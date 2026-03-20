@@ -1,0 +1,234 @@
+{
+  "article_slug": "exit-tickets",
+  "topic": "How to use exit tickets in the classroom",
+  "created_at": "2026-03-18T10:48:57Z",
+  "updated_at": "2026-03-18T17:23:17Z",
+  "current_stage": "done",
+  "status": "completed",
+  "dag_progress": {
+    "A1": {
+      "status": "completed",
+      "output_file": "outputs/A1-query-intelligence.md",
+      "started_at": "2026-03-18T10:48:57Z",
+      "completed_at": "2026-03-18T10:49:59Z",
+      "input_tokens": 1981,
+      "output_tokens": 1977
+    },
+    "A2": {
+      "status": "completed",
+      "output_file": "outputs/A2-competitive-intelligence.md",
+      "started_at": "2026-03-18T10:49:59Z",
+      "completed_at": "2026-03-18T10:51:53Z",
+      "input_tokens": 3925,
+      "output_tokens": 0
+    },
+    "B1": {
+      "status": "completed",
+      "output_file": "outputs/B1-intent-classifier.md",
+      "started_at": "2026-03-18T10:51:53Z",
+      "completed_at": "2026-03-18T10:52:38Z",
+      "input_tokens": 3975,
+      "output_tokens": 909
+    },
+    "B2": {
+      "status": "completed",
+      "output_file": "outputs/B2-ear-decomposer.md",
+      "started_at": "2026-03-18T10:52:38Z",
+      "completed_at": "2026-03-18T10:53:57Z",
+      "input_tokens": 4989,
+      "output_tokens": 2244
+    },
+    "B3": {
+      "status": "completed",
+      "output_file": "outputs/B3-content-brief-generator.md",
+      "started_at": "2026-03-18T10:53:57Z",
+      "completed_at": "2026-03-18T10:55:48Z",
+      "input_tokens": 10410,
+      "output_tokens": 3488
+    },
+    "C1": {
+      "status": "completed",
+      "output_file": "outputs/C1-research.md",
+      "started_at": "2026-03-18T11:18:03Z",
+      "completed_at": "2026-03-18T11:32:35Z",
+      "input_tokens": 4853,
+      "output_tokens": 4200
+    },
+    "C2": {
+      "status": "completed",
+      "output_file": "outputs/C2-outline.md",
+      "started_at": "2026-03-18T11:32:35Z",
+      "completed_at": "2026-03-18T11:35:18Z",
+      "input_tokens": 9655,
+      "output_tokens": 0
+    },
+    "C3": {
+      "status": "completed",
+      "output_file": "outputs/C3-draft.md",
+      "started_at": "2026-03-18T11:35:18Z",
+      "completed_at": "2026-03-18T11:37:02Z",
+      "input_tokens": 17219,
+      "output_tokens": 5488
+    },
+    "C4": {
+      "status": "completed",
+      "output_file": "outputs/C4-citation-enricher.md",
+      "started_at": "2026-03-18T11:37:02Z",
+      "completed_at": "2026-03-18T11:39:33Z",
+      "input_tokens": 23508,
+      "output_tokens": 6632
+    },
+    "C5": {
+      "status": "completed",
+      "output_file": "outputs/C5-composer.md",
+      "started_at": "2026-03-18T11:39:33Z",
+      "completed_at": "2026-03-18T11:41:51Z",
+      "input_tokens": 19570,
+      "output_tokens": 6718
+    },
+    "D1": {
+      "status": "completed",
+      "output_file": "outputs/D1-aeo-evaluator.md",
+      "started_at": "2026-03-18T11:41:51Z",
+      "completed_at": "2026-03-18T11:42:34Z",
+      "input_tokens": 15434,
+      "output_tokens": 1290
+    },
+    "D2": {
+      "status": "completed",
+      "output_file": "outputs/D2-fact-check.md",
+      "started_at": "2026-03-18T11:41:51Z",
+      "completed_at": "2026-03-18T11:43:36Z",
+      "input_tokens": 8137,
+      "output_tokens": 2736
+    },
+    "D3": {
+      "status": "completed",
+      "output_file": "outputs/D3-seo.md",
+      "started_at": "2026-03-18T11:41:51Z",
+      "completed_at": "2026-03-18T11:43:14Z",
+      "input_tokens": 12607,
+      "output_tokens": 0
+    },
+    "D4": {
+      "status": "completed",
+      "output_file": "outputs/D4-extractability-optimizer.md",
+      "started_at": "2026-03-18T11:41:51Z",
+      "completed_at": "2026-03-18T11:44:51Z",
+      "input_tokens": 9411,
+      "output_tokens": 0
+    },
+    "E1": {
+      "status": "completed",
+      "output_file": "revisions/e1-feedback.md",
+      "completed_at": "2026-03-18T14:28:10Z"
+    },
+    "E2": {
+      "status": "completed",
+      "output_file": "outputs/E2-brand-voice-reviewer.md",
+      "started_at": "2026-03-18T11:44:51Z",
+      "completed_at": "2026-03-18T11:45:51Z",
+      "input_tokens": 12149,
+      "output_tokens": 1061
+    },
+    "F1": {
+      "status": "completed",
+      "output_file": "outputs/F1-schema-markup.md",
+      "started_at": "2026-03-18T14:28:10Z",
+      "completed_at": "2026-03-18T14:29:09Z",
+      "input_tokens": 11714,
+      "output_tokens": 2684
+    },
+    "F2": {
+      "status": "completed",
+      "output_file": "outputs/F2-page-designer.md",
+      "started_at": "2026-03-18T14:28:10Z",
+      "completed_at": "2026-03-18T14:31:09Z",
+      "input_tokens": 12202,
+      "output_tokens": 10204
+    },
+    "F3": {
+      "status": "completed",
+      "output_file": "outputs/F3-internal-linking.md",
+      "started_at": "2026-03-18T14:31:09Z",
+      "completed_at": "2026-03-18T14:32:19Z",
+      "input_tokens": 14418,
+      "output_tokens": 2494
+    },
+    "F4": {
+      "status": "completed",
+      "output_file": "outputs/F4-publisher.md",
+      "started_at": "2026-03-18T14:32:20Z",
+      "completed_at": "2026-03-18T14:34:20Z",
+      "input_tokens": 23643,
+      "output_tokens": 5635
+    },
+    "F5": {
+      "status": "completed",
+      "output_file": "outputs/F5-distribution-strategist.md",
+      "started_at": "2026-03-18T14:34:20Z",
+      "completed_at": "2026-03-18T14:36:16Z",
+      "input_tokens": 17764,
+      "output_tokens": 4685
+    },
+    "F6": {
+      "status": "completed",
+      "output_file": "outputs/F6-channel-adaptor.md",
+      "started_at": "2026-03-18T14:36:16Z",
+      "completed_at": "2026-03-18T14:39:40Z",
+      "input_tokens": 19087,
+      "output_tokens": 10961
+    },
+    "G1": {
+      "status": "completed",
+      "output_file": "outputs/G1-sov-tracker.md",
+      "started_at": "2026-03-18T14:39:40Z",
+      "completed_at": "2026-03-18T17:21:07Z",
+      "input_tokens": 7314,
+      "output_tokens": 2972
+    },
+    "G2": {
+      "status": "completed",
+      "output_file": "outputs/G2-feedback-analyst.md",
+      "started_at": "2026-03-18T17:21:08Z",
+      "completed_at": "2026-03-18T17:23:17Z",
+      "input_tokens": 6098,
+      "output_tokens": 6877
+    }
+  },
+  "gates": {
+    "D_gate": {
+      "decision": "PASS",
+      "d1_scores": {
+        "qape": 9,
+        "ear": 8,
+        "extract": 9,
+        "trust": 8,
+        "intent": 9
+      },
+      "composite": 8.55
+    },
+    "E_gate": {
+      "decision": "Approved",
+      "feedback_file": "/Users/chandanbehera/Desktop/checking_claude/professional/aeo/engine/runs/exit-tickets/revisions/e1-feedback.md"
+    }
+  },
+  "revisions": {
+    "count": 1,
+    "max": 2,
+    "history": [
+      {
+        "revision": 1,
+        "source": "D1",
+        "reason": "Failed dimensions: trust(5) ",
+        "timestamp": "2026-03-18T11:18:02Z"
+      }
+    ]
+  },
+  "model_overrides": {},
+  "token_usage": {
+    "total_input": 364794,
+    "total_output": 122074,
+    "cost_estimate_usd": 5.530104000000001
+  }
+}

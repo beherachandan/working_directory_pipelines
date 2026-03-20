@@ -1,0 +1,207 @@
+{
+  "article_slug": "blooket-vs-wayground",
+  "topic": "Blooket vs Wayground comparison for classroom learning",
+  "created_at": "2026-03-18T14:28:09Z",
+  "updated_at": "2026-03-18T19:32:58Z",
+  "current_stage": "E2",
+  "status": "waiting_human_review",
+  "dag_progress": {
+    "A1": {
+      "status": "completed",
+      "output_file": "outputs/A1-query-intelligence.md",
+      "started_at": "2026-03-18T14:28:10Z",
+      "completed_at": "2026-03-18T14:29:08Z",
+      "input_tokens": 1984,
+      "output_tokens": 2086
+    },
+    "A2": {
+      "status": "completed",
+      "output_file": "outputs/A2-competitive-intelligence.md",
+      "started_at": "2026-03-18T14:29:08Z",
+      "completed_at": "2026-03-18T14:31:56Z",
+      "input_tokens": 4084,
+      "output_tokens": 7714
+    },
+    "B1": {
+      "status": "completed",
+      "output_file": "outputs/B1-intent-classifier.md",
+      "started_at": "2026-03-18T14:31:56Z",
+      "completed_at": "2026-03-18T14:33:01Z",
+      "input_tokens": 11822,
+      "output_tokens": 2117
+    },
+    "B2": {
+      "status": "completed",
+      "output_file": "outputs/B2-ear-decomposer.md",
+      "started_at": "2026-03-18T14:33:01Z",
+      "completed_at": "2026-03-18T14:34:33Z",
+      "input_tokens": 13987,
+      "output_tokens": 3752
+    },
+    "B3": {
+      "status": "completed",
+      "output_file": "outputs/B3-content-brief-generator.md",
+      "started_at": "2026-03-18T14:34:33Z",
+      "completed_at": "2026-03-18T14:36:51Z",
+      "input_tokens": 20946,
+      "output_tokens": 5659
+    },
+    "C1": {
+      "status": "completed",
+      "output_file": "outputs/C1-research.md",
+      "started_at": "2026-03-18T19:08:13Z",
+      "completed_at": "2026-03-18T19:10:40Z",
+      "input_tokens": 7107,
+      "output_tokens": 6261
+    },
+    "C2": {
+      "status": "completed",
+      "output_file": "outputs/C2-outline.md",
+      "started_at": "2026-03-18T19:10:40Z",
+      "completed_at": "2026-03-18T19:14:09Z",
+      "input_tokens": 13941,
+      "output_tokens": 9218
+    },
+    "C3": {
+      "status": "completed",
+      "output_file": "outputs/C3-draft.md",
+      "started_at": "2026-03-18T19:14:09Z",
+      "completed_at": "2026-03-18T19:19:13Z",
+      "input_tokens": 40513,
+      "output_tokens": 9742
+    },
+    "C4": {
+      "status": "completed",
+      "output_file": "outputs/C4-citation-enricher.md",
+      "started_at": "2026-03-18T19:19:14Z",
+      "completed_at": "2026-03-18T19:23:01Z",
+      "input_tokens": 41841,
+      "output_tokens": 9741
+    },
+    "C5": {
+      "status": "completed",
+      "output_file": "outputs/C5-composer.md",
+      "started_at": "2026-03-18T19:23:01Z",
+      "completed_at": "2026-03-18T19:28:10Z",
+      "input_tokens": 34764,
+      "output_tokens": 10921
+    },
+    "D1": {
+      "status": "completed",
+      "output_file": "outputs/D1-aeo-evaluator.md",
+      "started_at": "2026-03-18T19:28:11Z",
+      "completed_at": "2026-03-18T19:29:33Z",
+      "input_tokens": 21769,
+      "output_tokens": 2737
+    },
+    "D2": {
+      "status": "completed",
+      "output_file": "outputs/D2-fact-check.md",
+      "started_at": "2026-03-18T19:28:11Z",
+      "completed_at": "2026-03-18T19:29:53Z",
+      "input_tokens": 12221,
+      "output_tokens": 2864
+    },
+    "D3": {
+      "status": "completed",
+      "output_file": "outputs/D3-seo.md",
+      "started_at": "2026-03-18T19:28:11Z",
+      "completed_at": "2026-03-18T19:30:03Z",
+      "input_tokens": 18942,
+      "output_tokens": 3807
+    },
+    "D4": {
+      "status": "completed",
+      "output_file": "outputs/D4-extractability-optimizer.md",
+      "started_at": "2026-03-18T19:28:11Z",
+      "completed_at": "2026-03-18T19:31:49Z",
+      "input_tokens": 13496,
+      "output_tokens": 10243
+    },
+    "E1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "E2": {
+      "status": "completed",
+      "output_file": "outputs/E2-brand-voice-reviewer.md",
+      "started_at": "2026-03-18T19:31:50Z",
+      "completed_at": "2026-03-18T19:32:58Z",
+      "input_tokens": 18484,
+      "output_tokens": 1317
+    },
+    "F1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F4": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F5": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F6": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G2": {
+      "status": "pending",
+      "output_file": null
+    }
+  },
+  "gates": {
+    "D_gate": {
+      "decision": "ESCALATE",
+      "d1_scores": {
+        "qape": 8,
+        "ear": 9,
+        "extract": 9,
+        "trust": 5,
+        "intent": 9
+      },
+      "composite": 7.95
+    },
+    "E_gate": {
+      "decision": null,
+      "feedback_file": null
+    }
+  },
+  "revisions": {
+    "count": 2,
+    "max": 2,
+    "history": [
+      {
+        "revision": 1,
+        "source": "D1",
+        "reason": "Failed dimensions: trust(5) ",
+        "timestamp": "2026-03-18T17:35:53Z"
+      },
+      {
+        "revision": 2,
+        "source": "D1",
+        "reason": "Failed dimensions: trust(6) ",
+        "timestamp": "2026-03-18T19:08:13Z"
+      }
+    ]
+  },
+  "model_overrides": {},
+  "token_usage": {
+    "total_input": 599103,
+    "total_output": 201594,
+    "cost_estimate_usd": 11.624415
+  }
+}

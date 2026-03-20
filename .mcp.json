@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "dataforseo": {
+      "command": "npx",
+      "args": ["-y", "dataforseo-mcp-server"],
+      "env": {
+        "DATAFORSEO_USERNAME": "${DATAFORSEO_USERNAME}",
+        "DATAFORSEO_PASSWORD": "${DATAFORSEO_PASSWORD}",
+        "ENABLED_MODULES": "SERP,KEYWORDS_DATA,DATAFORSEO_LABS"
+      }
+    },
+    "semrush": {
+      "command": "npx",
+      "args": ["-y", "github:mrkooblu/semrush-mcp"],
+      "env": {
+        "SEMRUSH_API_KEY": "${SEMRUSH_API_KEY}"
+      }
+    },
+    "webflow": {
+      "type": "http",
+      "url": "https://mcp.webflow.com/sse"
+    }
+  }
+}

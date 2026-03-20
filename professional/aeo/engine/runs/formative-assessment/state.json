@@ -1,0 +1,227 @@
+{
+  "article_slug": "formative-assessment",
+  "topic": "What are formative assessment strategies?",
+  "created_at": "2026-03-18T10:02:00Z",
+  "updated_at": "2026-03-18T11:19:13Z",
+  "current_stage": "done",
+  "status": "completed",
+  "dag_progress": {
+    "A1": {
+      "status": "completed",
+      "output_file": "outputs/A1-query-intelligence.md",
+      "started_at": "2026-03-18T10:02:00Z",
+      "completed_at": "2026-03-18T10:03:09Z",
+      "input_tokens": 1981,
+      "output_tokens": 2646
+    },
+    "A2": {
+      "status": "completed",
+      "output_file": "outputs/A2-competitive-intelligence.md",
+      "started_at": "2026-03-18T10:03:09Z",
+      "completed_at": "2026-03-18T10:04:38Z",
+      "input_tokens": 4575,
+      "output_tokens": 3776
+    },
+    "B1": {
+      "status": "completed",
+      "output_file": "outputs/B1-intent-classifier.md",
+      "started_at": "2026-03-18T10:04:38Z",
+      "completed_at": "2026-03-18T10:05:42Z",
+      "input_tokens": 8331,
+      "output_tokens": 1641
+    },
+    "B2": {
+      "status": "completed",
+      "output_file": "outputs/B2-ear-decomposer.md",
+      "started_at": "2026-03-18T10:05:42Z",
+      "completed_at": "2026-03-18T10:06:48Z",
+      "input_tokens": 10041,
+      "output_tokens": 2559
+    },
+    "B3": {
+      "status": "completed",
+      "output_file": "outputs/B3-content-brief-generator.md",
+      "started_at": "2026-03-18T10:06:48Z",
+      "completed_at": "2026-03-18T10:08:46Z",
+      "input_tokens": 15810,
+      "output_tokens": 4165
+    },
+    "C1": {
+      "status": "completed",
+      "output_file": "outputs/C1-research.md",
+      "started_at": "2026-03-18T10:08:46Z",
+      "completed_at": "2026-03-18T10:09:12Z",
+      "input_tokens": 5609,
+      "output_tokens": 143
+    },
+    "C2": {
+      "status": "completed",
+      "output_file": "outputs/C2-outline.md",
+      "started_at": "2026-03-18T10:09:12Z",
+      "completed_at": "2026-03-18T10:11:41Z",
+      "input_tokens": 6395,
+      "output_tokens": 7152
+    },
+    "C3": {
+      "status": "completed",
+      "output_file": "outputs/C3-draft.md",
+      "started_at": "2026-03-18T10:11:41Z",
+      "completed_at": "2026-03-18T10:14:48Z",
+      "input_tokens": 13551,
+      "output_tokens": 8209
+    },
+    "C4": {
+      "status": "completed",
+      "output_file": "outputs/C4-citation-enricher.md",
+      "started_at": "2026-03-18T10:14:48Z",
+      "completed_at": "2026-03-18T10:17:58Z",
+      "input_tokens": 15105,
+      "output_tokens": 9212
+    },
+    "C5": {
+      "status": "completed",
+      "output_file": "outputs/C5-composer.md",
+      "started_at": "2026-03-18T10:17:58Z",
+      "completed_at": "2026-03-18T10:21:34Z",
+      "input_tokens": 14950,
+      "output_tokens": 9058
+    },
+    "D1": {
+      "status": "completed",
+      "output_file": "outputs/D1-aeo-evaluator.md",
+      "started_at": "2026-03-18T10:21:34Z",
+      "completed_at": "2026-03-18T10:22:21Z",
+      "input_tokens": 18530,
+      "output_tokens": 1545
+    },
+    "D2": {
+      "status": "completed",
+      "output_file": "outputs/D2-fact-check.md",
+      "started_at": "2026-03-18T10:21:34Z",
+      "completed_at": "2026-03-18T10:23:37Z",
+      "input_tokens": 10477,
+      "output_tokens": 5692
+    },
+    "D3": {
+      "status": "completed",
+      "output_file": "outputs/D3-seo.md",
+      "started_at": "2026-03-18T10:21:34Z",
+      "completed_at": "2026-03-18T10:23:01Z",
+      "input_tokens": 15703,
+      "output_tokens": 3027
+    },
+    "D4": {
+      "status": "completed",
+      "output_file": "outputs/D4-extractability-optimizer.md",
+      "started_at": "2026-03-18T10:21:34Z",
+      "completed_at": "2026-03-18T10:24:57Z",
+      "input_tokens": 11752,
+      "output_tokens": 9099
+    },
+    "E1": {
+      "status": "completed",
+      "output_file": "revisions/e1-feedback.md",
+      "completed_at": "2026-03-18T10:48:50Z"
+    },
+    "E2": {
+      "status": "completed",
+      "output_file": "outputs/E2-brand-voice-reviewer.md",
+      "started_at": "2026-03-18T10:24:58Z",
+      "completed_at": "2026-03-18T10:26:10Z",
+      "input_tokens": 15245,
+      "output_tokens": 1547
+    },
+    "F1": {
+      "status": "completed",
+      "output_file": "outputs/F1-schema-markup.md",
+      "started_at": "2026-03-18T10:48:50Z",
+      "completed_at": "2026-03-18T10:49:45Z",
+      "input_tokens": 14810,
+      "output_tokens": 2772
+    },
+    "F2": {
+      "status": "completed",
+      "output_file": "outputs/F2-page-designer.md",
+      "started_at": "2026-03-18T10:48:50Z",
+      "completed_at": "2026-03-18T10:54:45Z",
+      "input_tokens": 15298,
+      "output_tokens": 20101
+    },
+    "F3": {
+      "status": "completed",
+      "output_file": "outputs/F3-internal-linking.md",
+      "started_at": "2026-03-18T10:54:45Z",
+      "completed_at": "2026-03-18T10:56:17Z",
+      "input_tokens": 17602,
+      "output_tokens": 3609
+    },
+    "F4": {
+      "status": "completed",
+      "output_file": "outputs/F4-publisher.md",
+      "started_at": "2026-03-18T10:56:17Z",
+      "completed_at": "2026-03-18T10:59:12Z",
+      "input_tokens": 37141,
+      "output_tokens": 8290
+    },
+    "F5": {
+      "status": "completed",
+      "output_file": "outputs/F5-distribution-strategist.md",
+      "started_at": "2026-03-18T10:59:13Z",
+      "completed_at": "2026-03-18T11:02:40Z",
+      "input_tokens": 23571,
+      "output_tokens": 4997
+    },
+    "F6": {
+      "status": "completed",
+      "output_file": "outputs/F6-channel-adaptor.md",
+      "started_at": "2026-03-18T11:02:40Z",
+      "completed_at": "2026-03-18T11:14:16Z",
+      "input_tokens": 24450,
+      "output_tokens": 16524
+    },
+    "G1": {
+      "status": "completed",
+      "output_file": "outputs/G1-sov-tracker.md",
+      "started_at": "2026-03-18T11:14:16Z",
+      "completed_at": "2026-03-18T11:16:29Z",
+      "input_tokens": 10025,
+      "output_tokens": 4944
+    },
+    "G2": {
+      "status": "completed",
+      "output_file": "outputs/G2-feedback-analyst.md",
+      "started_at": "2026-03-18T11:16:30Z",
+      "completed_at": "2026-03-18T11:19:13Z",
+      "input_tokens": 8409,
+      "output_tokens": 6102
+    }
+  },
+  "gates": {
+    "D_gate": {
+      "decision": "PASS",
+      "d1_scores": {
+        "qape": 9,
+        "ear": 10,
+        "extract": 9,
+        "trust": 9,
+        "intent": 9
+      },
+      "composite": 9.25
+    },
+    "E_gate": {
+      "decision": "Approved",
+      "feedback_file": "/Users/chandanbehera/Desktop/checking_claude/professional/aeo/engine/runs/formative-assessment/revisions/e1-feedback.md"
+    }
+  },
+  "revisions": {
+    "count": 0,
+    "max": 2,
+    "history": []
+  },
+  "model_overrides": {},
+  "token_usage": {
+    "total_input": 319361,
+    "total_output": 136810,
+    "cost_estimate_usd": 4.703324999999999
+  }
+}
