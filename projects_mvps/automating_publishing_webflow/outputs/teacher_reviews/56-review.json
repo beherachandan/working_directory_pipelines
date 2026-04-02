@@ -1,0 +1,28 @@
+{
+  "item_num": "56",
+  "name": "differentiation techniques in the classroom",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.4,
+  "verdict": "REVISE",
+  "top_issues": [
+    "Opening paragraph fails the conciseness test: 'Every student brings unique strengths and challenges, and reaching all of them is achievable with proven techniques' is classic AI throat-clearing that restates the title without adding value. Cut to the Key Takeaways or open directly with the 8-strategy list.",
+    "Standards alignment is entirely absent. For a lesson design article explicitly targeting classroom implementation, there is no mention of Common Core, NGSS, or any state framework \u2014 even though the 7th-grade science examples map directly to NGSS MS-LS1 and the FAQ mentions 'meeting the same standard' without ever naming one.",
+    "Wayground's value proposition is vague and buried: 'Wayground offers standards-aligned resources with 25+ built-in accommodations' tells a teacher nothing actionable. What feature? What does it do in practice? Replace with something specific, e.g., 'Wayground's Create with AI lets you generate tiered versions of any assignment in under 3 minutes, with built-in scaffolds for ELL and IEP students.'"
+  ],
+  "positive_signals": [
+    "The 'Quick setup (\u22642 steps)' + time estimate format for every strategy is genuinely teacher-friendly \u2014 a busy teacher can scan this in a planning period and know exactly what Monday looks like.",
+    "Concrete, reusable 7th-grade science examples (photosynthesis, cell structure, ecosystems) throughout give the article real instructional specificity rather than generic placeholders."
+  ],
+  "narrative": "This article has strong bones \u2014 the modular strategy format with setup steps, time estimates, and concrete grade-level examples is exactly what teachers want to see, and the visual structure makes it genuinely scannable during a planning period. However, three issues prevent a PASS: the intro opens with filler sentences that delay the value, there is zero standards alignment (NGSS and Common Core are directly applicable here and never named), and the Wayground callout at the end is a generic claim with no feature specificity \u2014 \"25+ built-in accommodations\" means nothing to a teacher who needs to know *how* the tool saves them time. Fix the opening line to lead with the concrete promise, name at least one NGSS standard in context, and replace the Wayground mention with one specific feature tied to a real use case from this article."
+}

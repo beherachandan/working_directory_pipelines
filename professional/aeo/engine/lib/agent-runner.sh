@@ -49,13 +49,20 @@ run_agent() {
     local model
     model=$(get_agent_model "$agent")
 
+    # Build MCP config flag if .mcp.json exists
+    local mcp_flag=""
+    if [[ -f "${ENGINE_DIR}/.mcp.json" ]]; then
+        mcp_flag="--mcp-config ${ENGINE_DIR}/.mcp.json"
+    fi
+
     # Call claude
-    echo "[${agent}] Calling claude (model: ${model})..." | tee -a "$log_file"
+    echo "[${agent}] Calling claude (model: ${model}${mcp_flag:+, mcp: enabled})..." | tee -a "$log_file"
     local start_time
     start_time=$(date +%s)
 
     local raw_output
-    if ! raw_output=$(echo "$prompt" | claude -p --model "$model" 2>>"$log_file"); then
+    # shellcheck disable=SC2086
+    if ! raw_output=$(echo "$prompt" | claude -p --model "$model" $mcp_flag 2>>"$log_file"); then
         state_agent_fail "$slug" "$agent" "Claude API call failed"
         echo "[${agent}] FAILED: Claude API call failed" | tee -a "$log_file"
         return 1

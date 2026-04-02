@@ -8,7 +8,7 @@ from urllib.parse import urlparse, urlencode, urlunparse, parse_qs
 from google.oauth2.service_account import Credentials as SACredentials
 from googleapiclient.discovery import build
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# ── Standalone config (used when run directly) ────────────────────────────────
 SOURCE_SHEET_ID = "1g1IOK-ReOplL_iLO0I8nktxVjC4L_BtOy0hnfG974VU"
 NEW_SHEET_TITLE = "Wayground Resources (UTM Tagged)"
 
@@ -20,7 +20,10 @@ UTM_PARAMS = {
 
 DRY_RUN = False
 
-CREDENTIALS_DIR = os.path.join(os.path.dirname(__file__), "credentials")
+CREDENTIALS_DIR = os.environ.get(
+    "SHARED_CREDS_DIR",
+    os.path.join(os.path.dirname(__file__), "credentials"),
+)
 SA_KEY_FILE = os.path.join(CREDENTIALS_DIR, "service-account.json")
 
 SCOPES = [
@@ -31,26 +34,43 @@ SCOPES = [
 # Regex to find URLs in cell text
 URL_PATTERN = re.compile(r'https?://[^\s<>"\']+')
 
-# Columns that back the B-F HYPERLINK formulas (0-indexed)
-# B→M(12), C→U(20), D→T(19), E→V(21), F→K(10)
-TARGET_COLS = {10, 12, 19, 20, 21}
+# Columns that contain Wayground URLs (0-indexed)
+# Old schema: K(10)=video_id, M(12)=yt_url, T(19)=iv, U(20)=assessment, V(21)=worksheet
+# New schema: K(10)=video_id, L(11)=yt_url, N(13)=assessment, Q(16)=iv, V(21)=worksheet
+TARGET_COLS = {10, 11, 12, 13, 16, 19, 20, 21}
 
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
-def auth():
+def auth(sa_key_file=None):
     """Authenticate with Sheets + Drive APIs via service account."""
-    creds = SACredentials.from_service_account_file(SA_KEY_FILE, scopes=SCOPES)
+    key = sa_key_file or SA_KEY_FILE
+    creds = SACredentials.from_service_account_file(key, scopes=SCOPES)
     sheets = build("sheets", "v4", credentials=creds)
     drive = build("drive", "v3", credentials=creds)
     return sheets, drive
 
 
+# ── Title cleaning ─────────────────────────────────────────────────────────────
+def clean_title(title):
+    """Strip 'Copy of', '- Copy', '(Copy)' variants (case-insensitive) from a sheet title."""
+    # Strip leading "Copy of " (Google Drive auto-prefix)
+    cleaned = re.sub(r'(?i)^copy\s+of\s+', '', title).strip()
+    # Strip trailing " - Copy" or " (Copy)"
+    cleaned = re.sub(r'(?i)\s*[-–]\s*copy\s*$', '', cleaned).strip()
+    cleaned = re.sub(r'(?i)\s*\(copy\)\s*$', '', cleaned).strip()
+    return cleaned
+
+
 # ── Sheet duplication ─────────────────────────────────────────────────────────
 def duplicate_sheet(drive, source_id, title):
-    """Copy a sheet via Drive API. Returns new sheet ID."""
+    """Copy a sheet via Drive API and rename it cleanly. Returns new sheet ID."""
     body = {"name": title}
     resp = drive.files().copy(fileId=source_id, body=body).execute()
     new_id = resp["id"]
+
+    # Drive may still have prepended "Copy of" — force the clean name
+    drive.files().update(fileId=new_id, body={"name": title}).execute()
+
     print(f"  Duplicated → {new_id}")
     print(f"  URL: https://docs.google.com/spreadsheets/d/{new_id}")
 
@@ -72,24 +92,20 @@ def duplicate_sheet(drive, source_id, title):
 
 
 # ── UTM tagging ───────────────────────────────────────────────────────────────
-def add_utms_to_url(url):
-    """Replace all utm_* params in a URL with the configured UTM_PARAMS."""
+def add_utms_to_url(url, utm_params):
+    """Replace all utm_* params in a URL with the given utm_params dict."""
     parsed = urlparse(url)
     existing = parse_qs(parsed.query)
-    # Strip all existing utm_* params
     cleaned = {k: v for k, v in existing.items() if not k.startswith("utm_")}
-    # Add our UTM params
-    for key, val in UTM_PARAMS.items():
+    for key, val in utm_params.items():
         cleaned[key] = [val]
-    # Flatten single-value lists for clean encoding
     flat = {k: v[0] if len(v) == 1 else v for k, v in cleaned.items()}
     new_query = urlencode(flat, doseq=True)
     return urlunparse(parsed._replace(query=new_query))
 
 
-def find_and_tag_urls(sheets, sheet_id):
-    """Read all cells, find URLs, add UTMs, batch-update changed cells."""
-    # Get all sheet names
+def find_and_tag_urls(sheets, sheet_id, utm_params, dry_run=False):
+    """Read all cells, find URLs in TARGET_COLS, add UTMs, batch-update changed cells."""
     meta = sheets.spreadsheets().get(spreadsheetId=sheet_id).execute()
     sheet_names = [s["properties"]["title"] for s in meta["sheets"]]
 
@@ -103,7 +119,7 @@ def find_and_tag_urls(sheets, sheet_id):
         if not rows:
             continue
 
-        updates = []  # list of {"range": "Sheet1!B2", "values": [[new_val]]}
+        updates = []
         for r_idx, row in enumerate(rows):
             for c_idx, cell in enumerate(row):
                 if c_idx not in TARGET_COLS:
@@ -115,7 +131,7 @@ def find_and_tag_urls(sheets, sheet_id):
                     continue
                 new_cell = cell
                 for url in urls_found:
-                    tagged = add_utms_to_url(url)
+                    tagged = add_utms_to_url(url, utm_params)
                     if tagged != url:
                         new_cell = new_cell.replace(url, tagged)
                 if new_cell != cell:
@@ -126,7 +142,7 @@ def find_and_tag_urls(sheets, sheet_id):
 
         if updates:
             print(f"  Sheet '{sheet_name}': {len(updates)} cells to update ({total_urls} URLs)")
-            if not DRY_RUN:
+            if not dry_run:
                 sheets.spreadsheets().values().batchUpdate(
                     spreadsheetId=sheet_id,
                     body={
@@ -143,38 +159,66 @@ def find_and_tag_urls(sheets, sheet_id):
     return total_urls
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-def main():
-    print("=== Wayground UTM Duplicator ===")
-    print(f"  DRY_RUN={DRY_RUN}")
-    print(f"  SOURCE: {SOURCE_SHEET_ID}")
-    print(f"  UTMs: {UTM_PARAMS}")
+# ── Public API ────────────────────────────────────────────────────────────────
+def run(source_sheet_id, new_sheet_title, utm_campaign, dry_run=False, sa_key_file=None):
+    """
+    Duplicate source_sheet_id, tag all URLs with UTMs, return new sheet ID.
+
+    Args:
+        source_sheet_id: ID of the source Google Sheet to copy
+        new_sheet_title: Clean title for the new sheet (no 'Copy of' needed)
+        utm_campaign: Value for utm_campaign parameter
+        dry_run: If True, skip duplication and URL writes
+        sa_key_file: Path to service account JSON (defaults to module-level SA_KEY_FILE)
+
+    Returns:
+        New sheet ID (or source_sheet_id in dry_run mode)
+    """
+    utm_params = {
+        "utm_source": "yt_creator",
+        "utm_medium": "partnership",
+        "utm_campaign": utm_campaign,
+    }
+
+    print(f"=== UTM Duplicator: {new_sheet_title} ===")
+    print(f"  DRY_RUN={dry_run}")
+    print(f"  SOURCE: {source_sheet_id}")
+    print(f"  UTMs: {utm_params}")
     print()
 
-    sheets, drive = auth()
+    sheets, drive = auth(sa_key_file)
     print("  ✓ Auth OK")
     print()
 
-    # Step 1: Duplicate
     print("Duplicating sheet...")
-    if DRY_RUN:
+    if dry_run:
         print("  (dry-run — skipping duplication, will read source directly)")
-        target_id = SOURCE_SHEET_ID
+        target_id = source_sheet_id
     else:
-        target_id = duplicate_sheet(drive, SOURCE_SHEET_ID, NEW_SHEET_TITLE)
+        target_id = duplicate_sheet(drive, source_sheet_id, new_sheet_title)
     print()
 
-    # Step 2: Find and tag URLs
     print("Scanning for URLs and adding UTMs...")
-    total = find_and_tag_urls(sheets, target_id)
+    total = find_and_tag_urls(sheets, target_id, utm_params, dry_run=dry_run)
     print()
 
-    if not DRY_RUN:
+    if not dry_run:
         print(f"Done! {total} URLs tagged.")
         print(f"New sheet: https://docs.google.com/spreadsheets/d/{target_id}")
-        print(f"\nCopy this URL into yt_commenter.py as UTM_SHEET_URL.")
     else:
         print(f"Dry run complete. {total} URLs would be tagged.")
+
+    return target_id
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+def main():
+    run(
+        source_sheet_id=SOURCE_SHEET_ID,
+        new_sheet_title=NEW_SHEET_TITLE,
+        utm_campaign=UTM_PARAMS["utm_campaign"],
+        dry_run=DRY_RUN,
+    )
 
 
 if __name__ == "__main__":

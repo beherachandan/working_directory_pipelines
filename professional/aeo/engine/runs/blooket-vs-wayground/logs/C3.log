@@ -10,3 +10,4 @@
 [C3] Calling claude (model: opus)...
 [C3] Claude responded in 304s
 [C3] Completed. Output: outputs/C3-draft.md (304s, ~40513+9742 tokens)
+[C3] Already completed, skipping.

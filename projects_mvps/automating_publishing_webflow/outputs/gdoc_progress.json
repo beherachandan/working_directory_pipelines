@@ -1,0 +1,7 @@
+{
+  "__folder_id__": "1FvDG5IonlQL-hyuT7cauAtdKvG6Mgb-C",
+  "52": {
+    "status": "failed",
+    "error": "copy: <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1GT7Scrxw37OOowWcBVztknvIyYb9INegHTiT9I3h8J4/copy?fields=id&supportsAllDrives=true&alt=json returned \"The user's Drive storage quota has been exceeded.\". Details: \"[{'message': \"The user's Drive storage quota has been exceeded.\", 'domain': 'usageLimits', 'reason': 'storageQuotaExceeded'}]\">"
+  }
+}

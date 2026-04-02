@@ -2,3 +2,4 @@
 [B3] Calling claude (model: sonnet)...
 [B3] Claude responded in 138s
 [B3] Completed. Output: outputs/B3-content-brief-generator.md (138s, ~20946+5659 tokens)
+[B3] Already completed, skipping.

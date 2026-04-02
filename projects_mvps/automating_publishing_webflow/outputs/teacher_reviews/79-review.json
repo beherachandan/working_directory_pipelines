@@ -1,0 +1,28 @@
+{
+  "item_num": "79",
+  "name": "scaffolding language learning",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 3.4,
+  "verdict": "REVISE",
+  "top_issues": [
+    "Opening is too slow \u2014 the article leads with a generic observation ('Language learning looks different for every student') followed by a second paragraph defining scaffolding, then a third paragraph restating what the article will cover. A teacher reading this on a planning period would skim past three paragraphs before hitting anything useful. The Key Takeaways box helps, but the prose intro itself needs to open with a concrete fact or direct actionable hook.",
+    "Grade-band specificity is thin for an article this long. The 7th-grade Ms. Patel example is excellent, but the rest of the article drifts into generic references to 'ELA,' 'math,' 'social studies,' and 'science' without pinning strategies to specific grade bands. A 3rd-grade teacher and an 11th-grade teacher would both wonder if this is actually for them.",
+    "Differentiation and inclusivity coverage is surface-level given the article's focus. ELL students are well-addressed, but students with IEPs/504s, gifted learners, and students with learning disabilities get no named strategies or examples \u2014 despite the article explicitly claiming equity as a core theme."
+  ],
+  "positive_signals": [
+    "Teacher agency is handled well throughout \u2014 Wayground is consistently framed as a time-saver that frees up teacher judgment ('you control which accommodations each student receives'), and the FAQ answer on AI/data privacy explicitly reinforces this framing.",
+    "The technology table is genuinely useful and scannable \u2014 pairing 'Key Point,' 'How Technology Helps,' and 'Practical Classroom Example' columns gives a planning-period teacher something they could actually reference while building a lesson."
+  ],
+  "narrative": "This article has strong bones \u2014 the CER/sentence frame strategies are concrete, the Wayground value proposition is specific rather than generic, and the technology table is the kind of thing a teacher might actually bookmark. However, the overall score of 3.4 and the opening conciseness score of 2 trigger a mandatory REVISE verdict: the first three paragraphs essentially repeat each other before delivering any value, which will lose the busy teacher this article is written for. The two other priority fixes are expanding grade-band specificity beyond the single Ms. Patel example (the table rows reference \"ELA\" and \"math\" abstractly, which doesn't help a 5th-grade teacher know this applies to them) and adding at least one named strategy each for IEP/504 students and gifted learners, since the article claims equity as a central theme but doesn't follow through for those groups. Tighten the opening to lead with the Ms. Patel stat or the WIDA finding, add two to three grade-anchored examples across the strategy bullets, and address two additional learner categories explicitly \u2014 then this article is close to a PASS."
+}

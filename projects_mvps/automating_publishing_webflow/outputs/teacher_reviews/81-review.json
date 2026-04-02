@@ -1,0 +1,28 @@
+{
+  "item_num": "81",
+  "name": "scaffolding notes",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.3,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 \u2014 Standards alignment is absent where it's clearly applicable. A lesson design article for K-12 science and ELA contexts should name at least one relevant framework (e.g., CCSS ELA literacy standards for note-taking such as CCSS.ELA-LITERACY.RST.6-8.1, or NGSS science practices like 'Obtaining, Evaluating, and Communicating Information'). The article cites research authors but never anchors the strategies to actual standards teachers are accountable to.",
+    "C10 \u2014 Wayground's value proposition is entirely generic. Phrases like 'standards-aligned resources with built-in accommodations' and 'Wayground helps you meet every student where they are' appear three times but never name a specific feature. A teacher reading this cannot picture what they would actually click on in Wayground. Replace at least one mention with something concrete \u2014 e.g., 'Wayground's Create with AI lets you generate a three-tier scaffolded note template in under 5 minutes by inputting your lesson objective and target grade.'",
+    "C5 \u2014 Grade-band specificity is thin outside of 7th-grade science. The article leans heavily on one scenario (7th-grade science, chemical reactions, photosynthesis) but the title and meta description promise K-12 breadth. Add at least one explicit example from a different grade band and subject \u2014 e.g., a 3rd-grade ELA reading lesson or a 10th-grade history class \u2014 to match the scope claimed."
+  ],
+  "positive_signals": [
+    "The three-tier differentiation table (High/Moderate/Low support) is genuinely useful and photocopy-ready \u2014 exactly the kind of visual reference a teacher would bookmark during planning.",
+    "Cognitive Load Theory and the gradual release of responsibility framework are both defined inline and cited, which respects novice teachers without talking down to experienced ones."
+  ],
+  "narrative": "This article has real bones \u2014 the differentiation table is classroom-ready, the research citations are handled cleanly, and teacher agency is consistently respected throughout. However, it cannot pass in its current state because two criteria hit automatic-revise thresholds: Wayground is mentioned four times without ever naming a single specific feature (a teacher still has no idea what to click), and a lesson-design article aimed at K-12 teachers never once references a standards framework teachers are actually evaluated against, such as CCSS literacy standards or NGSS science practices. Fix those two issues first, then broaden the grade-band examples beyond the single 7th-grade science scenario to match the K-12 scope the title and meta description promise."
+}

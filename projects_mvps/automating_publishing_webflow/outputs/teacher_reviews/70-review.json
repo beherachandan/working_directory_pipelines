@@ -1,0 +1,28 @@
+{
+  "item_num": "70",
+  "name": "differentiated instruction vs universal design for learning",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.4,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 - Standards alignment is essentially absent for an article explicitly targeting science teachers. A lesson design article covering UDL and differentiation for 7th-grade science should reference NGSS practices (e.g., Science and Engineering Practice 3: Planning and Carrying Out Investigations) and/or CAST's UDL Guidelines v3.0 as a named framework \u2014 not just cite CAST as a source for a statistics claim.",
+    "C10 - Wayground's value proposition appears twice but never names a specific feature or workflow: 'See how Wayground can help you implement both frameworks with built-in accommodations and adaptive resources' and 'Wayground adapts to your classroom approach while saving you time' are generic claims. A teacher reading this cannot picture what Wayground actually does \u2014 there's no 'Create with AI,' no 'tiered activity generator,' no specific feature name anywhere.",
+    "C2 - The opening does not get to value quickly. The article leads with 'What is the difference between differentiated instruction and Universal Design for Learning, and when should you use each? Every teacher faces a daily planning dilemma...' \u2014 this restates the title as a question and adds a rhetorical frame before delivering anything concrete. The actual payoff ('UDL helps you design lessons that work for more students from the start...') doesn't arrive until the third paragraph."
+  ],
+  "positive_signals": [
+    "The comparison table is genuinely excellent \u2014 seven attributes, concrete 7th-grade science examples in every row, and a clear proactive/reactive framing. A teacher could pull this into a planning meeting or PD session without modification.",
+    "The Ms. Hernandez example and the building-with-ramps analogy are the strongest moments of human, practitioner voice in the article \u2014 specific, visual, and grounded in a real classroom context."
+  ],
+  "narrative": "This article has real strengths \u2014 the comparison table is one of the most usable artifacts I've seen in a piece like this, and the 7th-grade science throughline (chemical reactions, particle motion, density) gives it genuine grade-band credibility \u2014 but two criteria score at 2 and trigger an automatic REVISE. Wayground is mentioned twice and does nothing both times: a teacher finishing this article has no idea what Wayground feature to click or how it connects to UDL or differentiation specifically. Separately, for an article explicitly aimed at science teachers doing lesson design, the absence of any NGSS reference is a real gap \u2014 even a single line linking UDL's \"multiple means of representation\" to NGSS Science and Engineering Practices would close it. Fix those two issues, sharpen the opening so it leads with the ramp analogy or the \"40% less accommodation time\" finding instead of a rhetorical question, and this article is close to a PASS."
+}

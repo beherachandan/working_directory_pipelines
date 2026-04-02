@@ -1,0 +1,28 @@
+{
+  "item_num": "86",
+  "name": "student motivation and engagement",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.4,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C10 (Wayground Value Prop = 2): Wayground is referenced three times but never with a specific, named feature. 'Wayground's accommodations make this automatic' and 'Wayground adapts to your teaching style with standards-aligned resources, built-in accommodations, and time-saving differentiation tools' are generic claims \u2014 a teacher reading this cannot picture what they would actually click on or do inside the product. Replace at least one mention with a named feature and a concrete use case (e.g., 'Wayground's Create with AI lets you generate a three-level choice board in under 3 minutes').",
+    "C9 (Standards Alignment = 2): This is a lesson-design article that repeatedly mentions 'standards-aligned resources' and 'aligned to standards,' yet zero specific frameworks are named \u2014 no Common Core, NGSS, ISTE, or state standards. For a K-12 instructional strategy article, that omission is conspicuous. Add at least one named framework with a clear connection (e.g., 'Common Core's emphasis on text complexity directly supports tiered reading materials').",
+    "C5 (Grade-Band Specificity = 3): The article leans heavily on middle school framing ('every middle schooler needs') and the Ms. Patel 7th-grade science anecdote, but the title and meta promise 'every learner' and 'K-12.' Elementary and high school teachers will feel the article wasn't written for them. Add at least one concrete example each for a lower elementary grade band (e.g., K-2) and a high school course to validate the K-12 claim."
+  ],
+  "positive_signals": [
+    "The strategy table (mastery-based progressions, choice boards, retakes, progress dashboards, teacher-approved alternatives) is genuinely classroom-ready \u2014 a teacher could screenshot it for a planning meeting Monday morning.",
+    "Teacher agency is handled well throughout: phrases like 'you know your classroom best' and 'the right tools should amplify your expertise, not complicate it' position the teacher as decision-maker, and the Ms. Patel anecdote grounds the theory in a real classroom outcome."
+  ],
+  "narrative": "This article has strong bones \u2014 the strategy table is photocopy-worthy, the structure is easy to scan during a planning period, and the teacher-voice framing is mostly solid \u2014 but two criteria score at 2 and trigger a mandatory REVISE. Wayground is name-dropped three times without ever identifying a specific feature a teacher could actually use, and a lesson-design article that talks about \"standards-aligned resources\" while naming zero standards frameworks will lose credibility with any teacher who reads carefully. Fix those two issues first, then broaden the grade-band examples beyond 7th-grade science to back up the K-12 promise in the title and meta description. Once those gaps are closed, this article is close to a classroom-ready PASS."
+}

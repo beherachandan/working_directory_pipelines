@@ -1,0 +1,28 @@
+{
+  "item_num": "74",
+  "name": "scaffolding in math",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.7,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 \u2014 Standards alignment is critically absent for a lesson-design article about math scaffolding. A K-12 math instruction piece with no mention of Common Core Standards for Mathematical Practice (e.g., MP.1, MP.4), NCTM frameworks, or even a passing state-standards reference is a real gap. Math teachers live and plan by standards, and a scaffolding guide should connect explicitly \u2014 e.g., 'scaffolding concrete-to-abstract aligns with CCSS.MATH.CONTENT.4.NF for fraction understanding.'",
+    "C8 \u2014 ELL and IEP/504 learners are invisible. The article addresses mixed-ability and gifted-adjacent (advanced students) learners but never names English Language Learners, students with IEPs, or 504 accommodations. The FAQ mentions 'additional help' vaguely. A sentence like 'For ELL students, pair visual representations with labeled diagrams in home language' or 'For students with IEPs, hard scaffolds like graphic organizers may be required supports, not optional' would correct this.",
+    "C10 \u2014 Wayground's value proposition is underdeveloped. The two mentions of Wayground describe it as offering 'differentiated versions,' 'AI-powered answer explanations,' 'step-by-step presentations,' and 'mastery-focused assessments' \u2014 but never show a teacher *doing* something specific with it. Compare 'Wayground's AI-powered answer explanations let you assign a scaffolded algebra set and have each student see a worked-step explanation at their level in under 2 minutes' versus what's written. The current phrasing reads like a generic product blurb."
+  ],
+  "positive_signals": [
+    "The grade-band comparison table (K\u20135 through 11\u201312) is genuinely excellent \u2014 specific, scannable, and immediately useful for lesson planning across departments. This is exactly the kind of artifact a teacher would screenshot or bookmark.",
+    "The opening two sentences deliver a crisp, accurate definition with zero throat-clearing, and the cited stat from Woodward et al. (2012) \u2014 'six times more likely to solve problems correctly' \u2014 gives teachers a credible hook for parent and admin conversations."
+  ],
+  "narrative": "This article earns a REVISE verdict \u2014 not because it's poorly written, but because one criterion scores a 2 (Standards Alignment), which triggers an automatic flag regardless of the otherwise solid overall score of 3.7. The grade-band table and concrete strategy sequence are genuinely strong, classroom-ready elements that many scaffolding articles lack entirely. However, a K-12 math instruction piece that never mentions the Common Core Standards for Mathematical Practice, NCTM, or any state framework will feel incomplete to experienced math teachers who plan by standards daily \u2014 adding even two or three specific standard citations would close that gap quickly. Fixing the ELL/IEP blind spot and sharpening the Wayground feature description from vague (\"differentiated versions\") to specific (\"generate a tiered algebra set with step-by-step explanations in under 2 minutes\") would push this to a clean PASS."
+}

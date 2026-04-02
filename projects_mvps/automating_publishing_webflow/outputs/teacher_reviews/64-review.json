@@ -1,0 +1,28 @@
+{
+  "item_num": "64",
+  "name": "differentiated instruction in math",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 2,
+    "C9_standards_alignment": 4,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.8,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C8 (Differentiation & Inclusivity) scores a 2 \u2014 automatic REVISE trigger. The article never mentions ELL students, IEP/504 accommodations, or gifted learners by name. 'Diverse needs' is implied through readiness tiers, but a teacher supporting a student with a processing disability or an English language learner would find zero actionable guidance here. The FAQ section's single reference to 'built-in accommodations' is too vague to count.",
+    "C10 (Wayground Value Prop) is a 3 at best. The article mentions 'step-by-step presentations,' 'Desmos integration,' and 'built-in accommodations' but never names a specific Wayground feature (e.g., 'Create with AI,' a specific report type, or an accommodation toggle) with a concrete use case. The closing CTA ('Check out Wayground today') is generic; the one actionable mention \u2014 'assign access, on-level, and extension variations with a few clicks' \u2014 lacks a feature name.",
+    "C3 (Non-AI Tone) has scattered AI-ish phrasing that a real teacher would notice: 'fosters productive struggle and deeper understanding' in the key takeaways reads like a content brief, and 'Based on feedback from Wayground educators who use math differentiation tools daily' sounds like a marketing insert rather than a practitioner voice. The 'Maria shared how she visualized slope' example is a nice human touch but feels constructed rather than recalled."
+  ],
+  "positive_signals": [
+    "The strategy reference table is genuinely excellent \u2014 subject-specific examples (algebra tiles for x\u00b2 + 5x + 6, patty paper for reflections), a clear purpose column, and tech tie-ins make it something a teacher could actually laminate and use during planning.",
+    "Term definitions are handled well throughout: 'productive struggle,' Tomlinson's framework, and Rosenshine's Principles are all introduced with enough context that a first-year teacher isn't lost, while the inline definition box for differentiated instruction itself sets a strong standard."
+  ],
+  "narrative": "This article has real strengths \u2014 the strategy table is genuinely reference-quality, the research citations are credible without being academic-heavy, and the FAQ section answers questions teachers actually ask \u2014 but it earns a mandatory REVISE on one critical criterion: it never addresses ELL students, IEP/504 learners, or gifted students by name, which means a teacher in a legally compliant, inclusion-model classroom will immediately notice the gap. The Wayground value proposition also needs a named feature (\"Create with AI,\" a specific accommodation toggle, or a tiered assignment workflow) rather than the current vague references to \"built-in accommodations\" and \"a few clicks.\" Fix those two gaps \u2014 add a concrete paragraph or sidebar on ELL/IEP/gifted differentiation with specific strategies, and replace at least one generic Wayground mention with a named feature and 30-second use case \u2014 and this article will be genuinely classroom-ready."
+}

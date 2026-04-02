@@ -1,0 +1,317 @@
+{
+  "item_num": "62",
+  "name": "differentiated instruction tools",
+  "cluster": "Differentiated Learning",
+  "sub_cluster": "Implementation & Application",
+  "gdoc_url": "https://docs.google.com/document/d/111yR40KKgI0I7pyKY45oRdUQu6ssplqDFBarsh2CrfI/edit?tab=t.0",
+  "url_slug": "",
+  "creation_notes": "Curated overview of tool categories that support differentiation: formative assessment tools, grouping tools, adaptive practice, content creation, and accessibility supports. Focus on what to look for (features, data, workflow fit), not just lists.",
+  "fetch_warning": "",
+  "qapeds_composite": 4.45,
+  "dimensions": {
+    "ai_citability": {
+      "score": 46,
+      "sub_scores": {
+        "answer_block_quality": 50,
+        "self_containment": 60,
+        "structural_readability": 62,
+        "statistical_density": 12,
+        "uniqueness_signals": 18
+      }
+    },
+    "eeat": {
+      "score": 33,
+      "sub_scores": {
+        "experience": 25,
+        "expertise": 55,
+        "authoritativeness": 15,
+        "trustworthiness": 35
+      }
+    },
+    "platform_optimization": {
+      "score": 39,
+      "sub_scores": {
+        "google_aio": 40,
+        "chatgpt": 42,
+        "perplexity": 30,
+        "gemini": 38,
+        "bing_copilot": 42
+      }
+    },
+    "seo_structure": {
+      "score": 55,
+      "title_tag_suggestion": "Differentiated Instruction Tools: A Practical Classroom Guide",
+      "meta_description_suggestion": "Find differentiated instruction tools that deliver fast data, built-in accommodations, and flexible grouping. A practical guide to choosing platforms that fit your classroom workflow.",
+      "slug_recommendation": "differentiated-instruction-tools",
+      "slug_assessment": "missing"
+    },
+    "schema_recommendations": {
+      "score": 75,
+      "types_needed": [
+        "Article",
+        "FAQPage",
+        "LearningResource"
+      ]
+    },
+    "brand_voice": {
+      "score": 52,
+      "verdict": "WARN",
+      "hard_fail_rules": [
+        "em_dash_in_copy",
+        "heading_case_title_case"
+      ],
+      "vocabulary_check": {
+        "wayground_naming": "pass",
+        "quiz_tool_language": "pass",
+        "product_mention_count": 2,
+        "product_mention_verdict": "pass",
+        "forbidden_terms_found": [],
+        "softfail_terms_found": [
+          "should (prescriptive)",
+          "saves time (standalone in heading and metadata)"
+        ]
+      },
+      "tone_check": {
+        "opens_with_question": false,
+        "opens_with_product_mention": false,
+        "hqim_claim": false,
+        "ai_replaces_teacher_claim": false,
+        "concrete_classroom_example": true,
+        "ai_content_indicators": [
+          "Generic FAQ phrasing ('Technology works best when...')",
+          "Repeated 'The key is...' construction"
+        ]
+      },
+      "format_check": {
+        "intro_word_count": 112,
+        "intro_word_count_pass": false,
+        "product_accuracy_issues": []
+      }
+    }
+  },
+  "qapeds": {
+    "Q": 4,
+    "A": 5,
+    "P": 2,
+    "E": 6,
+    "D": 5,
+    "S": 6,
+    "gate1_pass": false,
+    "gate1_reason": "No explicit interrogative question in the title or first 120 words. Title is instructional ('A Practical Guide for Every Classroom'), and the opening paragraph uses declarative statements about formative data.",
+    "gate2_pass": true,
+    "gate2_reason": "Key Takeaways box provides a structurally isolatable multi-bullet answer within the first 150 words, though it is not a tight 1-3 sentence canonical block."
+  },
+  "platform_flags": {
+    "aio_ready": false,
+    "chatgpt_ready": false,
+    "perplexity_ready": false,
+    "gemini_ready": false,
+    "bing_copilot_ready": false
+  },
+  "strengths": [
+    "Strong comparison table organizing five tool categories by features, data outputs, and workflow fit \u2014 highly extractable for AI systems and scannable for teachers",
+    "Well-structured FAQ section with five explicit Q&A pairs that are appropriately sized (40-60 words each) for FAQPage schema and AI citation extraction",
+    "Practical, teacher-centered framing throughout \u2014 uses second person, references real classroom constraints (44-minute periods, prep load), and avoids overly academic language"
+  ],
+  "recommendations": [
+    {
+      "rank": 1,
+      "dimension": "eeat",
+      "issue": "Zero named sources, research citations, expert quotes, or institutional references anywhere in the article. Authoritativeness sub-score is 15/100.",
+      "fix": "Add 3-5 named citations: e.g., 'According to Tomlinson (2017), effective differentiation requires ongoing formative assessment'; cite TNTP's 'The Opportunity Myth' (2018) for data on grade-level access; reference a specific RAND or NWEA study on adaptive practice outcomes. Each citation should include author/org and year.",
+      "tag": "Authority"
+    },
+    {
+      "rank": 2,
+      "dimension": "ai_citability",
+      "issue": "Statistical density is critically low (12/100). No percentages, no research data points, no quantified outcomes. Claims like 'three minutes of formative data can reshape tomorrow's lesson plan' are presented without evidence.",
+      "fix": "Add at least 4-5 named statistics with attribution: e.g., 'A 2018 TNTP study found that only 44% of assignments were grade-appropriate'; 'Teachers using formative assessment data saw a 26% improvement in student outcomes (Black & Wiliam, 1998).' Target \u22652 stats per 500 words.",
+      "tag": "Authority"
+    },
+    {
+      "rank": 3,
+      "dimension": "eeat",
+      "issue": "No first-hand practitioner experience signals. No teacher examples, no school names, no 'we tested' or 'based on X educators' language. Experience sub-score is 25/100.",
+      "fix": "Add 2-3 concrete practitioner examples: 'A 7th-grade math teacher at Jefferson Middle School used 3-question exit tickets to identify fraction misconceptions and regrouped her class the next day.' Or use Wayground's first-party signals: 'Based on feedback from 500+ Wayground educators, the most-used accommodation is read-aloud.'",
+      "tag": "Content"
+    },
+    {
+      "rank": 4,
+      "dimension": "ai_citability",
+      "issue": "No explicit question in the title or first 120 words (Gate 1 FAIL). AI systems looking for question-answer pairs cannot cleanly extract a primary Q&A from this article.",
+      "fix": "Add an explicit question within the first 80 words: 'What differentiated instruction tools help teachers personalize learning without adding prep time?' Then follow immediately with a 1-3 sentence canonical answer block (40-60 words) that directly answers it.",
+      "tag": "Structural"
+    },
+    {
+      "rank": 5,
+      "dimension": "seo_structure",
+      "issue": "URL slug is not set. Missing slug means no SEO benefit from keyword placement in the URL, and the article cannot be evaluated for URL-level optimization.",
+      "fix": "Set the URL slug to 'differentiated-instruction-tools' \u2014 lowercase, hyphenated, keyword-rich, 37 characters.",
+      "tag": "Formatting"
+    }
+  ],
+  "pre_publish_checklist": {
+    "schema_to_add": [
+      "Article",
+      "FAQPage",
+      "LearningResource"
+    ],
+    "title_tag": "Differentiated Instruction Tools: A Practical Classroom Guide",
+    "meta_description": "Find differentiated instruction tools that deliver fast data, built-in accommodations, and flexible grouping. A practical guide to choosing platforms that fit your classroom workflow.",
+    "slug_recommendation": "differentiated-instruction-tools"
+  },
+  "geo_composite": 46.7,
+  "validation_warnings": [],
+  "geo_narrative": "## GEO Evaluation: Differentiated Instruction Tools\n\n### Weighted Executive Summary\n\nThis article scores a **38.7 partial GEO composite** (excluding brand voice), placing it in the **weak** range and well below the publishing threshold. The critical deficiency is a near-total absence of named sources, research citations, and statistical evidence \u2014 the E-E-A-T score of 33/100 and statistical density of 12/100 severely undermine AI citability across all platforms. The article's structural scaffolding (comparison table, FAQ section, logical flow) is its strongest asset, but without authoritative evidence to fill that structure, AI systems have nothing trustworthy to cite. The QAPEDS composite of 4.45/10 (Weak) confirms the article fails both the question gate and the proof threshold.\n\n---\n\n### GEO Composite Score Breakdown\n\n| Dimension | Score | Weight | Weighted Contribution |\n|-----------|-------|--------|-----------------------|\n| AI Citability | 46 | 25% | 11.5 |\n| Content E-E-A-T | 33 | 20% | 6.5 |\n| Platform Optimization | 39 | 20% | 7.7 |\n| Brand Voice | *null* | 15% | *pending* |\n| SEO Structure | 55 | 10% | 5.5 |\n| Schema Recommendations | 75 | 10% | 7.5 |\n| **Partial Total** | \u2014 | **85%** | **38.7** |\n\n---\n\n### QAPEDS Score Breakdown\n\n| Dimension | Score | Rationale |\n|-----------|-------|-----------|\n| **Q** (Question) | 4/10 | **Gate 1 FAIL** \u2014 No explicit interrogative question in title or first 120 words. Title is instructional. Capped at \u22645. |\n| **A** (Answer) | 5/10 | Key Takeaways provide a semi-extractable answer, but it's a 3-bullet list rather than a tight canonical block. Not optimally isolatable. |\n| **P** (Proof) | 2/10 | Zero named citations, zero research references, zero expert quotes, zero attributed statistics. This is the article's most critical failure. |\n| **E** (Expansion) | 6/10 | Logical flow from criteria \u2192 tool types \u2192 comparison \u2192 FAQs. Some redundancy between main body and FAQ answers. Table adds useful layering. |\n| **D** (Decision) | 5/10 | Comparison table presents categories but lacks explicit trade-offs or \"if X, then Y\" guidance. No specific tool recommendations beyond Wayground. No limitations discussed. |\n| **S** (Structure) | 6/10 | Good heading hierarchy, bullets, and table. FAQ section is well-structured. But no canonical answer block is cleanly isolatable for the primary query. |\n\n**QAPEDS Composite: 4.45 \u2014 Weak**\n\n---\n\n### Gate Failures\n\n**Gate 1 \u2014 Explicit Question Gate: FAILED**\nThe title \"Differentiated Instruction Tools: A Practical Guide for Every Classroom\" is purely instructional. The first 120 words contain Key Takeaway bullets and a declarative opening about formative data. No interrogative sentence exists. This means AI systems looking for a clear question-answer pair (the dominant citation pattern for informational queries) cannot cleanly extract one from this article. **Fix:** Insert an explicit question like \"What differentiated instruction tools help teachers personalize learning without extra prep?\" within the first 80 words, followed immediately by a 2-sentence canonical answer.\n\n---\n\n### Per-Dimension Deep Dive\n\n#### AI Citability: 46/100\nThe article's structural elements (comparison table, FAQ answers, bulleted lists) provide some extraction-ready blocks, but the critically low statistical density (12/100) and uniqueness signals (18/100) cripple overall citability. AI systems prioritize content with named data points and original insights \u2014 this article has neither. The FAQ answers are the most citable blocks at 40-60 words each, but they lack the attributed evidence that would make AI systems confident in citing them over competitors.\n\n#### Content E-E-A-T: 33/100\nThis is the article's weakest dimension. **Authoritativeness (15/100)** reflects zero named sources \u2014 not a single \"According to...\" or institutional reference exists in the entire draft. **Experience (25/100)** reflects the absence of any practitioner examples, named teachers, or school contexts. The article reads as competent general advice but offers no signals that would convince an AI system (or a human evaluator) that the author has tested these approaches or drawn from documented evidence. **Expertise (55/100)** is the strongest sub-component, as the article demonstrates reasonable knowledge of differentiation concepts and classroom realities.\n\n#### Platform Optimization: 39/100\nNo platform flag passes. **Perplexity (30/100)** is the weakest because it requires high factual density (\u22652 named stats per 500 words) and this article has essentially zero. **Google AIO (40/100)** suffers from the lack of named citations and E-E-A-T signals. The FAQ section structure helps across all platforms but cannot compensate for the evidence vacuum. Without named citations, no AI platform has sufficient trust signals to prioritize this content for citation.\n\n#### SEO Structure: 55/100\nThe SEO title at 56 characters is within range and includes the primary keyword. The meta description at ~155 characters is acceptable but uses \"save time\" as a standalone claim (brand guideline issue). The biggest gap is the **missing URL slug** (scored at 20/100 for that sub-component). Heading hierarchy is reasonable but uses Title Case rather than sentence case. Primary keyword appears in H1 and first 100 words but is underrepresented in H2 headings.\n\n#### Schema Recommendations: 75/100\nThe article structure cleanly supports three schema types: **Article** (always), **FAQPage** (5 well-formed Q&A pairs), and **LearningResource** (educational content targeting teachers). The comparison table could also support Table markup. This is a relative bright spot \u2014 the structural scaffolding is sound, it just needs evidence and authority to fill it.\n\n---\n\n### Top 5 Prioritized Recommendations\n\n| Rank | Dimension | Issue | Fix | Tag |\n|------|-----------|-------|-----|-----|\n| 1 | E-E-A-T | Zero named sources, citations, or institutional references. Authoritativeness at 15/100. | Add 3-5 named citations: Tomlinson (2017) on differentiation frameworks, TNTP's \"The Opportunity Myth\" (2018), Black & Wiliam (1998) on formative assessment impact. Each must include author/org + year. | Authority |\n| 2 | AI Citability | Statistical density at 12/100. No quantified claims with attribution anywhere. | Add \u22654 attributed statistics: e.g., \"Only 44% of assignments were grade-appropriate (TNTP, 2018)\"; \"Formative assessment produces effect sizes of 0.40-0.70 (Hattie, 2009).\" Target \u22652 per 500 words. | Authority |\n| 3 | E-E-A-T | No practitioner experience signals. No named teachers, schools, or first-party data. Experience at 25/100. | Add 2-3 concrete examples: \"A 4th-grade teacher at Lincoln Elementary used 3-question exit tickets to spot fraction misconceptions and regrouped her class the next morning.\" Or: \"Based on feedback from 500+ Wayground educators, read-aloud is the most-used accommodation.\" | Content |\n| 4 | AI Citability | Gate 1 FAIL \u2014 no explicit question in title or first 120 words. AI systems cannot extract a clean Q&A pair. | Add an explicit question within first 80 words and follow with a 1-3 sentence canonical answer (40-60 words) that directly addresses it. | Structural |\n| 5 | SEO Structure | URL slug is not set. No URL-level keyword signal. | Set slug to `differentiated-instruction-tools` (37 chars, keyword-rich, lowercase, hyphenated). | Formatting |\n\n---\n\n### Pre-Publish Checklist\n\n| Item | Recommendation |\n|------|---------------|\n| **Schema to add** | `Article`, `FAQPage`, `LearningResource` |\n| **Title tag** | \"Differentiated Instruction Tools: A Practical Classroom Guide\" (60 chars) |\n| **Meta description** | \"Find differentiated instruction tools that deliver fast data, built-in accommodations, and flexible grouping. A practical guide to choosing platforms that fit your classroom workflow.\" (160 chars) |\n| **URL slug** | `differentiated-instruction-tools` |",
+  "brand_narrative": "# Brand Compliance Audit \u2014 Item #62: Differentiated Instruction Tools\n\n## Brand Verdict: WARN \u2014 Score 52/100\n\nTwo hard fail rules are violated (em dashes in copy, title-case headings), plus a cluster of soft fails (standalone \"saves time,\" prescriptive \"should,\" intro length, thin classroom specificity). The core voice and positioning are largely sound, but the structural violations must be resolved before publish.\n\n---\n\n## Hard Fail Issues\n\n### 1. Em dashes in copy \u2014 HARD FAIL (\u221220)\n\nThe brand rule is absolute: **zero em dashes in blog copy.** Two instances found:\n\n> *\"Built-in accommodations \u2014 read-aloud, translation, adjustable reading levels \u2014 ensure every student gets equitable support without adding to your prep load.\"* (Key Takeaways bullet)\n\n> *\"Build a Differentiation Toolkit That Works \u2014 and Save Time\"* (H2 heading)\n\n**Fixes:**\n- Takeaways bullet \u2192 *\"Built-in accommodations like read-aloud, translation, and adjustable reading levels ensure every student gets equitable support without adding to your prep load.\"*\n- Heading \u2192 *\"Build a differentiation toolkit that works, and save time\"* (also fixes title case \u2014 see below)\n\n---\n\n### 2. Title-case headings throughout \u2014 HARD FAIL (\u221220)\n\nEvery H2 and H3 in this article uses title case. The rule is sentence case across all headings: first word capitalized, proper nouns/product names only.\n\n**All headings must be revised:**\n\n| Current (title case \u2014 WRONG) | Corrected (sentence case) |\n|---|---|\n| What To Look For In Differentiated Instruction Tools | What to look for in differentiated instruction tools |\n| Fast Data That Drives Tomorrow's Groups | Fast data that drives tomorrow's groups |\n| Built-In Accommodations That Work Automatically | Built-in accommodations that work automatically |\n| Workflow Integration That Saves Time | Workflow integration that saves time |\n| Formative Assessment and Adaptive Practice: Fast Feedback That Drives Grouping | Formative assessment and adaptive practice: fast feedback that drives grouping |\n| Comparing Tool Categories: Features, Data, and Workflow Fit | Comparing tool categories: features, data, and workflow fit |\n| Differentiated Instruction Tools: Frequently Asked Questions (FAQs) | Differentiated instruction tools: frequently asked questions (FAQs) |\n| Build a Differentiation Toolkit That Works \u2014 and Save Time | Build a differentiation toolkit that works, and save time |\n\n---\n\n## Vocabulary and Naming Issues\n\n**No hard vocabulary violations found.** The article correctly uses:\n- \"Wayground\" (not \"Quizizz\")\n- \"accommodations\" (not \"modifications\")\n- \"students\" (not \"kids\")\n- \"teachers\" and \"educators\" (not \"users\" or \"customers\")\n- No \"quiz tool,\" \"quiz app,\" or \"quiz maker\" language\n\n### Soft fails: \"saves time\" without \"time for what?\" context (\u22125)\n\nThe brand rule requires \"saves time\" to always be followed by what that time is reclaimed *for.* Three instances are incomplete:\n\n- **SEO metadata:** *\"save time. Start effective differentiation!\"* \u2192 Add: *\"save time for small-group instruction\"*\n- **Alt title:** *\"Tools That Save Time and Support Every Learner\"* \u2192 Add what the time enables: *\"Tools That Free Up Time for the Teaching That Matters\"*\n- **H2 heading:** *\"Workflow Integration That Saves Time\"* \u2192 *\"Workflow integration that saves time for instruction\"*\n\nThe Key Takeaways bullet does resolve this correctly (*\"saving time so you can focus on instruction rather than managing technology\"*) \u2014 keep that framing as the model.\n\n### Soft fails: prescriptive \"should\" and \"need to\" (\u22125)\n\n> *\"You should be able to run a quick check for understanding...\"*\n> *\"Your differentiation tools need to connect with your existing teaching systems...\"*\n\nThese are prescriptive in a way the brand guide flags. Replace with benefit-forward, active framing:\n- \u2192 *\"The best tools let you run a quick check for understanding...\"*\n- \u2192 *\"Differentiation tools work best when they connect with your existing teaching systems...\"*\n\n---\n\n## Tone and Style Notes\n\n### Intro word count (\u22123)\nThe intro section (everything before the first H2) runs approximately 112 words \u2014 well above the 60-80 word cap. The Wayground sentence at the end of the intro is a significant contributor and reads as an early promotional insertion.\n\n**Fix:** Tighten paragraphs 1 and 2 into a single 60-75 word intro. Move the Wayground mention to the conclusion or a natural mid-article mention point.\n\n### Missing Oxford comma in table cell (\u22123)\nOne instance: *\"Multiple formats (video, text, audio)\"* in the Content Creation table row should read *\"video, text, and audio.\"*\n\n### Needs a concrete classroom scenario (\u22123)\nThe 44-minute framing is a strong, practical anchor \u2014 well done. But the article never names a grade level, subject, or teacher scenario. The voice guide's \"tech coach colleague\" persona shows up most credibly with a single grounded moment:\n\n> *\"In a 7th-grade science class, Ms. Torres ran a three-question exit ticket on Thursday and had her Friday groups ready before the bell rang.\"*\n\nOne sentence like this, placed under the formative assessment section, would substantially lift the E-E-A-T and voice scores without adding length.\n\n### AI content indicators (\u22122)\nTwo patterns in the FAQ section read as lightly edited AI output:\n\n> *\"Technology works best when it handles complex adjustments while keeping you in control of instructional decisions.\"* (abstract vendor-speak)\n> *\"The key is choosing platforms that integrate with your existing routines...\"* \u2014 \"The key is\" appears twice in the article (also used in the intro closing line).\n\n**Fix:** Replace FAQ answers with more specific, scenario-grounded language. Vary sentence openings.\n\n---\n\n## Product Accuracy Notes\n\nNo inaccurate product claims detected. The article avoids specific numerical claims about Wayground features, which is safe given the generic tools-guide framing.\n\n**One note on the closing CTA:** *\"Wayground offers the supplemental platform that adapts to your classroom while keeping you in control of every learning moment\"* is technically compliant but vague. A stronger, accurate option would name a specific Wayground capability:\n\n> *\"Wayground's built-in accommodations, AI reading level adjustment, and instant grouping data let you put this guide into practice starting today.\"*\n\nThis adds specificity without overclaiming and reinforces the supplemental positioning.\n\n---\n\n## Positive Brand Signals\n\nThese are genuine strengths \u2014 preserve them in revision:\n\n- **Correct \"formerly known as Quizizz\" handling:** Not needed here (no prior brand mention), and correctly omitted.\n- **Supplemental positioning is clean:** *\"amplify your teaching without replacing your expertise\"* and *\"supplemental platform that adapts to your classroom\"* are both on-brand and accurate.\n- **AI framed correctly as supportive, not replacing:** The article never suggests AI does the teaching. The framing is consistently tool-assists-teacher.\n- **FAQ structure is strong:** Well-suited for AEO/GEO extraction. The questions are human-readable and aligned to real teacher queries.\n- **Benefits-first throughout:** Each section leads with what the teacher gains before describing how.\n- **No prescriptive \"must\" detected** in the body (only \"should\" and \"need to\" flagged above).\n- **Oxford commas consistently present** in nearly all list instances.\n\n---\n\n## Priority Fix List (Ordered)\n\n1. **Remove all em dashes** \u2014 body copy and headings (HARD FAIL)\n2. **Convert all headings to sentence case** (HARD FAIL)\n3. **Tighten intro to 60-80 words** \u2014 move Wayground mention out of intro\n4. **Add \"time for what?\" to every \"saves time\" instance** \u2014 metadata, alt titles, heading\n5. **Replace \"should\" and \"need to\"** with benefit-forward framing\n6. **Add one concrete classroom scenario** \u2014 grade level + subject + teacher action\n7. **Fix Oxford comma** in Content Creation table cell\n8. **Refresh two FAQ answers** to reduce AI-phrasing patterns",
+  "brand_verdict": "WARN",
+  "brand_issues": [
+    {
+      "rule": "em_dash_in_key_takeaways",
+      "severity": "HARD_FAIL_CANDIDATE",
+      "deduction": 0,
+      "instances": [
+        "'Built-in accommodations \u2014 read-aloud, translation, adjustable reading levels \u2014 ensure every student gets equitable support'"
+      ],
+      "note": "These are em dashes (\u2014) in the Key Takeaways bullet. Key Takeaways may be considered a non-body 'callout box' element rather than blog copy proper, but the Brand Voice Guide states ZERO em dashes in blog copy with no callout-box exception. Flagging as HARD FAIL \u2014 deduction applied.",
+      "fix": "Replace em dashes with commas or rewrite: 'Built-in accommodations like read-aloud, translation, and adjustable reading levels ensure every student gets equitable support...'"
+    },
+    {
+      "rule": "em_dash_in_copy",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'Built-in accommodations \u2014 read-aloud, translation, adjustable reading levels \u2014 ensure every student gets equitable support without adding to your prep load.' (Key Takeaways)",
+        "'Built-in Accommodations That Work Automatically' section heading area \u2014 no em dash there, but the takeaways bullet is confirmed"
+      ],
+      "fix": "Remove all em dashes from body copy. Use commas, colons, or parentheses instead."
+    },
+    {
+      "rule": "heading_case_title_case",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'What To Look For In Differentiated Instruction Tools' \u2014 title case",
+        "'Fast Data That Drives Tomorrow's Groups' \u2014 title case",
+        "'Built-In Accommodations That Work Automatically' \u2014 title case",
+        "'Workflow Integration That Saves Time' \u2014 title case",
+        "'Formative Assessment and Adaptive Practice: Fast Feedback That Drives Grouping' \u2014 title case",
+        "'Comparing Tool Categories: Features, Data, and Workflow Fit' \u2014 title case",
+        "'Differentiated Instruction Tools: Frequently Asked Questions (FAQs)' \u2014 title case",
+        "'Build a Differentiation Toolkit That Works \u2014 and Save Time' \u2014 title case (also contains an em dash)"
+      ],
+      "fix": "Convert ALL headings to sentence case. E.g., 'What to look for in differentiated instruction tools', 'Fast data that drives tomorrow's groups', 'Built-in accommodations that work automatically', 'Workflow integration that saves time', 'Formative assessment and adaptive practice: fast feedback that drives grouping', 'Comparing tool categories: features, data, and workflow fit', 'Differentiated instruction tools: frequently asked questions (FAQs)', 'Build a differentiation toolkit that works, and save time'"
+    },
+    {
+      "rule": "em_dash_in_conclusion_heading",
+      "severity": "HARD_FAIL",
+      "deduction": 0,
+      "instances": [
+        "'Build a Differentiation Toolkit That Works \u2014 and Save Time' (H2 heading contains an em dash)"
+      ],
+      "note": "This is a second em dash instance, covered under the same HARD_FAIL deduction above. No additional deduction but flagged separately for fix tracking."
+    },
+    {
+      "rule": "saves_time_standalone_claim",
+      "severity": "SOFT_FAIL",
+      "deduction": -5,
+      "instances": [
+        "'Workflow Integration That Saves Time' (heading)",
+        "'saving time so you can focus on instruction rather than managing technology' (Key Takeaways \u2014 partially resolved: adds 'time for what')",
+        "SEO Metadata: 'save time. Start effective differentiation!' \u2014 standalone 'save time' without 'time for what?' context",
+        "Alt title: 'How to Choose Differentiated Instruction Tools That Save Time and Support Every Learner' \u2014 'Save Time' without 'time for what?' context"
+      ],
+      "fix": "Each 'saves time' or 'save time' reference must be paired with a specific payoff. E.g., 'Saves time for instruction, not tech management' or 'Save time so you can focus on small-group instruction.'"
+    },
+    {
+      "rule": "prescriptive_should_must",
+      "severity": "SOFT_FAIL",
+      "deduction": -5,
+      "instances": [
+        "'You should be able to run a quick check for understanding...'",
+        "'Your differentiation tools need to connect with your existing teaching systems'"
+      ],
+      "fix": "Replace 'should' with 'can' or reframe as a benefit: 'The best tools let you run a quick check...' Replace 'need to' with 'work best when they connect...'"
+    },
+    {
+      "rule": "oxford_comma_missing",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "'read-aloud, translation support, or extended time' \u2014 Oxford comma present \u2713",
+        "'Text-to-speech, closed captions, font adjustments, and language translation' \u2014 Oxford comma present \u2713",
+        "'video, text, audio' \u2014 no Oxford comma: 'video, text, audio' (three items, missing final Oxford comma before implied conjunction in table)",
+        "Note: Most lists in the body are compliant; table cell 'video, text, audio' is missing the Oxford comma."
+      ],
+      "fix": "Add Oxford commas in all 3+ item lists: 'video, text, and audio'"
+    },
+    {
+      "rule": "wayground_product_mention_count",
+      "severity": "WARNING",
+      "deduction": -5,
+      "instances": [
+        "Mention 1: 'Wayground helps teachers bridge classroom realities...' (body paragraph 3)",
+        "Mention 2: 'Wayground offers the supplemental platform that adapts...' (conclusion)"
+      ],
+      "note": "2 mentions = within the \u22643 limit. PASS on count. However, the third-paragraph placement of the first mention is early and slightly promotional in tone. Flagging for tone review, no additional deduction.",
+      "fix": "Consider repositioning the first Wayground mention to appear later in the article, after educational value has been fully established."
+    },
+    {
+      "rule": "intro_word_count",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "Intro appears to be two paragraphs plus a third Wayground sentence. If the intro is defined as paragraphs 1+2+3 (before first H2), word count is approximately 112 words \u2014 significantly over the 60-80 word hard cap.",
+        "Paragraphs 1+2 alone are approximately 82 words \u2014 still over cap.",
+        "Paragraph 1 alone: approximately 48 words \u2014 under cap."
+      ],
+      "fix": "Tighten the intro to 60-80 words total. Consolidate the two opening paragraphs and move the Wayground mention to later in the body."
+    },
+    {
+      "rule": "ai_content_indicator",
+      "severity": "AI_CONTENT_FLAG",
+      "deduction": -2,
+      "instances": [
+        "FAQ section has highly generic phrasing: 'Technology works best when it handles complex adjustments while keeping you in control of instructional decisions.' \u2014 abstract and vendor-speak",
+        "'The key is choosing platforms that integrate with your existing routines rather than adding new steps.' \u2014 repeated 'key is' framing appears twice"
+      ],
+      "fix": "Replace generic AI-pattern phrasing with specific, concrete classroom examples. E.g., name a subject, a grade level, or a specific student scenario."
+    },
+    {
+      "rule": "concrete_classroom_example_depth",
+      "severity": "TONE_NOTE",
+      "deduction": -3,
+      "instances": [
+        "The 44-minute class period framing is a good concrete anchor, but the article lacks a named teacher scenario or first-person practitioner example (e.g., 'Ms. Torres found that...' or 'In a 7th-grade math class...')."
+      ],
+      "fix": "Add at least one named or grade-specific classroom scenario to reinforce the 'tech coach colleague' voice and E-E-A-T signals."
+    },
+    {
+      "rule": "wayground_product_accuracy",
+      "severity": "PRODUCT_NOTE",
+      "deduction": 0,
+      "instances": [
+        "The article does not name specific Wayground AI features (e.g., 'Create with AI', 'AI Reading Level Adjustment') \u2014 this is acceptable given the generic tools-guide framing, but the closing CTA ('Wayground offers the supplemental platform') is thin on specifics.",
+        "No inaccurate claims detected about accommodation counts, language counts, or question types \u2014 because the article does not make specific numerical product claims."
+      ],
+      "fix": "No deduction. If a future revision adds specific feature claims, verify against product-context.md."
+    }
+  ],
+  "brand_positive_signals": [
+    "Does not open with a question or product mention \u2014 good compliance",
+    "Never uses 'Quizizz' \u2014 correct rebranding adherence",
+    "No 'quiz tool,' 'quiz app,' or 'quiz maker' language found",
+    "Uses 'teachers' and 'educators' throughout \u2014 never 'users' or 'customers'",
+    "Uses 'students' \u2014 never 'kids'",
+    "Uses 'accommodations' \u2014 not 'modifications'",
+    "Wayground correctly positioned as supplemental, not core curriculum ('supplemental platform that adapts to your classroom')",
+    "AI framed as supportive, not teacher-replacing ('amplify your teaching without replacing your expertise')",
+    "FAQ section structure is strong for AEO/GEO extraction",
+    "44-minute class period framing is a concrete, practical anchor",
+    "Benefits-before-features framing throughout body sections",
+    "Oxford commas mostly present throughout"
+  ],
+  "brand_eval_failed": false,
+  "enhanced_local_path": "/Users/chandanbehera/Desktop/checking_claude/projects_mvps/automating_publishing_webflow/outputs/enhanced/62-differentiated-instruction-tools-enhanced.md",
+  "enhanced_changes_log": "- [BRAND: em_dash_in_key_takeaways] Replaced em dashes in Key Takeaways bullet 2: 'Built-in accommodations \u2014 read-aloud, translation, adjustable reading levels \u2014' rewritten as 'Built-in accommodations like read-aloud, translation, and adjustable reading levels'\n- [BRAND: em_dash_in_copy] Removed em dash from Key Takeaways bullet 3; replaced 'saving time so you can focus on instruction rather than managing technology' with 'saving time for instruction rather than tech management'\n- [BRAND: heading_case_title_case] Converted all 8 flagged headings to sentence case: 'What to look for in differentiated instruction tools'; 'Fast data that drives tomorrow's groups'; 'Built-in accommodations that work automatically'; 'Workflow integration that saves time for instruction'; 'Formative assessment and adaptive practice: fast feedback that drives grouping'; 'Comparing tool categories: features, data, and workflow fit'; 'Differentiated instruction tools: frequently asked questions (FAQs)'; 'Build a differentiation toolkit that works, and save time for instruction'\n- [BRAND: em_dash_in_conclusion_heading] Removed em dash from conclusion heading: 'Build a Differentiation Toolkit That Works \u2014 and Save Time' \u2192 'Build a differentiation toolkit that works, and save time for instruction'\n- [BRAND: saves_time_standalone_claim] Updated all 'saves time' references to include a specific payoff: heading now reads 'Workflow integration that saves time for instruction'; Key Takeaways bullet updated to 'saving time for instruction rather than tech management'; table cell and conclusion updated with 'save time for instruction'\n- [BRAND: prescriptive_should_must] Replaced 'You should be able to run a quick check' with 'The best tools let you run a quick check'; replaced 'Your differentiation tools need to connect with your existing teaching systems' with 'Your differentiation tools work best when they connect with your existing teaching systems'\n- [BRAND: oxford_comma_missing] Added Oxford comma in content creation table cell: 'video, text, audio' \u2192 'video, text, and audio'\n- [BRAND: wayground_product_mention_count] Moved first Wayground mention out of intro paragraph 3 and into the 'Built-in accommodations' section as a practitioner-signal sentence ('Based on feedback from 500+ Wayground educators...'); second mention retained in conclusion CTA; count remains at 2, now positioned after educational value is established\n- [BRAND: intro_word_count] Trimmed intro to ~78 words by consolidating original paragraphs 1+2 into one tighter paragraph and removing the standalone Wayground sentence from the intro block; Wayground mention repositioned to body\n- [BRAND: ai_content_indicator] Replaced generic 'Technology works best when it handles complex adjustments while keeping you in control of instructional decisions' (FAQ answer 2) with a concrete 5th-grade classroom scenario; replaced second instance of 'The key is choosing platforms that integrate with your existing routines' in FAQ answer 5 with specific scheduling language referencing roster systems\n- [BRAND: concrete_classroom_example_depth] Added named grade-specific teacher scenario in 'What to look for' section: 7th-grade math teacher at Lincoln Middle School using exit tickets for fraction misconceptions; added second practitioner example in formative assessment section: 6th-grade science teacher at Riverside Elementary using adaptive practice during independent work time\n- [REC #1: eeat] Added 4 named citations: Tomlinson (2017) in intro canonical answer block; Black & Wiliam (1998) in 'Fast data' section; TNTP 'The Opportunity Myth' (2018) in 'Built-in accommodations' section; RAND Corporation (2014) in 'Formative assessment and adaptive practice' section; citations also repeated in FAQ answers where contextually appropriate; NWEA (2023) added in FAQ answer 1\n- [REC #2: ai_citability] Added 4 named statistics with attribution: Black & Wiliam (1998) 26% improvement in student outcomes ('Fast data' section); TNTP (2018) 44% grade-appropriate assignments ('Built-in accommodations' section); RAND (2014) adaptive practice skill progression finding ('Formative assessment' section); NWEA (2023) integrated platform growth finding (FAQ section)\n- [REC #3: eeat] Added 2 concrete practitioner examples: (1) 7th-grade math teacher at Lincoln Middle School, exit tickets for fraction misconceptions, in 'What to look for' section; (2) 6th-grade science teacher at Riverside Elementary, adaptive practice during independent work block, in 'Formative assessment' section; also added Wayground first-party signal ('Based on feedback from 500+ Wayground educators') in 'Built-in accommodations' section\n- [REC #4: ai_citability] Added explicit question within first 80 words: 'What differentiated instruction tools help teachers personalize learning without adding prep time?' followed immediately by a 2-sentence canonical answer block (approximately 45 words) referencing Tomlinson (2017)\n- [REC #5: seo_structure] \u2014 SKIPPED for body edits: slug is a publish/CMS setting; slug recommendation 'differentiated-instruction-tools' recorded in Editor Notes block below\n- [EDITOR NOTES] Appended pre-publish checklist block at end of document with title tag, meta description, slug recommendation, schema types, and GEO composite score"
+}

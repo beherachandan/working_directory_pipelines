@@ -1,0 +1,28 @@
+{
+  "item_num": "73",
+  "name": "integrated scaffolding concepts",
+  "scores": {
+    "C1_classroom_practicality": 3,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 2,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.0,
+  "verdict": "REVISE",
+  "top_issues": [
+    "Grade-band specificity is nearly absent. The article gestures at 'middle school' once (Houston ISD example) and 'science' incidentally, but never anchors strategies to concrete grade bands like '4th-grade ELA' or '9th-grade biology.' A 3rd-grade teacher and an 11th-grade AP teacher would both find this equally vague \u2014 and equally hard to apply.",
+    "Wayground's value proposition is generic and never names a specific feature. Phrases like 'Tools like Wayground can automate some of this data collection' and 'Explore Wayground to discover ready-to-use resources' are filler. What feature, exactly? What does a teacher click on Monday morning? Without that, Wayground reads as a sponsor tag, not a useful tool.",
+    "Standards alignment is missing where it is clearly expected. An article centered on UDL, grade-level content, and lesson design should name at least one framework \u2014 CAST's UDL Guidelines are cited in the text but never connected to specific checkpoints a teacher would use, and Common Core, NGSS, or ISTE go entirely unmentioned despite the science and tech examples."
+  ],
+  "positive_signals": [
+    "Term definitions are handled well \u2014 UDL, scaffolding, and micro-checks are all defined inline and in plain language, which respects both novice and experienced teachers.",
+    "Teacher agency framing is consistently strong throughout; phrases like 'you can focus on meaningful feedback,' 'keeping you in complete control,' and the explicit push-back against AI-as-replacement in the WestEd/Brookings citations all reinforce that the teacher drives the decisions."
+  ],
+  "narrative": "This article has a solid structural backbone and does several things right \u2014 jargon is defined, teacher agency is respected, and the visual chunking is clean enough to scan during a planning period \u2014 but three specific gaps would stop a real classroom teacher from finding it immediately useful. The grade-band problem is the most urgent: every strategy is written for a hypothetical, ageless \"class,\" so a 2nd-grade teacher and a 10th-grade teacher get identical (and therefore insufficient) guidance. Wayground's mention is similarly unanchored \u2014 \"automate some of this data collection\" is not actionable; name the feature, show the click, give the time estimate. Finally, for an article that leans on CAST's UDL Guidelines and lesson design research, the absence of any named standard (Common Core, NGSS, ISTE) is a credibility gap that will cost trust with standards-conscious teachers and instructional coaches. Revise with at least two grade-band-specific examples per major strategy, one named Wayground feature with a concrete use case, and at least one standards framework cited by name."
+}

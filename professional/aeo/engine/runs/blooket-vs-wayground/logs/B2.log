@@ -2,3 +2,4 @@
 [B2] Calling claude (model: sonnet)...
 [B2] Claude responded in 92s
 [B2] Completed. Output: outputs/B2-ear-decomposer.md (92s, ~13987+3752 tokens)
+[B2] Already completed, skipping.

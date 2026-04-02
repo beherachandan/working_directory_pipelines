@@ -1,0 +1,28 @@
+{
+  "item_num": "88",
+  "name": "evaluating student engagement platforms for scalability",
+  "scores": {
+    "C1_classroom_practicality": 3,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 2,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 3,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 5,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.2,
+  "verdict": "REVISE",
+  "top_issues": [
+    "No grade-band specificity anywhere in the article \u2014 'students,' 'classrooms,' and 'diverse learners' are used throughout with zero examples tied to actual grade levels (e.g., 'elementary rostering challenges differ from high school elective scheduling'). A K-5 curriculum director and a high school principal have completely different scalability concerns, and this article doesn't acknowledge that.",
+    "Wayground's value proposition is generic and tacked on at the very end: 'Wayground offers an inclusive, standards-aligned supplemental learning platform with automatic accommodations and AI-supported differentiation' tells a district leader nothing actionable. What specific feature handles tiered content? How does it connect to Clever? This reads like a boilerplate ad tag, not a demonstrated capability.",
+    "The article is written almost entirely for district technology leaders and curriculum coordinators \u2014 not classroom teachers. The framing ('evaluate vendors,' 'signed DPAs,' '99.9% uptime SLAs') will be opaque to the building-level teacher the blog likely intends to reach, and the teacher agency framing is inconsistent: phrases like 'when platforms handle the technical complexity of differentiation, teachers can focus on what they do best' subtly position the platform as doing the instructional heavy lifting."
+  ],
+  "positive_signals": [
+    "Standards and research citations are genuinely strong \u2014 ISTE, CoSN, FERPA, CAST, WCAG 2.1, RAND, and the Uptime Institute are all named and connected to specific claims, which gives district leaders real frameworks to act on.",
+    "The staged pilot structure (3 schools \u2192 benchmarks \u2192 56+ classrooms) with concrete go/no-go thresholds (80% adoption, sub-2-second load times, one class period of prep savings) gives procurement teams a replicable process rather than vague advice."
+  ],
+  "narrative": "This article is well-researched and structurally sound for a district technology audience, but it falls short of a classroom-teacher pass on two criteria that trigger mandatory revision: grade-band specificity is entirely absent (a K-2 teacher and a high school department chair face fundamentally different scalability realities, and the article treats them as interchangeable), and Wayground's mention at the end is a single generic sentence that fails to demonstrate any specific feature or use case. The audience mismatch is also a problem \u2014 the article speaks fluently to CTOs and curriculum coordinators but would lose most building-level teachers at \"signed Data Processing Agreements\" and \"EVER criteria,\" with no on-ramp provided. To pass, the author should anchor at least two concrete grade-band examples throughout (e.g., \"for middle school ELA departments managing intervention periods\u2026\"), replace the Wayground tag with one specific feature and a 30-second use case, and define or briefly gloss the procurement-layer terminology for teacher readers."
+}

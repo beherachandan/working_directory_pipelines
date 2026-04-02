@@ -1,0 +1,28 @@
+{
+  "item_num": "66",
+  "name": "differentiated instruction for gifted students",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 2,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.6,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C8 (Differentiation & Inclusivity) scores a 2: the article is titled 'differentiated instruction for gifted students' but never addresses how to manage gifted differentiation alongside ELL students, students with IEPs/504s, or students who are twice-exceptional (gifted + disability) \u2014 a common and critical reality in mixed classrooms. The 7th-grade science playbook is the right vehicle to fix this; one concrete callout (e.g., 'For a twice-exceptional student who is gifted but has dysgraphia, allow voice-recorded scientific arguments instead of written ones') would satisfy this criterion.",
+    "C6 (Term Definitions): 'curriculum compacting,' 'The Compactor,' 'depth-rich tasks,' and 'flexible grouping' appear without inline definitions. A novice teacher in year 1 or 2 \u2014 a core Wayground audience \u2014 may not know what 'The Compactor documentation form' is or where to find it. At minimum, add a one-sentence definition the first time each term appears.",
+    "C10 (Wayground Value Prop): Wayground is mentioned twice but both times vaguely \u2014 'built-in accommodations and instant insights' and 'flexible activity types' are feature descriptors that don't show a specific workflow. A line like 'Wayground's pre-assessment builder lets you create a 5-question compacting diagnostic in under 3 minutes, then automatically flags which students hit the 67% mastery threshold' would elevate this to a 5."
+  ],
+  "positive_signals": [
+    "The three-strategy comparison table (Pre-assess & compact / Mini-acceleration / Depth-rich tasks) is genuinely photocopy-worthy \u2014 it's the kind of at-a-glance reference a teacher tacks above their desk, and it directly answers the 'what do I do Monday?' question.",
+    "Teacher agency framing is consistently strong throughout: the Texas Title I teacher anecdote, the explicit 'only a teacher can provide' closing line, and the 'responsive teaching matches pace to readiness, not privilege' language all position the teacher as decision-maker rather than a passive recipient of AI output."
+  ],
+  "narrative": "This article has a genuinely useful core \u2014 the compacting table, the 67% mastery threshold, and the 7th-grade science playbook give teachers real Monday-morning handles \u2014 and the teacher-agency framing is consistently strong throughout. The automatic REVISE is triggered by C8: an article about differentiating for gifted learners that never mentions twice-exceptional students, ELL gifted learners, or gifted students with IEPs will feel incomplete (and potentially inequitable) to any teacher working in a real mixed-ability classroom, which is nearly every teacher. The two supporting fixes are targeted: add a one-sentence inline definition when terms like \"curriculum compacting\" and \"flexible grouping\" first appear, and replace Wayground's vague feature language (\"built-in accommodations\") with one specific workflow tied to the compacting process described in the article. With those three edits, this clears the threshold comfortably."
+}

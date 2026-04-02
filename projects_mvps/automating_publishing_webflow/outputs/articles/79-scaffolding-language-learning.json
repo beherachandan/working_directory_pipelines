@@ -1,0 +1,326 @@
+{
+  "item_num": "79",
+  "name": "scaffolding language learning",
+  "cluster": "Scaffolding",
+  "sub_cluster": "Topics",
+  "gdoc_url": "https://docs.google.com/document/d/18I2nqSpobw64KRs1KMOFXTyZZ476VmwMUcslaqoYjHU/edit?usp=sharing",
+  "url_slug": "",
+  "creation_notes": "Focused support for academic language development across content areas.",
+  "fetch_warning": "",
+  "qapeds_composite": 4.25,
+  "dimensions": {
+    "ai_citability": {
+      "score": 44,
+      "sub_scores": {
+        "answer_block_quality": 40,
+        "self_containment": 60,
+        "structural_readability": 70,
+        "statistical_density": 10,
+        "uniqueness_signals": 15
+      }
+    },
+    "eeat": {
+      "score": 35,
+      "sub_scores": {
+        "experience": 25,
+        "expertise": 65,
+        "authoritativeness": 15,
+        "trustworthiness": 35
+      }
+    },
+    "platform_optimization": {
+      "score": 39,
+      "sub_scores": {
+        "google_aio": 40,
+        "chatgpt": 38,
+        "perplexity": 35,
+        "gemini": 38,
+        "bing_copilot": 45
+      }
+    },
+    "seo_structure": {
+      "score": 54,
+      "title_tag_suggestion": "Scaffolding language learning: strategies for every classroom",
+      "meta_description_suggestion": "Practical scaffolding strategies that help multilingual learners access grade-level content and build academic language. Includes classroom examples, tech tips, and FAQs.",
+      "slug_recommendation": "scaffolding-language-learning",
+      "slug_assessment": "missing"
+    },
+    "schema_recommendations": {
+      "score": 80,
+      "types_needed": [
+        "Article",
+        "FAQPage",
+        "LearningResource"
+      ]
+    },
+    "brand_voice": {
+      "score": 47,
+      "verdict": "FAIL",
+      "hard_fail_rules": [
+        "heading_title_case",
+        "forbidden_product_language"
+      ],
+      "vocabulary_check": {
+        "wayground_naming": "pass",
+        "quiz_tool_language": "fail",
+        "product_mention_count": 6,
+        "product_mention_verdict": "fail",
+        "forbidden_terms_found": [
+          "Quiz Maker",
+          "quizzes (\u00d73)"
+        ],
+        "softfail_terms_found": [
+          "saves time (without context)"
+        ]
+      },
+      "tone_check": {
+        "opens_with_question": false,
+        "opens_with_product_mention": false,
+        "hqim_claim": false,
+        "ai_replaces_teacher_claim": false,
+        "concrete_classroom_example": true,
+        "ai_content_indicators": [
+          "generic parallel table structure",
+          "four unnamed 'research shows' citations"
+        ]
+      },
+      "format_check": {
+        "intro_word_count": 97,
+        "intro_word_count_pass": false,
+        "intro_note": "Intro runs approximately 97 words (two paragraphs combined as intro block) \u2014 exceeds the 60-80 word hard cap. First standalone paragraph is ~47 words; second is ~50 words. If only the first paragraph is treated as the intro, it passes at ~47 words but falls short of the 60-word floor.",
+        "product_accuracy_issues": [
+          "Wayground's Quiz Maker \u2014 not a valid product feature name",
+          "No mention of 25+ accommodations or specific AI feature names (Create with AI) where relevant"
+        ]
+      }
+    }
+  },
+  "qapeds": {
+    "Q": 4,
+    "A": 4,
+    "P": 2,
+    "E": 7,
+    "D": 5,
+    "S": 5,
+    "gate1_pass": false,
+    "gate1_reason": "Title is instructional ('Scaffolding Language Learning: Practical Strategies for Diverse Classrooms') with no interrogative. No explicit question appears within the first 120 words. The article's intent is implied but never framed as a question.",
+    "gate2_pass": false,
+    "gate2_reason": "No structurally isolatable canonical answer within the first 150 words. The intro describes scaffolding in narrative form but does not provide a tight 1-3 sentence extractable answer block. The closest candidate ('Scaffolding is one of the most effective ways to do this. By breaking complex language tasks into manageable steps...') is embedded in surrounding narrative and not self-contained."
+  },
+  "platform_flags": {
+    "aio_ready": false,
+    "chatgpt_ready": false,
+    "perplexity_ready": false,
+    "gemini_ready": false,
+    "bing_copilot_ready": false
+  },
+  "strengths": [
+    "Well-structured FAQ section with five Q&A pairs that are reasonably self-contained and directly address common teacher questions about scaffolding language learning",
+    "Strong use of diverse content formats: bullet list for strategies, table for technology comparison, and FAQ section \u2014 providing multiple entry points for both readers and AI systems",
+    "Demonstrates genuine subject-matter expertise with accurate references to CER framework, cognitive load theory, phenomenon-based learning, and multimodal instruction"
+  ],
+  "recommendations": [
+    {
+      "rank": 1,
+      "dimension": "eeat",
+      "issue": "Zero named citations or sources anywhere in the article. 'Research shows' appears twice and 'Research-based practices suggest' once, all without attribution. Authoritativeness sub-score is 15/100.",
+      "fix": "Replace every instance of 'Research shows' with a named source. Examples: 'According to Gibbons (2015), learners develop academic language fastest when tied to meaningful problem-solving.' 'Sweller's cognitive load theory (2011) demonstrates that reducing extraneous load through visuals and sentence frames frees working memory for complex content.' Add at least 3-4 named citations (e.g., Gibbons, WIDA, Sweller, Zwiers & Crawford) with years.",
+      "tag": "Authority"
+    },
+    {
+      "rank": 2,
+      "dimension": "ai_citability",
+      "issue": "No direct-answer block in the first 150 words. Both QAPEDS gates fail. AI systems cannot extract a clean citation from the introduction because it reads as narrative setup rather than a definitive answer.",
+      "fix": "Add a 2-3 sentence canonical answer immediately after the opening sentence. Example: 'Scaffolding language learning means providing temporary, structured support \u2014 such as sentence frames, visual models, vocabulary previews, and discussion protocols \u2014 that helps multilingual students access grade-level content while building academic language skills. Effective scaffolding reduces cognitive load without lowering rigor, giving every student tools to think and communicate in the discipline.' Place this as its own paragraph before the 'Scaffolding is one of the most effective ways...' sentence.",
+      "tag": "Structural"
+    },
+    {
+      "rank": 3,
+      "dimension": "eeat",
+      "issue": "No first-hand practitioner experience signals. No named teachers, schools, or classroom-tested data. Experience sub-score is 25/100.",
+      "fix": "Add 2-3 concrete practitioner examples with names: 'When 7th-grade science teacher Ms. Patel at Eastview Middle School introduced color-coded CER starters for her multilingual learners, she saw lab report completion rates increase from 60% to 89% in one quarter.' Or reference Wayground's user base: 'Based on feedback from over 500 Wayground educators, sentence frames paired with visual word banks are the most-used scaffolding strategy in science classrooms.'",
+      "tag": "Content"
+    },
+    {
+      "rank": 4,
+      "dimension": "ai_citability",
+      "issue": "Statistical density is critically low (10/100). Zero percentages, zero data points, zero quantified outcomes anywhere in the article.",
+      "fix": "Add at least 4-5 named statistics throughout the article. Examples: cite WIDA's framework data on academic language proficiency timelines, reference specific study findings on vocabulary acquisition rates with scaffolding vs. without, add a percentage showing impact of multimodal supports on comprehension. Every major claim needs a number attached to it.",
+      "tag": "Authority"
+    },
+    {
+      "rank": 5,
+      "dimension": "seo_structure",
+      "issue": "URL slug is missing entirely, and meta description ends with a promotional CTA ('Try Wayground's tools today!') that wastes valuable character space and reads as salesy rather than informative.",
+      "fix": "Set slug to 'scaffolding-language-learning'. Revise meta description to: 'Practical scaffolding strategies that help multilingual learners access grade-level content and build academic language. Includes classroom examples, tech tips, and FAQs.' (160 chars, keyword-rich, value-oriented, no CTA).",
+      "tag": "Formatting"
+    }
+  ],
+  "pre_publish_checklist": {
+    "schema_to_add": [
+      "Article",
+      "FAQPage",
+      "LearningResource"
+    ],
+    "title_tag": "Scaffolding language learning: strategies for every classroom",
+    "meta_description": "Practical scaffolding strategies that help multilingual learners access grade-level content and build academic language. Includes classroom examples, tech tips, and FAQs.",
+    "slug_recommendation": "scaffolding-language-learning"
+  },
+  "geo_composite": 46.2,
+  "validation_warnings": [],
+  "geo_narrative": "## GEO Evaluation: Scaffolding Language Learning\n\n### Weighted Executive Summary\n\nThis article scores a **39.2 partial GEO composite** (before brand voice), placing it well below the publishable threshold. The primary drivers of the low score are a near-total absence of named citations or statistics (Authoritativeness: 15/100, Statistical Density: 10/100) and the failure of both QAPEDS gates \u2014 the article lacks an explicit question and a structurally isolatable direct answer. While the article demonstrates genuine pedagogical expertise and uses strong formatting (bullet lists, tables, FAQs), no AI platform can currently extract a reliable, attributed citation from this content. Significant revision is required before publishing.\n\n---\n\n### GEO Composite Score Breakdown\n\n| Dimension | Score | Weight | Weighted Contribution |\n|-----------|-------|--------|-----------------------|\n| AI Citability | 44 | 25% | 11.0 |\n| Content E-E-A-T | 35 | 20% | 7.0 |\n| Platform Optimization | 39 | 20% | 7.8 |\n| Brand Voice | *null* | 15% | *pending* |\n| SEO Structure | 54 | 10% | 5.4 |\n| Schema Recommendations | 80 | 10% | 8.0 |\n| **Partial Total** | \u2014 | **85%** | **39.2** |\n\n---\n\n### QAPEDS Score Breakdown\n\n| Dimension | Score | Rationale |\n|-----------|-------|-----------|\n| **Q** (Question) | 4/10 | \u26a0\ufe0f Gate 1 FAIL. Title is instructional (\"Scaffolding Language Learning: Practical Strategies...\"). No interrogative sentence in first 120 words. Capped at \u22645. |\n| **A** (Answer) | 4/10 | \u26a0\ufe0f Gate 2 FAIL. No canonical 1-3 sentence answer block in first 150 words. The intro narrates around scaffolding but never delivers a clean, extractable definition-answer. Capped at \u22645. |\n| **P** (Proof) | 2/10 | \"Research shows\" used twice without named sources. \"Research-based practices suggest\" without attribution. Zero named citations, zero statistics, zero expert quotes anywhere in the article. Evidence Presence capped at \u22641 per rubric rules. |\n| **E** (Expansion) | 7/10 | Strong logical layering: why it matters \u2192 specific strategies \u2192 technology \u2192 FAQs \u2192 action steps. Some redundancy between strategies section and FAQ answers. Table and bullets aid scannability. |\n| **D** (Decision) | 5/10 | Strategies are listed but no trade-offs are discussed. No guidance on when to prioritize one strategy over another. No proficiency-level-specific recommendations. Action steps exist but are generic. |\n| **S** (Structure) | 5/10 | Good header hierarchy and list/table usage. But Answer Isolation capped at \u22641 (Gate 2 fail). Entities like \"scaffolding\" and \"academic language\" are described but never explicitly defined in extractable form. |\n\n**QAPEDS Composite: 4.25 \u2014 Weak** (threshold for Moderate is 6.0)\n\n---\n\n### Gate Failures\n\n**Gate 1 \u2014 Explicit Question Gate: FAIL**\nThe title \"Scaffolding Language Learning: Practical Strategies for Diverse Classrooms\" is a topic statement, not a question. The first 120 words contain no interrogative sentence. AI systems looking for a question-answer pair have no anchor question to match against.\n\n**Fix:** Add an explicit question either in the title (\"How do you scaffold language learning in diverse classrooms?\") or as the second sentence of the intro (\"How can teachers support multilingual learners in accessing grade-level content without lowering expectations?\").\n\n**Gate 2 \u2014 Direct Answer Gate: FAIL**\nThe intro builds context narratively but never delivers a tight, extractable answer. The closest candidate \u2014 \"By breaking complex language tasks into manageable steps and providing structured support, educators help students build confidence and gradually develop independence\" \u2014 is embedded mid-paragraph and requires the preceding sentences for context.\n\n**Fix:** Insert a standalone 2-3 sentence answer block as its own paragraph within the first 100 words. This block should define scaffolding language learning and name the key strategies (sentence frames, visual models, vocabulary previews, structured discussion) in a self-contained format.\n\n---\n\n### Per-Dimension Deep Dive\n\n#### AI Citability: 44/100\nThe article's fatal weakness for AI citation is the combination of no direct answer block and no statistical evidence. The FAQ section partially compensates \u2014 Q&A pairs are reasonably extractable \u2014 but the core article body offers AI systems no clean citation candidates with attribution. The strategies list is well-formatted but each bullet is too long (50-80 words) for optimal extraction blocks. Statistical density (10/100) is the worst-performing sub-component: not a single named percentage, date, or quantified outcome appears anywhere.\n\n#### Content E-E-A-T: 35/100\nThe article shows genuine expertise in pedagogical frameworks (CER, cognitive load theory, phenomenon-based learning), scoring 65/100 on Expertise. However, the other three E-E-A-T pillars are critically weak. Authoritativeness (15/100) is undermined by the complete absence of named sources \u2014 every research claim uses \"Research shows\" without attribution, which the brand guide explicitly flags as unacceptable. Experience (25/100) suffers from zero practitioner stories or named classroom examples. Trustworthiness (35/100) is damaged by the pattern of unattributed claims.\n\n#### Platform Optimization: 39/100\nNo platform flag is triggered. The article fails `aio_ready` because it lacks both a direct answer block and named citations. It fails `chatgpt_ready` because factual density is too low to serve as a reliable reference. It fails `perplexity_ready` because there are zero named stats per 500 words (threshold is \u22652). The FAQ section provides the best platform-ready content in the article, but even FAQ answers lack attributed evidence.\n\n#### SEO Structure: 54/100\nThe title tag (55 chars) is within range and contains the primary keyword. The URL slug is entirely missing. The meta description wastes characters on a promotional CTA (\"Try Wayground's tools today!\") that serves neither the user nor search engines. Heading hierarchy is logical but all H2s use Title Case, which violates brand guidelines (sentence case required). Keyword placement is adequate \u2014 \"scaffolding language learning\" appears in the H1, intro, and conclusion.\n\n#### Schema Recommendations: 80/100\nThis is the article's strongest dimension. The FAQ section clearly supports FAQPage schema with five well-formed Q&A pairs. Article schema is standard. The educational focus supports LearningResource schema. Three schema types can be recommended with clear field mappings, warranting the 80/100 score.\n\n---\n\n### Top 5 Prioritized Recommendations\n\n**1. Add named citations and sources throughout** (Authority)\n- **Dimension:** E-E-A-T (Authoritativeness: 15/100) + AI Citability (Statistical Density: 10/100)\n- **Issue:** Zero named sources. \"Research shows\" used as attribution three times.\n- **Fix:** Replace every \"Research shows\" with a named citation. Add at minimum: Gibbons (2015) on academic language development, Sweller (2011) on cognitive load theory, WIDA framework data, and Zwiers & Crawford (2011) on academic discussions. Include specific data points (percentages, sample sizes, years).\n\n**2. Add a direct-answer block in the first 100 words** (Structural)\n- **Dimension:** AI Citability (Answer Block Quality: 40/100) + QAPEDS Gate 2\n- **Issue:** No extractable canonical answer exists. Both QAPEDS gates fail.\n- **Fix:** Insert a standalone 2-3 sentence paragraph immediately after the opening sentence that defines scaffolding language learning and names the core strategies. Make it self-contained and extractable without surrounding context.\n\n**3. Add first-hand practitioner examples** (Content)\n- **Dimension:** E-E-A-T (Experience: 25/100)\n- **Issue:** No named teachers, schools, or classroom-tested results anywhere.\n- **Fix:** Add 2-3 named examples (\"Ms. Patel at Eastview Middle School found that...\") or Wayground user data (\"Based on feedback from 500+ educators...\"). Anchor at least one strategy to a specific, measurable classroom outcome.\n\n**4. Add quantified data points and statistics** (Authority)\n- **Dimension:** AI Citability (Statistical Density: 10/100)\n- **Issue:** Zero percentages, zero quantified outcomes, zero data points in the entire article.\n- **Fix:** Include at least 4-5 named statistics: academic language acquisition timelines from WIDA, impact percentages from scaffolding studies, and specific outcome data from classroom implementations. Every major section needs at least one number.\n\n**5. Fix URL slug and meta description** (Formatting)\n- **Dimension:** SEO Structure (54/100)\n- **Issue:** Slug is missing. Meta description ends with a promotional CTA that wastes character space.\n- **Fix:** Set slug to `scaffolding-language-learning`. Revise meta to: \"Practical scaffolding strategies that help multilingual learners access grade-level content and build academic language. Includes classroom examples, tech tips, and FAQs.\"\n\n---\n\n### Pre-Publish Checklist\n\n| Item | Recommendation |\n|------|---------------|\n| **Schema to add** | `Article`, `FAQPage`, `LearningResource` |\n| **Title tag** | `Scaffolding language learning: strategies for every classroom` (59 chars) |\n| **Meta description** | `Practical scaffolding strategies that help multilingual learners access grade-level content and build academic language. Includes classroom examples, tech tips, and FAQs.` (167 chars \u2014 trim to 160) |\n| **URL slug** | `scaffolding-language-learning` |\n\n**Additional brand fixes needed before publish:**\n- Replace \"Wayground's Quiz Maker\" in FAQ with \"Wayground\" or \"Wayground's assessment tools\"\n- Replace \"build engaging quizzes\" in conclusion with \"build engaging activities\" or \"build engaging assessments\"\n- Convert all H2 headings from Title Case to sentence case\n- Remove promotional CTA from meta description",
+  "brand_narrative": "# Brand Compliance Review \u2014 Item #79: Scaffolding Language Learning\n\n## Brand Verdict: FAIL \u2014 Score: 47/100\n\nThis article has genuine strengths in teacher voice, classroom specificity, and AI framing \u2014 but two hard fail violations and a cluster of compounding soft issues bring it below the passing threshold. It cannot publish as written.\n\n---\n\n## Hard Fail Issues\n\n### 1. Title Case Headings (HARD FAIL, -20 pts)\n\nEvery H2 in the article uses title case. This is a zero-tolerance violation under Wayground's heading rules.\n\n**Violating headings:**\n- \"Why Scaffolding Language Learning Matters in Content-Rich Classrooms\"\n- \"Language Thrives Through Authentic Problem-Solving\"\n- \"This Is Where Strategic Support Makes All the Difference\"\n- \"The Equity Piece: Multiple Pathways Preserve Rigor While Ensuring Access\"\n- \"Strategies To Scaffold Academic Language\"\n- \"How Technology Amplifies Differentiated Scaffolding\"\n- \"Scaffolding Language Learning: Frequently Asked Questions (FAQs)\"\n- \"Bring It All Together: Scaffolding Language Learning With Confidence\"\n\n**Fix:** Convert every heading to sentence case. Capitalize only the first word and proper nouns.\n\nCorrected examples:\n- \"Why scaffolding language learning matters in content-rich classrooms\"\n- \"Strategies to scaffold academic language\"\n- \"Bring it all together: scaffolding language learning with confidence\"\n\n---\n\n### 2. Forbidden Product Language: \"Quiz Maker\" and \"Quizzes\" (HARD FAIL, -20 pts)\n\nTwo distinct violations are bundled here.\n\n**\"Wayground's Quiz Maker\"** \u2014 this is not a Wayground product feature name and simultaneously violates the \"quiz maker\" prohibition. The correct phrasing is \"Wayground\" or \"Wayground's activity builder.\"\n\n> *\"Responsive tools like Wayground's Quiz Maker let you create one assessment with multiple access points.\"*\n\n**\"Quizzes\"** appears three times as a generic term for student activities:\n> *\"Check understanding with differentiated quizzes\"*\n> *\"A math quiz where students can hear word problems read aloud...\"*\n> *\"Try Wayground to build engaging quizzes with built-in accommodations...\"*\n\n**Fix:** Replace all instances of \"quiz/quizzes\" with \"activities,\" \"assessments,\" or \"comprehension checks\" depending on context. Remove \"Quiz Maker\" entirely \u2014 replace with \"Wayground\" or \"Wayground's activity builder.\"\n\n---\n\n## Vocabulary and Naming Issues\n\n### Unnamed \"Research Shows\" Citations (4 instances, -3 pts)\n\nThe brand writing standard requires named sources. Four times this article cites \"research shows\" or \"research-based practices\" with no author, institution, or year attached:\n\n1. *\"Research shows that learners develop academic language fastest when it's tied to meaningful problem-solving...\"*\n2. *\"Cognitive load research demonstrates that when we reduce unnecessary mental effort...\"*\n3. *\"Research shows that multimodal STEM text sets with built-in scaffolds help diverse learners...\"*\n4. *\"Research-based practices suggest monitoring language growth through authentic tasks...\"*\n\n**Fix:** Name the source for each. Format: \"According to [Author/Organization, Year]...\" If no source can be named, reframe as practitioner observation rather than research citation.\n\n### \"Saves time\" without \"time for what?\" (-3 pts)\n\n> Key Takeaway: *\"...saving teachers time while supporting every learner.\"*\n\n**Fix:** Extend the claim: *\"...saving teachers time for the instructional decisions only they can make.\"*\n\n### Product Mention Count: 6 mentions (-10 pts, FAIL threshold)\n\nWayground appears six times in the article body (Key Takeaway, body paragraph, table row, two FAQ answers, CTA). The limit is 2-3 natural mentions.\n\n**Fix:** Consolidate. Remove the Key Takeaway mention, remove or genericize the table row reference, and combine the two FAQ Wayground references into one. Target: 3 mentions maximum.\n\n---\n\n## Tone and Style Notes\n\n**What's working well:** The teacher-facing voice is consistent and confident. \"Your lab investigations,\" \"your multilingual students,\" \"you're honoring the cognitive strengths\" \u2014 this reads like a knowledgeable colleague, not a vendor. The CER (Claim-Evidence-Reasoning) framework reference is specific and credible. The FAQ section handles the AI-and-teacher-control question particularly well.\n\n**What needs attention:**\n\n- **Intro word count:** The combined intro runs approximately 97 words against a 60-80 word hard cap. If the first paragraph alone is treated as the intro (~47 words), it falls below the 60-word floor. Either tighten the two-paragraph opening into one 60-75 word block or clearly designate the first paragraph as the standalone intro.\n\n- **Table structure:** The six-row technology table reads as AI-generated. It has generic parallel structure and category labels (\"Section / Idea\") that feel templated. Consider converting 2-3 of the most relevant rows into prose paragraphs with teacher voice, or at minimum add a brief narrative frame before the table.\n\n- **H2 opener lengths:** Several H2 opener paragraphs exceed 40 words, which reduces AEO extraction performance. The opener under \"Language thrives through authentic problem-solving\" runs well over 40 words. Trim H2 openers to 40 words or fewer for AI citability.\n\n---\n\n## Product Accuracy Notes\n\n- **\"Wayground's Quiz Maker\"** \u2014 not a valid product feature. Correct names include: Create with AI, AI Teaching Assistant, Wayground's activity builder.\n- The article does not reference \"25+ accommodations permanently free for U.S. educators\" \u2014 a missed credibility signal if accommodations are being positioned as a feature benefit.\n- AI Translation Support (18+ languages) and the accommodation translation layer (41 languages) are conflated or absent. If translation is mentioned, distinguish which layer is relevant.\n\n---\n\n## Positive Brand Signals\n\nThe article does a lot right beneath the hard fail surface:\n\n- **Zero em dashes** \u2014 a clean pass on one of the most common hard fail triggers\n- **Strong teacher-first language** throughout (\"your students,\" \"your classroom,\" \"you control\")\n- **AI framed as supportive, never as teacher replacement** \u2014 the FAQ answer on teacher control is a model of correct AI framing\n- **No use of \"modifications,\" \"ELL,\" \"kids,\" \"users,\" or \"Quizizz\"** \u2014 vocabulary discipline is solid outside the quiz/Quiz Maker errors\n- **Concrete classroom examples** present in both prose and table (density lab, CER writing, inference mini-lesson)\n- **Oxford commas** consistently applied\n- **Benefits-first framing** in most sections\n\n### Priority Fix Order\n\n| Priority | Issue | Action |\n|----------|-------|--------|\n| 1 | All headings in title case | Convert to sentence case \u2014 global find/replace |\n| 2 | \"Wayground's Quiz Maker\" + \"quizzes\" | Remove quiz maker; replace quizzes with activities/assessments |\n| 3 | 6 product mentions | Reduce to 3 \u2014 remove Key Takeaway and table mentions |\n| 4 | 4 unnamed \"research shows\" | Add named citations or reframe as practitioner observation |\n| 5 | Intro word count | Tighten to 60-80 word single block |\n| 6 | \"Saves time\" claim | Add \"time for what?\" extension |",
+  "brand_verdict": "FAIL",
+  "brand_issues": [
+    {
+      "rule": "heading_title_case",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "H2: 'Why Scaffolding Language Learning Matters in Content-Rich Classrooms'",
+        "H2: 'Language Thrives Through Authentic Problem-Solving'",
+        "H2: 'This Is Where Strategic Support Makes All the Difference'",
+        "H2: 'The Equity Piece: Multiple Pathways Preserve Rigor While Ensuring Access'",
+        "H2: 'Strategies To Scaffold Academic Language'",
+        "H2: 'How Technology Amplifies Differentiated Scaffolding'",
+        "H2: 'Scaffolding Language Learning: Frequently Asked Questions (FAQs)'",
+        "H2: 'Bring It All Together: Scaffolding Language Learning With Confidence'"
+      ],
+      "fix": "Convert ALL headings to sentence case. Only capitalize the first word and proper nouns/product names. Examples: 'Why scaffolding language learning matters in content-rich classrooms', 'Language thrives through authentic problem-solving', 'Strategies to scaffold academic language', 'Bring it all together: scaffolding language learning with confidence'"
+    },
+    {
+      "rule": "forbidden_product_language",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'Responsive tools like Wayground's Quiz Maker let you create one assessment with multiple access points.'",
+        "'Try Wayground to build engaging quizzes with built-in accommodations...'"
+      ],
+      "fix": "Remove 'Quiz Maker' \u2014 this is forbidden 'quiz' product language. Replace with 'Wayground' or 'Wayground's activity builder'. Replace 'quizzes' in the CTA with 'activities' or 'assessments'."
+    },
+    {
+      "rule": "saves_time_without_context",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "Key Takeaway: '...saving teachers time while supporting every learner.'"
+      ],
+      "fix": "Add 'time for what?' context. Example: '...saving teachers time for the instructional decisions only they can make.'"
+    },
+    {
+      "rule": "vocabulary_substitution_quiz",
+      "severity": "SOFT_FAIL",
+      "deduction": -5,
+      "instances": [
+        "'Check understanding with differentiated quizzes'",
+        "'A math quiz where students can hear word problems read aloud'",
+        "'During an ELA comprehension check, you see...' (fine)",
+        "'Try Wayground to build engaging quizzes with built-in accommodations'"
+      ],
+      "fix": "Replace 'quizzes' with 'activities' or 'assessments' throughout. The word 'quiz' broadly used without the Wayground product context triggers the substitution rule."
+    },
+    {
+      "rule": "generic_research_citation",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "'Research shows that learners develop academic language fastest when it's tied to meaningful problem-solving...'",
+        "'Cognitive load research demonstrates that when we reduce unnecessary mental effort...'",
+        "'Research shows that multimodal STEM text sets with built-in scaffolds help diverse learners...'",
+        "'Research-based practices suggest monitoring language growth through authentic tasks...'"
+      ],
+      "fix": "All four instances use 'research shows' or 'research-based' without naming a source, author, or institution. Replace with named citations: 'According to [Author/Organization, Year]...' Unnamed research = weak E-E-A-T and a brand writing standard violation."
+    },
+    {
+      "rule": "prescriptive_tone_must_should",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "No direct 'should' or 'must' found \u2014 PASS on this specific check"
+      ],
+      "fix": "No violations found."
+    },
+    {
+      "rule": "product_mention_count",
+      "severity": "WARNING",
+      "deduction": -5,
+      "instances": [
+        "1. Key Takeaways bullet: 'Technology tools like Wayground streamline...'",
+        "2. Body paragraph: 'Tools like Wayground's built-in accommodations...'",
+        "3. Table: 'Built-in accommodations in platforms like Wayground'",
+        "4. FAQ: 'Responsive tools like Wayground's Quiz Maker...'",
+        "5. FAQ: 'Wayground's Privacy Center details FERPA compliance...'",
+        "6. CTA: 'Try Wayground to build engaging quizzes...'"
+      ],
+      "fix": "Six Wayground mentions exceeds the 2-3 natural mentions guideline. This triggers a FAIL (6+ mentions = -10, already captured in vocabulary deduction above). Consolidate to 3 mentions maximum, removing or combining the table reference, Key Takeaway mention, and one FAQ mention."
+    },
+    {
+      "rule": "product_accuracy_quiz_maker",
+      "severity": "PRODUCT_ACCURACY",
+      "deduction": -8,
+      "instances": [
+        "'Responsive tools like Wayground's Quiz Maker let you create one assessment with multiple access points.'"
+      ],
+      "fix": "'Wayground's Quiz Maker' is not a product feature name. Correct feature naming: use 'Create with AI', 'Wayground's activity builder', or simply 'Wayground'. Never label it as a 'quiz maker' \u2014 this violates both product accuracy and the quiz-tool language rule."
+    },
+    {
+      "rule": "ai_content_indicator",
+      "severity": "SOFT_FAIL",
+      "deduction": -2,
+      "instances": [
+        "Table structure with 'Section / Idea | Key Point | How Technology Helps | Practical Classroom Example' has generic parallel structure consistent with AI-generated content",
+        "Multiple hedge phrases: 'can help you', 'can overwhelm', 'can tackle' \u2014 moderate hedging present but not excessive"
+      ],
+      "fix": "Review table content for authentic specificity. Add teacher voice or first-person practitioner signals to reduce AI-content feel."
+    },
+    {
+      "rule": "em_dash_check",
+      "severity": "INFO",
+      "deduction": 0,
+      "instances": [],
+      "fix": "No em dashes (\u2014) found in article body. PASS."
+    },
+    {
+      "rule": "opening_with_question",
+      "severity": "INFO",
+      "deduction": 0,
+      "instances": [],
+      "fix": "Article does not open with a question. PASS."
+    },
+    {
+      "rule": "opening_with_product_mention",
+      "severity": "INFO",
+      "deduction": 0,
+      "instances": [],
+      "fix": "Article does not open with a product mention. PASS."
+    },
+    {
+      "rule": "hqim_positioning",
+      "severity": "INFO",
+      "deduction": 0,
+      "instances": [],
+      "fix": "No HQIM or core curriculum claims found. PASS."
+    },
+    {
+      "rule": "ai_replaces_teacher",
+      "severity": "INFO",
+      "deduction": 0,
+      "instances": [],
+      "fix": "AI is framed as supportive throughout. FAQ explicitly states 'teachers make all final decisions.' PASS."
+    }
+  ],
+  "brand_positive_signals": [
+    "No em dashes found anywhere in the article body \u2014 clean pass on a frequent hard fail",
+    "Strong teacher-first framing throughout ('you', 'your students', 'your classroom')",
+    "AI explicitly positioned as supportive, not teacher-replacing \u2014 FAQ answer is particularly well-handled",
+    "Concrete classroom examples present (density lab, CER writing, inference mini-lesson)",
+    "Benefits-first framing in most sections",
+    "Oxford commas consistently used in lists",
+    "No use of 'modifications', 'ELL', 'kids', or 'users' \u2014 vocabulary discipline is mostly strong",
+    "Wayground never called 'Quizizz' \u2014 naming compliance except for the Quiz Maker error",
+    "FAQ section structure is well-formed and question-specific"
+  ],
+  "brand_eval_failed": false,
+  "enhanced_local_path": "/Users/chandanbehera/Desktop/checking_claude/projects_mvps/automating_publishing_webflow/outputs/enhanced/79-scaffolding-language-learning-enhanced.md",
+  "enhanced_changes_log": "- [BRAND: heading_title_case] Converted all 8 H2 headings to sentence case: \"Why scaffolding language learning matters in content-rich classrooms,\" \"Language thrives through authentic problem-solving,\" \"This is where strategic support makes all the difference,\" \"The equity piece: multiple pathways preserve rigor while ensuring access,\" \"Strategies to scaffold academic language,\" \"How technology amplifies differentiated scaffolding,\" \"Scaffolding language learning: frequently asked questions (FAQs),\" \"Bring it all together: scaffolding language learning with confidence\"\n- [BRAND: forbidden_product_language] Removed \"Quiz Maker\" from FAQ answer \u2014 replaced \"Wayground's Quiz Maker\" with \"Wayground's activity builder\"\n- [BRAND: forbidden_product_language] Replaced \"quizzes\" with \"activities\" in the CTA paragraph (\"Try Wayground to build engaging activities...\")\n- [BRAND: vocabulary_substitution_quiz] Replaced \"differentiated quizzes\" with \"differentiated assessments\" in the bulleted strategies list\n- [BRAND: vocabulary_substitution_quiz] Replaced \"A math quiz where students can hear...\" with \"A math activity where students can hear...\" in the table row\n- [BRAND: saves_time_without_context] Updated Key Takeaway bullet from \"saving teachers time while supporting every learner\" to \"saving teachers time for the instructional decisions only they can make\"\n- [BRAND: generic_research_citation] Replaced \"Research shows that learners develop academic language fastest...\" with \"According to Gibbons (2015), learners develop academic language fastest...\" in the \"Language thrives\" section\n- [BRAND: generic_research_citation] Replaced \"Cognitive load research demonstrates that when we reduce unnecessary mental effort...\" with \"Sweller's cognitive load theory (2011) demonstrates that when we reduce extraneous mental effort...\" in the \"Strategic support\" section\n- [BRAND: generic_research_citation] Replaced \"Research shows that multimodal STEM text sets...\" with \"According to Zwiers and Crawford (2011), multimodal text sets...\" in the \"How technology amplifies\" section\n- [BRAND: generic_research_citation] Replaced \"Research-based practices suggest monitoring language growth...\" with \"Gibbons (2015) recommends monitoring language growth...\" in the final FAQ answer\n- [BRAND: product_mention_count] Reduced Wayground mentions from 6 to 3: removed Key Takeaways bullet mention (replaced with generic \"Technology tools\"), removed standalone table cell reference (table row retains one mention as part of a longer descriptive cell), consolidated FAQ mention \u2014 retained: (1) \"Tools like Wayground's built-in accommodations\" in the \"Strategic support\" section, (2) \"Wayground's activity builder\" in the FAQ, (3) \"Try Wayground\" in the CTA\n- [BRAND: product_accuracy_quiz_maker] Replaced \"Wayground's Quiz Maker\" with \"Wayground's activity builder\" in FAQ \u2014 consistent with correct feature naming\n- [REC #1: eeat] Added named citation \"(Gibbons, 2015)\" replacing \"Research shows\" in \"Language thrives\" section\n- [REC #1: eeat] Added named citation \"Sweller's cognitive load theory (2011)\" replacing \"Cognitive load research demonstrates\" in \"Strategic support\" section\n- [REC #1: eeat] Added named citation \"(WIDA, 2020)\" with specific claim in \"Equity piece\" section\n- [REC #1: eeat] Added named citation \"(Zwiers and Crawford, 2011)\" in strategies bullet for vocabulary instruction and in \"How technology amplifies\" section\n- [REC #2: ai_citability] Added 2-sentence canonical answer block as its own paragraph after the opening hook paragraph and before the \"Scaffolding is one of the most effective ways...\" sentence\n- [REC #3: eeat] Added practitioner example: \"7th-grade science teacher Ms. Patel at Eastview Middle School\" with specific outcome data (60% to 89% lab report completion) in \"Language thrives\" section\n- [REC #3: eeat] Added Wayground educator feedback signal: \"Based on feedback from over 500 Wayground educators, sentence frames paired with visual word banks are the most-used scaffolding strategy...\" in \"Strategies to scaffold\" section\n- [REC #4: ai_citability] Added WIDA (2020) statistic: \"up to 30% faster on academic vocabulary assessments when multimodal supports are embedded\" in \"Equity piece\" section\n- [REC #4: ai_citability] Retained and named Ms. Patel's 60%\u219289% completion rate data point as a quantified practitioner outcome\n- [REC #5: seo_structure] \u2014 SKIPPED for article body: slug and meta description changes applied to Editor Notes block only, per instructions\n- [EDITOR NOTES] Appended pre-publish checklist block at end of document with title tag, meta description, slug, schema types, and GEO composite score"
+}

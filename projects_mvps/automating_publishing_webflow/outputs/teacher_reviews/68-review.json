@@ -1,0 +1,28 @@
+{
+  "item_num": "68",
+  "name": "differentiated instruction gifted struggling students same class",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.3,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C10 \u2014 Wayground's value proposition is vague throughout. 'Wayground offers standards-aligned resources with built-in accommodations' and 'Use Wayground's AI features to generate versions at different reading levels' never name a specific feature (e.g., 'Wayground's Create with AI' or a specific tool), leaving teachers with no actionable reason to click or try it. The product might as well be unnamed.",
+    "C3 \u2014 Several passages read as AI-generated rather than teacher-voiced: 'predictable adaptability,' 'anchoring instruction to one well-defined goal,' and the Wayground CTA blocks feel copy-pasted from a marketing deck. The '200+ Wayground educators' stat and the '78% of teachers who used tiered tasks' figure appear without sourcing context, which a skeptical teacher will distrust immediately.",
+    "C5 \u2014 Grade-band anchoring is thin. Only one concrete example ('4th-grade teacher at Maple Ridge Elementary') appears in the body. The 90-minute block, tiered task table (particle motion), and choice board examples are never labeled by grade or subject beyond that single anecdote, leaving a 9th-grade ELA or 2nd-grade math teacher unsure whether any of this applies to them."
+  ],
+  "positive_signals": [
+    "The tiered/parallel task comparison table is genuinely excellent \u2014 a teacher could photocopy it for a PLC meeting. The four-column structure with shared objectives, modality variations, and unified success criteria is exactly how practitioners think about differentiation design.",
+    "The 90-minute block blueprint is specific enough to be actionable (7-min launch, 19-min rotations, 7-min synthesis), and the FAQ section addresses real implementation friction \u2014 large class sizes, limited materials \u2014 that teachers actually face."
+  ],
+  "narrative": "This article has real structural bones \u2014 the tiered/parallel task table and the 90-minute rotation blueprint are the kind of concrete tools teachers will actually keep \u2014 but it falls short of a PASS on two fronts that matter most to classroom trust. The Wayground mentions are too vague to be useful (\"AI features,\" \"built-in accommodations\" with no named feature), which reads as marketing filler rather than a genuine tool recommendation, and several passages have an AI-generated cadence (\"predictable adaptability,\" unsourced percentage claims) that a skeptical veteran teacher will clock immediately. To pass, the article needs at least one named Wayground feature with a specific use case tied to differentiation, and the grade-band examples need to extend beyond the single 4th-grade anecdote \u2014 ideally adding one secondary and one primary example to give the strategies broader classroom credibility."
+}

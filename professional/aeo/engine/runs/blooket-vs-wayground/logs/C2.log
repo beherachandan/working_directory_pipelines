@@ -11,3 +11,4 @@
 [C2] Calling claude (model: sonnet)...
 [C2] Claude responded in 209s
 [C2] Completed. Output: outputs/C2-outline.md (209s, ~13941+9218 tokens)
+[C2] Already completed, skipping.

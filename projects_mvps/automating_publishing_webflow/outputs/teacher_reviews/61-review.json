@@ -1,0 +1,28 @@
+{
+  "item_num": "61",
+  "name": "differentiated assessment",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 3.9,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 (Standards Alignment) scores a 2 and triggers automatic REVISE: this is a lesson-design article squarely about meeting grade-level standards, yet no named framework appears \u2014 not Common Core, NGSS, ISTE, or any state framework. The 7th-grade ecosystem example cries out for an NGSS citation (e.g., MS-LS2-1), and the rubric section is exactly where a reference to CCSSI or state-specific ELA writing standards would land. Without it, the article talks *about* standards without ever grounding itself in real ones.",
+    "C3 (Non-AI Tone) is borderline: phrases like 'The secret to equitable assessment isn't lowering the bar. It's building multiple bridges to the equivalent destination' and 'Ready to create assessments that adapt to every student without additional prep time?' read as marketing copy, not teacher voice. The Eastview Middle School anecdote helps, but it sits next to stat-padding lines ('Based on feedback from 150 Wayground educators, teachers who offer three or more assessment formats report 30% fewer students scoring below proficient') that feel unverifiable and erode trust with skeptical teachers.",
+    "The accommodations vs. modifications table includes a 'Classroom notes' row and a 'Data considerations' row that don't belong in a 4-column comparison table \u2014 they break the parallel structure and would confuse a teacher trying to use this as a quick reference. These should be pulled out as a separate tip box or paragraph."
+  ],
+  "positive_signals": [
+    "The accommodations vs. modifications table is genuinely useful \u2014 the Purpose / What Changes / Examples / Impact on Standards column structure is exactly what a teacher would want to photocopy or screenshot for an IEP meeting prep session.",
+    "Term definitions are handled well throughout: 'criterion-referenced assessment,' 'CER response,' 'scaffolding,' 'accommodations,' and 'modifications' are all defined inline in plain language without talking down to the reader."
+  ],
+  "narrative": "This article has real classroom utility \u2014 the rubric-building section, the accommodations vs. modifications table, and the grade-specific 7th-grade science examples give teachers something concrete to act on \u2014 but it cannot pass in its current state because C9 (Standards Alignment) scores a 2, triggering an automatic REVISE. A lesson-design article that repeatedly invokes \"grade-level standards\" without once naming NGSS, Common Core, or any state framework is a credibility gap that content-area teachers will notice immediately; adding even one named standard to the ecosystem example would fix this. Secondarily, two or three marketing-register phrases (\"multiple bridges to the equivalent destination,\" the unattributed 30%-fewer-students stat) undercut the otherwise practical teacher voice, and the accommodations table needs its final two rows restructured so it stays usable as a quick-reference tool."
+}

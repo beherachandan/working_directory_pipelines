@@ -1,0 +1,28 @@
+{
+  "item_num": "63",
+  "name": "technology and differentiated instruction",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 3.6,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C2 \u2014 Opening buries the value. The article opens with a rhetorical question ('How can teachers use technology to differentiate instruction without overwhelming prep work?') immediately followed by a cinematic scene-setter, then restates the same rhetorical question a second time in the very next sentence. A busy teacher scanning this in 10 seconds gets no concrete payoff. Cut to the 29-students/39-minutes scenario immediately and drop the framing question entirely.",
+    "C9 \u2014 Standards alignment is conspicuously absent for an article explicitly about K-12 lesson design. A 7th-grade science water cycle example is used throughout \u2014 NGSS MS-ESS2-4 is directly applicable and never mentioned. ISTE Standards for Educators (1c, 5b) and Common Core ELA literacy standards for science are also relevant and ignored. For a teacher deciding whether to adopt these strategies, the absence of any named framework is a credibility gap.",
+    "C6 \u2014 Several terms appear without inline definitions: 'UDL' is referenced only via the CAST citation with no plain-language definition; 'adaptive branching' is used in the bullet list before it is explained; 'ZPD' is never mentioned but the concept is implied. A first-year teacher or a specialist unfamiliar with these terms would have to stop and search. Define UDL (Universal Design for Learning) and adaptive branching the first time each appears."
+  ],
+  "positive_signals": [
+    "The comparison table (C4) is genuinely classroom-ready \u2014 the 'Teacher Controls' and 'Equity Notes' columns are the kind of specific, actionable detail that distinguishes this from generic EdTech content and reflects real teacher workflow.",
+    "Teacher agency framing (C7) is handled exceptionally well throughout \u2014 phrases like 'keeping you firmly in control,' the FAQ on avoiding over-reliance, and the consistent 'technology as your teaching assistant' framing all reinforce a teacher-first posture without feeling defensive or preachy."
+  ],
+  "narrative": "This article has the bones of something genuinely useful \u2014 the comparison table alone is worth the read, and the teacher-agency framing is some of the strongest this rubric has seen \u2014 but two automatic-REVISE flags prevent a pass. The opening runs a rhetorical question directly into a scene-setting paragraph and then *repeats the same rhetorical question*, which means a teacher skimming during planning period gets zero value in the first 100 words; cut straight to the 29-students/39-minutes scenario and the article starts earning trust immediately. More critically, a 7th-grade science lesson design article that never once names NGSS, ISTE, or Common Core is a harder sell to any teacher whose principal asks \"is this standards-aligned?\" \u2014 MS-ESS2-4 fits the water cycle example exactly and should be cited by name. Fix the opening, add at least two named standards with explicit connections, and define UDL and adaptive branching inline on first use; the article will clear the bar comfortably."
+}

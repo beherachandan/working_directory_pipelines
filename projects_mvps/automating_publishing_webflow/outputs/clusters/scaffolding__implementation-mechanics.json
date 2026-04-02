@@ -1,0 +1,115 @@
+{
+  "cluster": "Scaffolding",
+  "sub_cluster": "Implementation Mechanics",
+  "article_count": 3,
+  "avg_geo_composite": 43.7,
+  "avg_qapeds_composite": 4.32,
+  "dimension_averages": {
+    "ai_citability": 41.0,
+    "eeat": 35.3,
+    "platform_optimization": 33.3,
+    "brand_voice": 44.0,
+    "seo_structure": 55.0,
+    "schema_recommendations": 76.0
+  },
+  "weakest_dimension": "platform_optimization",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 0,
+    "aio_ready_pct": 0,
+    "chatgpt_ready_count": 0,
+    "chatgpt_ready_pct": 0,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 3,
+    "common_issues": [
+      "em_dash_in_copy",
+      "title_case_headings",
+      "brand_naming_or_vocabulary_violations"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 every article uses 'research shows' or 'research from cognitive scientists shows' with no author, source, year, or institution attached",
+      "article_count": 3,
+      "dimension": "eeat",
+      "impact": "Caps QAPEDS P (Proof) score at \u22641 per rubric rules; suppresses E-E-A-T Authoritativeness and Trustworthiness; blocks AIO, ChatGPT, and Perplexity readiness across the entire cluster"
+    },
+    {
+      "pattern": "No direct-answer block in the first 150 words \u2014 intros use narrative scenarios, mixed definitions, or article previews instead of a canonical 1\u20133 sentence answer to the primary query",
+      "article_count": 3,
+      "dimension": "ai_citability",
+      "impact": "Fails QAPEDS Direct Answer Gate (caps A Score at \u22645); prevents AI snippet extraction; suppresses Answer Block Quality sub-component across all three articles"
+    },
+    {
+      "pattern": "No first-hand practitioner experience signals \u2014 classroom examples are entirely hypothetical ('a seventh-grade teacher might...') with no attributed teacher voice, named school context, or first-person practitioner data",
+      "article_count": 3,
+      "dimension": "eeat",
+      "impact": "Eliminates Experience sub-component of E-E-A-T; reduces Uniqueness Signals in AI Citability; weakens GEO entity trust for all platforms"
+    },
+    {
+      "pattern": "No FAQ-structured sections \u2014 implied questions are present in the content but never formatted as explicit Q&A blocks",
+      "article_count": 3,
+      "dimension": "platform_optimization",
+      "impact": "FAQPage schema cannot be implemented without structural FAQ blocks; Perplexity readiness remains at 0%; Google AIO featured snippet eligibility blocked"
+    },
+    {
+      "pattern": "Heading formatting violations \u2014 title case headings and/or question-led headings present across articles instead of mandatory sentence case declarative headings",
+      "article_count": 2,
+      "dimension": "seo_structure",
+      "impact": "Hard brand FAIL trigger; reduces structural readability score; inconsistent with Wayground style guide"
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation void \u2014 zero named sources across all three articles",
+      "fix": "Add a minimum of 3 named, dated citations per article. Replace every instance of 'research shows' or 'research from cognitive scientists' with attributed references. Suggested sources for this cluster: Vygotsky (1978) Zone of Proximal Development; Sweller (1988) Cognitive Load Theory (Journal of Learning Sciences); Hammond & Gibbons (2005) on instructional scaffolding; CASEL (2023) SEL research for emotional scaffolding. Format: 'According to [Author, Year]' or 'A [Year] study published in [Journal] found...'",
+      "applies_to": "All 3 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 2,
+      "issue": "No direct-answer block in any article's opening 150 words",
+      "fix": "Rewrite every article's intro to open with: (1) a single explicit interrogative question anchoring the primary query, followed immediately by (2) a canonical 1\u20133 sentence answer (40\u201360 words) that can be extracted without surrounding context. The intro must then close within 80 words total. Example structure for 'scaffolding questions': 'What are scaffolding questions? Scaffolding questions are teacher-designed prompts that progressively build student thinking \u2014 moving from recall to analysis to synthesis. They reduce cognitive load by breaking complex reasoning into manageable steps, supporting students who need guided access to grade-level content.'",
+      "applies_to": "All 3 articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 3,
+      "issue": "No platform-ready FAQ sections \u2014 Perplexity and AIO readiness at 0%",
+      "fix": "Add a dedicated 'Frequently asked questions' section (H2, sentence case) near the bottom of each article containing 4\u20135 Q&A pairs. Use H3 for each question. Each answer must be 40\u201360 words, self-contained, and directly responsive. This structure enables FAQPage schema and is the single fastest path to Perplexity citation eligibility. Example questions for 'emotional scaffolding': 'What is emotional scaffolding in the classroom?', 'How is emotional scaffolding different from academic scaffolding?', 'What does emotional scaffolding look like in practice?'",
+      "applies_to": "All 3 articles",
+      "dimension": "platform_optimization"
+    },
+    {
+      "rank": 4,
+      "issue": "Hypothetical-only classroom examples \u2014 no practitioner experience signals anywhere in the cluster",
+      "fix": "Replace at least one hypothetical example per article with a grounded, specific practitioner scenario. Either (a) attribute to a named teacher with role and grade level ('Marta Chen, a 7th-grade ELA teacher in Austin, uses...'), (b) use first-person Wayground data framing ('In a review of Wayground sessions with 500+ teachers, we found...'), or (c) include a pull quote from a real educator. This directly lifts the Experience sub-component of E-E-A-T and the Uniqueness Signals sub-component of AI Citability.",
+      "applies_to": "All 3 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "Universal brand FAIL \u2014 heading case violations and brand vocabulary infractions",
+      "fix": "Audit every H2 and H3 in all three articles and convert to sentence case (capitalize first word and proper nouns only). Remove all em dashes from body copy. Audit for vocabulary: confirm 'activity' replaces 'quiz,' 'passage' replaces 'reading handout,' and Wayground is used correctly throughout. Brand compliance must reach at least WARN before any article is published.",
+      "applies_to": "All 3 articles",
+      "dimension": "brand_voice"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "80",
+    "name": "scaffolding questions",
+    "geo_composite": 44.3
+  },
+  "weakest_article": {
+    "item_num": "82",
+    "name": "emotional scaffolding",
+    "geo_composite": 42.5
+  },
+  "narrative": "<scores>\n{\n  \"cluster\": \"Scaffolding\",\n  \"sub_cluster\": \"Implementation Mechanics\",\n  \"article_count\": 3,\n  \"avg_geo_composite\": 43.7,\n  \"avg_qapeds_composite\": 4.32,\n  \"dimension_averages\": {\n    \"ai_citability\": 41.0,\n    \"eeat\": 35.3,\n    \"platform_optimization\": 33.3,\n    \"brand_voice\": 44.0,\n    \"seo_structure\": 55.0,\n    \"schema_recommendations\": 76.0\n  },\n  \"weakest_dimension\": \"platform_optimization\",\n  \"strongest_dimension\": \"schema_recommendations\",\n  \"platform_readiness\": {\n    \"aio_ready_count\": 0,\n    \"aio_ready_pct\": 0,\n    \"chatgpt_ready_count\": 0,\n    \"chatgpt_ready_pct\": 0,\n    \"perplexity_ready_count\": 0,\n    \"perplexity_ready_pct\": 0\n  },\n  \"brand_summary\": {\n    \"pass_count\": 0,\n    \"warn_count\": 0,\n    \"fail_count\": 3,\n    \"common_issues\": [\"em_dash_in_copy\", \"title_case_headings\", \"brand_naming_or_vocabulary_violations\"]\n  },\n  \"recurring_issues\": [\n    {\n      \"pattern\": \"Zero named citations \u2014 every article uses 'research shows' or 'research from cognitive scientists shows' with no author, source, year, or institution attached\",\n      \"article_count\": 3,\n      \"dimension\": \"eeat\",\n      \"impact\": \"Caps QAPEDS P (Proof) score at \u22641 per rubric rules; suppresses E-E-A-T Authoritativeness and Trustworthiness; blocks AIO, ChatGPT, and Perplexity readiness across the entire cluster\"\n    },\n    {\n      \"pattern\": \"No direct-answer block in the first 150 words \u2014 intros use narrative scenarios, mixed definitions, or article previews instead of a canonical 1\u20133 sentence answer to the primary query\",\n      \"article_count\": 3,\n      \"dimension\": \"ai_citability\",\n      \"impact\": \"Fails QAPEDS Direct Answer Gate (caps A Score at \u22645); prevents AI snippet extraction; suppresses Answer Block Quality sub-component across all three articles\"\n    },\n    {\n      \"pattern\": \"No first-hand practitioner experience signals \u2014 classroom examples are entirely hypothetical ('a seventh-grade teacher might...') with no attributed teacher voice, named school context, or first-person practitioner data\",\n      \"article_count\": 3,\n      \"dimension\": \"eeat\",\n      \"impact\": \"Eliminates Experience sub-component of E-E-A-T; reduces Uniqueness Signals in AI Citability; weakens GEO entity trust for all platforms\"\n    },\n    {\n      \"pattern\": \"No FAQ-structured sections \u2014 implied questions are present in the content but never formatted as explicit Q&A blocks\",\n      \"article_count\": 3,\n      \"dimension\": \"platform_optimization\",\n      \"impact\": \"FAQPage schema cannot be implemented without structural FAQ blocks; Perplexity readiness remains at 0%; Google AIO featured snippet eligibility blocked\"\n    },\n    {\n      \"pattern\": \"Heading formatting violations \u2014 title case headings and/or question-led headings present across articles instead of mandatory sentence case declarative headings\",\n      \"article_count\": 2,\n      \"dimension\": \"seo_structure\",\n      \"impact\": \"Hard brand FAIL trigger; reduces structural readability score; inconsistent with Wayground style guide\"\n    }\n  ],\n  \"cluster_recommendations\": [\n    {\n      \"rank\": 1,\n      \"issue\": \"Cluster-wide citation void \u2014 zero named sources across all three articles\",\n      \"fix\": \"Add a minimum of 3 named, dated citations per article. Replace every instance of 'research shows' or 'research from cognitive scientists' with attributed references. Suggested sources for this cluster: Vygotsky (1978) Zone of Proximal Development; Sweller (1988) Cognitive Load Theory (Journal of Learning Sciences); Hammond & Gibbons (2005) on instructional scaffolding; CASEL (2023) SEL research for emotional scaffolding. Format: 'According to [Author, Year]' or 'A [Year] study published in [Journal] found...'\",\n      \"applies_to\": \"All 3 articles\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 2,\n      \"issue\": \"No direct-answer block in any article's opening 150 words\",\n      \"fix\": \"Rewrite every article's intro to open with: (1) a single explicit interrogative question anchoring the primary query, followed immediately by (2) a canonical 1\u20133 sentence answer (40\u201360 words) that can be extracted without surrounding context. The intro must then close within 80 words total. Example structure for 'scaffolding questions': 'What are scaffolding questions? Scaffolding questions are teacher-designed prompts that progressively build student thinking \u2014 moving from recall to analysis to synthesis. They reduce cognitive load by breaking complex reasoning into manageable steps, supporting students who need guided access to grade-level content.'\",\n      \"applies_to\": \"All 3 articles\",\n      \"dimension\": \"ai_citability\"\n    },\n    {\n      \"rank\": 3,\n      \"issue\": \"No platform-ready FAQ sections \u2014 Perplexity and AIO readiness at 0%\",\n      \"fix\": \"Add a dedicated 'Frequently asked questions' section (H2, sentence case) near the bottom of each article containing 4\u20135 Q&A pairs. Use H3 for each question. Each answer must be 40\u201360 words, self-contained, and directly responsive. This structure enables FAQPage schema and is the single fastest path to Perplexity citation eligibility. Example questions for 'emotional scaffolding': 'What is emotional scaffolding in the classroom?', 'How is emotional scaffolding different from academic scaffolding?', 'What does emotional scaffolding look like in practice?'\",\n      \"applies_to\": \"All 3 articles\",\n      \"dimension\": \"platform_optimization\"\n    },\n    {\n      \"rank\": 4,\n      \"issue\": \"Hypothetical-only classroom examples \u2014 no practitioner experience signals anywhere in the cluster\",\n      \"fix\": \"Replace at least one hypothetical example per article with a grounded, specific practitioner scenario. Either (a) attribute to a named teacher with role and grade level ('Marta Chen, a 7th-grade ELA teacher in Austin, uses...'), (b) use first-person Wayground data framing ('In a review of Wayground sessions with 500+ teachers, we found...'), or (c) include a pull quote from a real educator. This directly lifts the Experience sub-component of E-E-A-T and the Uniqueness Signals sub-component of AI Citability.\",\n      \"applies_to\": \"All 3 articles\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 5,\n      \"issue\": \"Universal brand FAIL \u2014 heading case violations and brand vocabulary infractions\",\n      \"fix\": \"Audit every H2 and H3 in all three articles and convert to sentence case (capitalize first word and proper nouns only). Remove all em dashes from body copy. Audit for vocabulary: confirm 'activity' replaces 'quiz,' 'passage' replaces 'reading handout,' and Wayground is used correctly throughout. Brand compliance must reach at least WARN before any article is published.\",\n      \"applies_to\": \"All 3 articles\",\n      \"dimension\": \"brand_voice\"\n    }\n  ],\n  \"strongest_article\": {\"item_num\": \"80\", \"name\": \"scaffolding questions\", \"geo_composite\": 44.3},\n  \"weakest_article\": {\"item_num\": \"82\", \"name\": \"emotional scaffolding\", \"geo_composite\": 42.5}\n}\n</scores>\n\n<output>\n\n# Cluster Analysis: Scaffolding / Implementation Mechanics\n\n## Cluster overview\n\nThis three-article cluster \u2014 covering scaffolding questions, scaffolding notes, and emotional scaffolding \u2014 is the lowest-performing group evaluated to date, with an average GEO Composite of **43.7/100** and an average QAPEDS of **4.32/10**. Every article fails brand compliance, and not a single article is ready for citation by any AI platform \u2014 AIO, ChatGPT, Perplexity, Gemini, or Bing Copilot all register at 0%. The cluster has structural bones (schema potential is relatively strong) but is missing the two non-negotiable ingredients for AI citability: named evidence and extractable direct answers.\n\n---\n\n## Score summary table\n\n| Dimension | Cluster Average | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 41.0 | 70 | \u221229.0 |\n| E-E-A-T | 35.3 | 70 | \u221234.7 |\n| Platform Optimization | 33.3 | 70 | \u221236.7 |\n| Brand Voice | 44.0 | 70 | \u221226.0 |\n| SEO Structure | 55.0 | 70 | \u221215.0 |\n| Schema Recommendations | 76.0 | 70 | **+6.0** |\n| **GEO Composite** | **43.7** | **70** | **\u221226.3** |\n| **QAPEDS** | **4.32 / 10** | 7.0 | \u22122.68 |\n\nSchema Recommendations is the only dimension above target \u2014 the articles have the structural potential for rich markup. Everything else falls well below the 70-point threshold. Platform Optimization and E-E-A-T are the most urgent failures.\n\n---\n\n## Top 3 recurring issues\n\n### 1. Zero named citations \u2014 all 3 articles (E-E-A-T / AI Citability)\n\nEvery article in this cluster uses unattributed phrases like \"research shows\" or \"research from cognitive scientists shows\" with no author, no year, no journal, and no institution. Per the QAPEDS rubric, this caps the Proof (P) score at \u22641 \u2014 the single harshest individual penalty in the framework. It simultaneously suppresses E-E-A-T Authoritativeness, reduces AI Citability's Statistical Density sub-component to near zero, and makes it impossible for Google AIO or Perplexity to treat the content as a trustworthy source worth surfacing. This is not a polish issue \u2014 it is a fundamental credibility failure that blocks publication readiness entirely.\n\n### 2. No direct-answer block in the first 150 words \u2014 all 3 articles (AI Citability)\n\nAll three intros fail the QAPEDS Direct Answer Gate. Article 80 mixes definition, benefits, and article preview. Article 81 opens with a narrative classroom scenario. Article 82 begins with a general framing paragraph that never resolves into a canonical answer. Without a 1\u20133 sentence direct-answer block in the opening 150 words, AI engines have no extractable snippet to cite, the QAPEDS A (Answer) score is capped at \u22645, and AIO featured snippet eligibility is blocked. The fix is mechanical and fast \u2014 every intro needs a question followed immediately by its answer before anything else.\n\n### 3. No FAQ sections and no practitioner experience signals \u2014 all 3 articles (Platform Optimization / E-E-A-T)\n\nNo article contains a FAQ-structured section, which means FAQPage schema cannot be implemented and Perplexity readiness stays at zero. Separately, every classroom example across the cluster is hypothetical \u2014 phrases like \"a seventh-grade teacher might\" or \"imagine a student who\" carry no E-E-A-T weight. The Experience sub-component of E-E-A-T requires first-hand, attributed practitioner perspective. Without it, these articles read as AI-generated summaries of educational theory, not as practitioner-backed resources \u2014 and AI citation platforms are increasingly penalizing that pattern.\n\n---\n\n## Platform readiness\n\n| Platform | Ready | Count | Percentage |\n|---|---|---|---|\n| Google AIO | No | 0 / 3 | 0% |\n| ChatGPT | No | 0 / 3 | 0% |\n| Perplexity | No | 0 / 3 | 0% |\n| Gemini | No | 0 / 3 | 0% |\n| Bing Copilot | No | 0 / 3 | 0% |\n\n**Overall cluster platform readiness: 0%.** This is the defining characteristic of this cluster's failure. The three core blockers \u2014 no direct-answer block, no named citations, no FAQ structure \u2014 collectively prevent citation readiness on every major AI platform. Resolving Recommendations 1, 2, and 3 below would move the cluster from 0% to an estimated 60\u201380% readiness on AIO and ChatGPT, and would unlock Perplexity eligibility for the first time.\n\n---\n\n## Brand compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | 0 |\n| WARN | 0 |\n| FAIL | 3 |\n\n**100% brand FAIL rate.** Common violations across the cluster include em dashes in body copy (zero-tolerance violation), title case headings (hard rule: sentence case always), and brand vocabulary infractions. Article 80 has the most documented heading case violations. Articles 80 and 82 both scored below 40 on Brand Voice. Article 81 scored highest at 55 \u2014 still well below the WARN threshold \u2014 suggesting partial vocabulary compliance but unresolved formatting issues. No article in this cluster should be published without a full brand audit pass.\n\n---\n\n## Cluster-level recommendations\n\n### Recommendation 1 \u2014 Add named citations to every article (Priority: Critical)\n\nReplace every instance of \"research shows,\" \"studies suggest,\" and \"research from cognitive scientists\" with a named, dated reference. Minimum three named sources per article before resubmission. Anchoring citations for this cluster's topics:\n\n- **Scaffolding (general):** Vygotsky (1978), *Mind in Society* \u2014 Zone of Proximal Development; Hammond & Gibbons (2005), *Teachers and Teaching: Theory and Practice*\n- **Cognitive Load:** Sweller (1988), *Cognitive Science* journal; Sweller, van Merri\u00ebnboer & Paas (1998)\n- **Emotional Scaffolding:** CASEL (2023) annual report; Durlak et al. (2011) meta-analysis in *Child Development* (213 SEL studies, 270,000 students)\n- **Note-taking / scaffolded notes:** Boyle (2013) in *Learning Disabilities Research and Practice*\n\nFormat standard: \"According to [Author, Year]\" or \"A [Year] [Journal] study found...\" \u2014 never a bare claim.\n\n### Recommendation 2 \u2014 Rewrite every intro with a question-then-answer structure (Priority: Critical)\n\nEach article's first 150 words must follow this exact sequence: (1) one explicit interrogative question naming the topic, (2) a canonical 1\u20133 sentence direct answer (40\u201360 words) that stands alone without context, (3) a brief \"why it matters\" bridge sentence, (4) close the intro at or under 80 words total. The direct-answer block is what AI engines extract. If it is not present in the opening, the article does not get cited \u2014 regardless of content quality in the body.\n\n### Recommendation 3 \u2014 Add a FAQ section to every article (Priority: High)\n\nEach article needs a \"Frequently asked questions\" H2 section (sentence case) with 4\u20135 H3 question headings, each followed by a 40\u201360 word self-contained answer. This is the fastest structural change available for improving Perplexity and AIO readiness. It also unlocks FAQPage schema implementation. Draft question sets for each article:\n\n- **Scaffolding questions:** What are scaffolding questions? How do scaffolding questions differ from regular discussion questions? What are examples of scaffolding questions in math?\n- **Scaffolding notes:** What are scaffolding notes? How do scaffolding notes support students with learning differences? When should a teacher use scaffolding notes vs. full notes?\n- **Emotional scaffolding:** What is emotional scaffolding? How is emotional scaffolding different from academic scaffolding? What does emotional scaffolding look like in a high school classroom?\n\n### Recommendation 4 \u2014 Ground every classroom example in attributed practitioner reality (Priority: High)\n\nAudit all hypothetical examples (\"imagine a teacher,\" \"a student might\") across the cluster and replace at least one per article with a grounded scenario. Options: (a) attribute to a named teacher with grade level and subject, (b) frame as Wayground platform data (\"based on"
+}

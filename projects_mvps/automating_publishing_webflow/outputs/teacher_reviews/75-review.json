@@ -1,0 +1,28 @@
+{
+  "item_num": "75",
+  "name": "scaffolding for reading",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 5,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.9,
+  "verdict": "PASS",
+  "top_issues": [
+    "Grade-band specificity is thin: only one concrete example ('4th-grade science') appears in the entire article. A piece covering reading scaffolding should explicitly address how strategies differ for, say, 2nd-grade emergent readers vs. 8th-grade ELA vs. 10th-grade history \u2014 teachers self-identify by grade and will disengage if they can't see themselves in the content.",
+    "Wayground's value proposition is vague in the CTA: 'reading passages and comprehension activities offer genre-spanning content, pause-and-discuss videos, and built-in comprehension checks' describes features but never names a specific Wayground tool (e.g., 'Create with AI,' 'Lesson Library') or ties a feature to a step in the scaffold ('Use Wayground's vocabulary activity builder to pre-teach your three terms in under 5 minutes'). The '25+ permanently free accommodations' mention is the strongest specific claim but appears only in the FAQ, not in the main instructional flow.",
+    "A few AI-ish phrases dilute the practitioner voice: 'The beauty of this approach lies in student choice within structure' and 'elevate every reader' read as generated filler. The FAQ opener \u2014 'Teachers working with diverse learners often wonder how to balance support with challenge' \u2014 is a classic AI throat-clear that a real teacher would cut immediately."
+  ],
+  "positive_signals": [
+    "The differentiation menu table is genuinely classroom-ready \u2014 a teacher could print it, tape it to their lesson plan binder, and work through it column by column. The Before/During/After structure with student choice options and quick checks in every row is exactly the kind of artifact busy teachers want.",
+    "The five-step scaffold (purpose \u2192 vocabulary \u2192 chunking \u2192 guided annotation \u2192 independent check) is specific, sequenced, and immediately actionable with realistic time estimates, ticking the Monday-morning usability box."
+  ],
+  "narrative": "This article is genuinely useful for classroom teachers: the five-step scaffold, the differentiation menu table, and the chunking/annotation bullet list are the kind of concrete, steal-and-use resources that earn a spot in a teacher's planning folder. The main gaps holding it back from a stronger score are grade-band thinness (one 4th-grade example does not cover the range of teachers who will land on this page) and a Wayground CTA that names features without connecting any specific tool to a specific step in the scaffold \u2014 \"Use Wayground's [named feature] to build your vocabulary preview in 3 minutes before class\" would be far more compelling than the current generic closing. A light pass to add one grade-band example per school level (elementary, middle, high) and sharpen the Wayground feature callout to at least one named tool with a concrete use case would push this from a solid PASS to a teacher-endorsed resource."
+}

@@ -2,9 +2,9 @@
   "article_slug": "blooket-vs-wayground",
   "topic": "Blooket vs Wayground comparison for classroom learning",
   "created_at": "2026-03-18T14:28:09Z",
-  "updated_at": "2026-03-18T19:32:58Z",
-  "current_stage": "E2",
-  "status": "waiting_human_review",
+  "updated_at": "2026-03-20T09:37:04Z",
+  "current_stage": "done",
+  "status": "completed",
   "dag_progress": {
     "A1": {
       "status": "completed",
@@ -119,8 +119,9 @@
       "output_tokens": 10243
     },
     "E1": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "revisions/e1-feedback.md",
+      "completed_at": "2026-03-20T09:17:46Z"
     },
     "E2": {
       "status": "completed",
@@ -131,36 +132,68 @@
       "output_tokens": 1317
     },
     "F1": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F1-schema-markup.md",
+      "started_at": "2026-03-20T09:17:46Z",
+      "completed_at": "2026-03-20T09:18:39Z",
+      "input_tokens": 18049,
+      "output_tokens": 2480
     },
     "F2": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F2-page-designer.md",
+      "started_at": "2026-03-20T09:17:46Z",
+      "completed_at": "2026-03-20T09:23:04Z",
+      "input_tokens": 18537,
+      "output_tokens": 19846
     },
     "F3": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F3-internal-linking.md",
+      "started_at": "2026-03-20T09:23:04Z",
+      "completed_at": "2026-03-20T09:24:49Z",
+      "input_tokens": 20549,
+      "output_tokens": 0
     },
     "F4": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F4-publisher.md",
+      "started_at": "2026-03-20T09:24:49Z",
+      "completed_at": "2026-03-20T09:27:22Z",
+      "input_tokens": 34733,
+      "output_tokens": 6845
     },
     "F5": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F5-distribution-strategist.md",
+      "started_at": "2026-03-20T09:27:22Z",
+      "completed_at": "2026-03-20T09:29:02Z",
+      "input_tokens": 25365,
+      "output_tokens": 3586
     },
     "F6": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/F6-channel-adaptor.md",
+      "started_at": "2026-03-20T09:29:02Z",
+      "completed_at": "2026-03-20T09:31:51Z",
+      "input_tokens": 23338,
+      "output_tokens": 7525
     },
     "G1": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/G1-sov-tracker.md",
+      "started_at": "2026-03-20T09:31:51Z",
+      "completed_at": "2026-03-20T09:34:19Z",
+      "input_tokens": 8583,
+      "output_tokens": 5364
     },
     "G2": {
-      "status": "pending",
-      "output_file": null
+      "status": "completed",
+      "output_file": "outputs/G2-feedback-analyst.md",
+      "started_at": "2026-03-20T09:34:19Z",
+      "completed_at": "2026-03-20T09:37:04Z",
+      "input_tokens": 10069,
+      "output_tokens": 5333
     }
   },
   "gates": {
@@ -176,8 +209,8 @@
       "composite": 7.95
     },
     "E_gate": {
-      "decision": null,
-      "feedback_file": null
+      "decision": "Approved",
+      "feedback_file": "/Users/chandanbehera/Desktop/checking_claude/professional/aeo/engine/runs/blooket-vs-wayground/revisions/e1-feedback.md"
     }
   },
   "revisions": {
@@ -200,8 +233,8 @@
   },
   "model_overrides": {},
   "token_usage": {
-    "total_input": 599103,
-    "total_output": 201594,
-    "cost_estimate_usd": 11.624415
+    "total_input": 758326,
+    "total_output": 252573,
+    "cost_estimate_usd": 12.866769000000001
   }
 }

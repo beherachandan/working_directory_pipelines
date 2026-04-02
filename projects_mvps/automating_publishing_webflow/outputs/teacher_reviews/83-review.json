@@ -1,0 +1,27 @@
+{
+  "item_num": "83",
+  "name": "student engagement strategies",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 5,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 5,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 4.2,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 \u2014 Standards alignment is completely absent for an article squarely in K-12 instructional design territory. A single sentence referencing ISTE Student Standards (e.g., 1c: student agency), Common Core Speaking & Listening anchors, or even a note that strategies support state SEL/engagement frameworks would lift this to passing. As written, a teacher in an observed classroom or PLC can't connect this to any accountability framework.",
+    "C10 \u2014 Wayground's value proposition is mentioned but never made specific enough to be convincing. 'Create your first activity today with Wayground' and 'Wayground makes it easier to gather participation data quickly' are generic claims. The article needs at least one concrete feature call-out \u2014 e.g., 'Wayground's participation reports show you which students responded, in what format, and how long they took \u2014 without a separate spreadsheet.'"
+  ],
+  "positive_signals": [
+    "Grade-band specificity is genuinely strong throughout \u2014 Grade 2 math, Grade 6 science, Grade 8 social studies, Algebra I, high school biology \u2014 this reads like a teacher who has actually been in these rooms, and it will make the article feel credible and scannable across subject areas.",
+    "The participation tracker table is a standout element: five rows, four columns, directly usable during a planning period with zero adaptation needed. This is exactly the kind of artifact teachers bookmark and return to."
+  ],
+  "narrative": "This article is genuinely close to classroom-ready \u2014 the \"Try this / Example\" format is tight and repeatable, the participation tracker table is the kind of thing a teacher would photograph and put in their planning binder, and the grade-band anchoring throughout gives it real credibility across K-12 contexts. The single criterion that triggers a mandatory REVISE is C9: for an article about instructional design in K-12 settings, leaving out any reference to applicable standards (ISTE Student Standards, CCSS Speaking & Listening, or even a gesture toward state SEL frameworks) is a meaningful gap, especially for teachers who need to justify professional learning choices to administrators or connect strategies to observed practice. Fix that with two to three inline standard citations, sharpen the Wayground feature references from generic encouragement (\"makes it easier\") to one specific named capability with a concrete use case, and this article earns a clean PASS."
+}

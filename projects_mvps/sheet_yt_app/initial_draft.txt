@@ -1,0 +1,72 @@
+# Wayground Sheets & Distribution Manager
+
+Project structure and implementation notes for syncing internal resources with YouTube via Google Sheets.
+
+---
+
+## 1. Technical stack & dependencies
+
+Register a project in [Google Cloud Console](https://console.cloud.google.com/) and enable the **Sheets** and **YouTube Data** APIs.
+
+### Core dependencies (`requirements.txt`)
+
+| Package | Role |
+|--------|------|
+| **google-auth-oauthlib** | Google SSO / OAuth 2.0 flow |
+| **google-api-python-client** | Sheets and YouTube API access |
+| **pandas** | Moving data between your DB and sheet-shaped data |
+| **sqlalchemy** or **motor** | SQL (e.g. PostgreSQL) vs NoSQL (MongoDB) for the resource DB |
+| **python-dotenv** | `CLIENT_ID`, `CLIENT_SECRET`, and other secrets |
+
+---
+
+## 2. File structure
+
+Keep **fetching** (YouTube / internal DB) separate from **pushing** (Sheets / comments).
+
+```
+wayground-manager/
+├── .env                    # API keys, client secrets, scopes
+├── main.py                 # Entry point (FastAPI or Flask)
+├── auth.py                 # OAuth 2.0 flow & token management
+├── database/
+│   ├── models.py           # Internal resource schema
+│   └── db_client.py        # Connection to your resource DB
+├── services/
+│   ├── youtube_svc.py      # Playlist fetch & commenting
+│   ├── sheets_svc.py       # Spreadsheet create & format
+│   └── aggregator.py       # Merge DB data with YouTube data
+├── templates/              # UI (if you add a web frontend)
+└── requirements.txt
+```
+
+---
+
+## 3. Database & storage setup
+
+Use a local store to cache **job state**. YouTube quotas are tight—avoid redoing a full sync after a mid-run crash.
+
+| Component | Purpose | Suggested tool |
+|-----------|---------|----------------|
+| **User tokens** | Persist `refresh_token`s so users aren’t forced to log in every time | PostgreSQL or Redis |
+| **Resource DB** | Your internal resource database (per product requirements) | MongoDB (flexible metadata) |
+| **Sync logs** | Map `commentId` ↔ `videoId` to avoid duplicate pins | SQLite (simple) |
+
+---
+
+## 4. UI flow logic
+
+1. **Trigger** — User picks a YouTube playlist and an internal resource category.
+2. **Mapping** — `aggregator.py` aligns internal data (e.g. affiliate links, docs) with playlist items.
+3. **Sheet creation** — `sheets_svc.py` creates a sheet from a template and fills rows.
+4. **Distribution** — User reviews the sheet. On **Approve**, `youtube_svc.py` walks rows to:
+   - Update the video description
+   - Post a top-level comment
+   - Read the new `commentId` and call `setModerationStatus(status='published', moderatorStatus='pinned')`
+
+---
+
+## 5. Security & limitations
+
+- **Sensitive scopes** — The app may show **“Google hasn’t verified this app”** while unverified. For internal use, users can proceed via **Advanced**.
+- **Refresh tokens** — Use `access_type='offline'` in the OAuth flow, or access ends when the browser session ends.

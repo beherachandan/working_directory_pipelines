@@ -1,0 +1,27 @@
+{
+  "item_num": "60",
+  "name": "differentiated questions",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 5,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 4.2,
+  "verdict": "REVISE",
+  "top_issues": [
+    "Wayground value prop is too vague to score above a 2: 'Wayground lets you build adaptable, standards-aligned question sets with diverse formats and instant insights' names no specific feature and could describe any edtech tool. A teacher reading this has no idea what to click or how Wayground actually saves them time on differentiated questioning. Needs a specific feature callout, e.g., 'Wayground's Create with AI lets you generate tiered question ladders for a single standard in under 3 minutes.'",
+    "Grade-band specificity is thin outside of the one Grade 7 science example. The Bloom/DOK table uses states-of-matter and freezing-point questions (middle school chemistry) throughout, but a 3rd-grade ELA teacher or a 10th-grade history teacher has nothing to anchor to. Adding even one non-science, non-middle-school example would push this from a 3 to a 4."
+  ],
+  "positive_signals": [
+    "The Ask \u2192 Wait \u2192 Support \u2192 Probe \u2192 Lift table is genuinely classroom-ready \u2014 a teacher could laminate it and keep it on a podium. The combination of 'What You Do / What Students Do / Quick Supports' columns is exactly the kind of scannable reference busy teachers need during a planning period.",
+    "Term definitions are handled exceptionally well throughout: Bloom's, DOK, WIDA, wait time, and revoicing are all defined inline with no assumed expertise, and the explicit note that 'Bloom and DOK are not a one-to-one match' shows real pedagogical honesty that teachers will trust."
+  ],
+  "narrative": "This article is substantively strong \u2014 the routine table, Bloom/DOK ladder, and tiered sentence stems are genuinely print-and-use quality, and the consistent inline definitions make it accessible to novice and veteran teachers alike. The single criterion that triggers a REVISE verdict is the Wayground call-to-action: \"lets you build adaptable, standards-aligned question sets with diverse formats and instant insights\" is a marketing placeholder, not a feature description, and a skeptical teacher will ignore it entirely. Before publish, replace it with the name of a specific Wayground feature and a concrete time-or-effort claim (e.g., \"Wayground's Create with AI generates a ready-to-use tiered question ladder for any standard in about three minutes\"). A secondary fix worth making: add one example outside middle school science \u2014 even a single \"5th-grade ELA\" or \"9th-grade history\" question ladder entry \u2014 so the article signals relevance to the full K\u201312 audience it claims to serve."
+}

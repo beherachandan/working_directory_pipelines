@@ -1,0 +1,28 @@
+{
+  "item_num": "53",
+  "name": "differentiation in education",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 4.2,
+  "verdict": "PASS",
+  "top_issues": [
+    "AI tone creeps in at a few moments \u2014 'Differentiation works best when you maintain professional autonomy over classroom decisions' and 'Research confirms these frameworks work together' read like generated filler transitions rather than practitioner voice; a real teacher would phrase these more bluntly and specifically.",
+    "Standards alignment is implicit throughout but no specific framework is ever named in context \u2014 the article references 'grade-level standards' and 'standards-aligned learning goals' repeatedly without once citing Common Core (ELA/Math), NGSS (directly relevant to the photosynthesis example), or ISTE, which is a missed opportunity given how naturally NGSS fits the 7th-grade science framing.",
+    "Differentiation for gifted learners and ELL students is mentioned briefly ('extension tasks,' 'English learners') but neither group gets a concrete strategy of its own \u2014 the station rotation section gestures at extension without specifying what a gifted student actually does differently."
+  ],
+  "positive_signals": [
+    "The 'What differentiation is NOT' section is genuinely excellent \u2014 five myth-busters written in plain language that a skeptical or overwhelmed teacher would immediately trust and possibly share with colleagues.",
+    "The UDL/MTSS/Differentiation/Personalization comparison table is the clearest treatment of this oft-confused quartet I've seen in a blog format; the 'Who Drives Decisions' and 'When Applied' columns in particular are exactly what teachers need to stop conflating these terms."
+  ],
+  "narrative": "This article is classroom-ready in its bones \u2014 the station rotation setup, the single-rubric product choice model, and the myth-busting section are the kind of practical, reusable content that earns a bookmark in a teacher's browser. The teacher-agency framing is consistent and well-executed throughout, and Wayground is woven in as a time-saving tool rather than a replacement for professional judgment. Two things should be tightened before publish: swap the handful of generic AI-sounding transition sentences for more direct practitioner voice (the photosynthesis example proves the writer can do this \u2014 lean into that register more consistently), and add at least one explicit standards callout, ideally NGSS, since the 7th-grade science context practically invites it and its absence will feel like an oversight to any secondary science teacher reading this. Overall score of 4.2 earns a PASS, but the tone and standards gaps are worth a light revision pass rather than leaving them for readers to notice."
+}

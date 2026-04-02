@@ -1,0 +1,28 @@
+{
+  "item_num": "72",
+  "name": "types of scaffolding in education",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.7,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 \u2014 Standards alignment is conspicuously absent for an article about lesson design and differentiation. The article cites research but never names a single applicable framework (Common Core ELA standards on academic language, NGSS science practices, ISTE standards for student agency). For a piece aimed at K-12 teachers making instructional decisions, this is a real gap that undermines credibility with standards-conscious educators.",
+    "C10 \u2014 Wayground's value proposition is generic throughout. 'Wayground's standards-aligned library and built-in accommodations' appears twice but names no specific feature, workflow, or time saving that a teacher could act on. Contrast with what this could say: 'Wayground's Create with AI lets you generate a tiered version of any worksheet \u2014 sentence frames, vocabulary preview, and full text \u2014 in under two minutes.' The current framing reads like a banner ad, not a peer recommendation.",
+    "C2 \u2014 The opening two sentences ('Watch a student's face light up... That moment when...') are evocative but delay concrete value. A teacher scanning during a planning period needs the payoff sentence \u2014 'There are six types of scaffolding, and knowing when to fade each one is what separates effective differentiation from dependency' \u2014 to come first, not third."
+  ],
+  "positive_signals": [
+    "The comparison table is genuinely excellent \u2014 the 'Quick Check' and 'Fade-Out Move' columns are the kind of at-a-glance reference a teacher would photograph or print; this is the article's strongest asset.",
+    "The 'How to choose the right type' section with three diagnostic categories (understanding / execution / persistence) and observable student signals is highly practical and reflects real classroom decision-making, not theory."
+  ],
+  "narrative": "This article is substantively strong \u2014 the six-type framework is well-explained, the comparison table is genuinely photocopy-worthy, and the FAQ section answers the questions teachers actually ask mid-unit rather than in a graduate seminar. However, two criteria score at 2 and trigger a mandatory REVISE: Wayground's product mentions are too vague to be persuasive (\"standards-aligned library and built-in accommodations\" says nothing a competitor couldn't claim), and the article never names a single applicable standard or framework despite covering lesson design and differentiation for K-12 classrooms \u2014 a credibility gap that standards-accountable teachers will notice. Fix those two elements \u2014 add one named Wayground feature with a concrete time-saving use case, and anchor at least one section to a named framework (NGSS practices, Common Core ELA anchor standards, or ISTE) \u2014 and this article clears the bar comfortably."
+}

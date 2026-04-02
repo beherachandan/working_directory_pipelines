@@ -1,0 +1,28 @@
+{
+  "item_num": "58",
+  "name": "differentiated lesson plan examples",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 5,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 4.0,
+  "verdict": "PASS",
+  "top_issues": [
+    "Opening paragraph is throat-clearing: 'You know that moment when you scan your classroom and see 28 different learners with 28 different needs?' is a classic AI-flavored rhetorical opener that delays value. A teacher landing on this page wants examples immediately \u2014 lead with the comparison table or a one-sentence definition of what's inside.",
+    "Wayground's value proposition is too vague at the close: 'AI-powered planning tools can generate standards-aligned plans with automatic accommodations in minutes' reads like a generic category claim. The Key Takeaways mention 'Create with AI' specifically, but the CTA paragraph drops the feature name and reverts to generic language. Name the feature, show one concrete output (e.g., 'Wayground's Create with AI generates a tiered task set for your 6th-grade math objective in under 3 minutes').",
+    "Differentiation for ELL students and students with IEPs/504s is absent by name. The article references 'support-level' tasks and scaffolds throughout, but never explicitly addresses ELL learners, students with disabilities, or gifted students as distinct populations. Given the article's own NCES stat that 67% of classrooms span 3+ reading levels, a brief callout \u2014 even a single sentence per plan \u2014 for these groups would meaningfully raise inclusivity."
+  ],
+  "positive_signals": [
+    "Classroom practicality is genuinely excellent: all three lesson plans include minute-by-minute sequences, tiered task sheets with exact language differences across levels, observation checklists a teacher can print and carry, and data-driven progression rules with specific percentage thresholds (80%, 86%). This is rare and highly usable.",
+    "Standards alignment is a standout: NGSS MS-ESS2-2, CCSS.ELA-LITERACY.RI.7.8, and 6.RP.A.3 are all named, cited inline, and directly connected to lesson objectives \u2014 not appended as an afterthought."
+  ],
+  "narrative": "This article earns a PASS and is close to teacher-endorsed quality: the three lesson plans are genuinely classroom-ready, with minute-by-minute sequences, tiered task language written out in full, printable checklists, and named standards \u2014 the kind of specificity that saves a teacher real planning time. The two issues most worth fixing before publish are the rhetorical opener (cut it and lead with the definition or the comparison table) and the closing CTA, which loses the \"Create with AI\" feature name and falls back on generic \"AI-powered planning tools\" language that could describe any competitor. A third pass to add one explicit sentence per lesson plan addressing ELL or IEP students by name would push this from good to genuinely inclusive. Fix those three things and this is a strong publish."
+}

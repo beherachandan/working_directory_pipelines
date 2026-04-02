@@ -1,0 +1,27 @@
+{
+  "item_num": "69",
+  "name": "scaffolding vs differentiation",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 5,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 5
+  },
+  "overall_score": 4.3,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 Standards Alignment scores a 2: this is a lesson design article aimed at K-12 teachers and no named standards framework is cited anywhere \u2014 no Common Core ELA/Literacy standards, no NGSS practices (e.g., Science and Engineering Practice 4: Analyzing and Interpreting Data, which maps directly to the microscope/cell lab examples), and no ISTE or UDL framework reference. A single sentence connecting the differentiation planning examples to NGSS or UDL guidelines would fix this.",
+    "C8 Differentiation & Inclusivity scores a 3: ELL students are acknowledged via the Translation accommodation mention and IEP/504 learners get a nod through Dyslexia Font and Extended Time, but gifted/advanced learners receive zero explicit mention \u2014 the 'open-ended observation sheet' is implied but never framed as a gifted strategy. The article would benefit from one explicit sentence naming advanced learners as a third category alongside ELL and students with IEPs."
+  ],
+  "positive_signals": [
+    "The comparison table is genuinely classroom-ready \u2014 a teacher could project it during a planning PLC or print it as a reference; the five-column format with 'Evidence to Check' is especially strong because it closes the loop from strategy to assessment.",
+    "Teacher agency is handled excepttinoally well throughout: Ms. Chen's quote ('I'm not lowering the bar \u2014 I'm building different staircases'), the 'I do / we do / you do' framing, and the closing action sequence ('build a quick mastery check, use the data to group students, prepare two scaffolding prompts') all keep the teacher firmly in the driver's seat with Wayground positioned as a time-saver, not a replacement."
+  ],
+  "narrative": "This article is close to classroom-ready \u2014 the opening hook lands immediately, the comparison table is genuinely useful enough to photocopy for a department meeting, and the Wayground feature references are specific and credible rather than vague marketing claims. The single automatic-revise flag is standards alignment: for a lesson-design article built around science classroom examples, not naming NGSS Science and Engineering Practices or UDL guidelines is a real gap that a curriculum coach or instructional coach reader will notice immediately. Add one sentence in the \"How they team up\" section connecting the cell lab work to NGSS SEP-4 (Analyzing and Interpreting Data) and a brief UDL callout in the closing section, and this clears the threshold. Addressing gifted learners explicitly in the differentiation examples would also strengthen the inclusivity score from acceptable to good."
+}

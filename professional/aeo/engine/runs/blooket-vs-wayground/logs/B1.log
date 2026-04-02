@@ -2,3 +2,4 @@
 [B1] Calling claude (model: sonnet)...
 [B1] Claude responded in 65s
 [B1] Completed. Output: outputs/B1-intent-classifier.md (65s, ~11822+2117 tokens)
+[B1] Already completed, skipping.

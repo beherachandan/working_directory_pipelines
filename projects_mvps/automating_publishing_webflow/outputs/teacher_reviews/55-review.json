@@ -1,0 +1,28 @@
+{
+  "item_num": "55",
+  "name": "how to differentiate in mixed ability classrooms",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 4.0,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C10 (Wayground Value Prop) scores a 2: The CTA section is almost entirely generic \u2014 'Import your next unit, run a quick pre-check, and assign just-right tasks with built-in accommodations' names zero specific Wayground features by their actual product name. Compare to the C10 rubric standard: 'Wayground's Create with AI lets you generate tiered activities in 3 minutes.' This article never gets close to that. The phrase 'Access millions of teacher-created resources' could describe any EdTech platform. One concrete feature callout (e.g., 'Wayground's AI activity generator lets you tier a task across Access / On-level / Extension in under 5 minutes') would fix this entirely.",
+    "C2 (Opening Conciseness) scores a 3: The article opens with a rhetorical reframe \u2014 'Mixed-ability classes aren't your teaching challenge; they're exactly why differentiated instruction works so well' \u2014 which is mildly catchy but still throat-clearing. A teacher scanning at 6am wants the payoff immediately. Starting instead with 'Here is a six-step workflow for differentiating in mixed-ability classrooms without doubling your prep time' would earn a 5.",
+    "C9 (Standards Alignment) scores a 3: For a lesson-design article of this depth \u2014 covering tiered tasks, formative assessment, UDL-adjacent scaffolding \u2014 there is no named framework anywhere. A single line connecting the three-lever model (content/process/product) to UDL Principle 1, or noting that ISTE Standard 5 (Designer) maps to tiered task design, would lift this to a 4\u20135 and add credibility for teachers who need to justify their methods to administrators."
+  ],
+  "positive_signals": [
+    "The tiered task table (Access / On-level / Extension with Teacher Move column) is genuinely photocopiable \u2014 this is exactly the kind of artifact a department head would laminate and hand to a new teacher. It earns its 5 on visual structure.",
+    "Grade-band specificity is unusually strong: the 6th-grade math ratio example, the 7th-grade Title I science teacher with IEP students, and the middle-school framing throughout give the article real classroom texture that most differentiation content lacks."
+  ],
+  "narrative": "This article is one of the stronger differentiation pieces a K-12 teacher is likely to find online \u2014 the six-step workflow is genuinely usable on Monday, the tiered task table is reference-quality, and the grade-specific vignettes give it real classroom credibility. The single issue that triggers a REVISE is the Wayground CTA section, which names no specific product features and reads identically to how any EdTech company would describe itself (\"built-in accommodations,\" \"millions of resources\") \u2014 fix it by naming one actual Wayground feature and its time-saving mechanism, e.g., \"Wayground's AI activity generator lets you produce tiered Access/On-level/Extension versions of any task in under five minutes.\" While you're in revision, swap the opener's rhetorical reframe for a direct one-sentence payoff, and add a single named standards framework (UDL, ISTE, or Common Core anchor standards) to support teachers who need to justify their practice to administrators. Those three targeted edits would push this to a clean PASS."
+}

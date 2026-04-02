@@ -1,0 +1,136 @@
+{
+  "article_slug": "audit-differentiation",
+  "topic": "differentiation strategies for teachers",
+  "created_at": "2026-04-02T08:34:49Z",
+  "updated_at": "2026-04-02T08:40:32Z",
+  "current_stage": "A2",
+  "status": "running",
+  "dag_progress": {
+    "A1": {
+      "status": "completed",
+      "output_file": "outputs/A1-query-intelligence.md",
+      "started_at": "2026-04-02T08:34:49Z",
+      "completed_at": "2026-04-02T08:37:39Z",
+      "input_tokens": 3936,
+      "output_tokens": 4288
+    },
+    "A2": {
+      "status": "completed",
+      "output_file": "outputs/A2-competitive-intelligence.md",
+      "started_at": "2026-04-02T08:37:39Z",
+      "completed_at": "2026-04-02T08:40:32Z",
+      "input_tokens": 7859,
+      "output_tokens": 5918
+    },
+    "B1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "B2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "B3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "C1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "C2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "C3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "C4": {
+      "status": "pending",
+      "output_file": null
+    },
+    "C5": {
+      "status": "pending",
+      "output_file": null
+    },
+    "D1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "D2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "D3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "D4": {
+      "status": "pending",
+      "output_file": null
+    },
+    "E1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "E2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F4": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F5": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F6": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G2": {
+      "status": "pending",
+      "output_file": null
+    }
+  },
+  "gates": {
+    "D_gate": {
+      "decision": null,
+      "d1_scores": null,
+      "composite": null
+    },
+    "E_gate": {
+      "decision": null,
+      "feedback_file": null
+    }
+  },
+  "revisions": {
+    "count": 0,
+    "max": 2,
+    "history": []
+  },
+  "model_overrides": {},
+  "token_usage": {
+    "total_input": 11795,
+    "total_output": 10206,
+    "cost_estimate_usd": 0.188475
+  }
+}

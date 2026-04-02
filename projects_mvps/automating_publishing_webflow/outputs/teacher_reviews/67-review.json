@@ -1,0 +1,28 @@
+{
+  "item_num": "67",
+  "name": "differentiated instruction for special education",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.8,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 FAIL \u2014 Standards alignment is critically absent for an article explicitly about IEPs, IDEA compliance, and grade-level expectations. IDEA, FAPE, LRE, Common Core, and state access-point frameworks are all directly applicable here and never named. A special education article that discusses compliance, IEP documentation, and graduation pathways without citing IDEA, Section 504, or ESSA is a gap a district special ed coordinator would immediately notice.",
+    "C10 is vague at the feature level \u2014 Wayground is mentioned three times but the only near-specific claim ('built-in accommodations, read-aloud, enlarged text, translation') appears buried in the FAQ and reads like a generic feature list, not a demonstrated use case. The closing CTA ('comprehensive, standards-aligned resources and automatic accommodations') tells teachers nothing actionable. A line like 'Wayground's Create with AI lets you generate a tiered graphic organizer for a 4th-grade fractions lesson in under 3 minutes' would close this gap.",
+    "C5 grade-band specificity is thin for a topic this broad \u2014 '4th-grade co-teacher in Houston ISD' is the only concrete grade anchor in the entire article. A piece covering co-teaching, progress monitoring, assistive tech, and IEP compliance should include at least one secondary example (e.g., 'a 9th-grade ELA class with ELL students on IEPs') to signal usefulness beyond elementary math."
+  ],
+  "positive_signals": [
+    "The differentiation/accommodations/modifications/interventions comparison table is genuinely excellent \u2014 it includes compliance notes, frequency guidance ('specify daily, weekly rather than vague terms like as needed'), and a terminology disclaimer. This is the kind of resource a special ed coordinator would print for a staff PD session.",
+    "Classroom voice is strong and consistent \u2014 the Marcus/speech-to-text vignette, Ms. Chen's 18% score improvement, and Ms. Torres's quote all read like real practitioner evidence, not AI filler, and keep the teacher positioned as the decision-maker throughout."
+  ],
+  "narrative": "This article has real strengths that put it close to classroom-ready: the compliance-grade comparison table, the practitioner vignettes, and the clear term definitions make it genuinely useful for both general ed and special education teachers. However, it earns an automatic REVISE because C9 (Standards Alignment) scores a 2 \u2014 an article that explicitly discusses IEP compliance, FAPE, LRE implications, and graduation pathway impacts cannot omit IDEA, Section 504, or ESSA without undermining its credibility with the district-level educators it most needs to reach. The Wayground value proposition also needs a single concrete feature-plus-use-case example to replace the current generic CTA, and one additional grade-band anchor (middle or high school) would broaden the article's practical reach. Fix those three items and this becomes a strong PASS."
+}

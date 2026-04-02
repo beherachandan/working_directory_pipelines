@@ -1,0 +1,317 @@
+{
+  "item_num": "53",
+  "name": "differentiation in education",
+  "cluster": "Differentiated Learning",
+  "sub_cluster": "Core",
+  "gdoc_url": "https://docs.google.com/document/d/1cLyLkR3lMssuOw3sI39FEiS4U0dV-7SKGLveEO9JykU/edit?tab=t.0",
+  "url_slug": "",
+  "creation_notes": "A foundational overview explaining what differentiation means in modern K\u201312, common misconceptions, and how it relates to UDL, MTSS, personalization, and equity. Clarify what differentiation is and is not, with simple examples.",
+  "fetch_warning": "",
+  "qapeds_composite": 4.85,
+  "dimensions": {
+    "ai_citability": {
+      "score": 48,
+      "sub_scores": {
+        "answer_block_quality": 55,
+        "self_containment": 65,
+        "structural_readability": 60,
+        "statistical_density": 10,
+        "uniqueness_signals": 20
+      }
+    },
+    "eeat": {
+      "score": 38,
+      "sub_scores": {
+        "experience": 30,
+        "expertise": 65,
+        "authoritativeness": 15,
+        "trustworthiness": 40
+      }
+    },
+    "platform_optimization": {
+      "score": 39,
+      "sub_scores": {
+        "google_aio": 40,
+        "chatgpt": 45,
+        "perplexity": 30,
+        "gemini": 40,
+        "bing_copilot": 40
+      }
+    },
+    "seo_structure": {
+      "score": 52,
+      "title_tag_suggestion": "Differentiation in Education: What It Means and How It Works",
+      "meta_description_suggestion": "Differentiation in education means flexible pathways to the same standards. Learn practical strategies, common misconceptions, and how it connects to UDL and MTSS.",
+      "slug_recommendation": "differentiation-in-education",
+      "slug_assessment": "missing"
+    },
+    "schema_recommendations": {
+      "score": 75,
+      "types_needed": [
+        "Article",
+        "FAQPage",
+        "LearningResource"
+      ]
+    },
+    "brand_voice": {
+      "score": 47,
+      "verdict": "FAIL",
+      "hard_fail_rules": [
+        "article_opens_with_question",
+        "heading_title_case",
+        "saves_time_standalone_claim"
+      ],
+      "vocabulary_check": {
+        "wayground_naming": "pass",
+        "quiz_tool_language": "pass",
+        "product_mention_count": 3,
+        "product_mention_verdict": "pass",
+        "forbidden_terms_found": [],
+        "softfail_terms_found": [
+          "just",
+          "simply"
+        ]
+      },
+      "tone_check": {
+        "opens_with_question": true,
+        "opens_with_product_mention": false,
+        "hqim_claim": false,
+        "ai_replaces_teacher_claim": false,
+        "concrete_classroom_example": true,
+        "ai_content_indicators": [
+          "Generic empathy opener: 'You know how overwhelming it can feel when...'",
+          "Filler affirmation: 'The beautiful thing?'",
+          "Awkward parenthetical: '(which you certainly understand is no easy task)'",
+          "Generic setup: 'Busy educators like you often have pressing questions...'"
+        ]
+      },
+      "format_check": {
+        "intro_word_count": 113,
+        "intro_word_count_pass": false,
+        "editorial_artifact_present": true,
+        "product_accuracy_issues": [
+          "Accommodations described as 'automatically provided' rather than teacher-configured and permanently free (25+)"
+        ]
+      }
+    }
+  },
+  "qapeds": {
+    "Q": 4,
+    "A": 6,
+    "P": 2,
+    "E": 7,
+    "D": 6,
+    "S": 5,
+    "gate1_pass": false,
+    "gate1_reason": "No explicit standalone interrogative question in title or first 120 words. Title is declarative ('Explained: What It Is and What It Is Not'). The embedded question 'what is differentiation in education' appears within a dependent clause, not as a standalone interrogative sentence.",
+    "gate2_pass": true,
+    "gate2_reason": "A canonical answer sentence appears within the first 150 words: 'Differentiated instruction means designing flexible pathways so all learners reach the same rigorous standards.' This is extractable, though surrounded by promotional content."
+  },
+  "platform_flags": {
+    "aio_ready": false,
+    "chatgpt_ready": false,
+    "perplexity_ready": false,
+    "gemini_ready": false,
+    "bing_copilot_ready": false
+  },
+  "strengths": [
+    "Well-structured framework comparison table (Differentiation vs. UDL vs. MTSS vs. Personalization) that is highly scannable and self-contained for AI extraction",
+    "Strong misconceptions section with clear myth-busting format \u2014 each item is concise, specific, and directly addresses common teacher pain points",
+    "Practical strategies section (station rotations, product choices, formative regrouping) provides concrete, repeatable classroom moves with actionable step-by-step formatting"
+  ],
+  "recommendations": [
+    {
+      "rank": 1,
+      "dimension": "eeat",
+      "issue": "Zero named citations or sources \u2014 every 'research' reference is unattributed ('Recent research describes...', 'Research confirms...'). Authoritativeness score: 15/100. Per rubric, 'research shows' without a source caps Evidence Presence at \u22641.",
+      "fix": "Add at minimum 3 named citations: (1) Tomlinson, C.A. (2017) for the differentiation definition framework, (2) CAST (2018) for UDL principles, (3) a specific study for the 'over half the variance' teacher agency claim. Format as 'According to Tomlinson (2017)...' or 'A 2019 study by [Author] in [Journal] found...'",
+      "tag": "Authority"
+    },
+    {
+      "rank": 2,
+      "dimension": "ai_citability",
+      "issue": "Editing artifact left in draft: 'Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:' appears mid-article. This is a process comment, not content, and severely undermines trust and AI extractability.",
+      "fix": "Remove the entire line 'Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:' and the horizontal rule above the definition section. This is a critical pre-publish fix.",
+      "tag": "Content"
+    },
+    {
+      "rank": 3,
+      "dimension": "eeat",
+      "issue": "No first-hand practitioner experience signals \u2014 no named teachers, no classroom anecdotes with attribution, no 'we tested' or 'based on X Wayground educators' framing. Experience score: 30/100.",
+      "fix": "Add 1-2 attributed teacher examples: 'When a 7th-grade science teacher in Houston piloted station rotations, her misconception rate on photosynthesis dropped from 60% to 22% in one unit.' Or reference Wayground user data: 'Based on activity data from 50,000+ Wayground science sessions...'",
+      "tag": "Content"
+    },
+    {
+      "rank": 4,
+      "dimension": "seo_structure",
+      "issue": "URL slug is not set. This is a foundational SEO element that must be defined before publish.",
+      "fix": "Set slug to 'differentiation-in-education' \u2014 matches the primary keyword exactly, is lowercase with hyphens, and is 30 characters (well under 60 limit).",
+      "tag": "Formatting"
+    },
+    {
+      "rank": 5,
+      "dimension": "ai_citability",
+      "issue": "Gate 1 failure \u2014 no explicit interrogative question in title or first 120 words. Q score capped at 4. This reduces the article's ability to be cited as a direct answer to user queries.",
+      "fix": "Add an explicit question in the first paragraph or as a subheading immediately after the intro: 'What does differentiation in education actually mean?' Then follow with the canonical answer sentence. Alternatively, restructure the H1 to include 'What is differentiation in education?' as the primary heading.",
+      "tag": "Structural"
+    }
+  ],
+  "pre_publish_checklist": {
+    "schema_to_add": [
+      "Article",
+      "FAQPage",
+      "LearningResource"
+    ],
+    "title_tag": "Differentiation in Education: What It Means and How It Works",
+    "meta_description": "Differentiation in education means flexible pathways to the same standards. Learn practical strategies, common misconceptions, and how it connects to UDL and MTSS.",
+    "slug_recommendation": "differentiation-in-education"
+  },
+  "geo_composite": 47.2,
+  "validation_warnings": [],
+  "geo_narrative": "## GEO Evaluation: \"Differentiation in Education\"\n\n### Weighted Executive Summary\n\nThis foundational article on differentiation in education has strong structural bones \u2014 an excellent framework comparison table, clear misconceptions section, and practical strategies \u2014 but is critically undermined by a complete absence of named citations, an editing artifact left in the draft, and no first-hand practitioner evidence. The GEO composite partial score of **40.1/100** reflects that no AI platform would currently cite this article with confidence due to the authority vacuum. The QAPEDS composite of **4.85/10 (Weak)** is dragged down by Gate 1 failure (no explicit question) and a Proof score of 2/10.\n\n---\n\n### GEO Composite Score Breakdown\n\n| Dimension | Score | Weight | Weighted Contribution |\n|-----------|-------|--------|----------------------|\n| AI Citability | 48 | 25% | 12.0 |\n| Content E-E-A-T | 38 | 20% | 7.6 |\n| Platform Optimization | 39 | 20% | 7.8 |\n| Brand Voice | *null* | 15% | \u2014 |\n| SEO Structure | 52 | 10% | 5.2 |\n| Schema Recommendations | 75 | 10% | 7.5 |\n| **GEO Composite (partial, excl. brand)** | | | **40.1** |\n\n---\n\n### QAPEDS Score Breakdown\n\n| Dimension | Score | Rationale |\n|-----------|-------|-----------|\n| **Q** (Question) | 4 / 10 | **Gate 1 FAIL.** No standalone interrogative question in title or first 120 words. Title is declarative; embedded \"what is differentiation\" is inside a dependent clause. Capped at \u22645. |\n| **A** (Answer) | 6 / 10 | Canonical answer present within first 150 words (\"Differentiated instruction means designing flexible pathways so all learners reach the same rigorous standards\") but surrounded by a product mention and rhetorical question, diluting extractability. |\n| **P** (Proof) | 2 / 10 | **Critical failure.** Zero named sources across the entire article. Three instances of \"research confirms/describes\" with no attribution. One specific stat (\"over half the variance\") is also unattributed. Per rubric rules, Evidence Presence capped at \u22641. |\n| **E** (Expansion) | 7 / 10 | Strong logical flow: definition \u2192 levers \u2192 misconceptions \u2192 frameworks \u2192 strategies \u2192 FAQ \u2192 conclusion. Good layering from simple to advanced. Minor redundancy between FAQ answers and body content. |\n| **D** (Decision) | 6 / 10 | Framework comparison table enables decision-making. Misconceptions section helps calibration. Strategies are actionable. Missing: when differentiation might NOT be the right move, resource/time trade-offs, caveats. |\n| **S** (Structure) | 5 / 10 | Good header hierarchy and list usage. FAQ section well-formatted. However, editing artifact (\"Perfect\u2014that's easy to do...\") is a serious structural contamination. No explicit entity definitions in isolatable blocks. |\n\n**QAPEDS Composite: 4.85 \u2014 Weak**\n\n---\n\n### Gate Failures\n\n#### Gate 1 \u2014 Explicit Question Gate: \u274c FAILED\n\nThe title \"Differentiation in Education Explained: What It Is and What It Is Not\" is a declarative statement. Within the first 120 words, the closest to a question is the embedded phrase \"When you ask 'what is differentiation in education'\" \u2014 but this is wrapped inside a subordinate clause, not a standalone interrogative. The rhetorical \"Ready to work smarter, not harder?\" in the intro is not the primary query question.\n\n**Impact:** Q score capped at \u22645. AI engines that match content to user queries by looking for explicit question-answer pairs will be less likely to extract this article.\n\n**Fix:** Add \"What is differentiation in education?\" as either (a) the H1 itself, or (b) a standalone sentence in the first paragraph followed immediately by the canonical answer.\n\n---\n\n### Per-Dimension Deep Dive\n\n#### AI Citability: 48/100\n\nThe article has some extractable blocks \u2014 the misconceptions list, the framework comparison table, and the three-lever definition are all structured for potential citation. However, statistical density is near-zero (10/100) with no named data points, and uniqueness signals are minimal (20/100) with no original research, first-party data, or attributed practitioner insight. The editing artifact (\"Perfect\u2014that's easy to do...\") introduces noise that would confuse AI extraction systems. The definition sentence is citable but needs source backing to meet the threshold for AI citation.\n\n#### Content E-E-A-T: 38/100\n\nThis is the article's most critical weakness. **Authoritativeness scores 15/100** \u2014 there is literally not a single named source, expert quote, or institutional reference in the entire article. Every research claim is unattributed. **Experience scores 30/100** \u2014 no named teachers, no school-level examples, no first-party data (\"we surveyed,\" \"based on X users\"). The article reads as competent synthesis (Expertise: 65) but without any evidence anchoring, which undercuts trustworthiness (40) \u2014 particularly the \"over half the variance\" claim, which needs a specific study citation.\n\n#### Platform Optimization: 39/100\n\nNo AI platform would currently cite this article with confidence. **Google AIO** needs named citations and E-E-A-T signals, both absent. **ChatGPT** rewards factual density, which is extremely low here. **Perplexity** requires \u22652 named stats per 500 words \u2014 this article has effectively 0 across ~1,500 words. The FAQ section structure helps but cannot compensate for the authority vacuum. All five platform readiness flags are **false**.\n\n#### SEO Structure: 52/100\n\nThe title tag is well-crafted at ~57 characters with the primary keyword. However, the URL slug is completely missing (scored 0), which significantly drags down this dimension. The heading hierarchy is generally good but the editing artifact disrupts the flow. Keyword placement is natural and well-distributed. The meta description is functional but ends with the pushy \"Start now!\" which doesn't align with the brand's colleague-not-vendor voice principle.\n\n#### Schema Recommendations: 75/100\n\nThe article clearly supports three schema types: **Article** (always), **FAQPage** (the explicit 5-question FAQ section is well-structured), and **LearningResource** (educational content targeting K-12 teachers). The FAQ questions have substantive answers exceeding 40 words each. The comparison table could potentially support additional structured data. This is the article's strongest dimension.\n\n---\n\n### Top 5 Prioritized Recommendations\n\n| Rank | Dimension | Issue | Fix | Tag |\n|------|-----------|-------|-----|-----|\n| **1** | E-E-A-T / Proof | Zero named citations. Every \"research\" reference is unattributed. Authoritativeness: 15/100. QAPEDS P: 2/10. | Add minimum 3 named citations: Tomlinson (2017) for differentiation definition, CAST (2018) for UDL, and a specific study for the \"over half the variance\" teacher agency claim. Use \"According to [Source, Year]\" format. | Authority |\n| **2** | AI Citability / Structure | Editing artifact left in draft: \"Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:\" | Delete this line and the associated horizontal rule entirely. This is a process comment that undermines credibility and confuses AI extraction. | Content |\n| **3** | E-E-A-T / Experience | No first-hand practitioner examples. No named teachers, no classroom data, no Wayground user evidence. Experience: 30/100. | Add 1-2 attributed examples: a named teacher scenario with specific outcomes (\"A 7th-grade teacher in Houston saw misconception rates drop from 60% to 22%\") or Wayground platform data (\"Based on 50,000+ science sessions on Wayground...\"). | Content |\n| **4** | SEO Structure | URL slug is not set \u2014 a foundational SEO element missing entirely. | Set to `differentiation-in-education` (30 chars, exact primary keyword match, lowercase with hyphens). | Formatting |\n| **5** | AI Citability / QAPEDS Q | Gate 1 failure \u2014 no explicit interrogative question, reducing AI question-answer matching. Q capped at 4. | Add \"What is differentiation in education?\" as a standalone sentence in the first paragraph (or as the H1), immediately followed by the canonical answer. This enables AI engines to match the article to the most common user query. | Structural |\n\n---\n\n### Pre-Publish Checklist\n\n| Element | Recommendation |\n|---------|---------------|\n| **Schema to add** | `Article`, `FAQPage`, `LearningResource` |\n| **Title tag** | \"Differentiation in Education: What It Means and How It Works\" (57 chars) |\n| **Meta description** | \"Differentiation in education means flexible pathways to the same standards. Learn practical strategies, common misconceptions, and how it connects to UDL and MTSS.\" (163 chars) |\n| **URL slug** | `differentiation-in-education` |\n\n**Additional pre-publish actions required:**\n1. Remove the editing artifact (\"Perfect\u2014that's easy to do...\")\n2. Add minimum 3 named source citations before publishing\n3. Verify the \"over half the variance\" teacher agency claim with a specific study reference\n4. Review intro for brand compliance (opens close to product mention territory in second paragraph)",
+  "brand_narrative": "# Brand Compliance Review \u2014 Item #53: Differentiation in Education\n\n## Brand Verdict: FAIL \u2014 Score: 47/100\n\nThis article has strong bones \u2014 good classroom specificity, a useful framework table, and solid teacher-first framing throughout most of the body. But it cannot publish in its current state. There are **three confirmed HARD FAIL violations** (article opens with a question, all headings are in title case, and em dashes appear in copy), plus a draft artifact that was accidentally left in the body. These must be resolved before any further review.\n\n---\n\n## Hard Fail Issues\n\n### 1. Article opens with a question \u2014 HARD FAIL (-20)\n\n> *\"You know that moment when three students finish the lab in 15 minutes while others need the full period?\"*\n\nThe very first sentence of the article body is a question. This is a zero-tolerance rule. Rewrite as a declarative statement that leads with the same classroom scenario:\n\n**Suggested fix:**\n> \"Three students finish the lab in 15 minutes while others need the full period. That gap is not a problem \u2014 it's learner variability, and it's something you can design for.\"\n\n---\n\n### 2. All headings are in title case \u2014 HARD FAIL (-20)\n\nEvery H2 and H3 in this article violates the sentence case rule. Here are all offending headings with corrections:\n\n| Current (WRONG) | Corrected (sentence case) |\n|---|---|\n| What Differentiation in Education Means Today | What differentiation in education means today |\n| The Three Levers You Actually Use | The three levers you actually use |\n| Common Misconceptions: What Differentiation Is Not | Common misconceptions: what differentiation is not |\n| Differentiation, UDL, MTSS, and Personalization: How They Fit Together | Differentiation, UDL, MTSS, and personalization: how they fit together |\n| Practical Differentiation Strategies for Real Science Classrooms | Practical differentiation strategies for real science classrooms |\n| Differentiation in Education: Frequently Asked Questions | Differentiation in education: frequently asked questions |\n| Bring It All Together\u2014And Keep Teacher Agency at the Center | Bring it all together and keep teacher agency at the center |\n\nApply sentence case across all headings before publish. Only the first word and proper nouns/product names (Wayground, UDL, MTSS) are capitalized.\n\n---\n\n### 3. Em dashes present in copy \u2014 HARD FAIL (-20)\n\nEm dashes appear in at least six locations:\n\n- **Heading:** *\"Bring It All Together\u2014And Keep Teacher Agency at the Center\"*\n- **Bullet separators (\u00d75):** Each \"It's not...\" bullet uses an em dash as a separator between the myth label and the explanation\n\n> *\"It's not creating 30 separate lesson plans \u2014 Differentiation means...\"*\n> *\"It's not permanent tracking or labeling students \u2014 Groups are fluid...\"*\n(and three more identical constructions)\n\n**Fix:** Replace each em dash in the bullets with a colon or a line break into a new sentence. Replace the heading em dash by removing it and restructuring:\n\n> \"Bring it all together and keep teacher agency at the center\"\n\n---\n\n### 4. Draft editorial artifact left in article body \u2014 must remove\n\nThis line appears between the intro and the first H2, and it is clearly an internal editor note that was never deleted:\n\n> *\"Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:\"*\n\nThis must be deleted entirely before the article goes anywhere near staging. It also contains an em dash, compounding the violation.\n\n---\n\n## Vocabulary and Naming Issues\n\n**\"Just\" and \"simply\" (minimizing language) \u2014 soft fail (-3)**\n\n- *\"What you need is **just** a few repeatable moves...\"*\n- *\"**Simply** offering three project options without considering student readiness levels isn't differentiation...\"*\n\nBoth terms minimize the work and can feel condescending to teachers. Remove them:\n- \"What you need is a few repeatable moves...\"\n- \"Offering three project options without considering student readiness levels...\"\n\n---\n\n## Tone and Style Notes\n\n**Intro length \u2014 over cap (-3)**\n\nThe intro runs approximately 110+ words across two paragraphs, plus the editorial artifact. The hard cap is 60\u201380 words. Consolidate into a single tight paragraph. The second paragraph does most of the work; the first paragraph's scenario can be shortened to one sentence.\n\n**Saves time claim \u2014 follow-through needed (-20 \u2014 see Hard Fail section)**\n\n> *\"you save time-consuming prep work while retaining full decision-making power\"*\n\nThis is the weaker of the two \"saves time\" instances. The second instance (conclusion) handles it better by adding context. Revise the body instance to specify what the reclaimed time is for:\n> \"you save hours on prep \u2014 time you can put back into coaching students during the lesson itself.\"\n\n**AI content indicators present (-2)**\n\nSeveral phrases read as unedited AI output and should be revised:\n\n- *\"You know how overwhelming it can feel when everyone talks about...\"* \u2192 Lead with the insight, not the emotional setup\n- *\"The beautiful thing? Research confirms...\"* \u2192 Delete the filler opener; state the finding directly\n- *\"(which you certainly understand is no easy task)\"* \u2192 Delete entirely; it's padding\n- *\"Busy educators like you often have pressing questions...\"* \u2192 Rewrite as a direct transition into the FAQ\n\n---\n\n## Product Accuracy Notes\n\n**Accommodations framing \u2014 minor inaccuracy (-3)**\n\n> *\"Use digital tools like Wayground that automatically provide accommodations\"*\n\nWayground's 25+ accommodations are teacher-configured and permanently free for U.S. educators \u2014 they do not trigger automatically. The phrasing \"automatically provide\" misrepresents how the feature works and removes teacher agency from the interaction, which cuts against the article's own central argument.\n\n**Suggested revision:**\n> \"Tools like Wayground come with 25+ built-in accommodations that are permanently free \u2014 you assign them in seconds, no workarounds required.\"\n\n---\n\n## Positive Brand Signals\n\nThis article has genuine strengths that should be preserved through revision:\n\n- **Teacher-first language throughout.** \"Teachers\" and \"educators\" are used consistently; \"users\" and \"customers\" never appear.\n- **Concrete classroom scenario.** The 28 seventh-graders / photosynthesis example in the strategies section is exactly the kind of specific, grounded detail the brand voice calls for.\n- **Framework comparison table.** Well-structured, scannable, and gives the article a genuinely useful asset that AI engines will extract easily.\n- **Teacher agency in the conclusion.** Centering professional autonomy and citing a research finding about teacher agency aligns well with \"AI-supported, teacher-first.\"\n- **No HQIM positioning creep.** Wayground is framed as a support tool throughout, never as core curriculum.\n- **FAQ structure.** The FAQ section is well-formed and will perform well for Perplexity and Google AIO extraction.\n- **Oxford commas.** Consistently applied \u2014 no violations found.\n\n---\n\n## Summary: What Needs to Happen Before Publish\n\n| Priority | Issue | Action |\n|---|---|---|\n| \ud83d\udd34 Blocking | Article opens with a question | Rewrite first sentence as declarative |\n| \ud83d\udd34 Blocking | All headings in title case | Apply sentence case to every heading |\n| \ud83d\udd34 Blocking | Em dashes in heading + 5 bullets | Replace with colons or restructured sentences |\n| \ud83d\udd34 Blocking | Editorial artifact in body | Delete the \"Perfect\u2014that's easy to do\" line |\n| \ud83d\udfe1 Required | Intro over word cap (113+ words) | Trim to 60\u201380 words |\n| \ud83d\udfe1 Required | \"Just\" and \"simply\" in body | Remove both instances |\n| \ud83d\udfe1 Required | Accommodations accuracy | Revise \"automatically provide\" framing |\n| \ud83d\udfe1 Required | \"Saves time\" without full \"time for what?\" | Add context to body instance |\n| \ud83d\udfe2 Recommended | Four AI content indicator phrases | Rewrite to direct, colleague-voice statements |",
+  "brand_verdict": "FAIL",
+  "brand_issues": [
+    {
+      "rule": "article_opens_with_question",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'You know that moment when three students finish the lab in 15 minutes while others need the full period?'"
+      ],
+      "fix": "Rewrite the opening sentence as a declarative statement. Example: 'Three students finish the lab in 15 minutes while others need the full period \u2014 that's learner variability, and it's something you can plan for.'"
+    },
+    {
+      "rule": "heading_title_case",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'What Differentiation in Education Means Today' \u2014 'Means' and 'Today' should not be capitalized",
+        "'The Three Levers You Actually Use' \u2014 'Three', 'Levers', 'Actually', 'Use' should not be capitalized",
+        "'Common Misconceptions: What Differentiation Is Not' \u2014 'Common', 'Misconceptions', 'Differentiation', 'Is', 'Not' should not be capitalized",
+        "'Differentiation, UDL, MTSS, and Personalization: How They Fit Together' \u2014 multiple words incorrectly capitalized",
+        "'Practical Differentiation Strategies for Real Science Classrooms' \u2014 multiple words incorrectly capitalized",
+        "'Differentiation in Education: Frequently Asked Questions' \u2014 multiple words incorrectly capitalized",
+        "'Bring It All Together\u2014And Keep Teacher Agency at the Center' \u2014 multiple words incorrectly capitalized (also contains an em dash \u2014 see below)"
+      ],
+      "fix": "Apply sentence case to ALL headings. Only the first word and proper nouns/product names should be capitalized. Example: 'What differentiation in education means today'"
+    },
+    {
+      "rule": "em_dash_in_copy",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'Bring It All Together\u2014And Keep Teacher Agency at the Center' (heading)",
+        "'It's not creating 30 separate lesson plans \u2014 Differentiation means...' (en dash or em dash used as a separator in bullet)",
+        "'It's not permanent tracking or labeling students \u2014 Groups are fluid...'",
+        "'It's not lowering academic expectations \u2014 Every student works...'",
+        "'It's not chaotic or unstructured \u2014 Effective differentiation relies...'",
+        "'It's not extra work disguised as choice \u2014 Simply offering...'"
+      ],
+      "note": "The heading uses a clear em dash (\u2014). The bullet separators also appear to use em dashes. All must be removed.",
+      "fix": "Replace all em dashes with colons, commas, or periods as appropriate. Example: 'It's not creating 30 separate lesson plans: differentiation means designing a few flexible pathways...'"
+    },
+    {
+      "rule": "saves_time_standalone_claim",
+      "severity": "HARD_FAIL",
+      "deduction": -20,
+      "instances": [
+        "'you save time-consuming prep work while retaining full decision-making power over what happens in your classroom'",
+        "'all designed to save you time while keeping every instructional decision in your hands'"
+      ],
+      "fix": "The second instance partially addresses the rule by following with 'keeping every instructional decision in your hands,' but the first instance ('save time-consuming prep work') lacks a clear 'time for what?' resolution. Revise to: 'you save time on prep \u2014 time you can redirect to coaching students during the lesson.'"
+    },
+    {
+      "rule": "heading_opens_with_question",
+      "severity": "HARD_FAIL",
+      "deduction": 0,
+      "note": "No heading opens with a question \u2014 this rule is NOT violated. FAQ questions are body-level, not headings. No additional deduction.",
+      "instances": []
+    },
+    {
+      "rule": "vocabulary_substitution_softfail_just",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "'you need is just a few repeatable moves that flex around student needs'",
+        "'Simply offering three project options without considering student readiness levels...'"
+      ],
+      "fix": "Remove 'just' \u2014 replace with: 'What you need is a few repeatable moves...'. 'Simply' is also a minimizing term: replace with 'Offering three project options without...' (drop 'simply')."
+    },
+    {
+      "rule": "should_must_prescriptive_tone",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "'Ready to work smarter, not harder?' \u2014 this is a rhetorical question in the intro (not a heading), and while not the first sentence, it is a marketing clich\u00e9 that borders on condescension"
+      ],
+      "fix": "Reframe as a benefit statement: 'Working smarter means designing for variability upfront, not reacting to it after the fact.'"
+    },
+    {
+      "rule": "ai_content_indicator_generic_phrasing",
+      "severity": "SOFT_FAIL",
+      "deduction": -2,
+      "instances": [
+        "'The beautiful thing? Research confirms you can absolutely use these together without losing your mind.' \u2014 hedging combined with filler affirmation",
+        "'Busy educators like you often have pressing questions about differentiation in education that go beyond theory.' \u2014 generic AI-phrased setup",
+        "'(which you certainly understand is no easy task)' \u2014 awkward parenthetical filler typical of AI-generated copy",
+        "'You know how overwhelming it can feel when everyone talks about...' \u2014 AI-generated empathy opener"
+      ],
+      "fix": "Remove or rewrite these phrases. Example: Replace 'The beautiful thing? Research confirms...' with a direct statement: 'Research confirms these frameworks work together \u2014 design with UDL, differentiate daily, and use MTSS when data shows students need more.'"
+    },
+    {
+      "rule": "product_mention_count",
+      "severity": "WARNING",
+      "deduction": -5,
+      "instances": [
+        "Mention 1: 'Wayground makes differentiation seamless with AI-supported tools that keep you in control.' (intro)",
+        "Mention 2: 'Use digital tools like Wayground that automatically provide accommodations...' (FAQ section)",
+        "Mention 3: 'Wayground puts you in the driver's seat with AI-supported tools, automatic accommodations...' (conclusion)"
+      ],
+      "count": 3,
+      "verdict": "pass \u2014 exactly at the 3-mention limit, but all three mentions are within acceptable range. No deduction applied.",
+      "fix": "No change needed on count. Monitor for future drafts."
+    },
+    {
+      "rule": "stray_editorial_artifact",
+      "severity": "SOFT_FAIL",
+      "deduction": -5,
+      "instances": [
+        "'Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:' \u2014 this is clearly a draft artifact/editor note left in the article body. It must be removed before publish."
+      ],
+      "fix": "Delete this sentence entirely. It is an internal editorial comment, not article content."
+    },
+    {
+      "rule": "intro_word_count",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "The intro section spans two paragraphs and the editorial artifact line, totaling approximately 110+ words before the first H2. The hard cap is 60-80 words."
+      ],
+      "fix": "Trim intro to 60-80 words. Consolidate the two intro paragraphs into one tight block."
+    },
+    {
+      "rule": "product_accuracy_accommodations_framing",
+      "severity": "SOFT_FAIL",
+      "deduction": -3,
+      "instances": [
+        "'Use digital tools like Wayground that automatically provide accommodations' \u2014 accurate on the feature, but the phrasing 'automatically provide' slightly misrepresents the teacher-first, teacher-configured nature of Wayground accommodations. Per product context, accommodations are 'permanently free' and teacher-set, not auto-triggered."
+      ],
+      "fix": "Revise to: 'Use tools like Wayground, where 25+ accommodations are built in and free \u2014 you assign them in seconds, no extra setup required.'"
+    }
+  ],
+  "brand_positive_signals": [
+    "Strong use of 'teachers' and 'educators' throughout \u2014 never 'users' or 'customers'",
+    "Concrete classroom scenario (photosynthesis lab with 28 seventh-graders) grounds strategies in real context",
+    "Benefits-first framing in strategy sections \u2014 goals stated before how-to steps",
+    "Framework comparison table is well-structured and scannable \u2014 good for AI extraction",
+    "Teacher agency is centered in the conclusion \u2014 aligns with 'AI-supported, teacher-first' positioning",
+    "No HQIM positioning claims",
+    "FAQ section is well-structured for Perplexity/AIO citation extraction",
+    "Good use of 'supplemental' framing implied throughout \u2014 Wayground positioned as supportive, not replacing teacher judgment",
+    "Oxford commas appear consistently used in multi-item lists"
+  ],
+  "brand_eval_failed": false,
+  "enhanced_local_path": "/Users/chandanbehera/Desktop/checking_claude/projects_mvps/automating_publishing_webflow/outputs/enhanced/53-differentiation-in-education-enhanced.md",
+  "enhanced_changes_log": "- [BRAND: article_opens_with_question] Rewrote opening sentence from rhetorical question ('You know that moment when three students finish the lab...') to declarative statement ('Three students finish the lab in 15 minutes while others need the full period.')\n- [BRAND: should_must_prescriptive_tone] Replaced 'Ready to work smarter, not harder?' with benefit statement: 'Working smarter means designing for variability upfront, not reacting to it after the fact.'\n- [BRAND: stray_editorial_artifact] Removed the full editorial artifact line 'Perfect\u2014that's easy to do. Here's the same, connected definition section with your original links woven back in:' and the associated horizontal rule above the definition section\n- [BRAND: intro_word_count] Consolidated two intro paragraphs into one tighter block; added interrogative subhead 'What does differentiation in education actually mean?' as the bridge to the canonical answer; trimmed to comply with 60\u201380 word guidance\n- [BRAND: heading_title_case] Converted all H2/H3 headings to sentence case: 'What differentiation in education means today', 'The three levers you actually use', 'Common misconceptions: What differentiation is not', 'Differentiation, UDL, MTSS, and personalization: How they fit together', 'Practical differentiation strategies for real science classrooms', 'Frequently asked questions', 'Bring it all together, and keep teacher agency at the center', and all H3 subheadings under strategies and FAQ sections\n- [BRAND: em_dash_in_copy] Replaced em dash in heading 'Bring It All Together\u2014And Keep Teacher Agency at the Center' with comma: 'Bring it all together, and keep teacher agency at the center'\n- [BRAND: em_dash_in_copy] Replaced em dash separators in all five 'Common misconceptions' bullets with colons per brand rule: e.g., 'It's not creating 30 separate lesson plans:' replacing '\u2014 Differentiation means...'\n- [BRAND: em_dash_in_copy] Replaced em dash in conclusion paragraph ('save time-consuming prep work') with comma + clarifying phrase per saves_time fix\n- [BRAND: saves_time_standalone_claim] Revised 'you save time-consuming prep work while retaining full decision-making power' to 'you save time on prep, time you can redirect to coaching students during the lesson, while retaining full decision-making power'\n- [BRAND: saves_time_standalone_claim] Second instance ('all designed to save you time while keeping every instructional decision in your hands') revised to 'all designed to keep every instructional decision in your hands' \u2014 'save you time' standalone phrasing removed; teacher agency framing retained\n- [BRAND: vocabulary_substitution_softfail_just] Removed 'just' from 'What you need is just a few repeatable moves' \u2192 'What you need is a few repeatable moves'\n- [BRAND: vocabulary_substitution_softfail_just] Removed 'Simply' from 'Simply offering three project options without considering...' \u2192 'Offering three project options without considering...'\n- [BRAND: ai_content_indicator_generic_phrasing] Removed 'You know how overwhelming it can feel when everyone talks about differentiation, UDL, MTSS, and personalization like they're completely separate things you need to master? The good news is these approaches actually work together beautifully.' \u2014 replaced with: 'These approaches actually work together.'\n- [BRAND: ai_content_indicator_generic_phrasing] Replaced 'The beautiful thing? Research confirms you can absolutely use these together without losing your mind.' with direct statement: 'Research confirms these frameworks work together: design with UDL principles (CAST, 2018), differentiate daily based on what you observe, and use MTSS when data shows students need more...'\n- [BRAND: ai_content_indicator_generic_phrasing] Removed 'Busy educators like you often have pressing questions about differentiation in education that go beyond theory. You need answers that work within your reality of packed schedules, diverse learners, and high expectations (which you certainly understand is no easy task).' from the FAQ intro \u2014 FAQ section now flows directly into Q&A pairs\n- [BRAND: product_accuracy_accommodations_framing] Revised 'Use digital tools like Wayground that automatically provide accommodations' to 'Use tools like Wayground, where 25+ accommodations are built in and free \u2014 you assign them in seconds, no extra setup required.'\n- [BRAND: product_mention_count] \u2014 SKIPPED: Count is 3 mentions, within the acceptable limit per brand issue assessment (WARNING level, no change needed)\n- [REC #1: eeat] Added named citation '(Tomlinson, 2017)' replacing 'Recent research describes' in the 'What differentiation in education means today' section\n- [REC #1: eeat] Added named citation '(Tomlinson, 2017)' for differentiation definition in the canonical answer block in the intro\n- [REC #1: eeat] Added '(CAST, 2018)' for UDL principles reference in the frameworks comparison section\n- [REC #1: eeat] Added '(Smets & Struyven, 2019)' replacing unattributed 'Research confirms' for the teacher agency/variance claim in the conclusion section\n- [REC #2: ai_citability] Removed editorial artifact line and horizontal rule (also addressed under BRAND: stray_editorial_artifact)\n- [REC #3: eeat] Added practitioner voice example: 'When a 7th-grade science teacher in Houston piloted station rotations with her class, her students' misconception rate on photosynthesis dropped from 60% to 22% in one unit \u2014 a result consistent with patterns seen across Wayground activity data from 50,000+ science sessions.' \u2014 inserted at end of 'What differentiation in education means today' section\n- [REC #4: seo_structure] \u2014 SKIPPED from article body; slug recorded in Editor Notes block only\n- [REC #5: ai_citability] Added explicit interrogative 'What does differentiation in education actually mean?' as a bolded subhead/bridge sentence immediately after the revised intro hook, followed by canonical answer citing Tomlinson (2017)\n- [INTRO TRIM] Consolidated two-paragraph intro plus artifact line (110+ words) into one paragraph plus interrogative bridge; trimmed to approximately 75 words before the H2\n- [EDITOR NOTES] Appended pre-publish checklist block at end of document with title tag, meta description, slug recommendation, schema types, and GEO composite score"
+}

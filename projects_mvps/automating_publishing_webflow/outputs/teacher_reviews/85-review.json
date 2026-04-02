@@ -1,0 +1,28 @@
+{
+  "item_num": "85",
+  "name": "how to engage students in active learning",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.9,
+  "verdict": "PASS",
+  "top_issues": [
+    "Opening paragraph undercuts itself with a contradictory two-sentence sequence: 'Active learning can improve achievement and help narrow equity gaps' sits orphaned between two disconnected thoughts, making the hook feel like placeholder copy rather than a strong entry point. A teacher skimming this during planning would likely skip to Step 1.",
+    "Wayground mentions are consistently vague \u2014 'Wayground can help you build quick pulse checks,' 'Wayground's differentiated activity options make it easier' \u2014 none of these name a specific feature (e.g., Create with AI, a quiz builder, an auto-differentiation tool). Per C10, this reads as generic marketing rather than a reason to click or try the platform.",
+    "A few AI-ish constructions persist in the body \u2014 'The good news is that you do not need to redesign everything at once' and 'Meet diverse learner needs in a single class period can feel overwhelming' echo the hedging, reassuring tone common in generated content. These won't fail the article, but a quick edit to more direct teacher voice would strengthen C3."
+  ],
+  "positive_signals": [
+    "The 4-8-20-8-4 lesson structure is a genuinely useful, named framework that a teacher can apply on Monday without additional research \u2014 exactly the kind of specific, low-prep tool that earns a top C1 score.",
+    "Grade-band anchoring is excellent throughout: '6th-grade science lab,' '9th-grade ELA,' '4th-grade math,' '7th-grade science teacher at a Title I school in Texas' \u2014 these specifics make the article feel field-tested rather than theoretical."
+  ],
+  "narrative": "This article earns a PASS and is close to classroom-ready: the 4-8-20-8-4 structure, the group roles table, and the consistent grade-band examples give it real instructional substance that a teacher can act on immediately. The two areas that need a targeted edit before publish are the opening paragraph \u2014 which currently reads like three disconnected sentences rather than a compelling hook \u2014 and the Wayground callouts, which mention the platform four times without once naming a specific feature, leaving a teacher no clearer on what to actually do with it. Tightening the intro to lead with the Freeman (2014) failure-rate stat and replacing at least one Wayground mention with a named feature and a concrete use case (e.g., \"Wayground's quiz builder lets you push a 3-question pulse check to every student in under two minutes\") would push this from a solid 3.9 to a genuinely teacher-endorsed piece."
+}

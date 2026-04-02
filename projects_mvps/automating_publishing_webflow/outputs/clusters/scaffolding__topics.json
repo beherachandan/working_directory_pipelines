@@ -1,0 +1,119 @@
+{
+  "cluster": "Scaffolding",
+  "sub_cluster": "Topics",
+  "article_count": 2,
+  "avg_geo_composite": 48.4,
+  "avg_qapeds_composite": 4.3,
+  "dimension_averages": {
+    "ai_citability": 45.5,
+    "eeat": 38.0,
+    "platform_optimization": 39.5,
+    "brand_voice": 59.0,
+    "seo_structure": 56.5,
+    "schema_recommendations": 80.0
+  },
+  "weakest_dimension": "eeat",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 0,
+    "aio_ready_pct": 0,
+    "chatgpt_ready_count": 0,
+    "chatgpt_ready_pct": 0,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0,
+    "gemini_ready_count": 0,
+    "gemini_ready_pct": 0,
+    "bing_copilot_ready_count": 0,
+    "bing_copilot_ready_pct": 0
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 1,
+    "unknown_count": 1,
+    "common_issues": [
+      "brand_voice_below_threshold",
+      "brand_review_incomplete"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 'research shows' and 'research has found' used multiple times across both articles without any named source, year, or institution",
+      "article_count": 2,
+      "dimension": "eeat",
+      "impact": "Directly suppresses E-E-A-T Authoritativeness and Trustworthiness sub-scores. Caps QAPEDS P (Proof) Evidence Presence at \u22641. Blocks AIO, ChatGPT, Perplexity, Gemini, and Bing Copilot readiness across both articles."
+    },
+    {
+      "pattern": "No direct-answer block in the first 150 words \u2014 both articles fail the QAPEDS Direct Answer Gate, with intros leading via narrative or non-extractable framing",
+      "article_count": 2,
+      "dimension": "ai_citability",
+      "impact": "Both articles fail the QAPEDS Gate 2 (A score capped at \u22645). AI systems cannot extract a canonical answer for the primary query. Zero platform readiness across both articles."
+    },
+    {
+      "pattern": "No first-hand practitioner experience signals \u2014 no named teachers, schools, classroom scenarios, or 'we tested' / 'based on X users' evidence",
+      "article_count": 2,
+      "dimension": "eeat",
+      "impact": "E-E-A-T Experience sub-score near floor for both articles. Without practitioner grounding, AI systems deprioritize content as non-authoritative. Reduces Wayground credibility as a teacher-first platform."
+    },
+    {
+      "pattern": "Zero quantitative data \u2014 no percentages, effect sizes, study sample sizes, or statistics of any kind across either article",
+      "article_count": 2,
+      "dimension": "ai_citability",
+      "impact": "Statistical Density sub-component scored at or near floor (15/100 confirmed for item 78; implied for item 79). GEO research shows statistics increase AI citation likelihood by +33%."
+    },
+    {
+      "pattern": "No FAQ-structured sections \u2014 neither article contains Q&A blocks that would enable FAQPage schema or Perplexity extraction",
+      "article_count": 2,
+      "dimension": "platform_optimization",
+      "impact": "Perplexity readiness is 0% across the cluster. FAQPage schema cannot be implemented without structural FAQ content. A key AI citation channel is entirely closed."
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation and authority vacuum",
+      "fix": "Replace every instance of 'research shows,' 'studies suggest,' and 'research has found' with named citations. Minimum 3 named sources per article with year. For early childhood: Vygotsky (1978), NAEYC (2022), Wood, Bruner & Ross (1976). For language learning: Krashen (1982), Cummins (2000), WIDA Consortium data. Format as: 'According to [Source, Year]...' \u2014 this is non-negotiable for AI citability and E-E-A-T.",
+      "applies_to": "Both articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 2,
+      "issue": "Both articles fail the QAPEDS Direct Answer Gate",
+      "fix": "Rewrite the intro of each article to open with a 1-3 sentence direct-answer block (40-60 words) within the first 150 words. The answer must be structurally isolatable \u2014 not buried in narrative. Example for item 78: 'Scaffolding in early childhood education means [definition]. Effective scaffolding strategies include [X, Y, Z]. Research shows children who receive scaffolded instruction [outcome].' This single change unlocks all five platform readiness flags.",
+      "applies_to": "Both articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 3,
+      "issue": "Zero quantitative evidence across the entire cluster",
+      "fix": "Add a minimum of 3 specific data points per article. Acceptable forms: effect sizes from peer-reviewed studies, percentage outcomes from named research, grade-level reading gain statistics, ELL proficiency data. Avoid fabricating \u2014 pull from NAEYC, WIDA, What Works Clearinghouse, or RAND Education. A single named statistic ('Students who received scaffolded reading instruction gained X months of growth per year, according to WWC, 2022') increases AI citation likelihood by ~33% per GEO research.",
+      "applies_to": "Both articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 4,
+      "issue": "No practitioner experience signals \u2014 E-E-A-T Experience sub-score near floor",
+      "fix": "Add at least one named classroom scenario or practitioner example per article. Format: 'Ms. [Name], a kindergarten teacher in [City], uses [strategy] to...' or reference Wayground's teacher network data ('Based on feedback from Wayground educators...'). For item 79 (language learning), include an ELL teacher or multilingual classroom scenario. This is the fastest E-E-A-T Experience lift available without structural rewrites.",
+      "applies_to": "Both articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "No FAQ sections \u2014 Perplexity readiness is 0% and FAQPage schema is blocked",
+      "fix": "Add a 'Frequently asked questions' section to each article with 4-5 Q&A pairs. H3 question headings followed by 40-60 word answers. This enables FAQPage schema (both articles already score 80/100 on Schema Recommendations, indicating schema infrastructure is otherwise ready), and opens the Perplexity citation channel. Example questions for item 78: 'What is scaffolding in early childhood education?' / 'How does scaffolding differ from differentiation for young learners?'",
+      "applies_to": "Both articles",
+      "dimension": "platform_optimization"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "78",
+    "name": "scaffolding in early childhood education",
+    "geo_composite": 50.7
+  },
+  "weakest_article": {
+    "item_num": "79",
+    "name": "scaffolding language learning",
+    "geo_composite": 46.1
+  },
+  "narrative": "# Cluster Synthesis: Scaffolding / Topics\n\n## Cluster Overview\n\nThe Scaffolding / Topics sub-cluster (2 articles) is the lowest-performing group evaluated to date, with an average GEO Composite of **48.4/100** and an average QAPEDS Composite of **4.3/10** \u2014 both well below publishable thresholds. Both articles fail every platform readiness flag (AIO, ChatGPT, Perplexity, Gemini, Bing Copilot), and neither passes brand review. The content is structurally incomplete for AI citation environments and requires substantive rewrites \u2014 not light edits \u2014 before publication.\n\n---\n\n## Score Summary Table\n\n| Dimension | Cluster Average | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 45.5 | 70 | -24.5 |\n| E-E-A-T | 38.0 | 70 | -32.0 |\n| Platform Optimization | 39.5 | 70 | -30.5 |\n| Brand Voice | 59.0* | 70 | -11.0 |\n| SEO Structure | 56.5 | 70 | -13.5 |\n| Schema Recommendations | **80.0** | 70 | +10.0 |\n| **GEO Composite** | **48.4** | 70 | **-21.6** |\n\n*Brand Voice average based on item 78 only (item 79 brand review incomplete \u2014 scored UNKNOWN).\n\nSchema Recommendations is the only dimension at or above target. Every other dimension is below 70, with E-E-A-T and Platform Optimization in critical-failure territory.\n\n---\n\n## Top Recurring Issues\n\n### 1. Complete citation vacuum (both articles)\nBoth articles rely entirely on unattributed phrases \u2014 \"research shows,\" \"research has found,\" \"studies suggest\" \u2014 without a single named source, institution, or year anywhere in the body. This is the single most damaging pattern in the cluster. Under QAPEDS rules, unnamed \"research shows\" caps the Proof/Evidence Presence score at \u22641/10. Under GEO rules, it suppresses AI Citability (Statistical Density near floor) and collapses E-E-A-T Authoritativeness and Trustworthiness simultaneously. No AI system will cite content it cannot trace to a credible source.\n\n### 2. Both articles fail the QAPEDS Direct Answer Gate (both articles)\nNeither article places a canonical, extractable answer in the first 150 words. Item 78 opens with a narrative anecdote; item 79 opens with framing that does not directly answer its title query. This means the QAPEDS A-score is capped at \u22645 for both articles, and AI systems encountering either article cannot identify a clear snippet to extract. This single structural failure is sufficient to explain why every platform readiness flag is false across the cluster.\n\n### 3. No practitioner experience signals and no quantitative data (both articles)\nNeither article contains a named teacher, a specific school scenario, or a single data point \u2014 no percentages, no effect sizes, no research statistics. E-E-A-T Experience is near floor for both. Per GEO research (arXiv:2311.09735), statistics increase AI citation rates by +33% and quotations by +41%. The cluster is currently contributing none of these signals. This is not an incremental gap \u2014 it is a structural content deficit.\n\n---\n\n## Platform Readiness\n\n| Platform | Ready Count | Ready % |\n|---|---|---|\n| Google AIO | 0 of 2 | 0% |\n| ChatGPT | 0 of 2 | 0% |\n| Perplexity | 0 of 2 | 0% |\n| Gemini | 0 of 2 | 0% |\n| Bing Copilot | 0 of 2 | 0% |\n\n**Cluster platform readiness: 0% across all five platforms.**\n\nThis is a hard floor outcome. The three flags most commonly triggered in isolation \u2014 `aio_ready` (requires named citation + direct answer block + structured headings), `chatgpt_ready` (requires direct answer to title query + factual density), and `perplexity_ready` (requires FAQ sections + named stats) \u2014 each demand at least one of the missing elements: citations, direct answer blocks, or FAQ structure. Because all three are absent from both articles, no platform flag can resolve independently. Fixing the citation vacuum and the direct-answer structure (Recommendations 1 and 2) will unlock multiple platform flags simultaneously.\n\n---\n\n## Brand Compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | 0 |\n| WARN | 0 |\n| FAIL | 1 |\n| UNKNOWN | 1 |\n\nItem 78 is a confirmed brand FAIL with a Brand Voice score of 59/100. Item 79's brand review is incomplete (UNKNOWN \u2014 score null). Neither article is cleared for publication on brand grounds alone. The most common identifiable brand issue across the cluster is Brand Voice falling below threshold \u2014 the content does not yet reflect the \"tech coach aficionado\" tone described in the Wayground brand guide. Item 79 requires a full brand review before any publish decision can be made.\n\n---\n\n## Cluster-Level Recommendations\n\n### 1. Eliminate every unattributed claim \u2014 replace with named citations\nThis is the highest-leverage action in the cluster. Every \"research shows\" and \"studies suggest\" must be replaced with a named source and year before any other optimization is attempted. Suggested sources by article:\n\n- **Item 78 (early childhood):** Vygotsky (1978) *Mind in Society*, Wood, Bruner & Ross (1976) scaffolding framework, NAEYC (2022) developmentally appropriate practice guidelines, What Works Clearinghouse early childhood findings.\n- **Item 79 (language learning):** Krashen (1982) input hypothesis, Cummins (2000) academic language development, WIDA Consortium proficiency data, RAND Education ELL outcome studies.\n\nMinimum standard: 3 named citations with year per article, formatted as \"According to [Source, Year]...\"\n\n### 2. Rewrite both intros to include a direct-answer block in the first 150 words\nBoth QAPEDS Gate 2 failures must be resolved. The fix is structural: each article's intro must open with a 1-3 sentence definition/answer block (40-60 words) that is fully extractable without surrounding context. Write the answer as if an AI will lift it verbatim into a featured snippet \u2014 because it will, once the block exists.\n\n### 3. Add at least 3 named statistics per article\nPull from the named sources identified in Recommendation 1. One statistic from an outcome study (e.g., reading growth months, language proficiency gains) is sufficient to move Statistical Density from near-floor to the mid-range. This single addition lifts AI Citability across both articles and contributes to Platform Optimization.\n\n### 4. Add one named classroom scenario per article\nA single practitioner example \u2014 one named teacher, one specific grade level, one described strategy \u2014 lifts E-E-A-T Experience from near-floor to mid-range. For Wayground's positioning as a teacher-first platform, this is also a brand alignment requirement. Use the format: \"A third-grade teacher in [State] uses [strategy] to...\" or reference Wayground educator feedback if internal data is available.\n\n### 5. Add FAQ sections to enable FAQPage schema and open the Perplexity channel\nBoth articles already score 80/100 on Schema Recommendations \u2014 the infrastructure is ready, but the FAQ content does not exist. Adding 4-5 Q&A pairs per article (H3 question heading + 40-60 word answer) resolves the `perplexity_ready` flag and enables FAQPage schema at publish. This is the fastest path to opening a currently completely closed AI citation channel.\n\n---\n\n## Standout Articles\n\n**Strongest: Item 78 \u2014 \"Scaffolding in early childhood education\" (GEO: 50.7)**\nMarginally stronger on every measured dimension, with a confirmed brand review (even at FAIL, it is further along in the pipeline). The NAEYC citation that exists in item 78 represents the only named source in the entire cluster \u2014 a foundation to build from rather than start from scratch.\n\n**Weakest: Item 79 \u2014 \"Scaffolding language learning\" (GEO: 46.1)**\nThe lowest-scoring article in the cluster, with zero named citations confirmed, an incomplete brand review (UNKNOWN status), and an E-E-A-T score of 35/100. This article requires the most substantial rewrite and must complete brand review before any publish timeline can be established."
+}

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "dataforseo": {
+      "command": "npx",
+      "args": ["-y", "dataforseo-mcp-server"],
+      "env": {
+        "DATAFORSEO_USERNAME": "",
+        "DATAFORSEO_PASSWORD": ""
+      }
+    },
+    "semrush": {
+      "command": "npx",
+      "args": ["-y", "github:mrkooblu/semrush-mcp"],
+      "env": {
+        "SEMRUSH_API_KEY": ""
+      }
+    }
+  }
+}

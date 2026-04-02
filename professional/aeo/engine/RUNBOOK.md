@@ -271,6 +271,15 @@ jq '.gates' runs/<slug>/state.json
 
 ---
 
+## Known Calibration Notes
+
+### Comparison Articles and Trust Dimension
+Comparison articles (e.g., "Tool A vs Tool B") inherently score lower on **Trust** because they have fewer third-party research citations — they rely more on feature comparisons than evidence-based claims. The default threshold of ≥7 on all dimensions will often cause comparison articles to ESCALATE.
+
+**Recommended handling:** Override the D-gate threshold for comparison articles via a content brief flag, or accept Trust:5-6 for comparison intent. Update when G2 provides enough data on comparison article citation rates to calibrate a separate threshold.
+
+---
+
 ## Choosing Topics
 
 Good AEO topics have:

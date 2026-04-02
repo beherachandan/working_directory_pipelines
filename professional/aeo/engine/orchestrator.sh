@@ -164,6 +164,129 @@ run_pipeline() {
     echo ""
 }
 
+# ── Demand Gap Audit — runs only A1+A2 as a diagnostic ──
+# Usage: run_demand_audit "formative-assessment" "formative assessment strategies"
+run_demand_audit() {
+    local slug="$1"
+    local topic="$2"
+    local audit_slug="audit-${slug}"
+    local run_dir="${RUNS_DIR}/${audit_slug}"
+
+    echo ""
+    echo "╔══════════════════════════════════════════════════╗"
+    echo "║  AEO Demand Gap Audit                           ║"
+    echo "╠══════════════════════════════════════════════════╣"
+    echo "║  Topic: $(printf '%-43s' "$topic") ║"
+    echo "╚══════════════════════════════════════════════════╝"
+    echo ""
+
+    # ── Build internal coverage snapshot from existing runs ──
+    local coverage_lines=""
+    local found_runs=0
+    if [[ -d "${RUNS_DIR}" ]]; then
+        for state_file in "${RUNS_DIR}"/*/state.json; do
+            [[ -f "$state_file" ]] || continue
+            local run_slug run_status run_topic d1_composite rev_count
+            run_slug=$(jq -r '.article_slug // ""' "$state_file" 2>/dev/null)
+            # Skip other audit runs
+            [[ "$run_slug" == audit-* ]] && continue
+            run_status=$(jq -r '.status // "unknown"' "$state_file" 2>/dev/null)
+            run_topic=$(jq -r '.topic // ""' "$state_file" 2>/dev/null)
+            d1_composite=$(jq -r '.gates.D_gate.composite // "n/a"' "$state_file" 2>/dev/null)
+            rev_count=$(jq -r '.revisions.count // 0' "$state_file" 2>/dev/null)
+            coverage_lines+="- ${run_slug}: \"${run_topic}\" (status: ${run_status}, D1: ${d1_composite}, revisions: ${rev_count})"$'\n'
+            found_runs=$((found_runs + 1))
+        done
+    fi
+
+    local internal_context
+    if [[ $found_runs -gt 0 ]]; then
+        internal_context="### Published Articles (Internal Coverage — ${found_runs} articles in pipeline)
+
+Use these to determine Gap Factor in your Opportunity Score calculation.
+- Articles with status 'completed' = Wayground has content → check if it covers this topic
+- If a topic matches or overlaps → Gap Factor = 1.0 (optimization) or 1.2 (weak)
+- If no match → Gap Factor = 1.5 (no coverage)
+
+${coverage_lines}"
+    else
+        internal_context="### Published Articles (Internal Coverage)
+
+No completed pipeline runs found. Treat all topics as Gap Factor = 1.5 (no Wayground coverage)."
+    fi
+
+    # ── Initialize audit run (guard against re-init) ──
+    if [[ -f "${run_dir}/state.json" ]]; then
+        echo "Resuming existing audit run: ${audit_slug}"
+    else
+        state_init "$audit_slug" "$topic"
+    fi
+
+    # ── Run A1 with internal coverage context ──
+    echo "━━━ Phase A1: Query Intelligence ━━━"
+    run_agent "$audit_slug" "A1" "$internal_context" || {
+        echo "FATAL: A1 failed. Check logs at ${run_dir}/logs/A1.log"
+        return 1
+    }
+
+    # ── Run A2 (uses A1 output automatically via dep graph) ──
+    echo "━━━ Phase A2: Competitive Intelligence ━━━"
+    run_agent "$audit_slug" "A2" || {
+        echo "WARNING: A2 failed. Gap report will be based on A1 only."
+    }
+
+    # ── Print gap report ──
+    echo ""
+    echo "╔══════════════════════════════════════════════════╗"
+    echo "║  Demand Gap Report                              ║"
+    echo "╠══════════════════════════════════════════════════╣"
+
+    # Internal coverage section (from injected context)
+    echo "║  INTERNAL COVERAGE                              ║"
+    echo "╠══════════════════════════════════════════════════╣"
+    if [[ $found_runs -gt 0 ]]; then
+        printf "║  %-48s ║\n" "${found_runs} articles in pipeline:"
+        for state_file in "${RUNS_DIR}"/*/state.json; do
+            [[ -f "$state_file" ]] || continue
+            local r_slug r_status r_d1
+            r_slug=$(jq -r '.article_slug // ""' "$state_file" 2>/dev/null)
+            [[ "$r_slug" == audit-* ]] && continue
+            r_status=$(jq -r '.status // "unknown"' "$state_file" 2>/dev/null)
+            r_d1=$(jq -r '.gates.D_gate.composite // "—"' "$state_file" 2>/dev/null)
+            printf "║    %-46s ║\n" "${r_slug} (${r_status}, D1:${r_d1})"
+        done
+    else
+        printf "║  %-48s ║\n" "No existing articles found"
+    fi
+
+    # External demand / gaps (from A1 output)
+    local a1_output_path
+    a1_output_path=$(jq -r '.dag_progress["A1"].output_file // ""' "${run_dir}/state.json" 2>/dev/null)
+    echo "╠══════════════════════════════════════════════════╣"
+    echo "║  OUTPUTS                                        ║"
+    echo "╠══════════════════════════════════════════════════╣"
+    if [[ -n "$a1_output_path" && -f "${run_dir}/${a1_output_path}" ]]; then
+        printf "║  A1: %-44s ║\n" "${run_dir}/${a1_output_path}"
+    fi
+    local a2_output_path
+    a2_output_path=$(jq -r '.dag_progress["A2"].output_file // ""' "${run_dir}/state.json" 2>/dev/null)
+    if [[ -n "$a2_output_path" && -f "${run_dir}/${a2_output_path}" ]]; then
+        printf "║  A2: %-44s ║\n" "${run_dir}/${a2_output_path}"
+    fi
+
+    echo "╠══════════════════════════════════════════════════╣"
+    local total_cost
+    total_cost=$(state_get "$audit_slug" '.token_usage.cost_estimate_usd')
+    printf "║  Est. cost: %-37s ║\n" "\$${total_cost}"
+    echo "╚══════════════════════════════════════════════════╝"
+    echo ""
+    echo "Review full outputs above. Look for:"
+    echo "  • opportunity_score + gap_factor in A1 output"
+    echo "  • double_gap: true entries in A2 output"
+    echo "  • Domains where Wayground is absent (A2 citation landscape)"
+    echo ""
+}
+
 # ── Generation + Quality loop (C-phase → D-phase with revision) ──
 # Returns: PASS or ESCALATE
 run_generation_quality_loop() {
@@ -171,42 +294,42 @@ run_generation_quality_loop() {
 
     while true; do
         # ── PHASE C: Content Generation (sequential) ──
-        echo "━━━ Phase C: Content Generation ━━━"
-        run_agent "$slug" "C1" || { echo "FATAL: C1 failed"; return 1; }
-        run_agent "$slug" "C2" || { echo "FATAL: C2 failed"; return 1; }
-        run_agent "$slug" "C3" || { echo "FATAL: C3 failed"; return 1; }
-        run_agent "$slug" "C4" || { echo "FATAL: C4 failed"; return 1; }
-        run_agent "$slug" "C5" || { echo "FATAL: C5 failed"; return 1; }
+        echo "━━━ Phase C: Content Generation ━━━" >&2
+        run_agent "$slug" "C1" || { echo "FATAL: C1 failed" >&2; return 1; }
+        run_agent "$slug" "C2" || { echo "FATAL: C2 failed" >&2; return 1; }
+        run_agent "$slug" "C3" || { echo "FATAL: C3 failed" >&2; return 1; }
+        run_agent "$slug" "C4" || { echo "FATAL: C4 failed" >&2; return 1; }
+        run_agent "$slug" "C5" || { echo "FATAL: C5 failed" >&2; return 1; }
 
         # ── PHASE D: Quality Gate (parallel D1-D4) ──
-        echo "━━━ Phase D: Quality Gate ━━━"
-        run_parallel "$slug" "D1 D2 D3 D4" || echo "WARNING: Some D-phase agents failed"
+        echo "━━━ Phase D: Quality Gate ━━━" >&2
+        run_parallel "$slug" "D1 D2 D3 D4" || echo "WARNING: Some D-phase agents failed" >&2
 
         # ── D-GATE CHECK ──
         local d_decision
         d_decision=$(check_d_gate "$slug")
-        echo "[D-Gate] Decision: ${d_decision}"
+        echo "[D-Gate] Decision: ${d_decision}" >&2
 
         case "$d_decision" in
             PASS)
-                echo "[D-Gate] PASSED — all dimensions ≥ 7."
+                echo "[D-Gate] PASSED — all dimensions ≥ 7." >&2
                 echo "PASS"
                 return 0
                 ;;
             REVISE)
                 local rev_count
                 rev_count=$(state_get "$slug" '.revisions.count')
-                echo "[D-Gate] REVISE — revision #${rev_count}. Looping back to C-phase."
+                echo "[D-Gate] REVISE — revision #${rev_count}. Looping back to C-phase." >&2
                 state_reset_for_revision "$slug"
                 # Loop continues
                 ;;
             ESCALATE)
-                echo "[D-Gate] ESCALATE — max revisions reached."
+                echo "[D-Gate] ESCALATE — max revisions reached." >&2
                 echo "ESCALATE"
                 return 0
                 ;;
             *)
-                echo "ERROR: Unexpected D-gate decision: ${d_decision}"
+                echo "ERROR: Unexpected D-gate decision: ${d_decision}" >&2
                 return 1
                 ;;
         esac
@@ -311,6 +434,11 @@ main() {
             local agent="${3:?Usage: orchestrator.sh single <slug> <agent>}"
             run_agent "$slug" "$agent"
             ;;
+        audit)
+            local slug="${2:?Usage: orchestrator.sh audit <slug> <topic>}"
+            local topic="${3:?Usage: orchestrator.sh audit <slug> <topic>}"
+            run_demand_audit "$slug" "$topic"
+            ;;
         reset)
             local slug="${2:?Usage: orchestrator.sh reset <slug>}"
             echo "This will delete ALL data (outputs + state) for run: ${slug}"
@@ -330,11 +458,13 @@ main() {
             echo "  ./orchestrator.sh dry-run <slug> <agent>  — Preview prompt"
             echo "  ./orchestrator.sh single <slug> <agent>   — Run single agent"
             echo "  ./orchestrator.sh reset  <slug>           — Delete a run"
+            echo "  ./orchestrator.sh audit  <slug> <topic>   — Demand gap audit (A1+A2 only)"
             echo ""
             echo "Examples:"
             echo "  ./orchestrator.sh run formative-assessment 'What are formative assessment strategies?'"
             echo "  ./orchestrator.sh resume formative-assessment"
             echo "  ./orchestrator.sh dry-run formative-assessment B3"
+            echo "  ./orchestrator.sh audit formative-assessment 'formative assessment strategies'"
             ;;
     esac
 }

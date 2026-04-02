@@ -1,0 +1,28 @@
+{
+  "item_num": "78",
+  "name": "scaffolding in early childhood education",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 3,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.6,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C10 \u2014 Wayground's value proposition is too vague to be credible. The closing paragraph says 'Wayground offers videos, audio flashcards, and interactive assessments that bring prompt ladders to life' but never names a specific feature (e.g., 'Wayground's Create with AI' or 'adaptive quiz builder') or shows the actual workflow a PreK-K teacher would use. Mid-article the phrase 'Wayground's built-in accommodations work on this same principle' is even more opaque \u2014 which accommodations, and how does a teacher access them in 2 minutes before circle time?",
+    "C2/C3 \u2014 The opening burns two full paragraphs before delivering usable information. The shoe-tying analogy and the block-tower vignette are pleasant but read like AI-generated scene-setting ('This moment illustrates scaffolding in early childhood, meeting young learners where they are developmentally...'). A busy PreK teacher planning on Sunday night needs to hit value by sentence 3, not paragraph 4.",
+    "C9 \u2014 Standards are only implicitly present. An article on early literacy and math scaffolding for PreK-K could easily anchor to Common Core ELA foundational skills (RF.K), Common Core Math (K.CC, K.OA), Head Start Early Learning Outcomes Framework, or NAEYC DAP standards \u2014 NAEYC is cited in the FAQ but never connected to a named standard or framework that a curriculum coordinator would recognize."
+  ],
+  "positive_signals": [
+    "Term definitions are genuinely strong \u2014 ZPD, CRA, DAP, and echo reading are all explained inline without assuming expertise, which will serve newer teachers well.",
+    "The FAQ section is the most classroom-useful part of the article: questions map directly to real planning dilemmas ('when do I step in during play?', 'how fast do I fade supports?') and the answers are specific and actionable."
+  ],
+  "narrative": "This article has a solid instructional core \u2014 the CRA sequence, graduated prompts, and multi-modal literacy scaffolding are all well-explained and research-grounded \u2014 but it earns a REVISE primarily because Wayground's value proposition never crosses the line from vague claim to specific, usable feature. Phrases like \"Wayground's built-in accommodations\" and \"bring prompt ladders to life\" tell a teacher nothing about what to click or how long it will take, which is the only thing that matters at 7:45 AM. The opening also needs tightening: cut or compress the block-tower vignette and shoe-tying analogy so the article leads with a concrete, scannable payoff within the first 2\u20133 sentences. Fix the Wayground section to name one specific feature with a realistic use case (e.g., \"Wayground's audio flashcard builder lets you create picture-paired vocabulary sets for your multilingual learners in under five minutes\"), add a named standards anchor such as Common Core RF.K or NAEYC's 2020 DAP framework, and this article will be genuinely classroom-ready."
+}

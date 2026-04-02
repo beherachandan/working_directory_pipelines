@@ -1,0 +1,112 @@
+{
+  "cluster": "Scaffolding",
+  "sub_cluster": "Subject",
+  "article_count": 4,
+  "avg_geo_composite": 44.65,
+  "avg_qapeds_composite": 4.35,
+  "dimension_averages": {
+    "ai_citability": 45.0,
+    "eeat": 38.75,
+    "platform_optimization": 36.75,
+    "brand_voice": "partial \u2014 1 of 4 scored (38.0); 3 articles returned UNKNOWN",
+    "seo_structure": 46.5,
+    "schema_recommendations": 73.25
+  },
+  "weakest_dimension": "platform_optimization",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 0,
+    "aio_ready_pct": 0,
+    "chatgpt_ready_count": 0,
+    "chatgpt_ready_pct": 0,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0,
+    "bing_copilot_ready_count": 1,
+    "bing_copilot_ready_pct": 25,
+    "overall_flag_pct": 5
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 1,
+    "unknown_count": 3,
+    "common_issues": [
+      "brand_evaluation_incomplete_for_3_articles",
+      "brand_fail_item_77_score_38"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 'research shows' used without any source attribution across all four articles",
+      "article_count": 4,
+      "dimension": "eeat",
+      "impact": "Caps QAPEDS Evidence Presence (P) at \u22641, collapses E-E-A-T Authoritativeness sub-component, and suppresses AI Citability Statistical Density across the entire cluster"
+    },
+    {
+      "pattern": "No direct-answer block in first 150 words \u2014 articles open with narrative or anecdote instead of a canonical answer",
+      "article_count": 4,
+      "dimension": "ai_citability",
+      "impact": "Both QAPEDS gates fail for every article. AI systems cannot extract a citable answer, driving all platform readiness flags to false"
+    },
+    {
+      "pattern": "No first-hand practitioner experience signals \u2014 no named teachers, no real classroom anecdotes, no first-party data",
+      "article_count": 3,
+      "dimension": "eeat",
+      "impact": "E-E-A-T Experience sub-component scores near zero; Google and AI platforms deprioritize content that reads as generic rather than practitioner-authored"
+    },
+    {
+      "pattern": "No FAQ-structured sections \u2014 implied questions throughout articles but no dedicated Q&A blocks",
+      "article_count": 4,
+      "dimension": "platform_optimization",
+      "impact": "FAQPage schema cannot be implemented; Perplexity readiness is 0% across the cluster; Perplexity citation likelihood remains near zero"
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Universal citation absence \u2014 'research shows' without attribution across all 4 articles",
+      "fix": "Replace every unattributed claim with a named source and year. Minimum 3 named citations per article. Suggested sources by topic: Vygotsky (1978) Zone of Proximal Development for foundational scaffolding; Tomlinson (2014) for differentiated scaffolding; Hammond (2015) Culturally Responsive Teaching for ELL content; RAND Education 2021 for math intervention research; Shanahan & Shanahan (2008) for reading scaffolding. Format: 'According to [Author, Year]...' \u2014 never 'research shows.'",
+      "applies_to": "All 4 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 2,
+      "issue": "Missing canonical direct-answer blocks \u2014 both QAPEDS gates fail for every article",
+      "fix": "Restructure every intro so that a clean, extractable 1\u20133 sentence answer appears within the first 150 words. This block should directly answer the article's title question. Example for 'scaffolding in math': 'Math scaffolding is the practice of temporarily supporting students through new concepts by breaking problems into smaller steps, using visual models, and progressively removing support as mastery builds. It is most effective when matched to a student's Zone of Proximal Development.' Place this block immediately after the intro hook \u2014 before any anecdote or context.",
+      "applies_to": "All 4 articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 3,
+      "issue": "Zero Perplexity readiness \u2014 no FAQ sections across the cluster",
+      "fix": "Add a dedicated 'Frequently asked questions' section (sentence-case H2) to each article with 4\u20135 Q&A pairs. Use H3 question headings followed by a 40\u201360 word direct answer. Questions should reflect real teacher search queries (e.g., 'What is the difference between scaffolding and differentiation?', 'How do I scaffold for English language learners?'). This unlocks FAQPage schema implementation and is the single highest-leverage change for Perplexity citation rates.",
+      "applies_to": "All 4 articles",
+      "dimension": "platform_optimization"
+    },
+    {
+      "rank": 4,
+      "issue": "No practitioner experience signals \u2014 content reads as generic, not teacher-authored",
+      "fix": "Add at least one first-person practitioner signal per article. Options: (a) a named teacher quote with school context, (b) a 'we tested this with X teachers' data point, or (c) a real classroom scenario with a named fictional persona (e.g., 'When a 6th-grade teacher in a Title I school tried sentence frames...'). These signals are what Google's E-E-A-T framework specifically rewards and what distinguishes this content from generic AI-generated text.",
+      "applies_to": "3 of 4 articles (74, 75, 77); implied for 76",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "Critical: Item 76 (scaffolding for ELLs) requires full rebuild \u2014 keyword-topic mismatch, SEO structure score 15",
+      "fix": "Item 76 currently targets 'scaffolding for reading' content rather than 'scaffolding for ELLs.' This is not an edit \u2014 it requires a full rewrite. The rebuilt article must: (1) define ELL scaffolding in first 150 words, (2) center all examples on English language learner scenarios, (3) reference ELL-specific frameworks (SIOP model, WIDA standards, Krashen's Input Hypothesis), and (4) include a functional H1 and keyword-aligned H2 structure. This article should be depublished or noindexed until rebuilt.",
+      "applies_to": "Item 76 only \u2014 but blocking the sub-cluster's authority signal on a core audience topic",
+      "dimension": "seo_structure"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "75",
+    "name": "scaffolding for reading",
+    "geo_composite": 48.5
+  },
+  "weakest_article": {
+    "item_num": "76",
+    "name": "scaffolding for ells",
+    "geo_composite": 34.7
+  },
+  "narrative": "I'll work through the analysis systematically before producing the output blocks.\n\n## Scratchpad\n\n### Step 1: Compute Averages\n\n**GEO Composites:** 47.2, 48.5, 34.7, 48.2\n- Average: (47.2 + 48.5 + 34.7 + 48.2) / 4 = 178.6 / 4 = **44.65**\n\n**QAPEDS Composites:** 4.45, 4.55, 3.75, 4.65\n- Average: (4.45 + 4.55 + 3.75 + 4.65) / 4 = 17.4 / 4 = **4.35**\n\n**Dimension Averages:**\n\n- AI Citability: (46 + 46 + 42 + 46) / 4 = 180 / 4 = **45.0**\n- E-E-A-T: (36 + 41 + 34 + 44) / 4 = 155 / 4 = **38.75**\n- Platform Optimization: (39 + 41 + 26 + 41) / 4 = 147 / 4 = **36.75**\n- Brand Voice: Only item 77 has a score (38). Items 74, 75, 76 are null/UNKNOWN. I'll note 38 as the only available score, average across scoreable = 38, cluster average = null for the 3 unknowns. I'll report 38.0 for the one scored article and note it as incomplete.\n- SEO Structure: (58 + 53 + 15 + 60) / 4 = 186 / 4 = **46.5**\n- Schema Recommendations: (78 + 80 + 55 + 80) / 4 = 293 / 4 = **73.25**\n\nFor brand voice, since 3 are null, I'll note partial data. I'll compute including only what's available for the JSON but note it. For the avg I'll put the one known score and flag it.\n\nActually, looking at this more carefully: brand_voice null means it wasn't evaluated (BRAND_REVIEWER didn't run or returned UNKNOWN). I'll report the dimension average as null for brand voice across the cluster since we only have 1 data point, but flag it. Actually the instruction says to compute averages \u2014 I'll compute as 38.0 for the one scoreable article and note 3/4 are unscored.\n\n**Weakest dimension:** Platform Optimization at 36.75\n**Strongest dimension:** Schema Recommendations at 73.25\n\n### Step 2: Recurring Issues\n\n**Issue 1: Zero named citations / \"research shows\" without attribution**\n- Items: 74, 75, 76, 77 \u2014 ALL 4 articles\n- Dimension: E-E-A-T (Authority) + AI Citability (Statistical Density)\n\n**Issue 2: No direct-answer block in first 150 words (QAPEDS gates fail)**\n- Items: 74, 75, 76, 77 \u2014 ALL 4 articles\n- Dimension: AI Citability (Structural)\n\n**Issue 3: No first-hand practitioner experience signals / no named teachers / no first-party data**\n- Items: 74, 75, 77 \u2014 3 articles (76 doesn't list this explicitly but has similar E-E-A-T failure)\n- Dimension: E-E-A-T (Experience)\n\n**Issue 4: Content/topic mismatch (item 76 specifically)**\n- Items: 76 only\n- This is a critical individual issue \u2014 SEO Structure score of 15\n\n### Step 3: Platform Readiness\n\n- AIO ready: 0/4 = 0%\n- ChatGPT ready: 0/4 = 0%\n- Perplexity ready: 0/4 = 0%\n- Gemini ready: 0/4 = 0%\n- Bing Copilot ready: 1/4 = 25% (item 75 only)\n\nCluster overall platform readiness: 1/20 flags = **5%** (catastrophically low)\n\n### Step 4: Brand Compliance\n\n- PASS: 0\n- WARN: 0\n- FAIL: 1 (item 77)\n- UNKNOWN: 3 (items 74, 75, 76)\n\n3 articles have no brand evaluation. Item 77 is a FAIL with brand_voice score of 38.\n\n### Step 5: Strongest and Weakest\n\n- Strongest: Item 75 \"scaffolding for reading\" at 48.5 GEO composite (marginally \u2014 essentially tied with 77 at 48.2 and 74 at 47.2)\n- Weakest: Item 76 \"scaffolding for ELLs\" at 34.7 GEO composite\n\n### Step 6: Cluster-Level Recommendations\n\n1. **Add named citations to every article** \u2014 All 4 articles use \"research shows\" without attribution. Add 3+ named sources with year per article (e.g., Vygotsky ZPD, Hammond 2015 Culturally Responsive Teaching, RAND studies, NWEA).\n\n2. **Add a direct-answer block in first 150 words** \u2014 All 4 articles open with narrative/anecdote without a canonical answer. This causes both QAPEDS gates to fail, suppressing AI citability across the board.\n\n3. **Add FAQ sections for Perplexity readiness** \u2014 0 articles are Perplexity-ready. Adding 4-5 Q&A FAQ sections enables FAQPage schema and dramatically improves citation rates.\n\n4. **Add first-person practitioner signals** \u2014 3-4 articles lack named teachers, real classroom anecdotes, or first-party data. This suppresses E-E-A-T Experience sub-component.\n\n5. **Critical: Fully rewrite item 76 (scaffolding for ELLs)** \u2014 Keyword-topic mismatch, SEO structure score of 15, platform optimization 26. This article needs a ground-up rebuild targeting ELL scaffolding specifically, not reading scaffolding.\n\n6. **Complete brand evaluations for 3 unreviewed articles** \u2014 Items 74, 75, 76 have UNKNOWN brand verdicts. Also, item 77's brand FAIL (score 38) suggests systemic brand compliance issues that may affect the others.\n\n---\n\n<scores>\n{\n  \"cluster\": \"Scaffolding\",\n  \"sub_cluster\": \"Subject\",\n  \"article_count\": 4,\n  \"avg_geo_composite\": 44.65,\n  \"avg_qapeds_composite\": 4.35,\n  \"dimension_averages\": {\n    \"ai_citability\": 45.0,\n    \"eeat\": 38.75,\n    \"platform_optimization\": 36.75,\n    \"brand_voice\": \"partial \u2014 1 of 4 scored (38.0); 3 articles returned UNKNOWN\",\n    \"seo_structure\": 46.5,\n    \"schema_recommendations\": 73.25\n  },\n  \"weakest_dimension\": \"platform_optimization\",\n  \"strongest_dimension\": \"schema_recommendations\",\n  \"platform_readiness\": {\n    \"aio_ready_count\": 0,\n    \"aio_ready_pct\": 0,\n    \"chatgpt_ready_count\": 0,\n    \"chatgpt_ready_pct\": 0,\n    \"perplexity_ready_count\": 0,\n    \"perplexity_ready_pct\": 0,\n    \"bing_copilot_ready_count\": 1,\n    \"bing_copilot_ready_pct\": 25,\n    \"overall_flag_pct\": 5\n  },\n  \"brand_summary\": {\n    \"pass_count\": 0,\n    \"warn_count\": 0,\n    \"fail_count\": 1,\n    \"unknown_count\": 3,\n    \"common_issues\": [\"brand_evaluation_incomplete_for_3_articles\", \"brand_fail_item_77_score_38\"]\n  },\n  \"recurring_issues\": [\n    {\n      \"pattern\": \"Zero named citations \u2014 'research shows' used without any source attribution across all four articles\",\n      \"article_count\": 4,\n      \"dimension\": \"eeat\",\n      \"impact\": \"Caps QAPEDS Evidence Presence (P) at \u22641, collapses E-E-A-T Authoritativeness sub-component, and suppresses AI Citability Statistical Density across the entire cluster\"\n    },\n    {\n      \"pattern\": \"No direct-answer block in first 150 words \u2014 articles open with narrative or anecdote instead of a canonical answer\",\n      \"article_count\": 4,\n      \"dimension\": \"ai_citability\",\n      \"impact\": \"Both QAPEDS gates fail for every article. AI systems cannot extract a citable answer, driving all platform readiness flags to false\"\n    },\n    {\n      \"pattern\": \"No first-hand practitioner experience signals \u2014 no named teachers, no real classroom anecdotes, no first-party data\",\n      \"article_count\": 3,\n      \"dimension\": \"eeat\",\n      \"impact\": \"E-E-A-T Experience sub-component scores near zero; Google and AI platforms deprioritize content that reads as generic rather than practitioner-authored\"\n    },\n    {\n      \"pattern\": \"No FAQ-structured sections \u2014 implied questions throughout articles but no dedicated Q&A blocks\",\n      \"article_count\": 4,\n      \"dimension\": \"platform_optimization\",\n      \"impact\": \"FAQPage schema cannot be implemented; Perplexity readiness is 0% across the cluster; Perplexity citation likelihood remains near zero\"\n    }\n  ],\n  \"cluster_recommendations\": [\n    {\n      \"rank\": 1,\n      \"issue\": \"Universal citation absence \u2014 'research shows' without attribution across all 4 articles\",\n      \"fix\": \"Replace every unattributed claim with a named source and year. Minimum 3 named citations per article. Suggested sources by topic: Vygotsky (1978) Zone of Proximal Development for foundational scaffolding; Tomlinson (2014) for differentiated scaffolding; Hammond (2015) Culturally Responsive Teaching for ELL content; RAND Education 2021 for math intervention research; Shanahan & Shanahan (2008) for reading scaffolding. Format: 'According to [Author, Year]...' \u2014 never 'research shows.'\",\n      \"applies_to\": \"All 4 articles\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 2,\n      \"issue\": \"Missing canonical direct-answer blocks \u2014 both QAPEDS gates fail for every article\",\n      \"fix\": \"Restructure every intro so that a clean, extractable 1\u20133 sentence answer appears within the first 150 words. This block should directly answer the article's title question. Example for 'scaffolding in math': 'Math scaffolding is the practice of temporarily supporting students through new concepts by breaking problems into smaller steps, using visual models, and progressively removing support as mastery builds. It is most effective when matched to a student's Zone of Proximal Development.' Place this block immediately after the intro hook \u2014 before any anecdote or context.\",\n      \"applies_to\": \"All 4 articles\",\n      \"dimension\": \"ai_citability\"\n    },\n    {\n      \"rank\": 3,\n      \"issue\": \"Zero Perplexity readiness \u2014 no FAQ sections across the cluster\",\n      \"fix\": \"Add a dedicated 'Frequently asked questions' section (sentence-case H2) to each article with 4\u20135 Q&A pairs. Use H3 question headings followed by a 40\u201360 word direct answer. Questions should reflect real teacher search queries (e.g., 'What is the difference between scaffolding and differentiation?', 'How do I scaffold for English language learners?'). This unlocks FAQPage schema implementation and is the single highest-leverage change for Perplexity citation rates.\",\n      \"applies_to\": \"All 4 articles\",\n      \"dimension\": \"platform_optimization\"\n    },\n    {\n      \"rank\": 4,\n      \"issue\": \"No practitioner experience signals \u2014 content reads as generic, not teacher-authored\",\n      \"fix\": \"Add at least one first-person practitioner signal per article. Options: (a) a named teacher quote with school context, (b) a 'we tested this with X teachers' data point, or (c) a real classroom scenario with a named fictional persona (e.g., 'When a 6th-grade teacher in a Title I school tried sentence frames...'). These signals are what Google's E-E-A-T framework specifically rewards and what distinguishes this content from generic AI-generated text.\",\n      \"applies_to\": \"3 of 4 articles (74, 75, 77); implied for 76\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 5,\n      \"issue\": \"Critical: Item 76 (scaffolding for ELLs) requires full rebuild \u2014 keyword-topic mismatch, SEO structure score 15\",\n      \"fix\": \"Item 76 currently targets 'scaffolding for reading' content rather than 'scaffolding for ELLs.' This is not an edit \u2014 it requires a full rewrite. The rebuilt article must: (1) define ELL scaffolding in first 150 words, (2) center all examples on English language learner scenarios, (3) reference ELL-specific frameworks (SIOP model, WIDA standards, Krashen's Input Hypothesis), and (4) include a functional H1 and keyword-aligned H2 structure. This article should be depublished or noindexed until rebuilt.\",\n      \"applies_to\": \"Item 76 only \u2014 but blocking the sub-cluster's authority signal on a core audience topic\",\n      \"dimension\": \"seo_structure\"\n    }\n  ],\n  \"strongest_article\": {\n    \"item_num\": \"75\",\n    \"name\": \"scaffolding for reading\",\n    \"geo_composite\": 48.5\n  },\n  \"weakest_article\": {\n    \"item_num\": \"76\",\n    \"name\": \"scaffolding for ells\",\n    \"geo_composite\": 34.7\n  }\n}\n</scores>\n\n<output>\n\n# Cluster Analysis: Scaffolding / Subject (4 Articles)\n\n## Cluster overview\n\nThis is the lowest-performing cluster reviewed to date. With an average GEO composite of **44.65** and an average QAPEDS composite of **4.35**, every article in the Scaffolding / Subject sub-cluster falls below the 70-point quality threshold \u2014 and three of four fall below 50. The cluster's defining failure is not surface-level polish: it is a structural absence of the two signals AI citation systems depend on most. Zero of four articles have a direct-answer block. Zero of four articles cite a named source. The result is a cluster that covers high-intent educational search territory (math scaffolding, reading scaffolding, ELL scaffolding, writing scaffolding) with content that no AI platform can extract, cite, or trust.\n\n---\n\n## Score summary table\n\n| Dimension | Cluster Avg | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 45.0 | 70 | **-25.0** |\n| E-E-A-T | 38.75 | 70 | **-31.25** |\n| Platform Optimization | 36.75 | 70 | **-33.25** |\n| Brand Voice | 38.0 (1 of 4 scored) | 70 | **-32.0** \u26a0\ufe0f |\n| SEO Structure | 46.5 | 70 | **-23.5** |\n| Schema Recommendations | 73.25 | 70 | +3.25 \u2713 |\n| **GEO Composite** | **44.65** | **70** | **-25.35** |\n| **QAPEDS** | **4.35 / 10** | **8.0** | **-3.65** |\n\n**Only schema recommendations clears the target threshold.** Every other dimension requires significant intervention. Platform optimization is the weakest at 36.75 \u2014 nearly 34 points below target \u2014 driven by a complete absence of FAQ sections and the resulting failure of all platform readiness flags.\n\n> \u26a0\ufe0f Brand voice data is incomplete: 3 of 4 articles returned UNKNOWN verdicts (no brand review completed). The one scored article (item 77) scored 38 and received a FAIL. Brand compliance status for this cluster must be treated as a risk until all four articles are reviewed.\n\n---\n\n## Top 3 recurring issues\n\n### 1."
+}

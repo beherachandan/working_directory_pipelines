@@ -243,7 +243,7 @@ build_prompt() {
 
     # Final instruction
     prompt+="---"$'\n'
-    prompt+="Now execute your task. Put your final output inside \`<output>\` tags."$'\n'
+    prompt+="Now execute your task. **IMPORTANT: Wrap your entire output in \`<output>\` and \`</output>\` tags.** Your output begins with \`<output>\` on its own line and ends with \`</output>\` on its own line. Everything between those tags is your deliverable."$'\n'
 
     echo "$prompt"
 }

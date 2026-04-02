@@ -1,0 +1,27 @@
+{
+  "item_num": "59",
+  "name": "learning stations for differentiated instruction",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 5,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 4.1,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 (Standards Alignment) scores a 2 and triggers automatic REVISE: for a lesson-design article aimed at K-12 teachers, no named standards framework is cited anywhere \u2014 not Common Core, NGSS, ISTE, or any state framework. The article repeatedly references 'same standard' and 'standards-aligned resources' without ever naming one. A single concrete example (e.g., 'NGSS MS-PS1-7 in a 7th-grade density unit' or 'CCSS.ELA-LITERACY.RI.6.1') would satisfy this criterion and make the examples far more usable.",
+    "C10 (Wayground Value Proposition) is vague and undersells the product: the closing CTA \u2014 'Wayground puts you in control while your students find their way to success' \u2014 is a generic tagline, not a feature description. The inline mention ('digital activity data cuts after-class grading time by roughly half') is the most concrete claim but is buried in a FAQ and attributed only to unnamed 'Wayground educators.' Replace at least one mention with a specific feature name and workflow, e.g., 'Wayground's Create with AI lets you generate a tiered three-station activity aligned to NGSS in under five minutes.'"
+  ],
+  "positive_signals": [
+    "Exceptional classroom practicality: the rotation model comparison table with period-length timing, group sizes, pros/cons, and a 7th-grade science example for every model is genuinely photocopy-worthy and rare in edu content.",
+    "Teacher agency framing is consistently strong throughout \u2014 phrases like 'you know your students best,' 'adapt these ideas to fit your classroom culture,' and 'frees you to give targeted attention where it matters most' position the teacher as the expert decision-maker at every turn."
+  ],
+  "narrative": "This article is one of the most classroom-ready station-rotation pieces a teacher could find \u2014 the timing math, the six-station playbook, the Title I anecdote, and the rotation table are all exactly the kind of specific, Monday-morning-usable content that experienced teachers rarely get from edu blogs. The single hard blocker is standards alignment (C9, score 2): an article that uses the word \"standard\" more than a dozen times never names one, which will frustrate any teacher trying to map this to their curriculum framework or an admin walkthrough rubric. Fix that by dropping one concrete standard example into the density unit thread (NGSS is already implied throughout), and tighten the Wayground CTA from a tagline into a feature-plus-workflow sentence. Make those two edits and this is a strong PASS."
+}

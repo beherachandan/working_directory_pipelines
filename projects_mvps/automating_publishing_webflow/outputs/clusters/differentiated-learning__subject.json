@@ -1,0 +1,114 @@
+{
+  "cluster": "Differentiated Learning",
+  "sub_cluster": "Subject",
+  "article_count": 2,
+  "avg_geo_composite": 46.6,
+  "avg_qapeds_composite": 4.13,
+  "dimension_averages": {
+    "ai_citability": 43.5,
+    "eeat": 42.0,
+    "platform_optimization": 39.0,
+    "brand_voice": 48.0,
+    "seo_structure": 49.0,
+    "schema_recommendations": 76.5
+  },
+  "brand_voice_note": "Brand voice average computed from 1 of 2 articles only. Item 65 brand_voice is null \u2014 evaluation incomplete. Brand verdict for Item 65 is UNKNOWN and must be resolved before publish.",
+  "weakest_dimension": "platform_optimization",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 0,
+    "aio_ready_pct": 0,
+    "chatgpt_ready_count": 0,
+    "chatgpt_ready_pct": 0,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0,
+    "gemini_ready_count": 0,
+    "gemini_ready_pct": 0,
+    "bing_copilot_ready_count": 0,
+    "bing_copilot_ready_pct": 0
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 1,
+    "unknown_count": 1,
+    "common_issues": [
+      "brand_evaluation_incomplete_item_65",
+      "brand_fail_item_64"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations across both articles \u2014 'research shows' and 'studies reveal' used repeatedly without any attributed source",
+      "article_count": 2,
+      "dimension": "eeat + ai_citability",
+      "impact": "Caps QAPEDS P (Proof) sub-score at \u22641 per rubric rules. Suppresses AI Citability Statistical Density sub-component. Makes content uncitable by any AI engine \u2014 no named source means no quotation or citation signal."
+    },
+    {
+      "pattern": "No direct answer block in first 150 words \u2014 both articles open with student-scenario narratives that defer the canonical answer",
+      "article_count": 2,
+      "dimension": "ai_citability + platform_optimization",
+      "impact": "Triggers QAPEDS Gate 2 failure, capping A score at \u22645. aio_ready flag false for both. ChatGPT content-answer fit low. Extraction by any AI engine requires scrolling past narrative setup."
+    },
+    {
+      "pattern": "Generic, unnamed classroom scenarios with no first-hand practitioner experience signals",
+      "article_count": 2,
+      "dimension": "eeat",
+      "impact": "E-E-A-T Experience sub-component cannot score above low-mid range without specific, attributable practitioner perspective. Scenarios like 'a seventh-grade student' provide no authority signal."
+    },
+    {
+      "pattern": "No FAQ-structured sections \u2014 both articles lack Q&A blocks needed for Perplexity citations and FAQPage schema",
+      "article_count": 2,
+      "dimension": "platform_optimization",
+      "impact": "perplexity_ready is false for both. FAQPage schema recommended in both articles but structurally unimplementable without Q&A sections in the content."
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation and proof failure",
+      "fix": "Replace every instance of 'research shows,' 'studies suggest,' and 'studies in cognitive science reveal' with a named citation in 'According to [Source, Year]' format. Minimum 3 named sources per article. Suggested sources for math: Tomlinson (2014) 'The Differentiated Classroom,' NWEA 2023 MAP Growth norms, NCTM position papers. Suggested sources for science: NGSS Lead States (2013), Krajcik & Shin (2014) on project-based science, RAND Education studies on science differentiation.",
+      "applies_to": "Both articles (Items 64 and 65)",
+      "dimension": "eeat + ai_citability"
+    },
+    {
+      "rank": 2,
+      "issue": "Missing direct answer blocks \u2014 QAPEDS Gate 2 failure in both articles",
+      "fix": "Rewrite the opening of each article so that a 1-3 sentence canonical answer appears within the first 150 words, after a single framing sentence. The answer must be structurally isolatable \u2014 not embedded in a scenario. Example structure: [1 sentence establishing the topic] + [2-3 sentence direct answer defining what differentiated instruction in [subject] means and its core mechanism] + [transition to body]. This single fix unlocks aio_ready and chatgpt_ready flags.",
+      "applies_to": "Both articles (Items 64 and 65)",
+      "dimension": "ai_citability + platform_optimization"
+    },
+    {
+      "rank": 3,
+      "issue": "No FAQ sections \u2014 Perplexity readiness and FAQPage schema blocked",
+      "fix": "Add a dedicated 'Frequently asked questions' section (H2, sentence case) near the end of each article containing 4-5 Q&A pairs. Each question becomes an H3 heading; each answer is 40-60 words, self-contained, and directly answers the H3 question. This unblocks perplexity_ready, enables FAQPage schema implementation, and adds the structural Q&A signal that ChatGPT and Gemini extract for featured responses. Sample questions for math: 'What does differentiated instruction look like in a math classroom?' / 'How do you differentiate math for advanced students?'",
+      "applies_to": "Both articles (Items 64 and 65)",
+      "dimension": "platform_optimization + schema_recommendations"
+    },
+    {
+      "rank": 4,
+      "issue": "Generic practitioner scenarios undermine E-E-A-T Experience sub-component",
+      "fix": "Replace anonymous scenarios ('a seventh-grade student,' 'a student who struggles') with named, specific practitioner examples. Use the Wayground teacher vetting network to source 1-2 real teacher quotes per article with full attribution (first name, grade level, school type or state). Alternatively, reframe using first-person Wayground authority: 'In our review of 200M+ activities on Wayground, math teachers most commonly differentiate by...' This creates an E-E-A-T Experience signal that generic content cannot match.",
+      "applies_to": "Both articles (Items 64 and 65)",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "Item 65 brand voice evaluation is incomplete \u2014 do not publish without resolution",
+      "fix": "Complete the BRAND_REVIEWER pass for Item 65 before any publish decision. Item 64 has already received a brand FAIL verdict \u2014 identify the specific violations (likely em dash usage, naming conventions, or heading case) and remediate before resubmission. Neither article in this cluster has a brand PASS on record.",
+      "applies_to": "Item 64 (brand FAIL), Item 65 (brand UNKNOWN)",
+      "dimension": "brand_voice"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "64",
+    "name": "differentiated instruction in math",
+    "geo_composite": 48.0
+  },
+  "weakest_article": {
+    "item_num": "65",
+    "name": "differentiation instruction in science",
+    "geo_composite": 45.2
+  },
+  "narrative": "I'll work through the analysis systematically before producing the output blocks.\n\n**Step 1: Compute Averages**\n\nFor brand_voice, item 65 has null \u2014 I'll exclude it from the brand_voice average and note this in the narrative.\n\n- geo_composite: (48.0 + 45.2) / 2 = **46.6**\n- qapeds_composite: (4.15 + 4.1) / 2 = **4.13**\n\nDimension averages (excluding null):\n- ai_citability: (45 + 42) / 2 = **43.5**\n- eeat: (44 + 40) / 2 = **42.0**\n- platform_optimization: (39 + 39) / 2 = **39.0**\n- brand_voice: 48 / 1 = **48.0** (one article only; one is null/UNKNOWN)\n- seo_structure: (52 + 46) / 2 = **49.0**\n- schema_recommendations: (78 + 75) / 2 = **76.5**\n\nWeakest dimension: platform_optimization (39.0)\nStrongest dimension: schema_recommendations (76.5)\n\n**Step 2: Recurring Issues**\n\nBoth articles share:\n1. Zero named citations \u2014 \"research shows\" / \"studies in cognitive science reveal\" without attribution (both articles, affects E-E-A-T and AI Citability)\n2. No direct answer block in first 150 words \u2014 intros open with student scenarios (both articles, affects AI Citability / QAPEDS A-gate)\n3. No platform readiness on any flag \u2014 0/5 flags across both articles (both articles, affects Platform Optimization)\n4. Generic practitioner framing \u2014 scenarios unnamed, no first-person teacher voice (both articles, affects E-E-A-T Experience)\n\n**Step 3: Platform Readiness**\nAll flags false for both articles. 0% readiness across all platforms.\n\n**Step 4: Brand Compliance**\nItem 64: FAIL. Item 65: UNKNOWN (brand_voice null \u2014 not evaluated).\n0 PASS, 0 WARN, 1 FAIL, 1 UNKNOWN.\n\n**Step 5: Strongest/Weakest**\nStrongest: Item 64 (geo_composite 48.0)\nWeakest: Item 65 (geo_composite 45.2)\n\n**Step 6: Cluster Recommendations**\n1. Add named citations throughout \u2014 minimum 3 per article (Tomlinson 2014, NWEA MAP data, National Council of Teachers of Mathematics guidance, NGSS frameworks)\n2. Rewrite intros to include a direct answer block \u22643 sentences in first 150 words\n3. Add FAQ section with 4-5 Q&A pairs per article for Perplexity/FAQ schema\n4. Replace generic classroom scenarios with named, specific practitioner examples (\"Ms. Chen, a 7th-grade math teacher in Austin\")\n5. Complete brand voice evaluation for item 65 before publish\n\n---\n\n<scores>\n{\n  \"cluster\": \"Differentiated Learning\",\n  \"sub_cluster\": \"Subject\",\n  \"article_count\": 2,\n  \"avg_geo_composite\": 46.6,\n  \"avg_qapeds_composite\": 4.13,\n  \"dimension_averages\": {\n    \"ai_citability\": 43.5,\n    \"eeat\": 42.0,\n    \"platform_optimization\": 39.0,\n    \"brand_voice\": 48.0,\n    \"seo_structure\": 49.0,\n    \"schema_recommendations\": 76.5\n  },\n  \"brand_voice_note\": \"Brand voice average computed from 1 of 2 articles only. Item 65 brand_voice is null \u2014 evaluation incomplete. Brand verdict for Item 65 is UNKNOWN and must be resolved before publish.\",\n  \"weakest_dimension\": \"platform_optimization\",\n  \"strongest_dimension\": \"schema_recommendations\",\n  \"platform_readiness\": {\n    \"aio_ready_count\": 0,\n    \"aio_ready_pct\": 0,\n    \"chatgpt_ready_count\": 0,\n    \"chatgpt_ready_pct\": 0,\n    \"perplexity_ready_count\": 0,\n    \"perplexity_ready_pct\": 0,\n    \"gemini_ready_count\": 0,\n    \"gemini_ready_pct\": 0,\n    \"bing_copilot_ready_count\": 0,\n    \"bing_copilot_ready_pct\": 0\n  },\n  \"brand_summary\": {\n    \"pass_count\": 0,\n    \"warn_count\": 0,\n    \"fail_count\": 1,\n    \"unknown_count\": 1,\n    \"common_issues\": [\"brand_evaluation_incomplete_item_65\", \"brand_fail_item_64\"]\n  },\n  \"recurring_issues\": [\n    {\n      \"pattern\": \"Zero named citations across both articles \u2014 'research shows' and 'studies reveal' used repeatedly without any attributed source\",\n      \"article_count\": 2,\n      \"dimension\": \"eeat + ai_citability\",\n      \"impact\": \"Caps QAPEDS P (Proof) sub-score at \u22641 per rubric rules. Suppresses AI Citability Statistical Density sub-component. Makes content uncitable by any AI engine \u2014 no named source means no quotation or citation signal.\"\n    },\n    {\n      \"pattern\": \"No direct answer block in first 150 words \u2014 both articles open with student-scenario narratives that defer the canonical answer\",\n      \"article_count\": 2,\n      \"dimension\": \"ai_citability + platform_optimization\",\n      \"impact\": \"Triggers QAPEDS Gate 2 failure, capping A score at \u22645. aio_ready flag false for both. ChatGPT content-answer fit low. Extraction by any AI engine requires scrolling past narrative setup.\"\n    },\n    {\n      \"pattern\": \"Generic, unnamed classroom scenarios with no first-hand practitioner experience signals\",\n      \"article_count\": 2,\n      \"dimension\": \"eeat\",\n      \"impact\": \"E-E-A-T Experience sub-component cannot score above low-mid range without specific, attributable practitioner perspective. Scenarios like 'a seventh-grade student' provide no authority signal.\"\n    },\n    {\n      \"pattern\": \"No FAQ-structured sections \u2014 both articles lack Q&A blocks needed for Perplexity citations and FAQPage schema\",\n      \"article_count\": 2,\n      \"dimension\": \"platform_optimization\",\n      \"impact\": \"perplexity_ready is false for both. FAQPage schema recommended in both articles but structurally unimplementable without Q&A sections in the content.\"\n    }\n  ],\n  \"cluster_recommendations\": [\n    {\n      \"rank\": 1,\n      \"issue\": \"Cluster-wide citation and proof failure\",\n      \"fix\": \"Replace every instance of 'research shows,' 'studies suggest,' and 'studies in cognitive science reveal' with a named citation in 'According to [Source, Year]' format. Minimum 3 named sources per article. Suggested sources for math: Tomlinson (2014) 'The Differentiated Classroom,' NWEA 2023 MAP Growth norms, NCTM position papers. Suggested sources for science: NGSS Lead States (2013), Krajcik & Shin (2014) on project-based science, RAND Education studies on science differentiation.\",\n      \"applies_to\": \"Both articles (Items 64 and 65)\",\n      \"dimension\": \"eeat + ai_citability\"\n    },\n    {\n      \"rank\": 2,\n      \"issue\": \"Missing direct answer blocks \u2014 QAPEDS Gate 2 failure in both articles\",\n      \"fix\": \"Rewrite the opening of each article so that a 1-3 sentence canonical answer appears within the first 150 words, after a single framing sentence. The answer must be structurally isolatable \u2014 not embedded in a scenario. Example structure: [1 sentence establishing the topic] + [2-3 sentence direct answer defining what differentiated instruction in [subject] means and its core mechanism] + [transition to body]. This single fix unlocks aio_ready and chatgpt_ready flags.\",\n      \"applies_to\": \"Both articles (Items 64 and 65)\",\n      \"dimension\": \"ai_citability + platform_optimization\"\n    },\n    {\n      \"rank\": 3,\n      \"issue\": \"No FAQ sections \u2014 Perplexity readiness and FAQPage schema blocked\",\n      \"fix\": \"Add a dedicated 'Frequently asked questions' section (H2, sentence case) near the end of each article containing 4-5 Q&A pairs. Each question becomes an H3 heading; each answer is 40-60 words, self-contained, and directly answers the H3 question. This unblocks perplexity_ready, enables FAQPage schema implementation, and adds the structural Q&A signal that ChatGPT and Gemini extract for featured responses. Sample questions for math: 'What does differentiated instruction look like in a math classroom?' / 'How do you differentiate math for advanced students?'\",\n      \"applies_to\": \"Both articles (Items 64 and 65)\",\n      \"dimension\": \"platform_optimization + schema_recommendations\"\n    },\n    {\n      \"rank\": 4,\n      \"issue\": \"Generic practitioner scenarios undermine E-E-A-T Experience sub-component\",\n      \"fix\": \"Replace anonymous scenarios ('a seventh-grade student,' 'a student who struggles') with named, specific practitioner examples. Use the Wayground teacher vetting network to source 1-2 real teacher quotes per article with full attribution (first name, grade level, school type or state). Alternatively, reframe using first-person Wayground authority: 'In our review of 200M+ activities on Wayground, math teachers most commonly differentiate by...' This creates an E-E-A-T Experience signal that generic content cannot match.\",\n      \"applies_to\": \"Both articles (Items 64 and 65)\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 5,\n      \"issue\": \"Item 65 brand voice evaluation is incomplete \u2014 do not publish without resolution\",\n      \"fix\": \"Complete the BRAND_REVIEWER pass for Item 65 before any publish decision. Item 64 has already received a brand FAIL verdict \u2014 identify the specific violations (likely em dash usage, naming conventions, or heading case) and remediate before resubmission. Neither article in this cluster has a brand PASS on record.\",\n      \"applies_to\": \"Item 64 (brand FAIL), Item 65 (brand UNKNOWN)\",\n      \"dimension\": \"brand_voice\"\n    }\n  ],\n  \"strongest_article\": {\n    \"item_num\": \"64\",\n    \"name\": \"differentiated instruction in math\",\n    \"geo_composite\": 48.0\n  },\n  \"weakest_article\": {\n    \"item_num\": \"65\",\n    \"name\": \"differentiation instruction in science\",\n    \"geo_composite\": 45.2\n  }\n}\n</scores>\n\n<output>\n\n# Cluster Analysis: Differentiated Learning / Subject\n\n## Cluster overview\n\nThis two-article sub-cluster is the lowest-performing group in the Differentiated Learning cluster. Both articles score below 50 on the GEO Composite (46.6 average), and both fail every platform readiness flag \u2014 the only sub-cluster in the pipeline with a 0% platform readiness rate across all five engines. The content has a workable structural skeleton and strong schema potential, but a near-total absence of named citations and direct answer blocks prevents any AI engine from extracting or citing either article in its current state.\n\n---\n\n## Score summary\n\n| Dimension | Cluster Avg | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 43.5 | 70 | **-26.5** |\n| E-E-A-T | 42.0 | 70 | **-28.0** |\n| Platform Optimization | 39.0 | 70 | **-31.0** |\n| Brand Voice | 48.0 * | 70 | **-22.0** |\n| SEO Structure | 49.0 | 70 | **-21.0** |\n| Schema Recommendations | 76.5 | 70 | +6.5 \u2713 |\n| **GEO Composite** | **46.6** | **70** | **-23.4** |\n| **QAPEDS Composite** | **4.13 / 10** | **8.0** | **-3.87** |\n\n*Brand voice average is computed from Item 64 only. Item 65 has not been evaluated by BRAND_REVIEWER.*\n\nSchema Recommendations is the only dimension above target \u2014 both articles have been correctly identified as candidates for Article + FAQPage + LearningResource schemas. However, FAQPage schema cannot be implemented until FAQ sections are added to the content (see Recommendation 3 below).\n\n---\n\n## Top 3 recurring issues\n\n### 1. Zero named citations \u2014 affects both articles\n\nEvery authority signal in both articles is unattributed. Item 64 uses \"studies in cognitive science reveal.\" Item 65 uses \"research shows\" at least four times. Per the QAPEDS rubric, unnamed sourcing hard-caps the Proof (P) sub-score at \u22641 and suppresses the AI Citability Statistical Density sub-component to near zero. This is the single most damaging pattern in the cluster: AI citation engines (ChatGPT, Perplexity, Gemini) do not quote or surface content they cannot trace to a named, credible source. Until named citations are added, neither article can be cited by any AI engine regardless of other improvements.\n\n### 2. No direct answer block in first 150 words \u2014 affects both articles\n\nBoth articles open with student-scenario narratives \u2014 a technique that provides warmth but actively blocks QAPEDS Gate 2. The canonical answer to \"what is differentiated instruction in [subject] and how does it work\" does not appear until well past the 150-word threshold in either article. This means aio_ready, chatgpt_ready, and gemini_ready flags all remain false. The fix is surgical: one framing sentence, then a 2-3 sentence direct answer, then the scenario. The scenario does not need to be removed \u2014 it needs to follow the answer, not precede it.\n\n### 3. Generic, unnamed practitioner scenarios \u2014 affects both articles\n\nNeither article contains a named teacher, a specific school context, or a first-person practitioner voice. Phrases like \"a student who struggles with abstract concepts\" and \"a seventh-grade class\" provide zero E-E-A-T Experience signal. Google's quality evaluator framework treats generic scenarios as a weak indicator of actual classroom experience. For a supplemental learning platform with 200M+ resources and a teacher vetting network, this is a missed authority opportunity. One attributed teacher quote per article \u2014 with name, grade level, and context \u2014 would meaningfully lift the E-E-A-T score.\n\n---\n\n## Platform readiness\n\n| Platform | Ready | % |\n|---|---|---|\n| Google AIO | 0 / 2 | 0% |\n| ChatGPT | 0 / 2 | 0% |\n| Perplexity | 0 / 2 | 0% |\n| Gemini | 0 / 2 | 0% |\n| Bing Copilot | 0 / 2 | 0% |\n\nThis is a complete platform readiness failure. No article in this sub-cluster is ready for extraction by any AI engine. The root cause is structural, not cosmetic: the absence of direct answer blocks (blocking AIO and ChatGPT), named citations (blocking all five platforms), and FAQ sections (blocking Perplexity and Gemini) means these articles are invisible to AI-generated responses regardless of keyword targeting. Addressing Recommendations 1-3 below would be expected to unlock AIO-ready and ChatGPT-ready status for both articles and Perplexity-ready status once FAQ sections are in place.\n\n---\n\n## Brand compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | 0 |\n| WARN | 0 |\n| FAIL | 1 (Item 64) |\n| UNKNOWN | 1 (Item 65 \u2014 evaluation not completed) |\n\nThis cluster has zero brand PASS verdicts on record. Item 64 received a FAIL from BRAND_REVIEWER \u2014 the specific violations should be identified and remediated before resubmission. Item 65 has not been evaluated at all, which is a pipeline gap: the article should not advance toward publish without a completed brand review. Common brand failure patterns in this cluster are likely to include em dash usage in body copy (zero-tolerance per the style guide), possible heading case violations, and potential naming or vocabulary substitution issues. Both articles require a clean brand PASS before publish clearance.\n\n---\n\n## Cluster"
+}

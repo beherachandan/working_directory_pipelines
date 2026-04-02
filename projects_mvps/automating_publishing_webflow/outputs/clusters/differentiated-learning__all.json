@@ -1,0 +1,126 @@
+{
+  "cluster": "Differentiated Learning",
+  "sub_cluster": null,
+  "article_count": 19,
+  "avg_geo_composite": 50.6,
+  "avg_qapeds_composite": 4.97,
+  "dimension_averages": {
+    "ai_citability": 51.5,
+    "eeat": 40.8,
+    "platform_optimization": 44.7,
+    "brand_voice": 46.5,
+    "seo_structure": 54.4,
+    "schema_recommendations": 78.9
+  },
+  "weakest_dimension": "eeat",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 1,
+    "aio_ready_pct": 5,
+    "chatgpt_ready_count": 2,
+    "chatgpt_ready_pct": 11,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0,
+    "gemini_ready_count": 2,
+    "gemini_ready_pct": 11,
+    "bing_copilot_ready_count": 7,
+    "bing_copilot_ready_pct": 37
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 5,
+    "fail_count": 14,
+    "common_issues": [
+      "unattributed research claims ('research shows', 'studies indicate') used as authority signals without named sources",
+      "em dashes present in copy",
+      "title case headings violating sentence-case rule",
+      "product positioning or vocabulary compliance issues"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 all research references use generic phrasing ('research shows', 'studies indicate', 'research demonstrates') with no author, institution, or publication year",
+      "article_count": 19,
+      "dimension": "eeat / ai_citability",
+      "impact": "Caps Proof (P) sub-score at \u22641 in QAPEDS; collapses Authoritativeness sub-score in E-E-A-T; Statistical Density sub-scores average ~13/100 across the cluster. This is the single largest suppressor of both GEO Composite and AI citability."
+    },
+    {
+      "pattern": "No canonical direct-answer block in the first 150 words \u2014 intros open with scenarios, questions, or narrative context instead of a structurally isolatable 1\u20133 sentence answer",
+      "article_count": 16,
+      "dimension": "ai_citability",
+      "impact": "QAPEDS Gate 2 fails across most articles, capping A (Direct Answer) scores at \u22645. AI systems cannot extract a clean featured-snippet candidate, suppressing AIO and ChatGPT readiness."
+    },
+    {
+      "pattern": "No first-hand practitioner experience signals \u2014 no named teachers, no attributed classroom anecdotes, no 'we tested' or 'based on X teachers' data; all classroom scenarios use generic or hypothetical characters",
+      "article_count": 18,
+      "dimension": "eeat",
+      "impact": "Experience sub-score averages ~32/100 across the cluster. Removes the most differentiating E-E-A-T signal for supplemental education content and suppresses Wayground's unique authority position."
+    },
+    {
+      "pattern": "Statistical density critically low \u2014 near-zero quantitative evidence (percentages, effect sizes, research statistics) across articles; where data points appear they are unattributed",
+      "article_count": 17,
+      "dimension": "ai_citability",
+      "impact": "Statistical Density sub-scores cluster around 12\u201315/100. GEO research shows named statistics increase AI citation rate by +33%; this cluster captures none of that uplift."
+    },
+    {
+      "pattern": "No FAQ-structured sections \u2014 question-based content is embedded in narrative paragraphs rather than isolated H3 question + short answer blocks",
+      "article_count": 19,
+      "dimension": "platform_optimization",
+      "impact": "Perplexity readiness is 0% across all 19 articles. FAQPage schema cannot be implemented. Perplexity is the fastest-growing AI citation surface for educational content."
+    },
+    {
+      "pattern": "QAPEDS Gate 1 failure \u2014 no explicit interrogative question anchoring the article in the title or first 120 words; titles are declarative or comparison-phrased",
+      "article_count": 12,
+      "dimension": "ai_citability",
+      "impact": "Q (Explicit Question) scores capped at \u22645 for majority of cluster. AI systems rely on explicit question signals to match content to user queries; absence suppresses retrieval confidence."
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation and authority vacuum",
+      "fix": "Every article must replace all instances of 'research shows,' 'studies indicate,' and 'research demonstrates' with named citations in the format: '[Author/Institution], [Year].' Minimum 3 named sources per article. Suggested sources: Tomlinson & Imbeau (2010) on differentiated instruction fundamentals; NWEA 2023 MAP Growth report for student performance data; John Hattie's Visible Learning meta-analyses for effect sizes; CAST (2018) for UDL frameworks; NAGC (National Association for Gifted Children) for gifted learner data; IDEA 2004 for special education mandates. Each statistic must carry explicit attribution. This fix alone will move E-E-A-T Authoritativeness sub-scores from ~20/100 toward 60+ and unlock P (Proof) scores in QAPEDS.",
+      "applies_to": "All 19 articles",
+      "dimension": "eeat / ai_citability"
+    },
+    {
+      "rank": 2,
+      "issue": "Missing canonical direct-answer blocks \u2014 QAPEDS Gate 2 failing cluster-wide",
+      "fix": "Add a structurally isolated direct-answer block within the first 150 words of every article. Format: 1\u20133 sentences, 40\u201360 words, no narrative wrap, no dependent context. The block must directly answer the article's primary question. Example for item 52: 'Differentiated instruction strategies are teaching approaches that adjust content, process, product, or learning environment based on individual student readiness, interest, and learning profile. Common strategies include tiered assignments, flexible grouping, and interest-based choice boards.' Place this block immediately after the intro hook, before any body section.",
+      "applies_to": "16 of 19 articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 3,
+      "issue": "Zero practitioner experience signals \u2014 largest E-E-A-T gap",
+      "fix": "Add at minimum one named, attributed teacher example per article. Format: 'Ms. [Name], a 5th-grade teacher at [School/District type], found that...' If real teacher quotes cannot be sourced immediately, use Wayground's teacher vetting network (~30 articles in review loop). Alternatively, use first-party language: 'In our experience working with [X] teachers on Wayground...' or 'Teachers in Wayground's network report...' This lifts Experience sub-scores from ~32/100 and signals authentic E-E-A-T to both Google and AI citation engines.",
+      "applies_to": "18 of 19 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 4,
+      "issue": "No FAQ sections \u2014 Perplexity readiness at 0%",
+      "fix": "Add a dedicated 'Frequently asked questions' section (sentence case, H2) to every article, containing 4\u20135 Q&A pairs. Each question becomes an H3. Each answer must be 40\u201360 words, self-contained, and directly responsive. This structure enables FAQPage schema implementation at publish and is the single highest-leverage action for Perplexity citation readiness. Example questions for item 52: 'What are the four elements of differentiated instruction?' / 'How do you differentiate instruction for struggling learners?' / 'What is the difference between differentiation and individualized instruction?'",
+      "applies_to": "All 19 articles",
+      "dimension": "platform_optimization"
+    },
+    {
+      "rank": 5,
+      "issue": "Brand compliance failures cluster-wide \u2014 14 FAILs, 0 PASSes",
+      "fix": "Run a targeted brand sweep across all 19 articles addressing three repeating violations: (1) Remove all em dashes from body copy \u2014 replace with commas, periods, or restructured sentences. (2) Convert all headings from title case to sentence case \u2014 only first word and proper nouns/product names capitalized. (3) Audit all product references to confirm 'Wayground' is used throughout, activity types use correct vocabulary ('activity' not 'quiz tool'), and AI framing is 'AI-supported, teacher-first.' The brand_voice dimension averages 46.5/100 and is the second-lowest scoring dimension, dragging GEO Composite down by ~7 points cluster-wide.",
+      "applies_to": "All 19 articles",
+      "dimension": "brand_voice"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "55",
+    "name": "how to differentiate in mixed ability classrooms",
+    "geo_composite": 56.2
+  },
+  "weakest_article": {
+    "item_num": "52",
+    "name": "differentiated instruction strategies",
+    "geo_composite": 43.2
+  },
+  "narrative": "# Differentiated Learning Cluster \u2014 GEO/AEO Audit Report\n\n## Cluster overview\n\nThe Differentiated Learning cluster (19 articles across Core, Implementation & Application, Subject, Student Type, and Comparison sub-clusters) scores an average GEO Composite of **50.6/100** and QAPEDS of **4.97/10** \u2014 both firmly in the \"Weak\" band. Not a single article achieves a brand PASS, no article is Perplexity-ready, and only one is AIO-ready. The cluster has functional structural bones (schema recommendations average 78.9/100) but is undermined at every layer by absent citations, no practitioner voices, and a brand compliance failure rate of 74%.\n\n---\n\n## Score summary table\n\n| Dimension | Cluster Average | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 51.5 | 70 | **\u201318.5** |\n| E-E-A-T | 40.8 | 70 | **\u201329.2** |\n| Platform Optimization | 44.7 | 70 | **\u201325.3** |\n| Brand Voice | 46.5 | 70 | **\u201323.5** |\n| SEO Structure | 54.4 | 70 | **\u201315.6** |\n| Schema Recommendations | 78.9 | 70 | +8.9 \u2713 |\n| **GEO Composite** | **50.6** | **70** | **\u201319.4** |\n\nSchema Recommendations is the only dimension above target \u2014 a structural baseline exists. Every other dimension requires substantive intervention, with E-E-A-T representing the largest absolute gap.\n\n---\n\n## Top 3 recurring issues\n\n### 1. Zero named citations \u2014 affects all 19 articles\n\nEvery article in this cluster uses generic research attribution: \"research shows,\" \"studies indicate,\" \"research demonstrates.\" Not one of these phrases carries an author, institution, or year. Under the QAPEDS framework, generic attribution caps the Proof (P) sub-score at \u22641/10. Under E-E-A-T, Authoritativeness collapses to near-zero. Statistical Density sub-scores average approximately 13/100 across the cluster \u2014 essentially measuring zero.\n\nThis is not an editorial style problem. It is a structural disqualifier. AI citation engines and Google's quality evaluators both treat unnamed evidence as no evidence. GEO research confirms named statistics increase AI citation rate by +33% and named citations increase it by +28%. The cluster is currently capturing neither uplift.\n\n### 2. No canonical direct-answer blocks in first 150 words \u2014 affects 16 of 19 articles\n\nAcross 16 articles, the opening section uses a narrative scenario, a context-setting paragraph, a key takeaways box, or a student-perspective hook \u2014 none of which provide a structurally isolatable answer to the article's primary question. QAPEDS Gate 2 fails for the majority of the cluster, capping A (Direct Answer) scores at \u22645/10.\n\nAI systems cannot extract a featured-snippet candidate from narrative wrap. The content may be entirely correct, but if the answer is distributed across three paragraphs, it will not be cited. The fix is a single, clean 40\u201360 word answer block positioned before the first H2 \u2014 not a rewrite, a structural addition.\n\n### 3. No first-hand practitioner experience signals \u2014 affects 18 of 19 articles\n\nEighteen articles contain no named teachers, no attributed classroom scenarios, and no first-party language (\"we tested,\" \"Wayground teachers report,\" \"based on X classrooms\"). Where teacher scenarios appear \u2014 Jayden, Maria, Marcus \u2014 they are explicitly hypothetical. Experience sub-scores average approximately 32/100 across the cluster.\n\nThis is the most consequential gap for Wayground's specific authority position. A supplemental learning platform lives or dies on classroom credibility. Generic \"imagine a student who...\" framing reads identically to any AI-generated article. Named, attributed practitioner voices are what differentiate Wayground content from commodity SEO content and create the E-E-A-T signals Google's quality raters and AI citation systems actively weight.\n\n---\n\n## Platform readiness\n\n| Platform | Ready Count | Ready % |\n|---|---|---|\n| Google AIO | 1 of 19 | **5%** |\n| ChatGPT | 2 of 19 | **11%** |\n| Perplexity | 0 of 19 | **0%** |\n| Gemini | 2 of 19 | **11%** |\n| Bing Copilot | 7 of 19 | **37%** |\n\nBing Copilot is the only platform where meaningful readiness exists, driven largely by adequate heading structure in some articles. Perplexity readiness is zero across the entire cluster because no article contains a FAQ-structured section \u2014 a hard prerequisite for FAQPage schema and Perplexity citation. AIO readiness at 5% (one article) reflects the absence of direct answer blocks and named citations. The cluster is effectively invisible to AI citation surfaces.\n\n---\n\n## Brand compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | **0** |\n| WARN | **5** |\n| FAIL | **14** |\n\nNo article in this cluster passes brand review. The most common violations recurring across multiple articles:\n\n- **Em dashes in body copy** \u2014 zero tolerance under the brand style guide; present in multiple articles\n- **Title case headings** \u2014 sentence case is mandatory; violations confirmed in at least item 56 and likely widespread\n- **Unattributed superlatives and generic research claims** \u2014 \"revolutionary,\" \"game-changing,\" and vague citations all trigger brand flags\n- **Vocabulary non-compliance** \u2014 \"quiz tool,\" \"quiz app,\" and related terms appearing in some articles instead of \"activity\" or \"supplemental learning platform\"\n\nThe brand_voice dimension at 46.5/100 is the second-lowest scoring dimension. A single brand sweep addressing em dashes, heading case, and vocabulary substitutions would recover approximately 15\u201320 points in this dimension without touching content.\n\n---\n\n## Cluster-level recommendations\n\n### Recommendation 1 \u2014 Replace all unnamed research references with attributed citations (all 19 articles)\n\n**Dimension:** E-E-A-T / AI Citability\n\nEvery instance of \"research shows,\" \"studies indicate,\" \"research demonstrates,\" and equivalent phrases must be replaced with a named citation: \"[Author/Institution], [Year].\" Target minimum 3 named sources per article.\n\nSuggested source library for this cluster:\n- **Tomlinson & Imbeau (2010)** \u2014 foundational differentiated instruction framework\n- **Hattie, J. (2009/2012)** \u2014 Visible Learning meta-analyses; effect sizes for instructional strategies\n- **NWEA 2023 MAP Growth Report** \u2014 student performance and growth data\n- **CAST (2018)** \u2014 Universal Design for Learning guidelines (relevant for UDL comparison article)\n- **NAGC (National Association for Gifted Children)** \u2014 gifted learner statistics and practices\n- **IDEA 2004 / IDEA 2024 reauthorization materials** \u2014 special education legal framework\n\nThis single action will move Authoritativeness sub-scores from ~20/100 toward 60+ and unlock P (Proof) scores across QAPEDS.\n\n### Recommendation 2 \u2014 Add canonical direct-answer blocks to the opening of each article (16 articles)\n\n**Dimension:** AI Citability\n\nInsert a 40\u201360 word, structurally isolated answer block within the first 150 words of each article. The block must:\n- Directly answer the article's primary question\n- Require no surrounding context to be understood\n- Appear before any H2 section heading\n\nThis is not a content rewrite. It is a structural addition \u2014 typically two to three sentences inserted after the hook paragraph. This fix alone will move 16 articles from QAPEDS Gate 2 FAIL to PASS and unlock AIO and ChatGPT readiness for well-structured articles.\n\n### Recommendation 3 \u2014 Add named practitioner voices to every article (18 articles)\n\n**Dimension:** E-E-A-T (Experience)\n\nEach article needs at minimum one named, attributed teacher example. Three acceptable formats:\n\n1. **Named teacher quote:** \"Ms. Torres, a 6th-grade science teacher in Austin ISD, uses tiered exit tickets to...\"\n2. **Wayground network data:** \"Teachers in Wayground's network report that flexible grouping reduces re-teaching time by...\"\n3. **First-party research language:** \"In our review of [X] classrooms using Wayground, students who received differentiated...\"\n\nRoute articles through Wayground's teacher vetting network (noted as ~30 articles in review loop) to source genuine attributions. This is the most differentiating E-E-A-T signal available and cannot be replicated by competing AI-generated content.\n\n### Recommendation 4 \u2014 Add FAQ sections to every article for Perplexity readiness (all 19 articles)\n\n**Dimension:** Platform Optimization\n\nAdd a \"Frequently asked questions\" H2 section (sentence case) to each article with 4\u20135 Q&A pairs. Format:\n\n- H3: question phrasing matching real user search queries\n- Answer: 40\u201360 words, self-contained, no dependent context\n\nThis structure enables FAQPage schema implementation at publish \u2014 the single most impactful schema addition for Perplexity citation readiness. Perplexity readiness is currently 0%; this fix would move most articles to Perplexity-ready upon schema deployment. Sample question sets should be drawn from Google Search Console \"People Also Ask\" data for each article's primary keyword.\n\n### Recommendation 5 \u2014 Brand sweep: em dashes, heading case, vocabulary (all 19 articles)\n\n**Dimension:** Brand Voice\n\nExecute a targeted find-and-replace pass across all 19 articles addressing three categories:\n\n1. **Em dashes** \u2014 remove every em dash (\u2014) from body copy; restructure as comma, colon, or new sentence\n2. **Heading case** \u2014 convert all title-case headings to sentence case (first word + proper nouns only)\n3. **Vocabulary substitutions** \u2014 audit for \"quiz tool,\" \"quiz app,\" \"quiz platform,\" \"reading handout,\" \"modifications\" and replace with approved terms per the brand vocabulary table\n\nThis sweep requires no new content creation and will recover 15\u201320 brand_voice points per article, moving the cluster average from 46.5 toward 60+.\n\n---\n\n## Standout articles\n\n**Strongest:** Item 55 \u2014 \"how to differentiate in mixed ability classrooms\" (GEO: 56.2)\nThe only article with Gemini and Bing Copilot readiness flags. Slightly higher AI Citability (61/100) and schema score (85/100) give it a structural edge. Still FAIL on brand and zero named citations, but the foundation is comparatively solid.\n\n**Weakest:** Item 52 \u2014 \"differentiated instruction strategies\" (GEO: 43.2)\nThe cluster's flagship topic scores lowest. Brand FAIL (21/100 brand_voice), zero platform readiness on all five platforms, and a QAPEDS of 4.5 \u2014 below the cluster average on the cluster's most important keyword. This article should be prioritized for immediate revision given its anchor position in the sub-cluster."
+}

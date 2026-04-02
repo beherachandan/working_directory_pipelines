@@ -1,0 +1,28 @@
+{
+  "item_num": "80",
+  "name": "scaffolding questions",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 5,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 4.0,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 Standards Alignment (score: 2 \u2192 automatic REVISE): The article is explicitly a lesson design / differentiation piece for K-12 classrooms, yet no standards framework is named anywhere \u2014 no Common Core ELA anchor standards for discussion (CCSS.ELA-LITERACY.SL), no NGSS science practices (which align directly with the ecosystems table), no ISTE frameworks. The meta description even says 'K-12 classrooms.' A single line such as 'This progression supports NGSS Science and Engineering Practice 6 (Constructing Explanations) and CCSS Speaking & Listening anchor standard 1' would satisfy this criterion.",
+    "C9 is the only automatic-fail criterion, but C5 Grade-Band Specificity also warrants attention: despite the detailed ecosystems table, the article never names a grade band. 'Upper-elementary' appears only in the alt-text of an image, not in the body copy. Teachers reading this for a 5th-grade unit or a 10th-grade biology class can't tell if it's aimed at them. At minimum, label the ecosystems table with a suggested grade band (e.g., 'grades 5\u20138 life science') and add one explicit reference in the text.",
+    "C3 Non-AI Tone: Several phrases read as polished AI prose rather than a practitioner's voice \u2014 'transforms mixed-ability classrooms into meaningful discussions where every voice matters,' 'The beauty lies in how this questioning ladder becomes a practical tool,' and the FAQ opener 'You know how challenging it can be...' are characteristic AI-softening constructions. A light editorial pass to replace these with plainer, more direct teacher language ('This works across content areas,' 'Here's why this matters') would meaningfully raise authenticity."
+  ],
+  "positive_signals": [
+    "The scaffolded question table is genuinely exceptional \u2014 nine rows covering three readiness levels \u00d7 three cognitive stages, with oral prompts, sentence frames, visual options, and quick-check moves all in one place. A teacher could print this and use it Tuesday with almost no adaptation.",
+    "Term definitions are handled well throughout: scaffolding, cognitive load theory, zone of productive struggle, trophic level, and differentiation are all explained inline without condescension, making the article accessible to first-year teachers and veterans alike."
+  ],
+  "narrative": "This article has genuinely strong bones \u2014 the tiered question table alone is one of the most immediately usable classroom artifacts I've seen in a blog post, and the inline definitions make it accessible to teachers at any career stage. However, it cannot pass in its current form because it triggers the automatic REVISE rule: a K-12 lesson design article with a detailed science ecosystems example has no business leaving the building without at least one named standards framework (NGSS, CCSS SL, or both), and that omission needs to be fixed before publish. Alongside that, the article should label the ecosystems table with a specific grade band in the body copy (not just the image alt-text), and a light editorial pass should replace three or four AI-softening constructions (\"every voice matters,\" \"the beauty lies in\") with the blunter, more direct voice real teachers use. Fix those three things and this is a strong PASS."
+}

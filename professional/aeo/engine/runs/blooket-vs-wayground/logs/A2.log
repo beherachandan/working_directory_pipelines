@@ -2,3 +2,4 @@
 [A2] Calling claude (model: sonnet)...
 [A2] Claude responded in 168s
 [A2] Completed. Output: outputs/A2-competitive-intelligence.md (168s, ~4084+7714 tokens)
+[A2] Already completed, skipping.

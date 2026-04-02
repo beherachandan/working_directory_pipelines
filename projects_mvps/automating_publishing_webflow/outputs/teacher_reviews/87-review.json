@@ -1,0 +1,28 @@
+{
+  "item_num": "87",
+  "name": "tools for personalized student engagement strategies",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 4,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.7,
+  "verdict": "PASS",
+  "top_issues": [
+    "Grade-band specificity is thin: the article leans heavily on '7th-grade science' as its only concrete example. A 4th-grade math teacher or a 10th-grade ELA teacher can't picture themselves in this article. At minimum, add one more grade-band callout (e.g., 'In a 3rd-grade reading block...' or 'For a high school history class...') to widen the audience.",
+    "Wayground's value proposition is vague at the close: 'extensive, standards-aligned library with automatic accommodations and AI-supported differentiation' describes a category, not a feature. The Houston ISD anecdote is the strongest Wayground moment in the piece, but the CTA never names a specific tool (e.g., 'Wayground's Create with AI' or 'Wayground's formative check builder'). Replace the generic closing claim with one named feature and a concrete time/outcome.",
+    "A handful of AI-ish constructions dilute the teacher voice \u2014 'when teachers maintain meaningful agency over AI-generated content decisions' and 'privacy-first design while making accommodations seamless rather than add-ons' read like vendor copy, not classroom practitioner language. Tighten to something a teacher would actually say."
+  ],
+  "positive_signals": [
+    "The three-step assign-check-adapt loop is genuinely usable on a Monday morning \u2014 it maps onto real class structure without requiring new planning systems, and the 63-minute framing immediately grounds the reader in classroom reality.",
+    "The tool-category comparison table is well-constructed: six rows, four meaningful columns, and the 'Progress Signals' column gives teachers something concrete to look for when evaluating platforms \u2014 this is the kind of reference a teacher bookmarks."
+  ],
+  "narrative": "This article earns a PASS \u2014 the assign-check-adapt loop, the comparison table, and the UDL/Hattie citations give it real classroom credibility, and the opening 63-minute framing is one of the stronger hooks I've seen in this content category. The two places that need sharpening before publish are grade-band reach (right now it's almost entirely a 7th-grade science article, which will cause other teachers to skim past it) and the Wayground CTA, which drops to a generic category claim at exactly the moment it should name a specific feature. Fix those two things and this is a genuinely solid teacher resource."
+}

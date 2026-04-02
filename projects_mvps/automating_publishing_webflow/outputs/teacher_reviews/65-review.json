@@ -1,0 +1,28 @@
+{
+  "item_num": "65",
+  "name": "differentiation instruction in science",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 4,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 5,
+    "C9_standards_alignment": 5,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.6,
+  "verdict": "REVISE",
+  "top_issues": [
+    "The opening buries the value: the first paragraph starts with a single student anecdote, then pivots to a Tomlinson citation, then asks a rhetorical question \u2014 three sentences of throat-clearing before the article defines its own purpose. A teacher skimming during planning has already moved on. Cut to the definition and strategy list in paragraph two immediately.",
+    "Wayground's value proposition is dangerously vague. '25+ accommodations handle the heavy lifting of personalization' and 'Set read-aloud, language options, timers' are feature lists, not use cases. There is no named Wayground feature tied to a specific teacher workflow \u2014 e.g., no mention of how a teacher actually generates a tiered investigation or CER scaffold inside the platform. This reads like a generic SaaS pitch, not a tool a science teacher would trust.",
+    "The section header 'Use models, drawings, and simulations' promises multimodal modeling strategies, but the body copy describes flexible lab roles (Materials Manager, Data Analyst, etc.) \u2014 a completely different strategy. The mismatch would confuse a teacher trying to implement this Monday. The content under that header needs to either match the header or be re-headed."
+  ],
+  "positive_signals": [
+    "The tiered investigations table (Access / Grade-level / Extension) is genuinely classroom-ready \u2014 a teacher could adapt it for a specific unit the same day with minimal extra work, and the data representation column is a practical detail most differentiation articles skip.",
+    "Differentiation and inclusivity coverage is among the strongest this rubric can reward: multilingual learners, IEP/504 students, neurodiverse learners, gifted learners, and home-language support all appear with concrete strategies (audio CER recording, bilingual glossaries, home-language anchor chart entries), not just acknowledgment."
+  ],
+  "narrative": "This article has genuine classroom value \u2014 the tiered investigations table, CER toolkit breakdown, and flexible lab-roles routine are the kind of specific, steal-able ideas teachers actually bookmark \u2014 and its NGSS and inclusivity coverage is thorough enough to serve both veteran and novice science teachers. However, two issues require revision before publish: the opening paragraph wastes a teacher's first 30 seconds with a student vignette, a research citation, and a rhetorical question before getting to the point, and the Wayground section closes the article with vague feature-listing (\"25+ accommodations,\" \"read-aloud, language options, timers\") rather than showing a specific teacher action inside the platform \u2014 which means the one section that should convert a reader into a user reads like a press release instead. Fix the opening to lead with the definition and strategy preview currently buried in paragraph two, rewrite the Wayground section around one named feature tied to one concrete teacher task (e.g., \"Use Wayground's activity builder to generate a three-tier CER investigation in under five minutes\"), and correct the header/body mismatch in the multimodal section \u2014 then this article is ready to publish."
+}

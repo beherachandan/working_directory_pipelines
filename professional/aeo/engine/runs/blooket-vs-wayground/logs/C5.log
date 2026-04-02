@@ -11,3 +11,4 @@
 [C5] Calling claude (model: opus)...
 [C5] Claude responded in 309s
 [C5] Completed. Output: outputs/C5-composer.md (309s, ~34764+10921 tokens)
+[C5] Already completed, skipping.

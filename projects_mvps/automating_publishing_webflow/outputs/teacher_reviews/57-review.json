@@ -1,0 +1,28 @@
+{
+  "item_num": "57",
+  "name": "differentiation methods",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 4.0,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 (Standards Alignment) scores a 2 \u2014 this is an automatic REVISE trigger. A lesson-design article covering content, process, product, and environment differentiation is exactly where CCSS, NGSS, or ISTE standards should be named. The article cites RAND and What Works Clearinghouse research but never connects the framework to any named standard or framework (e.g., ISTE Standard 5 on Designer, or how tiered texts align with CCSS Reading anchor standards). One sentence per relevant framework would fix this.",
+    "C10 (Wayground Value Prop) is vague in two of three mentions. 'Wayground can automatically suggest process accommodations based on individual student data' and 'Wayground gives you the tools to personalize content, process, and product without the extra prep work' are mechanism-free claims. The one concrete mention \u2014 'Wayground's live session modes let you control pacing' \u2014 is the right model; the other two need to follow it with a specific feature name and a time or workflow payoff (e.g., 'Wayground's Create with AI generates tiered reading passages on the same topic in under two minutes').",
+    "C5 (Grade-Band Specificity) only earns a 3. The 7th-grade science thread (Ms. Chen, photosynthesis, osmosis) is strong, but the article presents itself as 'a framework for every classroom' without anchoring the content, process, product, and environment examples to K\u20132, upper elementary, or high school contexts. A brief call-out box \u2014 even two sentences \u2014 showing how the same decision tree applies in, say, a 3rd-grade ELA or 10th-grade history class would push this to a 4."
+  ],
+  "positive_signals": [
+    "The three-step decision tree (identify the barrier \u2192 pick one learner variable \u2192 match method to time) is genuinely Monday-morning usable \u2014 specific, low-prep framing with realistic time estimates (5\u201310 minutes vs. a full period) is exactly what teachers need.",
+    "The teacher-led vs. student-driven comparison table is a standout structural element: it gives concrete classroom flow, a science example for every row, and an evidence citation, making it the kind of reference a teacher might actually keep open during planning."
+  ],
+  "narrative": "This article has real classroom muscle \u2014 the decision tree, the comparison table, and the FAQ section are all genuinely practical and would hold up well during a planning period. However, the missing standards alignment (C9 = 2) is an automatic REVISE: for a lesson-design article of this scope, not naming CCSS, NGSS, or ISTE is a gap a curriculum coach or instructional coach would flag immediately, and fixing it requires adding only a sentence or two per relevant framework. Beyond that hard stop, two of the three Wayground mentions need to be upgraded from vague claims to specific feature-plus-workflow examples, following the model already set by the live session modes reference. Add one grade-band anchor outside the 7th-grade science thread and this article is close to a clean PASS."
+}

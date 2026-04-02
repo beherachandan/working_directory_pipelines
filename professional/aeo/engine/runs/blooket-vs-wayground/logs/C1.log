@@ -10,3 +10,4 @@
 [C1] Calling claude (model: sonnet)...
 [C1] Claude responded in 147s
 [C1] Completed. Output: outputs/C1-research.md (147s, ~7107+6261 tokens)
+[C1] Already completed, skipping.

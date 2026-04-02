@@ -1,0 +1,28 @@
+{
+  "item_num": "71",
+  "name": "scaffolding in education",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 4.1,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 (Standards Alignment) scores a 2 and triggers automatic REVISE: for an article squarely about lesson design and differentiated instruction, there is no mention of Common Core ELA/Math, NGSS, ISTE, or any state framework \u2014 a meaningful missed opportunity that many teachers will notice immediately, especially those writing unit plans or justifying instructional choices to administrators.",
+    "C10 (Wayground Value Prop) is vague: the closing paragraph says Wayground offers 'standards-aligned resources and built-in accommodations' but never names a specific feature (e.g., 'Wayground's Create with AI lets you generate tiered versions of an exit ticket in under 2 minutes'). The sentence-starter stat citing '200 Wayground educators' is a nice data touch but doesn't connect back to a named product feature a teacher could actually use.",
+    "C8 (Differentiation & Inclusivity) covers multilingual learners and mixed-readiness well but is thin on gifted/advanced learners and students with IEPs/504 plans \u2014 two groups every classroom teacher thinks about daily. One sentence acknowledging that scaffolding logic also applies to extension tasks for advanced learners, or that certain scaffolds may be legally required accommodations for 504/IEP students, would round this out."
+  ],
+  "positive_signals": [
+    "The before/during/after table is genuinely photocopy-worthy \u2014 it names the goal, lists concrete strategies, and gives subject-specific classroom examples all in one scannable reference, exactly what teachers want during a planning period.",
+    "Term definitions are exemplary: ZPD, gradual release, adaptive fading, and scaffolding itself are all defined inline with citations, making the article accessible to a first-year teacher without condescending to a veteran."
+  ],
+  "narrative": "This article is substantively strong \u2014 the before/during/after table, the Ms. Chen vignette, the research citations, and the consistent teacher-as-decision-maker framing are all things a real classroom teacher would flag as genuinely useful. However, it earns an automatic REVISE because C9 (Standards Alignment) scores a 2: an article this focused on lesson design and differentiated instruction should explicitly connect to Common Core, NGSS, or at minimum name a standards framework, since teachers routinely have to justify instructional choices to instructional coaches and administrators. The Wayground value proposition also needs sharpening \u2014 replace the generic \"standards-aligned resources and built-in accommodations\" language with one specific, named feature and a concrete time or outcome claim. Fix those two items and this article is very close to a clean PASS."
+}

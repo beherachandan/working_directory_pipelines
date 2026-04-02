@@ -1,1 +1,6 @@
 .DS_Store
+
+# Secrets — never commit (use .env.example + local .env)
+projects_mvps/automating_publishing_webflow/.env
+projects_mvps/automating_publishing_webflow/chandan_b_service_account_key.json
+projects_mvps/automating_publishing_webflow/quizizz-org-f2b818b919d5.json

@@ -1,0 +1,192 @@
+{
+  "article_slug": "turn-and-talk-student-engagement",
+  "topic": "Turn and Talk: A Quick Guide to Increasing Student Engagement",
+  "created_at": "2026-03-20T11:43:28Z",
+  "updated_at": "2026-03-20T12:44:40Z",
+  "current_stage": "E2",
+  "status": "waiting_human_review",
+  "dag_progress": {
+    "A1": {
+      "status": "completed",
+      "output_file": "outputs/A1-query-intelligence.md",
+      "started_at": "2026-03-20T11:43:28Z",
+      "completed_at": "2026-03-20T11:44:50Z",
+      "input_tokens": 2030,
+      "output_tokens": 2019
+    },
+    "A2": {
+      "status": "completed",
+      "output_file": "outputs/A2-competitive-intelligence.md",
+      "started_at": "2026-03-20T11:44:50Z",
+      "completed_at": "2026-03-20T11:47:17Z",
+      "input_tokens": 4016,
+      "output_tokens": 4444
+    },
+    "B1": {
+      "status": "completed",
+      "output_file": "outputs/B1-intent-classifier.md",
+      "started_at": "2026-03-20T11:47:17Z",
+      "completed_at": "2026-03-20T11:49:25Z",
+      "input_tokens": 8460,
+      "output_tokens": 4337
+    },
+    "B2": {
+      "status": "completed",
+      "output_file": "outputs/B2-ear-decomposer.md",
+      "started_at": "2026-03-20T11:49:25Z",
+      "completed_at": "2026-03-20T11:52:05Z",
+      "input_tokens": 12902,
+      "output_tokens": 4623
+    },
+    "B3": {
+      "status": "completed",
+      "output_file": "outputs/B3-content-brief-generator.md",
+      "started_at": "2026-03-20T11:52:05Z",
+      "completed_at": "2026-03-20T11:54:19Z",
+      "input_tokens": 20776,
+      "output_tokens": 4497
+    },
+    "C1": {
+      "status": "completed",
+      "output_file": "outputs/C1-research.md",
+      "started_at": "2026-03-20T11:54:19Z",
+      "completed_at": "2026-03-20T11:55:53Z",
+      "input_tokens": 5989,
+      "output_tokens": 0
+    },
+    "C2": {
+      "status": "completed",
+      "output_file": "outputs/C2-outline.md",
+      "started_at": "2026-03-20T11:55:53Z",
+      "completed_at": "2026-03-20T11:58:31Z",
+      "input_tokens": 6632,
+      "output_tokens": 6394
+    },
+    "C3": {
+      "status": "completed",
+      "output_file": "outputs/C3-draft.md",
+      "started_at": "2026-03-20T11:58:31Z",
+      "completed_at": "2026-03-20T12:03:55Z",
+      "input_tokens": 13095,
+      "output_tokens": 6278
+    },
+    "C4": {
+      "status": "completed",
+      "output_file": "outputs/C4-citation-enricher.md",
+      "started_at": "2026-03-20T12:03:55Z",
+      "completed_at": "2026-03-20T12:09:17Z",
+      "input_tokens": 13784,
+      "output_tokens": 8498
+    },
+    "C5": {
+      "status": "completed",
+      "output_file": "outputs/C5-composer.md",
+      "started_at": "2026-03-20T12:09:17Z",
+      "completed_at": "2026-03-20T12:13:27Z",
+      "input_tokens": 15119,
+      "output_tokens": 8143
+    },
+    "D1": {
+      "status": "completed",
+      "output_file": "outputs/D1-aeo-evaluator.md",
+      "started_at": "2026-03-20T12:13:27Z",
+      "completed_at": "2026-03-20T12:15:07Z",
+      "input_tokens": 17996,
+      "output_tokens": 1702
+    },
+    "D2": {
+      "status": "completed",
+      "output_file": "outputs/D2-fact-check.md",
+      "started_at": "2026-03-20T12:13:27Z",
+      "completed_at": "2026-03-20T12:15:56Z",
+      "input_tokens": 9611,
+      "output_tokens": 4534
+    },
+    "D3": {
+      "status": "completed",
+      "output_file": "outputs/D3-seo.md",
+      "started_at": "2026-03-20T12:13:27Z",
+      "completed_at": "2026-03-20T12:15:30Z",
+      "input_tokens": 15169,
+      "output_tokens": 2943
+    },
+    "D4": {
+      "status": "failed",
+      "output_file": null,
+      "started_at": "2026-03-20T12:13:27Z",
+      "error": "Claude API call failed"
+    },
+    "E1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "E2": {
+      "status": "completed",
+      "output_file": "outputs/E2-brand-voice-reviewer.md",
+      "started_at": "2026-03-20T12:43:03Z",
+      "completed_at": "2026-03-20T12:44:40Z",
+      "input_tokens": 14711,
+      "output_tokens": 2141
+    },
+    "F1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F2": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F3": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F4": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F5": {
+      "status": "pending",
+      "output_file": null
+    },
+    "F6": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G1": {
+      "status": "pending",
+      "output_file": null
+    },
+    "G2": {
+      "status": "pending",
+      "output_file": null
+    }
+  },
+  "gates": {
+    "D_gate": {
+      "decision": "PASS",
+      "d1_scores": {
+        "qape": 9,
+        "ear": 9,
+        "extract": 8,
+        "trust": 7,
+        "intent": 9
+      },
+      "composite": 8.4
+    },
+    "E_gate": {
+      "decision": null,
+      "feedback_file": null
+    }
+  },
+  "revisions": {
+    "count": 0,
+    "max": 2,
+    "history": []
+  },
+  "model_overrides": {},
+  "token_usage": {
+    "total_input": 160290,
+    "total_output": 60553,
+    "cost_estimate_usd": 2.9110650000000002
+  }
+}

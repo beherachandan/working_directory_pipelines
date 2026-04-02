@@ -1,0 +1,111 @@
+{
+  "cluster": "Differentiated Learning",
+  "sub_cluster": "Comparison",
+  "article_count": 2,
+  "avg_geo_composite": 54.3,
+  "avg_qapeds_composite": 5.7,
+  "dimension_averages": {
+    "ai_citability": 53.0,
+    "eeat": 44.0,
+    "platform_optimization": 50.5,
+    "brand_voice": null,
+    "seo_structure": 60.0,
+    "schema_recommendations": 80.0
+  },
+  "weakest_dimension": "eeat",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 1,
+    "aio_ready_pct": 50,
+    "chatgpt_ready_count": 1,
+    "chatgpt_ready_pct": 50,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0,
+    "gemini_ready_count": 1,
+    "gemini_ready_pct": 50,
+    "bing_copilot_ready_count": 1,
+    "bing_copilot_ready_pct": 50
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 0,
+    "common_issues": [
+      "brand_verdict_unavailable_for_both_articles"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero or near-zero named citations \u2014 'research shows' and 'studies suggest' used without attribution across both articles",
+      "article_count": 2,
+      "dimension": "eeat / ai_citability",
+      "impact": "Authoritativeness sub-score critically suppressed; statistical density bottoms out AI Citability; both QAPEDS Proof (P) scores penalized by hard cap for unsourced claims"
+    },
+    {
+      "pattern": "No first-hand practitioner voices \u2014 no named teacher examples, no first-party data, no 'we tested' signals",
+      "article_count": 2,
+      "dimension": "eeat",
+      "impact": "Experience sub-score near-zero in both articles; AI engines cannot surface practitioner authority; weakens E-E-A-T cluster-wide"
+    },
+    {
+      "pattern": "No Perplexity-ready FAQ sections \u2014 zero FAQ-structured blocks in either article",
+      "article_count": 2,
+      "dimension": "platform_optimization",
+      "impact": "0% Perplexity readiness across the cluster; FAQPage schema cannot be implemented; comparison queries (high Perplexity intent) go unanswered in structured form"
+    },
+    {
+      "pattern": "Weak or missing explicit interrogative question in title or first 120 words \u2014 comparison framing used without anchoring a direct query",
+      "article_count": 2,
+      "dimension": "ai_citability / seo_structure",
+      "impact": "Gate 1 failure risk suppresses QAPEDS Q-score; AI systems cannot determine primary question; reduces snippet extraction likelihood"
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation and authority vacuum",
+      "fix": "Replace every instance of 'research shows,' 'studies suggest,' and 'experts say' with named, dated citations. Minimum 3 named sources per article. Recommended anchors: Tomlinson & Imbeau (2010) for DI, CAST (2018) for UDL principles, Vygotsky (1978) for scaffolding/ZPD, RAND Education & Labor (current year) for implementation studies. Format: 'According to [Author, Year]' \u2014 never anonymous attribution.",
+      "applies_to": "Both articles",
+      "dimension": "eeat / ai_citability"
+    },
+    {
+      "rank": 2,
+      "issue": "No practitioner voice \u2014 Experience sub-score near-zero",
+      "fix": "Add at least one named, role-specific teacher example per article. Format: 'Ms. [Name], a 5th-grade ELA teacher in [state], uses [approach] when...' If real quotes are unavailable, add first-party framing: 'In testing with Wayground teachers, we found...' or cite Wayground user data (with actual figures). This single change lifts E-E-A-T Experience from near-zero and activates Uniqueness Signals in AI Citability.",
+      "applies_to": "Both articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 3,
+      "issue": "Zero Perplexity readiness \u2014 no FAQ structure in comparison articles",
+      "fix": "Add a dedicated FAQ section (4\u20135 items minimum) using H3 question headings with 40\u201360 word answers. Comparison articles are among the highest-intent query types on Perplexity. Suggested questions: 'What is the main difference between scaffolding and differentiation?', 'Can teachers use DI and UDL at the same time?', 'Which approach is better for students with IEPs?', 'How do I know which strategy to use?' This enables FAQPage schema and directly serves the comparison intent.",
+      "applies_to": "Both articles",
+      "dimension": "platform_optimization"
+    },
+    {
+      "rank": 4,
+      "issue": "Implicit rather than explicit primary question \u2014 Gate 1 risk",
+      "fix": "Each comparison article must contain one explicit interrogative sentence within the first 120 words that mirrors the title query in user language. For item 69: 'What is the difference between scaffolding and differentiated instruction?' For item 70: 'How does differentiated instruction differ from Universal Design for Learning?' Place this question as a standalone sentence before or immediately after the intro paragraph. Follow it with a 1\u20133 sentence direct answer to satisfy Gate 2.",
+      "applies_to": "Both articles (confirmed failure for item 70; high-risk for item 69)",
+      "dimension": "ai_citability / seo_structure"
+    },
+    {
+      "rank": 5,
+      "issue": "SEO structure below 70 target \u2014 title tags, meta descriptions, and heading hierarchy need tightening",
+      "fix": "Audit both articles for: (1) H1 containing primary keyword phrase, (2) primary keyword appearing in first 100 words, (3) meta description 150\u2013160 chars with clear value prop and keyword, (4) URL slug \u226460 chars with hyphens only. Item 70 is the priority \u2014 its SEO Structure score of 58 is below the cluster floor. Recommended slug for item 70: /differentiated-instruction-vs-udl",
+      "applies_to": "Both articles (item 70 priority)",
+      "dimension": "seo_structure"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "70",
+    "name": "differentiated instruction vs universal design for learning",
+    "geo_composite": 55.9
+  },
+  "weakest_article": {
+    "item_num": "69",
+    "name": "scaffolding vs differentiation",
+    "geo_composite": 52.7
+  },
+  "narrative": "<scores>\n{\n  \"cluster\": \"Differentiated Learning\",\n  \"sub_cluster\": \"Comparison\",\n  \"article_count\": 2,\n  \"avg_geo_composite\": 54.3,\n  \"avg_qapeds_composite\": 5.7,\n  \"dimension_averages\": {\n    \"ai_citability\": 53.0,\n    \"eeat\": 44.0,\n    \"platform_optimization\": 50.5,\n    \"brand_voice\": null,\n    \"seo_structure\": 60.0,\n    \"schema_recommendations\": 80.0\n  },\n  \"weakest_dimension\": \"eeat\",\n  \"strongest_dimension\": \"schema_recommendations\",\n  \"platform_readiness\": {\n    \"aio_ready_count\": 1,\n    \"aio_ready_pct\": 50,\n    \"chatgpt_ready_count\": 1,\n    \"chatgpt_ready_pct\": 50,\n    \"perplexity_ready_count\": 0,\n    \"perplexity_ready_pct\": 0,\n    \"gemini_ready_count\": 1,\n    \"gemini_ready_pct\": 50,\n    \"bing_copilot_ready_count\": 1,\n    \"bing_copilot_ready_pct\": 50\n  },\n  \"brand_summary\": {\n    \"pass_count\": 0,\n    \"warn_count\": 0,\n    \"fail_count\": 0,\n    \"common_issues\": [\"brand_verdict_unavailable_for_both_articles\"]\n  },\n  \"recurring_issues\": [\n    {\n      \"pattern\": \"Zero or near-zero named citations \u2014 'research shows' and 'studies suggest' used without attribution across both articles\",\n      \"article_count\": 2,\n      \"dimension\": \"eeat / ai_citability\",\n      \"impact\": \"Authoritativeness sub-score critically suppressed; statistical density bottoms out AI Citability; both QAPEDS Proof (P) scores penalized by hard cap for unsourced claims\"\n    },\n    {\n      \"pattern\": \"No first-hand practitioner voices \u2014 no named teacher examples, no first-party data, no 'we tested' signals\",\n      \"article_count\": 2,\n      \"dimension\": \"eeat\",\n      \"impact\": \"Experience sub-score near-zero in both articles; AI engines cannot surface practitioner authority; weakens E-E-A-T cluster-wide\"\n    },\n    {\n      \"pattern\": \"No Perplexity-ready FAQ sections \u2014 zero FAQ-structured blocks in either article\",\n      \"article_count\": 2,\n      \"dimension\": \"platform_optimization\",\n      \"impact\": \"0% Perplexity readiness across the cluster; FAQPage schema cannot be implemented; comparison queries (high Perplexity intent) go unanswered in structured form\"\n    },\n    {\n      \"pattern\": \"Weak or missing explicit interrogative question in title or first 120 words \u2014 comparison framing used without anchoring a direct query\",\n      \"article_count\": 2,\n      \"dimension\": \"ai_citability / seo_structure\",\n      \"impact\": \"Gate 1 failure risk suppresses QAPEDS Q-score; AI systems cannot determine primary question; reduces snippet extraction likelihood\"\n    }\n  ],\n  \"cluster_recommendations\": [\n    {\n      \"rank\": 1,\n      \"issue\": \"Cluster-wide citation and authority vacuum\",\n      \"fix\": \"Replace every instance of 'research shows,' 'studies suggest,' and 'experts say' with named, dated citations. Minimum 3 named sources per article. Recommended anchors: Tomlinson & Imbeau (2010) for DI, CAST (2018) for UDL principles, Vygotsky (1978) for scaffolding/ZPD, RAND Education & Labor (current year) for implementation studies. Format: 'According to [Author, Year]' \u2014 never anonymous attribution.\",\n      \"applies_to\": \"Both articles\",\n      \"dimension\": \"eeat / ai_citability\"\n    },\n    {\n      \"rank\": 2,\n      \"issue\": \"No practitioner voice \u2014 Experience sub-score near-zero\",\n      \"fix\": \"Add at least one named, role-specific teacher example per article. Format: 'Ms. [Name], a 5th-grade ELA teacher in [state], uses [approach] when...' If real quotes are unavailable, add first-party framing: 'In testing with Wayground teachers, we found...' or cite Wayground user data (with actual figures). This single change lifts E-E-A-T Experience from near-zero and activates Uniqueness Signals in AI Citability.\",\n      \"applies_to\": \"Both articles\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 3,\n      \"issue\": \"Zero Perplexity readiness \u2014 no FAQ structure in comparison articles\",\n      \"fix\": \"Add a dedicated FAQ section (4\u20135 items minimum) using H3 question headings with 40\u201360 word answers. Comparison articles are among the highest-intent query types on Perplexity. Suggested questions: 'What is the main difference between scaffolding and differentiation?', 'Can teachers use DI and UDL at the same time?', 'Which approach is better for students with IEPs?', 'How do I know which strategy to use?' This enables FAQPage schema and directly serves the comparison intent.\",\n      \"applies_to\": \"Both articles\",\n      \"dimension\": \"platform_optimization\"\n    },\n    {\n      \"rank\": 4,\n      \"issue\": \"Implicit rather than explicit primary question \u2014 Gate 1 risk\",\n      \"fix\": \"Each comparison article must contain one explicit interrogative sentence within the first 120 words that mirrors the title query in user language. For item 69: 'What is the difference between scaffolding and differentiated instruction?' For item 70: 'How does differentiated instruction differ from Universal Design for Learning?' Place this question as a standalone sentence before or immediately after the intro paragraph. Follow it with a 1\u20133 sentence direct answer to satisfy Gate 2.\",\n      \"applies_to\": \"Both articles (confirmed failure for item 70; high-risk for item 69)\",\n      \"dimension\": \"ai_citability / seo_structure\"\n    },\n    {\n      \"rank\": 5,\n      \"issue\": \"SEO structure below 70 target \u2014 title tags, meta descriptions, and heading hierarchy need tightening\",\n      \"fix\": \"Audit both articles for: (1) H1 containing primary keyword phrase, (2) primary keyword appearing in first 100 words, (3) meta description 150\u2013160 chars with clear value prop and keyword, (4) URL slug \u226460 chars with hyphens only. Item 70 is the priority \u2014 its SEO Structure score of 58 is below the cluster floor. Recommended slug for item 70: /differentiated-instruction-vs-udl\",\n      \"applies_to\": \"Both articles (item 70 priority)\",\n      \"dimension\": \"seo_structure\"\n    }\n  ],\n  \"strongest_article\": {\"item_num\": \"70\", \"name\": \"differentiated instruction vs universal design for learning\", \"geo_composite\": 55.9},\n  \"weakest_article\": {\"item_num\": \"69\", \"name\": \"scaffolding vs differentiation\", \"geo_composite\": 52.7}\n}\n</scores>\n\n<output>\n\n# Cluster Analysis: Differentiated Learning / Comparison\n\n## Cluster overview\n\nThe Differentiated Learning / Comparison sub-cluster (2 articles) scores an average GEO Composite of **54.3/100** and a QAPEDS average of **5.7/10** \u2014 both below the publication-ready threshold of 70+ GEO and 6.0+ QAPEDS. Both articles are structurally coherent and carry strong schema foundations, but they share a critical shared failure: **zero verifiable authority**. No named citations, no practitioner voices, and no first-party data appear in either piece, which drags E-E-A-T to the cluster's floor and suppresses AI citability across the board. These articles require substantive content revision \u2014 not formatting tweaks \u2014 before they can compete for AI citations on comparison queries.\n\n---\n\n## Score summary table\n\n| Dimension | Item 69 | Item 70 | Cluster Avg | Target (70+) | Gap |\n|---|---|---|---|---|---|\n| AI Citability | 52 | 54 | **53.0** | 70 | -17.0 |\n| E-E-A-T | 38 | 50 | **44.0** | 70 | -26.0 |\n| Platform Optimization | 49 | 52 | **50.5** | 70 | -19.5 |\n| Brand Voice | null | null | **\u2014** | 70 | \u2014 |\n| SEO Structure | 62 | 58 | **60.0** | 70 | -10.0 |\n| Schema Recommendations | 82 | 78 | **80.0** | 70 | +10.0 \u2713 |\n| **GEO Composite** | **52.7** | **55.9** | **54.3** | 70 | **-15.7** |\n| **QAPEDS** | **5.9** | **5.5** | **5.7** | 8.0 | **-2.3** |\n\n**Schema Recommendations** is the only dimension above target \u2014 both articles have well-conceived structural skeletons. Every other dimension is below 70, with E-E-A-T as the critical failure point at 44.0.\n\n---\n\n## Top 3 recurring issues\n\n### 1. Zero named citations \u2014 affects both articles (E-E-A-T + AI Citability)\n\nNeither article names a single research source, institutional reference, or dated study. Both fall back on phrases like \"research shows\" and \"studies on inclusion\" \u2014 which the QAPEDS rubric hard-caps at a Proof Evidence Presence score of \u22641. This is the single largest drag on GEO performance in the cluster. AI engines including Perplexity and Google AIO actively deprioritize uncited educational content; comparison articles with no authority signals are nearly impossible to surface as AI-cited responses.\n\n**Scale:** 2 of 2 articles. **Dimension impact:** E-E-A-T Authoritativeness (sub-score near-zero), AI Citability Statistical Density (sub-score ~15/100 for item 69).\n\n### 2. No practitioner voice \u2014 affects both articles (E-E-A-T Experience)\n\nNeither article contains a named teacher example, a classroom scenario with a real educator, or any first-party signal (\"we tested,\" \"Wayground teachers reported,\" \"based on X classrooms\"). The Experience sub-component of E-E-A-T scores near-zero across both pieces. This is especially costly for comparison articles, where teachers are the primary audience and expect peer-level credibility \u2014 not abstract theorizing.\n\n**Scale:** 2 of 2 articles. **Dimension impact:** E-E-A-T Experience sub-score, Uniqueness Signals in AI Citability (sub-score ~10/100).\n\n### 3. No FAQ structure \u2014 Perplexity readiness is 0% across the cluster\n\nNeither article contains FAQ-structured sections. This is a structural gap with outsized consequences: comparison queries (\"scaffolding vs. differentiation,\" \"DI vs. UDL\") are among the highest-frequency question types on Perplexity and Google AIO. Without FAQ blocks, FAQPage schema cannot be implemented, and AI engines cannot extract discrete comparison answers. The cluster is scoring 0% Perplexity-ready against a query type that is inherently FAQ-shaped.\n\n**Scale:** 2 of 2 articles. **Dimension impact:** Platform Optimization (Perplexity sub-score), Schema Recommendations ceiling.\n\n---\n\n## Platform readiness\n\n| Platform | Ready Count | Ready % | Notes |\n|---|---|---|---|\n| Google AIO | 1 of 2 | 50% | Item 70 passes; item 69 lacks direct answer block |\n| ChatGPT | 1 of 2 | 50% | Item 70 passes; item 69 lacks content-answer fit |\n| Perplexity | 0 of 2 | **0%** | No FAQ sections in either article; cluster is invisible to Perplexity |\n| Gemini | 1 of 2 | 50% | Item 70 passes; item 69 weak on entity definitions |\n| Bing Copilot | 1 of 2 | 50% | Item 70 passes; item 69 structural gaps |\n\nItem 70 achieves partial platform presence (4 of 5 platforms passing), but the cluster's **0% Perplexity readiness** is the most urgent gap. Comparison queries are a Perplexity stronghold \u2014 this cluster is currently leaving that traffic entirely on the table.\n\n---\n\n## Brand compliance\n\nBrand verdicts are **UNKNOWN** for both articles \u2014 BRAND_REVIEWER evaluation has not been completed. No brand PASS, WARN, or FAIL can be reported. Both articles should be routed through BRAND_REVIEWER before publish, with particular attention to:\n\n- Em dash usage in blog copy (zero tolerance per brand rules)\n- Heading case (sentence case only \u2014 title case is a hard fail)\n- Product terminology (confirm \"activity\" not \"quiz\"; \"supplemental learning platform\" not \"quiz tool\")\n- Article opening \u2014 confirm neither piece opens with a question or a product mention\n\n---\n\n## Cluster-level recommendations\n\n### Rec 1 \u2014 Replace all anonymous citations with named, dated sources (both articles, priority 1)\n\nEvery \"research shows\" and \"studies suggest\" must be replaced with a named citation in \"According to [Author, Year]\" format. This is not optional for AI citability. Recommended anchors for this cluster:\n\n- **Scaffolding:** Vygotsky (1978) \u2014 Zone of Proximal Development; Wood, Bruner & Ross (1976) \u2014 scaffolding definition\n- **Differentiated Instruction:** Tomlinson & Imbeau (2010) \u2014 *Leading and Managing a Differentiated Classroom*; RAND Education & Labor (current year) \u2014 DI implementation data\n- **UDL:** CAST (2018) \u2014 *Universal Design for Learning Guidelines 2.2*; Meyer, Rose & Gordon (2014)\n\nMinimum: 3 named, dated sources per article. Format every citation consistently and never embed them only in footnotes \u2014 named citations must appear inline in body copy to activate AI extraction.\n\n### Rec 2 \u2014 Add one named practitioner example per article (both articles, priority 1)\n\nInsert at least one concrete teacher scenario per article with a real name, role, grade, and subject. Example format: *\"Ms. Torres, a 7th-grade science teacher in Houston, uses scaffolding for vocabulary instruction and differentiation for lab pacing \u2014 choosing the tool based on whether the barrier is prior knowledge or readiness level.\"* If sourcing real teacher quotes is not feasible, use Wayground first-party framing with actual data: *\"Among Wayground teachers surveyed in 2025, 68% reported using both DI and UDL frameworks in the same unit.\"* Fabricated statistics are prohibited \u2014 use real platform data or omit.\n\n### Rec 3 \u2014 Add FAQ sections to unlock Perplexity and FAQPage schema (both articles, priority 1)\n\nAdd a \"Frequently asked questions\" section (H2) with 4\u20135 H3 question headings, each followed by a 40\u201360 word answer. Comparison articles are naturally FAQ-shaped \u2014 lean into it. Suggested shared questions for this cluster:\n\n- What is the main difference between [X] and [Y]?\n- Can teachers use both approaches at the same time?\n- Which approach works better for students with IEPs or learning differences?\n- How do I decide which strategy to use for a given lesson?\n- Are [X] and [Y] required by curriculum standards?\n\nThis single change enables FAQPage schema, lifts Perplexity readiness from 0% to potentially 100%, and provides Google AIO with discrete extractable answers.\n\n### Rec 4 \u2014 Anchor each article with an explicit interrogative question in the first 120 words (both articles, priority 2)\n\nBoth articles carry comparison titles but neither leads with a direct interrogative question \u2014 creating Gate 1 failure risk in QAPEDS. Add one unambiguous, user-language question as a standalone sentence within the first 120 words, immediately followed by a 1\u20133 sentence direct answer. This satisfies both QAPEDS Gates 1 and 2 and signals to AI engines what the article is definitively answering.\n\n### Rec 5 \u2014 Tighten SEO structure to close the 10-point gap to target (both articles, priority 2)\n\nBoth articles sit at 58\u201362 on SEO Structure against a 70 target. Priority fixes:\n- Confirm primary keyword appears in H"
+}

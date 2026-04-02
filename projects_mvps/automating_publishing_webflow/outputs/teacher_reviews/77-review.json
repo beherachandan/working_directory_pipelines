@@ -1,0 +1,28 @@
+{
+  "item_num": "77",
+  "name": "scaffolding in writing",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 4,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 4,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 4,
+    "C9_standards_alignment": 2,
+    "C10_wayground_value_prop": 3
+  },
+  "overall_score": 3.9,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 \u2014 Standards alignment is critically absent for an article explicitly targeting 'every classroom' and lesson design. A writing scaffolding article is a textbook case where Common Core ELA Writing standards (e.g., CCSS.ELA-LITERACY.W.7.1 for argument writing) or NGSS Science and Engineering Practices (SEP 6: Constructing explanations) should be named \u2014 especially given the lab report and CER examples used throughout. Implicit connection is not enough here.",
+    "C10 \u2014 Wayground's value proposition is inconsistent and vague. The closing promise of 'step-by-step presentations, modeling videos, and writing rubrics' is repeated twice but never tied to a named feature. One specific call-out \u2014 e.g., 'Wayground's AI Teaching Assistant generates a tiered CER graphic organizer in under three minutes' \u2014 is buried in the modeling section without enough context. Teachers need to know *what to click*, not just that Wayground 'amplifies your expertise.'",
+    "C5 \u2014 Grade-band specificity is thin outside the 7th-grade Ms. Patel example. The article promises strategies for 'every classroom' and 'K-12' in the meta description, but most examples default to middle school science. Elementary teachers (grades 2\u20135 narrative writing) and high school teachers (grades 9\u201312 argumentative essays) are invisible. One concrete example per band would earn this a 5."
+  ],
+  "positive_signals": [
+    "Classroom practicality is genuinely excellent \u2014 the Prime-Model-Practice-Release cycle is explained with a verbatim think-aloud example ('The data supports that blue light promotes faster plant growth'), the 20-minute chunking is actionable, and the differentiation table gives teachers a plug-and-play reference they could use during planning.",
+    "Teacher agency framing is one of the strongest in any article of this type \u2014 the FAQ answer 'use technology for routine tasks... so you can focus on meaningful conversations' and the closing line 'amplify your expertise, not replace it' are exactly what teachers want to hear and will build trust with skeptical readers."
+  ],
+  "narrative": "This article has genuinely strong bones \u2014 the Prime-Model-Practice-Release walkthrough, the differentiation table, and the FAQ section are the kind of practical, ready-to-use content that earns a place in a teacher's bookmark bar. However, it earns an automatic REVISE on one hard criterion: for an article built around lesson design and writing instruction, the complete absence of named standards (CCSS ELA Writing, NGSS SEPs) is a significant gap that will undercut credibility with curriculum-aligned teachers. Wayground's value proposition also needs one specific, named feature tied to a concrete use case \u2014 \"AI Teaching Assistant\" appears once but floats without enough context for a teacher to know what to actually do with it. Fix the standards callout and sharpen the Wayground feature reference, and this article is very close to a strong PASS."
+}

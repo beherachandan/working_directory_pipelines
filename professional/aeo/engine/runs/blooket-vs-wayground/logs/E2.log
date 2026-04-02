@@ -2,3 +2,4 @@
 [E2] Calling claude (model: sonnet)...
 [E2] Claude responded in 68s
 [E2] Completed. Output: outputs/E2-brand-voice-reviewer.md (68s, ~18484+1317 tokens)
+[E2] Already completed, skipping.

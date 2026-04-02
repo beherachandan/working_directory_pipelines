@@ -1,0 +1,28 @@
+{
+  "item_num": "62",
+  "name": "differentiated instruction tools",
+  "scores": {
+    "C1_classroom_practicality": 4,
+    "C2_opening_conciseness": 2,
+    "C3_non_ai_tone": 3,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 4,
+    "C6_term_definitions": 3,
+    "C7_teacher_agency": 4,
+    "C8_differentiation_inclusivity": 3,
+    "C9_standards_alignment": 1,
+    "C10_wayground_value_prop": 2
+  },
+  "overall_score": 3.1,
+  "verdict": "REVISE",
+  "top_issues": [
+    "C9 (Standards Alignment) scores 1: A lesson-design article covering differentiation, formative assessment, adaptive practice, and inclusivity never once mentions Common Core, NGSS, ISTE, IDEA, or any state framework \u2014 this is a glaring omission for a teacher audience who must justify tool adoption to administrators using standards language.",
+    "C10 (Wayground Value Prop) scores 2: The only Wayground mention is a one-sentence closer \u2014 'Wayground offers a supplemental platform that adapts to your classroom' \u2014 with zero feature specificity. The article spends hundreds of words describing ideal tool features (read-aloud, adaptive difficulty, color-coded dashboards) without ever showing that Wayground delivers any of them by name.",
+    "C2 (Opening Conciseness) scores 2: The article opens with a rhetorical question ('What differentiated instruction tools help teachers...') before the actual content begins \u2014 a classic AI-opener pattern that delays value. The key takeaways box above it is strong, but the body intro undercuts the opening momentum."
+  ],
+  "positive_signals": [
+    "The comparison table (C4) is genuinely classroom-ready \u2014 a teacher could screenshot it during a curriculum night or PD session; the categories, data columns, and workflow-fit column are exactly the kind of side-by-side framing busy teachers need.",
+    "Grade-band anchoring is used well in the body examples (7th-grade math at Lincoln Middle, 6th-grade science at Riverside Elementary, 5th-grade exit ticket path) \u2014 these concrete scenarios give the advice real credibility rather than floating in the abstract."
+  ],
+  "narrative": "This article has strong bones \u2014 the comparison table, concrete grade-band scenarios, and teacher-agency framing are genuinely useful \u2014 but two automatic REVISE triggers prevent it from being classroom-ready: standards alignment is entirely absent (a critical gap for any teacher who needs to pitch tool adoption to a department head or align to an IEP mandate), and Wayground's own value proposition is reduced to a single vague closing sentence after an article that spends 1,000+ words describing exactly what a great differentiation platform should do. The opening rhetorical question also needs to be cut and replaced with the direct, fact-first framing the key-takeaways box already models. Fix those three issues \u2014 add a brief standards callout (ISTE 5, IDEA accommodation requirements, or relevant CCSS anchor standards), replace the closing Wayground sentence with one specific feature tied to a use case already described in the article, and rewrite the opening sentence \u2014 and this moves cleanly into PASS territory."
+}

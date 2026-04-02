@@ -1,0 +1,440 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard — Wayground{% endblock %}
+
+{% block nav_right %}
+<a href="/auth/logout" class="nav-link">Sign out</a>
+{% endblock %}
+
+{% block head %}
+<style>
+  .dashboard {
+    display: flex;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sidebar-header {
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+
+  .sidebar-count {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .playlist-list {
+    overflow-y: auto;
+    flex: 1;
+    padding: 8px;
+  }
+
+  .playlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 13px;
+    transition: background .12s;
+    gap: 8px;
+  }
+
+  .playlist-item:hover { background: var(--bg); }
+
+  .playlist-item.active {
+    background: var(--purple-light);
+    color: var(--purple);
+    font-weight: 600;
+  }
+
+  .playlist-item.active .playlist-count { background: rgba(124,58,237,.15); color: var(--purple); }
+
+  .playlist-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .playlist-count {
+    flex-shrink: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 1px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .no-playlists {
+    padding: 24px 20px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* ── Main content ── */
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+  }
+
+  .main-header {
+    margin-bottom: 20px;
+  }
+
+  .main-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .main-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* ── Empty / loading states ── */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 40px;
+    color: var(--muted);
+    gap: 12px;
+  }
+
+  .empty-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+  }
+
+  .empty-label { font-size: 14px; font-weight: 500; }
+  .empty-hint { font-size: 12px; }
+
+  /* ── Video grid ── */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .video-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow .15s;
+  }
+  .video-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+
+  .video-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    background: var(--border);
+  }
+
+  .video-body {
+    padding: 14px;
+  }
+
+  .video-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.45;
+  }
+
+  .pin-form { display: flex; flex-direction: column; gap: 8px; }
+
+  .pin-textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 12px;
+    color: var(--dark);
+    resize: vertical;
+    min-height: 72px;
+    line-height: 1.5;
+    outline: none;
+    transition: border-color .15s;
+    background: var(--bg);
+  }
+  .pin-textarea:focus { border-color: var(--purple); background: #fff; }
+  .pin-textarea::placeholder { color: #9CA3AF; }
+
+  .btn-pin {
+    align-self: flex-end;
+    padding: 7px 16px;
+    font-size: 12px;
+  }
+
+  .pin-status {
+    display: none;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-weight: 500;
+  }
+
+  .pin-status.success {
+    display: block;
+    color: var(--teal);
+    background: var(--teal-light);
+    border: 1px solid #99F6E4;
+  }
+
+  .pin-status.error {
+    display: block;
+    color: var(--red);
+    background: var(--red-light);
+    border: 1px solid #FECACA;
+  }
+
+  /* ── Loading skeleton ── */
+  .skeleton {
+    background: linear-gradient(90deg, var(--border) 25%, #f3f4f6 50%, var(--border) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+    border-radius: 6px;
+  }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+
+  <!-- Sidebar: Playlists -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">Playlists</div>
+      <div class="sidebar-count">{{ playlists | length }} playlist{{ 's' if playlists | length != 1 else '' }}</div>
+    </div>
+    <div class="playlist-list">
+      {% if playlists %}
+        {% for pl in playlists %}
+        <button class="playlist-item" data-id="{{ pl.id }}" onclick="loadPlaylist('{{ pl.id }}', this)">
+          <span class="playlist-name">{{ pl.title }}</span>
+          <span class="playlist-count">{{ pl.video_count }}</span>
+        </button>
+        {% endfor %}
+      {% else %}
+        <div class="no-playlists">No playlists found on your channel.</div>
+      {% endif %}
+    </div>
+  </aside>
+
+  <!-- Main: Videos -->
+  <main class="main">
+    <div class="main-header" id="main-header" style="display:none;">
+      <div class="main-title" id="playlist-title"></div>
+      <div class="main-sub" id="video-count"></div>
+    </div>
+
+    <div id="video-grid">
+      <div class="empty-state">
+        <div class="empty-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <rect x="2" y="4" width="18" height="14" rx="3" stroke="#9CA3AF" stroke-width="1.5"/>
+            <path d="M9 8.5L14 11L9 13.5V8.5Z" fill="#9CA3AF"/>
+          </svg>
+        </div>
+        <span class="empty-label">Select a playlist</span>
+        <span class="empty-hint">Choose a playlist on the left to see your videos.</span>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script>
+  let activePlaylistTitle = '';
+
+  async function loadPlaylist(playlistId, btn) {
+    // Mark active
+    document.querySelectorAll('.playlist-item').forEach(el => el.classList.remove('active'));
+    btn.classList.add('active');
+    activePlaylistTitle = btn.querySelector('.playlist-name').textContent;
+
+    // Show loading skeletons
+    const grid = document.getElementById('video-grid');
+    grid.innerHTML = `
+      <div class="video-grid">
+        ${Array(6).fill(`
+          <div class="video-card">
+            <div class="skeleton" style="width:100%;aspect-ratio:16/9;border-radius:0;"></div>
+            <div class="video-body">
+              <div class="skeleton" style="height:14px;width:80%;margin-bottom:8px;"></div>
+              <div class="skeleton" style="height:14px;width:55%;margin-bottom:12px;"></div>
+              <div class="skeleton" style="height:72px;width:100%;margin-bottom:8px;"></div>
+              <div class="skeleton" style="height:30px;width:90px;margin-left:auto;"></div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+
+    try {
+      const resp = await fetch(`/api/playlist/${playlistId}/videos`);
+      if (resp.status === 401) { window.location.href = '/'; return; }
+      const data = await resp.json();
+
+      const header = document.getElementById('main-header');
+      header.style.display = 'block';
+      document.getElementById('playlist-title').textContent = activePlaylistTitle;
+      document.getElementById('video-count').textContent =
+        `${data.videos.length} video${data.videos.length !== 1 ? 's' : ''}`;
+
+      if (!data.videos.length) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <rect x="2" y="4" width="18" height="14" rx="3" stroke="#9CA3AF" stroke-width="1.5"/>
+                <path d="M9 8.5L14 11L9 13.5V8.5Z" fill="#9CA3AF"/>
+              </svg>
+            </div>
+            <span class="empty-label">No videos in this playlist</span>
+          </div>`;
+        return;
+      }
+
+      grid.innerHTML = `<div class="video-grid">${data.videos.map(v => `
+        <div class="video-card" id="card-${v.video_id}">
+          ${v.thumbnail
+            ? `<img src="${esc(v.thumbnail)}" alt="${esc(v.title)}" class="video-thumb" loading="lazy"/>`
+            : `<div class="video-thumb" style="background:var(--border);"></div>`
+          }
+          <div class="video-body">
+            <p class="video-title">${esc(v.title)}</p>
+            <div class="pin-form">
+              <textarea
+                id="comment-${v.video_id}"
+                class="pin-textarea"
+                placeholder="Type your pinned comment..."
+                rows="3"
+              ></textarea>
+              <button
+                id="btn-${v.video_id}"
+                class="btn btn-primary btn-pin"
+                onclick="pinComment('${v.video_id}')"
+              >Pin Comment</button>
+              <div id="status-${v.video_id}" class="pin-status"></div>
+            </div>
+          </div>
+        </div>
+      `).join('')}</div>`;
+
+    } catch (err) {
+      grid.innerHTML = `<div class="empty-state"><span class="empty-label">Failed to load videos.</span><span class="empty-hint">${esc(err.message)}</span></div>`;
+    }
+  }
+
+  async function pinComment(videoId) {
+    const textarea = document.getElementById(`comment-${videoId}`);
+    const btn      = document.getElementById(`btn-${videoId}`);
+    const status   = document.getElementById(`status-${videoId}`);
+    const text     = textarea.value.trim();
+
+    if (!text) {
+      setStatus(status, 'error', 'Comment text cannot be empty.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Pinning…';
+    status.className = 'pin-status';
+    status.style.display = 'none';
+
+    try {
+      const resp = await fetch('/api/pin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ video_id: videoId, comment_text: text }),
+      });
+
+      if (resp.status === 401) { window.location.href = '/'; return; }
+
+      const result = await resp.json();
+
+      if (result.success) {
+        setStatus(status, 'success', '✓ Comment posted and pinned!');
+        textarea.value = '';
+        btn.textContent = 'Pinned ✓';
+        btn.style.background = 'var(--teal)';
+      } else {
+        setStatus(status, 'error', result.error || 'Something went wrong.');
+        btn.disabled = false;
+        btn.textContent = 'Pin Comment';
+      }
+    } catch (err) {
+      setStatus(status, 'error', 'Network error. Please try again.');
+      btn.disabled = false;
+      btn.textContent = 'Pin Comment';
+    }
+  }
+
+  function setStatus(el, type, message) {
+    el.className = `pin-status ${type}`;
+    el.textContent = message;
+  }
+
+  function esc(str) {
+    const d = document.createElement('div');
+    d.appendChild(document.createTextNode(String(str)));
+    return d.innerHTML;
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,4 @@
+# All credential files are gitignored — never commit these
+*
+!.gitignore
+!.gitkeep

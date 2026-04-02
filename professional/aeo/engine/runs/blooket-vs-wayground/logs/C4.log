@@ -10,3 +10,4 @@
 [C4] Calling claude (model: sonnet)...
 [C4] Claude responded in 227s
 [C4] Completed. Output: outputs/C4-citation-enricher.md (227s, ~41841+9741 tokens)
+[C4] Already completed, skipping.

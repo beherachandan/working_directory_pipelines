@@ -1,0 +1,121 @@
+{
+  "cluster": "Scaffolding",
+  "sub_cluster": null,
+  "article_count": 12,
+  "avg_geo_composite": 47.5,
+  "avg_qapeds_composite": 4.57,
+  "dimension_averages": {
+    "ai_citability": 46.8,
+    "eeat": 40.1,
+    "platform_optimization": 38.4,
+    "brand_voice": 47.1,
+    "seo_structure": 53.5,
+    "schema_recommendations": 76.5
+  },
+  "weakest_dimension": "platform_optimization",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 2,
+    "aio_ready_pct": 17,
+    "chatgpt_ready_count": 2,
+    "chatgpt_ready_pct": 17,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 5,
+    "fail_count": 7,
+    "common_issues": [
+      "brand_voice_non_compliant_tone_or_vocabulary",
+      "title_case_headings_instead_of_sentence_case",
+      "em_dash_usage_in_blog_copy"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 'research shows' used without attribution across every article",
+      "article_count": 12,
+      "dimension": "eeat",
+      "impact": "QAPEDS P (Proof) Evidence Presence capped at \u22641 in all articles; AI Citability Statistical Density scores range 15\u201320/100 cluster-wide; no article can pass the Authority threshold for AI citation"
+    },
+    {
+      "pattern": "No canonical direct-answer block in the first 150 words \u2014 intros use narrative anecdote or story framing instead",
+      "article_count": 11,
+      "dimension": "ai_citability",
+      "impact": "Both QAPEDS gates (Explicit Question and Direct Answer) fail for most articles; AI systems cannot extract a citable answer; AIO readiness suppressed to 17%"
+    },
+    {
+      "pattern": "No first-hand practitioner experience signals \u2014 all classroom scenarios are hypothetical or illustrative fiction",
+      "article_count": 11,
+      "dimension": "eeat",
+      "impact": "Experience sub-component of E-E-A-T is near zero across the cluster; content reads as AI-generated filler rather than practitioner-backed guidance"
+    },
+    {
+      "pattern": "Zero FAQ-structured sections \u2014 no Q&A blocks exist in any article",
+      "article_count": 12,
+      "dimension": "platform_optimization",
+      "impact": "Perplexity readiness is 0% across the entire cluster; FAQPage schema cannot be applied; Perplexity and Gemini citation rates are effectively zero"
+    },
+    {
+      "pattern": "Statistical density is critically low or zero \u2014 no percentages, effect sizes, sample sizes, or quantitative data points",
+      "article_count": 10,
+      "dimension": "ai_citability",
+      "impact": "Statistical Density sub-component scores 15\u201320/100 in most articles; GEO research shows named statistics increase AI citation rates by +33%"
+    },
+    {
+      "pattern": "Brand voice non-compliance \u2014 title case headings, em dashes, and vocabulary violations present across multiple articles",
+      "article_count": 7,
+      "dimension": "brand_voice",
+      "impact": "7 of 12 articles have brand FAIL verdict; no article in the cluster achieves brand PASS; cluster cannot be published as-is"
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Universal citation and evidence failure \u2014 'research shows' used without attribution in all 12 articles",
+      "fix": "Replace every instance of 'research shows,' 'studies suggest,' and 'research from [vague org]' with named citations in 'According to [Author, Year]' format. Minimum 3 named sources per article. Recommended sources for scaffolding: Vygotsky (1978) Zone of Proximal Development, Wood, Bruner & Ross (1976) scaffolding theory, NAEYC position statements, Sweller (1988) Cognitive Load Theory, RAND Education & Labor reports on reading/ELL instruction, What Works Clearinghouse intervention studies. Statistical targets: at least 2 quantitative data points per article (percentages, effect sizes, or sample sizes).",
+      "applies_to": "All 12 articles",
+      "dimension": "eeat + ai_citability"
+    },
+    {
+      "rank": 2,
+      "issue": "No canonical direct-answer blocks \u2014 AI systems cannot extract citable answers from any article intro",
+      "fix": "Rewrite every article intro to follow this structure: (1) explicit interrogative question anchoring the article within the first 120 words, (2) a 1\u20133 sentence canonical answer (40\u201360 words) that is structurally isolatable before the first H2. Example pattern: 'Scaffolding in education is [definition]. It works by [mechanism]. Teachers use it to [outcome].' This single change will unlock AIO readiness and improve QAPEDS A scores across the cluster. Target: intro \u226480 words total, direct answer block \u226460 words.",
+      "applies_to": "11 of 12 articles",
+      "dimension": "ai_citability + platform_optimization"
+    },
+    {
+      "rank": 3,
+      "issue": "Zero FAQ sections \u2014 Perplexity readiness is 0% cluster-wide",
+      "fix": "Add a 'Frequently asked questions' section (sentence case) to every article with 4\u20135 Q&A pairs. Each H3 question heading must be followed by a 40\u201360 word self-contained answer. This enables FAQPage schema implementation across all 12 articles and is the single highest-leverage change for Perplexity and Gemini citation rates. Suggested FAQ questions should mirror actual search queries (e.g., 'What is the difference between scaffolding and differentiation?' for core articles).",
+      "applies_to": "All 12 articles",
+      "dimension": "platform_optimization + schema_recommendations"
+    },
+    {
+      "rank": 4,
+      "issue": "No first-hand practitioner experience signals \u2014 all classroom examples are hypothetical fiction",
+      "fix": "Add at minimum one real practitioner signal per article. Options: (a) recruit 1\u20132 teachers from Wayground's vetting network (~30-teacher review loop) to contribute a named quote with title and school type, (b) reference Wayground's internal usage data ('Based on X teachers using scaffolding activities on Wayground...'), or (c) cite a classroom-tested outcome from a named educator in the field. Hypothetical scenarios ('Picture your Algebra class...') must be either removed or clearly labeled as illustrative, not presented as real-world evidence.",
+      "applies_to": "11 of 12 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "Brand compliance failures \u2014 7 FAILs, 5 WARNs, zero PASSes across the cluster",
+      "fix": "Run a cluster-wide brand pass before any article is published: (1) convert ALL headings to sentence case \u2014 capitalize only the first word and proper nouns, (2) remove every em dash from body copy and replace with a comma, colon, or period, (3) audit vocabulary for prohibited terms ('quiz tool,' 'kids,' 'modifications,' 'SPED') and substitute per the mandatory vocabulary table, (4) check that 'Wayground' is used throughout \u2014 never 'Quizizz' except on first mention with the approved parenthetical. Item 76 requires a full content audit for keyword-topic mismatch before brand review can apply.",
+      "applies_to": "All 12 articles",
+      "dimension": "brand_voice"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "72",
+    "name": "types of scaffolding in education",
+    "geo_composite": 57.9
+  },
+  "weakest_article": {
+    "item_num": "76",
+    "name": "scaffolding for ells",
+    "geo_composite": 37.3
+  },
+  "narrative": "# Scaffolding Cluster \u2014 GEO/SEO Analysis Report\n\n## Cluster Overview\n\nThe Scaffolding cluster (12 articles, 4 sub-clusters) is the weakest performing group evaluated to date, with an average GEO Composite of **47.5/100** and an average QAPEDS of **4.57/10** \u2014 both well below the publishable threshold of 70+ GEO and 6.0+ QAPEDS. The cluster's defining characteristic is systemic: every article shares the same four structural deficits (no citations, no direct-answer blocks, no FAQ sections, no practitioner signals), which means this is a **template-level problem**, not an article-by-article problem. Not a single article in the cluster has achieved a brand PASS verdict.\n\n---\n\n## Score Summary Table\n\n| Dimension | Cluster Avg | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 46.8 | 70 | -23.2 |\n| E-E-A-T | 40.1 | 70 | -29.9 |\n| Platform Optimization | 38.4 | 70 | -31.6 |\n| Brand Voice | 47.1 | 70 | -22.9 |\n| SEO Structure | 53.5 | 70 | -16.5 |\n| Schema Recommendations | 76.5 | 70 | **+6.5** |\n| **GEO Composite** | **47.5** | **70** | **-22.5** |\n| **QAPEDS** | **4.57/10** | **6.0** | **-1.43** |\n\nSchema Recommendations is the only dimension above target \u2014 articles are structurally eligible for schema markup, but the content inside them doesn't yet support it. Platform Optimization and E-E-A-T are the most critical gaps, both averaging below 41.\n\n---\n\n## Top 3 Recurring Issues\n\n### 1. \"Research shows\" without a source \u2014 12 of 12 articles\n\nEvery single article in this cluster uses unattributed generic research language. Phrases like \"research shows,\" \"studies suggest,\" and \"research from cognitive scientists\" appear throughout with no author, year, institution, or study name attached. Per the QAPEDS rubric, this caps the Evidence Presence sub-score at \u22641/10 \u2014 effectively nullifying the Proof dimension cluster-wide. Per GEO research, named statistics increase AI citation rates by +33%. This is the single most damaging pattern in the cluster and the highest-priority fix.\n\n### 2. No canonical direct-answer block in the first 150 words \u2014 11 of 12 articles\n\nArticle intros across this cluster consistently open with narrative anecdotes (\"Picture your Algebra class...\"), hypothetical scenarios, or general framing paragraphs. None deliver a clean, extractable 1\u20133 sentence definition or answer before the first H2. This causes both QAPEDS gates to fail simultaneously: the Explicit Question Gate and the Direct Answer Gate. The cascading effect: Q scores capped at \u22645, A scores capped at \u22645, and AIO readiness drops to 17% (only articles 71 and 72 pass). AI systems \u2014 Google AIO, ChatGPT, Perplexity, Gemini \u2014 require a structurally isolatable answer block to surface content as a citation. Without it, these articles are invisible to AI-generated answers.\n\n### 3. No first-hand practitioner experience signals \u2014 11 of 12 articles\n\nNo article in the cluster contains a named teacher quote, a named school scenario, a \"we tested with X educators\" signal, or first-party Wayground usage data. All classroom examples are explicitly hypothetical. This suppresses the Experience sub-component of E-E-A-T to near zero in every article and is the primary driver of the cluster's 40.1 average E-E-A-T score \u2014 the second-lowest dimension. This pattern also flags content as likely AI-generated to quality raters and AI citation systems.\n\n---\n\n## Platform Readiness\n\n| Platform | Ready Count | Ready % |\n|---|---|---|\n| AIO Ready | 2 of 12 | 17% |\n| ChatGPT Ready | 2 of 12 | 17% |\n| Perplexity Ready | 0 of 12 | **0%** |\n\nPerplexity readiness is zero across the entire cluster \u2014 no article contains FAQ-structured sections, which is the primary trigger for both FAQPage schema and Perplexity citations. The two AIO-ready articles (71 and 72) pass on structural grounds but remain limited by weak citation density. Gemini and Bing Copilot readiness is similarly low, with only articles 71 and 72 passing either. The cluster is effectively invisible to AI-answer surfaces in its current state.\n\n---\n\n## Brand Compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | 0 |\n| WARN | 5 |\n| FAIL | 7 |\n\nZero articles achieve brand PASS. This is the most alarming cluster-level brand result possible. The most common violations across FAIL and WARN articles are:\n\n- **Title case headings** instead of required sentence case (items 80 and others)\n- **Em dashes in blog copy** \u2014 a zero-tolerance violation per the brand guide\n- **Vocabulary violations** \u2014 non-compliant terms present in multiple articles\n- **Item 76 (scaffolding for ELLs)** has an additional critical issue: a confirmed keyword-topic mismatch (the evaluator flagged the article as targeting \"scaffolding for reading\" content despite the ELL title). This article requires a full content rewrite before brand or GEO review can be meaningfully applied.\n\nNo article in this cluster should be published until brand issues are resolved.\n\n---\n\n## Cluster-Level Recommendations\n\n### Rec 1 \u2014 Replace all unattributed research language with named citations (All 12 articles)\nThis is the cluster's highest-leverage fix. Every \"research shows\" must be replaced with \"According to [Author, Year]\" or equivalent. Minimum three named sources per article. For scaffolding content, the canonical sources are available and well-documented: Vygotsky (1978) on Zone of Proximal Development, Wood, Bruner and Ross (1976) on scaffolding theory, Sweller (1988) on Cognitive Load Theory, NAEYC position statements on early childhood, and What Works Clearinghouse intervention reports for subject-specific articles. Each article also needs at least two quantitative data points \u2014 percentages, effect sizes, or sample sizes from these sources.\n\n### Rec 2 \u2014 Rewrite every intro to include a canonical direct-answer block (11 of 12 articles)\nAdopt a cluster-wide intro template: one explicit interrogative question within the first 120 words, followed immediately by a 1\u20133 sentence answer (40\u201360 words) that can stand alone without surrounding context. The entire intro must stay at or under 80 words. This single structural change will move AIO readiness from 17% toward 70%+ and will lift QAPEDS A scores across the board.\n\n### Rec 3 \u2014 Add FAQ sections to every article to unlock Perplexity readiness (All 12 articles)\nEvery article needs a \"Frequently asked questions\" section (sentence case) with 4\u20135 Q&A pairs. Each question is an H3 heading; each answer is 40\u201360 words, self-contained, and directly responsive. This is the prerequisite for FAQPage schema and the primary driver of Perplexity citation rates. Questions should mirror actual search queries relevant to each sub-topic.\n\n### Rec 4 \u2014 Source at least one named practitioner signal per article (11 of 12 articles)\nWayground's ~30-teacher vetting network is the most credible and accessible source for this. A single named quote per article \u2014 \"[Name], [Title], [School Type]\" \u2014 is sufficient to materially lift the Experience sub-component of E-E-A-T. Alternatively, Wayground's internal usage data (\"Based on [X] teachers using scaffolding activities on Wayground\") can serve as a first-party authority signal. Remove or clearly label all hypothetical classroom scenarios as illustrative rather than presenting them as real evidence.\n\n### Rec 5 \u2014 Run a cluster-wide brand pass before any article is published (All 12 articles)\nThe brand failures are systematic and fixable with a checklist review: (1) convert all headings to sentence case, (2) remove all em dashes from body copy, (3) audit for prohibited vocabulary, (4) confirm \"Wayground\" is used correctly throughout. Item 76 must be triaged first \u2014 the keyword-topic mismatch means the content needs to be realigned to the ELL scaffolding topic before any other optimization applies.\n\n---\n\n## Standout Articles\n\n**Strongest \u2014 Item 72: \"Types of scaffolding in education\" (GEO: 57.9)**\nThe cluster's top scorer, though still 12 points below the publishable threshold. It achieves ChatGPT and AIO readiness, and has slightly better structural organization than peers. It shares all the same core deficits but does them less severely.\n\n**Weakest \u2014 Item 76: \"Scaffolding for ELLs\" (GEO: 37.3)**\nThe cluster's lowest scorer by a significant margin, with an additional disqualifying issue: a confirmed keyword-topic mismatch flagged by the evaluator (the article covers reading scaffolding content rather than ELL scaffolding). At 37.3 GEO and a brand WARN, this article is not a revision candidate \u2014 it requires a full rewrite aligned to the ELL scaffolding topic before any optimization work begins. Its SEO Structure score of 15/100 is the lowest individual dimension score in the entire cluster."
+}

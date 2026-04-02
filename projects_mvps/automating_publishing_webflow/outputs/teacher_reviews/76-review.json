@@ -1,0 +1,28 @@
+{
+  "item_num": "76",
+  "name": "scaffolding for ells",
+  "scores": {
+    "C1_classroom_practicality": 5,
+    "C2_opening_conciseness": 3,
+    "C3_non_ai_tone": 4,
+    "C4_visual_structure": 5,
+    "C5_grade_band_specificity": 3,
+    "C6_term_definitions": 5,
+    "C7_teacher_agency": 5,
+    "C8_differentiation_inclusivity": 5,
+    "C9_standards_alignment": 5,
+    "C10_wayground_value_prop": 4
+  },
+  "overall_score": 4.4,
+  "verdict": "PASS",
+  "top_issues": [
+    "Opening is slightly cluttered: the article leads with Key Takeaways, then a serviceable 3-sentence intro, then a dense bolded definition paragraph \u2014 that's three 'openings' before the real content begins. A teacher scanning quickly may not know where to start. Consider collapsing or reordering so the definition block doesn't interrupt momentum before the first H2.",
+    "Grade-band specificity is thin: the only concrete grade-level anchor is 'Ms. Hernandez, a 4th-grade teacher' \u2014 the rest of the article defaults to generic 'students' or 'multilingual learners.' A 6th-grade science teacher and a 2nd-grade reading teacher face very different scaffolding challenges; even two additional grade-band call-outs (e.g., 'In middle school ELA...' or 'For K-2 readers...') would meaningfully increase relevance.",
+    "Wayground feature specificity is good but slightly inconsistent: 'Passages and Interactive Video activities' and '25+ permanently free accommodations' are named concretely, but 'translation across 41 languages and read-aloud' only appears once (in the FAQ). Surface those specific features \u2014 especially the 41-language translation \u2014 at least once in the main body where differentiation is being discussed, not just in an FAQ answer."
+  ],
+  "positive_signals": [
+    "The differentiation table is genuinely classroom-ready and photocopy-worthy \u2014 Before/During/After stages with Teacher Moves, Student Options, and Quick Checks in a single view is exactly the kind of reference a teacher keeps on their desk.",
+    "Term definitions are handled with unusual care: ZPD, BICS/CALP, WIDA, CALP, and scaffolding are all defined inline with citations, making this accessible to first-year teachers and instructional coaches alike without feeling condescending to veterans."
+  ],
+  "narrative": "This article is classroom-ready in most of the ways that matter: the five-step framework is concrete enough to implement this week, the differentiation table is one of the most usable at-a-glance scaffolding references I've seen in a blog post, and teacher agency is maintained throughout \u2014 Wayground is consistently positioned as a time-saving tool, not a teacher replacement. The two things worth tightening before publish are grade-band specificity (the Ms. Hernandez anecdote carries almost all the grade-level weight; two more subject/grade call-outs would make this feel relevant to more than just elementary teachers) and the opening structure (Key Takeaways \u2192 intro paragraph \u2192 bold definition block creates three competing entry points that could confuse a teacher skimming during prep). Neither issue is a blocker, but fixing them would move this from a strong article to an endorsed one."
+}

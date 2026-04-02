@@ -1,0 +1,111 @@
+{
+  "cluster": "Engagement",
+  "sub_cluster": null,
+  "article_count": 5,
+  "avg_geo_composite": 44.9,
+  "avg_qapeds_composite": 4.28,
+  "dimension_averages": {
+    "ai_citability": 45.8,
+    "eeat": 39.6,
+    "platform_optimization": 38.6,
+    "brand_voice": 28.7,
+    "seo_structure": 49.8,
+    "schema_recommendations": 75.4
+  },
+  "dimension_averages_note": "brand_voice average is calculated from 3 scored articles only (items 85, 86, 88); items 83 and 87 returned UNKNOWN brand verdicts and are excluded from this average",
+  "weakest_dimension": "platform_optimization",
+  "strongest_dimension": "schema_recommendations",
+  "platform_readiness": {
+    "aio_ready_count": 0,
+    "aio_ready_pct": 0,
+    "chatgpt_ready_count": 0,
+    "chatgpt_ready_pct": 0,
+    "perplexity_ready_count": 0,
+    "perplexity_ready_pct": 0
+  },
+  "brand_summary": {
+    "pass_count": 0,
+    "warn_count": 0,
+    "fail_count": 3,
+    "unknown_count": 2,
+    "common_issues": [
+      "title_case_headings",
+      "brand_naming_violations",
+      "prohibited_phrasing"
+    ]
+  },
+  "recurring_issues": [
+    {
+      "pattern": "Zero named citations \u2014 'research shows' and 'research demonstrates' used without attribution across all articles",
+      "article_count": 5,
+      "dimension": "eeat + ai_citability",
+      "impact": "Suppresses Proof (P) scores to near-floor across every article; AI systems cannot cite unattributed assertions; kills AI Citability and E-E-A-T simultaneously"
+    },
+    {
+      "pattern": "No canonical direct-answer block in first 150 words \u2014 both QAPEDS gates fail on every article",
+      "article_count": 5,
+      "dimension": "ai_citability",
+      "impact": "AI systems cannot extract a concise, citable answer; AIO snippet, ChatGPT, Perplexity, and Gemini all require an isolatable direct-answer block to surface the content; 0% platform readiness is a direct consequence"
+    },
+    {
+      "pattern": "No first-person practitioner signals \u2014 no named teachers, schools, 'we tested' framing, or Wayground platform data cited",
+      "article_count": 4,
+      "dimension": "eeat",
+      "impact": "Experience sub-component of E-E-A-T scores near zero; content reads as generic AI-generated text, reducing Google quality evaluator confidence and suppressing Share of Voice"
+    },
+    {
+      "pattern": "Statistical density near zero \u2014 no percentages, effect sizes, or data points with attribution and date",
+      "article_count": 3,
+      "dimension": "ai_citability",
+      "impact": "Statistical signals are +33% GEO citability lift per research; absence across most articles means the cluster cannot compete for AI-cited placements on data-seeking queries"
+    }
+  ],
+  "cluster_recommendations": [
+    {
+      "rank": 1,
+      "issue": "Cluster-wide citation and proof failure \u2014 all 5 articles use unattributed 'research shows' phrasing",
+      "fix": "Replace every instance of 'research shows,' 'studies suggest,' and 'research demonstrates' with a named citation in 'According to [Source, Year]' format. Minimum 3 named sources per article. Recommended sources: Fredricks, Blumenfeld & Paris (2004) on multidimensional engagement; Hattie (2009) Visible Learning on effect sizes; Gallup Student Poll (2023) for disengagement statistics; Deci & Ryan Self-Determination Theory for motivation framing; NWEA 2023 MAP Growth norms for achievement data.",
+      "applies_to": "All 5 articles",
+      "dimension": "eeat + ai_citability"
+    },
+    {
+      "rank": 2,
+      "issue": "No direct-answer blocks \u2014 both QAPEDS gates fail on every article, resulting in 0% platform readiness",
+      "fix": "Rewrite the opening of each article to include a 1-3 sentence canonical answer (40-60 words) within the first 150 words. The answer must be structurally isolatable \u2014 a standalone paragraph, not buried in narrative. For example, item 86 ('student motivation and engagement') should open with a definition of both terms and their relationship before any contextual framing. Each article's first H2 opening paragraph must also be trimmed to under 40 words to qualify for AEO extraction.",
+      "applies_to": "All 5 articles",
+      "dimension": "ai_citability"
+    },
+    {
+      "rank": 3,
+      "issue": "No FAQ-structured sections \u2014 Perplexity readiness is 0% and FAQPage schema cannot be implemented",
+      "fix": "Add a dedicated FAQ section (H2: 'Frequently asked questions') to each article with 4-5 Q&A pairs using H3 question headings followed by 40-60 word answers. For the engagement cluster, natural FAQ candidates include: 'What is the difference between motivation and engagement?', 'How do you measure student engagement?', 'What causes student disengagement?' This section enables FAQPage schema on all 5 articles and directly unlocks Perplexity citation readiness.",
+      "applies_to": "All 5 articles",
+      "dimension": "platform_optimization"
+    },
+    {
+      "rank": 4,
+      "issue": "No practitioner voice \u2014 content reads as generic and lacks E-E-A-T Experience signals",
+      "fix": "Add at least one named practitioner scenario per article: a specific teacher role, grade level, subject, and outcome. Format: 'A 7th grade science teacher using Wayground found that...' or 'Based on [X] teachers in the Wayground network...' Where Wayground platform data exists (usage stats, activity completion rates, teacher feedback), cite it with 'Based on X users' framing. This is the single fastest lever to differentiate the cluster from competing generic content.",
+      "applies_to": "4 of 5 articles",
+      "dimension": "eeat"
+    },
+    {
+      "rank": 5,
+      "issue": "Brand compliance is critical \u2014 3 of 3 scored articles returned FAIL; 2 have unknown brand verdicts pending review",
+      "fix": "Priority brand fixes across the cluster: (1) Convert all H2 and H3 headings from title case to sentence case \u2014 item 87 has this documented explicitly and it is likely widespread. (2) Audit for em dashes in body copy \u2014 zero tolerance per brand rules. (3) Check for 'quiz tool,' 'quiz app,' or 'Quizizz' references and replace with 'Wayground' or 'supplemental learning platform.' Items 83 and 87 must be submitted for brand review immediately to resolve UNKNOWN verdicts before publication.",
+      "applies_to": "All 5 articles",
+      "dimension": "brand_voice"
+    }
+  ],
+  "strongest_article": {
+    "item_num": "88",
+    "name": "evaluating student engagement platforms for scalability",
+    "geo_composite": 49.8
+  },
+  "weakest_article": {
+    "item_num": "86",
+    "name": "student motivation and engagement",
+    "geo_composite": 41.0
+  },
+  "narrative": "I'll work through the analysis systematically before producing the output blocks.\n\n---\n\n**STEP 1: COMPUTE AVERAGES**\n\nGEO Composites: 45.4, 44.9, 41.0, 43.4, 49.8\nSum = 224.5 \u2192 Avg = 44.9\n\nQAPEDS: 4.35, 4.2, 4.5, 3.9, 4.45\nSum = 21.4 \u2192 Avg = 4.28\n\nDimension averages:\n- AI Citability: (45+49+44+43+48)/5 = 229/5 = 45.8\n- E-E-A-T: (41+42+35+39+41)/5 = 198/5 = 39.6\n- Platform Optimization: (35+42+35+36+45)/5 = 193/5 = 38.6\n- Brand Voice: items 85\u219218, 86\u219219, 88\u219249; items 83 and 87 are null. Average of available: (18+19+49)/3 = 86/3 = 28.7 (note: 2 articles have unknown brand verdicts, so brand_voice avg is partial)\n- SEO Structure: (51+49+56+41+52)/5 = 249/5 = 49.8\n- Schema Recommendations: (70+82+75+70+80)/5 = 377/5 = 75.4\n\nWeakest dimension: Platform Optimization (38.6)\nStrongest dimension: Schema Recommendations (75.4)\n\n**STEP 2: PLATFORM READINESS**\nAll 5 articles: aio_ready=false, chatgpt_ready=false, perplexity_ready=false, gemini_ready=false, bing_copilot_ready=false.\n0% readiness across all platforms.\n\n**STEP 3: BRAND SUMMARY**\nPASS: 0, WARN: 0, FAIL: 3 (items 85, 86, 88), UNKNOWN: 2 (items 83, 87)\n\n**STEP 4: RECURRING ISSUES**\n- Zero named citations / \"research shows\" without attribution: items 83, 85, 86, 87, 88 \u2192 ALL 5 articles \u2192 dimension: eeat + ai_citability\n- No direct answer block in first 150 words (QAPEDS gate failure): items 83, 85, 86, 87, 88 \u2192 ALL 5 articles \u2192 dimension: ai_citability\n- No first-hand practitioner signals: items 83, 85, 87, 88 \u2192 4 articles \u2192 dimension: eeat\n- Title case headings (brand violation): item 87 noted explicitly; but brand fails also likely involve this across items 85, 86, 88\n- Statistical density near zero: items 86, 87, 88 explicitly noted \u2192 3 articles\n\n**STEP 5: STRONGEST/WEAKEST**\nStrongest: item 88 \u2014 \"evaluating student engagement platforms for scalability\" (49.8)\nWeakest: item 86 \u2014 \"student motivation and engagement\" (41.0)\n\n---\n\n<scores>\n{\n  \"cluster\": \"Engagement\",\n  \"sub_cluster\": \"Core + Topics\",\n  \"article_count\": 5,\n  \"avg_geo_composite\": 44.9,\n  \"avg_qapeds_composite\": 4.28,\n  \"dimension_averages\": {\n    \"ai_citability\": 45.8,\n    \"eeat\": 39.6,\n    \"platform_optimization\": 38.6,\n    \"brand_voice\": 28.7,\n    \"seo_structure\": 49.8,\n    \"schema_recommendations\": 75.4\n  },\n  \"dimension_averages_note\": \"brand_voice average is calculated from 3 scored articles only (items 85, 86, 88); items 83 and 87 returned UNKNOWN brand verdicts and are excluded from this average\",\n  \"weakest_dimension\": \"platform_optimization\",\n  \"strongest_dimension\": \"schema_recommendations\",\n  \"platform_readiness\": {\n    \"aio_ready_count\": 0,\n    \"aio_ready_pct\": 0,\n    \"chatgpt_ready_count\": 0,\n    \"chatgpt_ready_pct\": 0,\n    \"perplexity_ready_count\": 0,\n    \"perplexity_ready_pct\": 0\n  },\n  \"brand_summary\": {\n    \"pass_count\": 0,\n    \"warn_count\": 0,\n    \"fail_count\": 3,\n    \"unknown_count\": 2,\n    \"common_issues\": [\n      \"title_case_headings\",\n      \"brand_naming_violations\",\n      \"prohibited_phrasing\"\n    ]\n  },\n  \"recurring_issues\": [\n    {\n      \"pattern\": \"Zero named citations \u2014 'research shows' and 'research demonstrates' used without attribution across all articles\",\n      \"article_count\": 5,\n      \"dimension\": \"eeat + ai_citability\",\n      \"impact\": \"Suppresses Proof (P) scores to near-floor across every article; AI systems cannot cite unattributed assertions; kills AI Citability and E-E-A-T simultaneously\"\n    },\n    {\n      \"pattern\": \"No canonical direct-answer block in first 150 words \u2014 both QAPEDS gates fail on every article\",\n      \"article_count\": 5,\n      \"dimension\": \"ai_citability\",\n      \"impact\": \"AI systems cannot extract a concise, citable answer; AIO snippet, ChatGPT, Perplexity, and Gemini all require an isolatable direct-answer block to surface the content; 0% platform readiness is a direct consequence\"\n    },\n    {\n      \"pattern\": \"No first-person practitioner signals \u2014 no named teachers, schools, 'we tested' framing, or Wayground platform data cited\",\n      \"article_count\": 4,\n      \"dimension\": \"eeat\",\n      \"impact\": \"Experience sub-component of E-E-A-T scores near zero; content reads as generic AI-generated text, reducing Google quality evaluator confidence and suppressing Share of Voice\"\n    },\n    {\n      \"pattern\": \"Statistical density near zero \u2014 no percentages, effect sizes, or data points with attribution and date\",\n      \"article_count\": 3,\n      \"dimension\": \"ai_citability\",\n      \"impact\": \"Statistical signals are +33% GEO citability lift per research; absence across most articles means the cluster cannot compete for AI-cited placements on data-seeking queries\"\n    }\n  ],\n  \"cluster_recommendations\": [\n    {\n      \"rank\": 1,\n      \"issue\": \"Cluster-wide citation and proof failure \u2014 all 5 articles use unattributed 'research shows' phrasing\",\n      \"fix\": \"Replace every instance of 'research shows,' 'studies suggest,' and 'research demonstrates' with a named citation in 'According to [Source, Year]' format. Minimum 3 named sources per article. Recommended sources: Fredricks, Blumenfeld & Paris (2004) on multidimensional engagement; Hattie (2009) Visible Learning on effect sizes; Gallup Student Poll (2023) for disengagement statistics; Deci & Ryan Self-Determination Theory for motivation framing; NWEA 2023 MAP Growth norms for achievement data.\",\n      \"applies_to\": \"All 5 articles\",\n      \"dimension\": \"eeat + ai_citability\"\n    },\n    {\n      \"rank\": 2,\n      \"issue\": \"No direct-answer blocks \u2014 both QAPEDS gates fail on every article, resulting in 0% platform readiness\",\n      \"fix\": \"Rewrite the opening of each article to include a 1-3 sentence canonical answer (40-60 words) within the first 150 words. The answer must be structurally isolatable \u2014 a standalone paragraph, not buried in narrative. For example, item 86 ('student motivation and engagement') should open with a definition of both terms and their relationship before any contextual framing. Each article's first H2 opening paragraph must also be trimmed to under 40 words to qualify for AEO extraction.\",\n      \"applies_to\": \"All 5 articles\",\n      \"dimension\": \"ai_citability\"\n    },\n    {\n      \"rank\": 3,\n      \"issue\": \"No FAQ-structured sections \u2014 Perplexity readiness is 0% and FAQPage schema cannot be implemented\",\n      \"fix\": \"Add a dedicated FAQ section (H2: 'Frequently asked questions') to each article with 4-5 Q&A pairs using H3 question headings followed by 40-60 word answers. For the engagement cluster, natural FAQ candidates include: 'What is the difference between motivation and engagement?', 'How do you measure student engagement?', 'What causes student disengagement?' This section enables FAQPage schema on all 5 articles and directly unlocks Perplexity citation readiness.\",\n      \"applies_to\": \"All 5 articles\",\n      \"dimension\": \"platform_optimization\"\n    },\n    {\n      \"rank\": 4,\n      \"issue\": \"No practitioner voice \u2014 content reads as generic and lacks E-E-A-T Experience signals\",\n      \"fix\": \"Add at least one named practitioner scenario per article: a specific teacher role, grade level, subject, and outcome. Format: 'A 7th grade science teacher using Wayground found that...' or 'Based on [X] teachers in the Wayground network...' Where Wayground platform data exists (usage stats, activity completion rates, teacher feedback), cite it with 'Based on X users' framing. This is the single fastest lever to differentiate the cluster from competing generic content.\",\n      \"applies_to\": \"4 of 5 articles\",\n      \"dimension\": \"eeat\"\n    },\n    {\n      \"rank\": 5,\n      \"issue\": \"Brand compliance is critical \u2014 3 of 3 scored articles returned FAIL; 2 have unknown brand verdicts pending review\",\n      \"fix\": \"Priority brand fixes across the cluster: (1) Convert all H2 and H3 headings from title case to sentence case \u2014 item 87 has this documented explicitly and it is likely widespread. (2) Audit for em dashes in body copy \u2014 zero tolerance per brand rules. (3) Check for 'quiz tool,' 'quiz app,' or 'Quizizz' references and replace with 'Wayground' or 'supplemental learning platform.' Items 83 and 87 must be submitted for brand review immediately to resolve UNKNOWN verdicts before publication.\",\n      \"applies_to\": \"All 5 articles\",\n      \"dimension\": \"brand_voice\"\n    }\n  ],\n  \"strongest_article\": {\n    \"item_num\": \"88\",\n    \"name\": \"evaluating student engagement platforms for scalability\",\n    \"geo_composite\": 49.8\n  },\n  \"weakest_article\": {\n    \"item_num\": \"86\",\n    \"name\": \"student motivation and engagement\",\n    \"geo_composite\": 41.0\n  }\n}\n</scores>\n\n<output>\n\n# Engagement Cluster \u2014 Synthesis Report\n\n## Cluster overview\n\nThe Engagement cluster is the lowest-performing group evaluated to date, with an average GEO composite of **44.9** and an average QAPEDS of **4.28** \u2014 both well below publishable thresholds. Every article in the cluster fails every AI platform readiness check (0% AIO, ChatGPT, and Perplexity ready), and brand compliance is critical, with 3 of 3 scored articles returning FAIL verdicts and 2 articles still awaiting brand review. The cluster's core structural problem is uniform: all five articles fail the same two QAPEDS gates simultaneously, meaning no article is currently citable by any AI system.\n\n---\n\n## Score summary\n\n| Dimension | Cluster Avg | Target (70+) | Gap |\n|---|---|---|---|\n| AI Citability | 45.8 | 70 | -24.2 |\n| E-E-A-T | 39.6 | 70 | -30.4 |\n| Platform Optimization | 38.6 | 70 | -31.4 |\n| Brand Voice* | 28.7 | 70 | -41.3 |\n| SEO Structure | 49.8 | 70 | -20.2 |\n| Schema Recommendations | 75.4 | 70 | **+5.4** |\n| **GEO Composite** | **44.9** | **70** | **-25.1** |\n| **QAPEDS** | **4.28/10** | **7.0+** | **-2.72** |\n\n*Brand Voice average calculated from 3 scored articles only (items 85, 86, 88). Items 83 and 87 have UNKNOWN brand verdicts pending review.\n\nSchema Recommendations is the lone above-target dimension \u2014 the articles have structure that could support schema, but the content quality issues must be resolved before schema implementation would have meaningful impact. Every other dimension is below the 70-point threshold, with Brand Voice and Platform Optimization as the most severe gaps.\n\n---\n\n## Top 3 recurring issues\n\n### 1. Zero named citations \u2014 affects all 5 articles\n\nEvery article in the cluster uses \"research shows,\" \"research demonstrates,\" or \"studies suggest\" without a single named source. This is not a minor citation style issue \u2014 it is a structural E-E-A-T failure. Under the rubric, \"research shows\" without a named source caps the Evidence Presence sub-score at floor level. It also directly suppresses AI Citability, because AI systems evaluating content for citation prioritize factual density with attribution. Per GEO research, named citations are a +28% citability signal and statistics with attribution are +33%. The Engagement cluster currently captures neither. This single pattern is responsible for the majority of the E-E-A-T gap across the cluster.\n\n### 2. No direct-answer blocks in the first 150 words \u2014 affects all 5 articles\n\nBoth QAPEDS hard gates fail on every article. Gate 1 (Explicit Question) and Gate 2 (Direct Answer) require a clear interrogative question and a 1-3 sentence canonical answer within the first 150 words. Instead, each article opens with narrative framing, rhetorical questions, or problem scenarios before pivoting to content. This means AI systems \u2014 Google AIO, ChatGPT, Perplexity, Gemini, Bing Copilot \u2014 have no extractable answer to surface. The 0% platform readiness across all five articles is a direct downstream consequence of this structural pattern. This is the single highest-leverage fix available: rewriting five article openings would unlock platform readiness across the entire cluster.\n\n### 3. No practitioner signals or first-person experience \u2014 affects 4 of 5 articles\n\nThe Experience sub-component of E-E-A-T requires first-hand evidence: named teachers, specific classroom scenarios, Wayground platform data, or \"we tested\" framing. None of these signals appear in four of the five articles. Classroom examples exist in some articles (noted in item 85's evaluation), but they are presented as illustrative constructs rather than attributed real-world experiences. Google's quality evaluator framework explicitly differentiates between content that demonstrates experience and content that describes scenarios. Without practitioner voice, the cluster reads as generic AI-generated text \u2014 which suppresses quality ratings and reduces Share of Voice against competitor content that does carry named teacher or school references.\n\n---\n\n## Platform readiness\n\n| Platform | Ready | % |\n|---|---|---|\n| Google AIO | 0 of 5 | 0% |\n| ChatGPT | 0 of 5 | 0% |\n| Perplexity | 0 of 5 | 0% |\n| Gemini | 0 of 5 | 0% |\n| Bing Copilot | 0 of 5 | 0% |\n\nThe Engagement cluster has a 0% platform readiness rate \u2014 the worst possible outcome. No article in the cluster is currently in a position to be cited by any major AI system. The cause is consistent across all five articles: the absence of a direct-answer block (which blocks AIO and ChatGPT readiness) and the absence of FAQ-structured sections with factual density (which blocks Perplexity readiness). These are fixable structural problems, not content quality problems that require fundamental rewrites. Implementing the direct-answer block and FAQ section recommendations in Cluster Recommendations 2 and 3 below would lift this metric substantially across all five articles.\n\n---\n\n## Brand compliance\n\n| Verdict | Count |\n|---|---|\n| PASS | 0 |\n| WARN | 0 |\n| FAIL | 3 |\n| UNKNOWN | 2 |\n\nBrand compliance is in a critical state. Of the 3 articles with completed brand reviews, all 3 returned FAIL verdicts. Item 86 (\""
+}
