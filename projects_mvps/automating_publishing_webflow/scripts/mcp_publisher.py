@@ -48,9 +48,13 @@ CONTENT_SIZE_THRESHOLD = 35_000  # bytes
 
 COLLECTION_IDS: dict[str, str] = {
     "Differentiated Learning": "69ca46c801a5a26e0c8d8f22",
+    "Scaffolding": "69e1d89aa44857542a0259b7",
+    "Engagement": "69e1d89aa44857542a025a00",
 }
 CATEGORY_IDS: dict[str, str] = {
     "Differentiated Learning": "69c66951544f10544a5db6fe",
+    "Scaffolding": "69c8b99081dce4d5e48f103a",
+    "Engagement": "69c8b995ba86b2f1fada2e3b",
 }
 
 
