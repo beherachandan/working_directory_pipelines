@@ -4,3 +4,6 @@
 projects_mvps/automating_publishing_webflow/.env
 projects_mvps/automating_publishing_webflow/chandan_b_service_account_key.json
 projects_mvps/automating_publishing_webflow/quizizz-org-f2b818b919d5.json
+
+# Local Quizizz frontend mirror for knowledge-base scans (large; do not commit)
+professional/wayground/_upstream/

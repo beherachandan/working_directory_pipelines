@@ -1,0 +1,14 @@
+---
+description: Wayground/Quizizz frontend — read and refresh the knowledge base when working on product or repo-aligned tasks
+globs: professional/wayground/**,projects_mvps/automating_publishing_webflow/**
+alwaysApply: false
+---
+
+# Quizizz / Wayground frontend context
+
+When tasks involve Wayground product accuracy, Quizizz frontend architecture, or Webflow publishing aligned to that product:
+
+1. **Read** `professional/wayground/knowledge/QUIZIZZ_FRONTEND.md` before deep assumptions about apps, packages, or flows.
+2. **After** substantive repo inspection or a `git pull` of `professional/wayground/_upstream/quizizz-frontend`, update the **Scan log** table and any changed sections in that file.
+
+The upstream repo is [quizizz/frontend](https://github.com/quizizz/frontend). Local mirror path (if present): `professional/wayground/_upstream/quizizz-frontend`.
